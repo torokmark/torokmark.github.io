@@ -6,10 +6,22 @@
     <description>Recent content on Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Jan 2019 17:51:15 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 08 Jan 2019 12:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Multibuilder</title>
+      <link>/post/multibuilder/</link>
+      <pubDate>Tue, 08 Jan 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/post/multibuilder/</guid>
+      <description>Abs: In this post I would like to present a couple of solutions for builder pattern in python, and finally the multibuilder pattern.
+Builder pattern comes in handy when we need to set a lot of fields of an object and we do not want to use many methods with multiple parameters.
+All implementations are found in this repo: https://github.com/torokmark/builders_in_python
+The Simple One Task: Let us implement a Person with the following fields like name, age, phone.</description>
+    </item>
     
     <item>
       <title>About</title>
@@ -23,23 +35,12 @@ Java enthusiast and Ruby monk.</description>
     </item>
     
     <item>
-      <title>About</title>
-      <link>/post/somethingelse/</link>
-      <pubDate>Tue, 01 Jan 2019 17:51:15 +0100</pubDate>
+      <title>Best practices to write an Entity in Spring/Hibernate</title>
+      <link>/post/entity-best-practices/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/post/somethingelse/</guid>
-      <description>Thoughts about coding and everything.
-Mark, software engineer and avid learner!
-Java enthusiast and Ruby monk.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>/post/something/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/post/something/</guid>
-      <description>hola</description>
+      <guid>/post/entity-best-practices/</guid>
+      <description>Every entity has to have a public default contstructor fetchType = FetchType.LAZY on @OneToOne, @OneToMany and @ManyToOne and other associations (EAGER is the default except @OneToMany) If an association is not mandatory:  optional = false on association annotations @Column and @JoinColumn should contain nullable = false  Entity should implement Persistable&amp;lt;IDTYPE&amp;gt; interface  Create own interface with default implementation: java public interface Identifiable extends Persistable&amp;lt;Long&amp;gt; { default isNew() { return getId() == null; } }   All ids should be boxed like Long, Integer, String, etc.</description>
     </item>
     
   </channel>

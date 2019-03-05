@@ -9,7 +9,7 @@
 
         <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet"> 
 
-        <title>Posts</title>
+        <title>Best practices to write an Entity in Spring/Hibernate</title>
 
         <link rel="stylesheet" href="/css/stylesheet.css">
     </head>
@@ -42,33 +42,47 @@
         </section>
 
 
-<section>
-  <ul class="posts_listing">
-    
-    <li>
-      <div class="row" id="posts">
-        <div class="d-none d-sm-block col-sm-3 date-time-title">
-          <time>08 Jan 2019</time>
-        </div>
-        <div class="col-sm date-time-title post">
-          <a href="/post/multibuilder/">Multibuilder</a>
-        </div>
-      </div>
-    </li>
-    
-    <li>
-      <div class="row" id="posts">
-        <div class="d-none d-sm-block col-sm-3 date-time-title">
-          <time>01 Oct 2018</time>
-        </div>
-        <div class="col-sm date-time-title post">
-          <a href="/post/entity-best-practices/">Best practices to write an Entity in Spring/Hibernate</a>
-        </div>
-      </div>
-    </li>
-    
-  </ul>
-</section>
+<div class="blog-post">
+  <h1>Best practices to write an Entity in Spring/Hibernate</h1>
+  <div class="blog-post-subheader">
+    <time>01 Oct 2018</time>
+  </div>
+  <div class="blog-post-content">
+    <ul>
+<li>Every entity has to have a <em>public default contstructor</em></li>
+<li><code>fetchType = FetchType.LAZY</code> on <code>@OneToOne</code>, <code>@OneToMany</code> and <code>@ManyToOne</code> and other associations (EAGER is the default except <code>@OneToMany</code>)</li>
+<li>If an association is not mandatory:
+
+<ul>
+<li><code>optional = false</code> on association annotations</li>
+<li><code>@Column</code> and <code>@JoinColumn</code> should contain <code>nullable = false</code></li>
+</ul></li>
+<li>Entity should implement <code>Persistable&lt;IDTYPE&gt;</code> interface
+
+<ul>
+<li>Create own interface with default implementation:
+<code>java
+public interface Identifiable extends Persistable&lt;Long&gt; { 
+default isNew() { 
+ return getId() == null; 
+}
+}
+</code></li>
+</ul></li>
+<li>All ids should be boxed like <code>Long</code>, <code>Integer</code>, <code>String</code>, etc. (Implementing <code>Persistable&lt;IDTYPE&gt;</code> will ensure this.)</li>
+<li>Do not use <em>lombok</em> for entities (hibernate), generated code interfere with each other</li>
+<li>Do not reimplement <code>equals</code> and <code>hashCode</code> for entities</li>
+<li>Do not use primitives if they can be null in the DB</li>
+</ul>
+
+<p>In the service layer:</p>
+
+<ul>
+<li>Use <code>@Transactional(readOnly = true)</code> if the method can write db or <code>@Transactional(readOnly = false)</code> if not (false is the default in spring)</li>
+</ul>
+
+  </div>
+</div>
 
       <footer>
         <hr>
