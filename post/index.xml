@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>Multibuilder</title>
+      <title>The Multibuilder Pattern</title>
       <link>/post/multibuilder/</link>
       <pubDate>Tue, 08 Jan 2019 12:00:00 +0100</pubDate>
       
       <guid>/post/multibuilder/</guid>
-      <description>Abs: In this post I would like to present a couple of solutions for builder pattern in python, and finally the multibuilder pattern.
+      <description>In this post I would like to present a couple of solutions for builder pattern in python, and finally how I implemented an ultimate builder that I call multibuilder pattern.
 Builder pattern comes in handy when we need to set a lot of fields of an object and we do not want to use many methods with multiple parameters.
 All implementations are found in this repo: https://github.com/torokmark/builders_in_python
 The Simple One Task: Let us implement a Person with the following fields like name, age, phone.</description>
@@ -29,7 +29,7 @@ The Simple One Task: Let us implement a Person with the following fields like na
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/entity-best-practices/</guid>
-      <description>Every entity has to have a public default contstructor fetchType = FetchType.LAZY on @OneToOne, @OneToMany and @ManyToOne and other associations (EAGER is the default except @OneToMany) If an association is not mandatory:  optional = false on association annotations @Column and @JoinColumn should contain nullable = false  Entity should implement Persistable&amp;lt;IDTYPE&amp;gt; interface  Create own interface with default implementation: java public interface Identifiable extends Persistable&amp;lt;Long&amp;gt; { default isNew() { return getId() == null; } }   All ids should be boxed like Long, Integer, String, etc.</description>
+      <description>Every entity has to have a public default contstructor fetchType = FetchType.LAZY on @OneToOne, @OneToMany and @ManyToOne and other associations (EAGER is the default except @OneToMany) If an association is not mandatory:  optional = false on association annotations @Column and @JoinColumn should contain nullable = false  Entity should implement Persistable&amp;lt;IDTYPE&amp;gt; interface  Create own interface with default implementation:   public interface Identifiable extends Persistable&amp;lt;Long&amp;gt; { default isNew() { return getId() == null; } }  All ids should be boxed like Long, Integer, String, etc.</description>
     </item>
     
   </channel>

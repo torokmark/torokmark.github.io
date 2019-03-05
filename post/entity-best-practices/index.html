@@ -60,15 +60,15 @@
 <li>Entity should implement <code>Persistable&lt;IDTYPE&gt;</code> interface
 
 <ul>
-<li>Create own interface with default implementation:
-<code>java
-public interface Identifiable extends Persistable&lt;Long&gt; { 
-default isNew() { 
- return getId() == null; 
-}
-}
-</code></li>
+<li>Create own interface with default implementation:</li>
 </ul></li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"> <span style="color:#66d9ef">public</span> <span style="color:#66d9ef">interface</span> <span style="color:#a6e22e">Identifiable</span> <span style="color:#66d9ef">extends</span> Persistable<span style="color:#f92672">&lt;</span>Long<span style="color:#f92672">&gt;</span> <span style="color:#f92672">{</span> 
+     <span style="color:#66d9ef">default</span> isNew<span style="color:#f92672">()</span> <span style="color:#f92672">{</span> 
+         <span style="color:#66d9ef">return</span> getId<span style="color:#f92672">()</span> <span style="color:#f92672">==</span> <span style="color:#66d9ef">null</span><span style="color:#f92672">;</span> 
+     <span style="color:#f92672">}</span>
+ <span style="color:#f92672">}</span></code></pre></div>
+<ul>
 <li>All ids should be boxed like <code>Long</code>, <code>Integer</code>, <code>String</code>, etc. (Implementing <code>Persistable&lt;IDTYPE&gt;</code> will ensure this.)</li>
 <li>Do not use <em>lombok</em> for entities (hibernate), generated code interfere with each other</li>
 <li>Do not reimplement <code>equals</code> and <code>hashCode</code> for entities</li>

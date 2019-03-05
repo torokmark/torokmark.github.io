@@ -9,7 +9,7 @@
 
         <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet"> 
 
-        <title>Multibuilder</title>
+        <title>The Multibuilder Pattern</title>
 
         <link rel="stylesheet" href="/css/stylesheet.css">
     </head>
@@ -43,14 +43,15 @@
 
 
 <div class="blog-post">
-  <h1>Multibuilder</h1>
+  <h1>The Multibuilder Pattern</h1>
   <div class="blog-post-subheader">
     <time>08 Jan 2019</time>
   </div>
   <div class="blog-post-content">
     
 
-<p><strong>Abs</strong>: In this post I would like to present a couple of solutions for builder pattern in python, and finally the multibuilder pattern.</p>
+<p><strong>In this post I would like to present a couple of solutions for builder pattern in python,
+and finally how I implemented an ultimate builder that I call multibuilder pattern.</strong></p>
 
 <p>Builder pattern comes in handy when we need to set a lot of fields of an object and we do not want to use many methods with multiple parameters.</p>
 
@@ -60,162 +61,132 @@
 
 <p><strong>Task</strong>: Let us implement a <code>Person</code> with the following fields like <code>name</code>, <code>age</code>, <code>phone</code>.<br />
 <strong>Approach</strong>: Make a <code>PersonBuilder</code> with methods according to the fields in <code>Person</code>, plus a <code>build</code> which returns an object of <code>Person</code>.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span>:
+    <span style="color:#66d9ef">def</span> __init__(self, name, age, phone):
+        self<span style="color:#f92672">.</span>_name <span style="color:#f92672">=</span> name
+        self<span style="color:#f92672">.</span>_age <span style="color:#f92672">=</span> age
+        self<span style="color:#f92672">.</span>_phone <span style="color:#f92672">=</span> phone
 
-<pre><code class="language-python">class Person:
-    def __init__(self, name, age, phone):
-        self._name = name
-        self._age = age
-        self._phone = phone
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">name</span>(self):
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_name
 
-    def name(self):
-        return self._name
-
-    def age(self):
-        return self._age
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">age</span>(self):
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_age
     
-    def phone(self):
-        return self._phone
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">phone</span>(self):
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_phone
 
-    def __str__(self):
-        return '[name={}; age={}; phone={}]'.format(self._name, self._age, self._phone)
-</code></pre>
+    <span style="color:#66d9ef">def</span> __str__(self):
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;[name={}; age={}; phone={}]&#39;</span><span style="color:#f92672">.</span>format(self<span style="color:#f92672">.</span>_name, self<span style="color:#f92672">.</span>_age, self<span style="color:#f92672">.</span>_phone)</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">PersonBuilder</span>:
+    <span style="color:#66d9ef">def</span> __init__(self):
+        self<span style="color:#f92672">.</span>_name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;John Doe&#39;</span>
+        self<span style="color:#f92672">.</span>_age <span style="color:#f92672">=</span> <span style="color:#ae81ff">99</span>
+        self<span style="color:#f92672">.</span>_phone <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;000&#39;</span>
 
-<pre><code class="language-python">class PersonBuilder:
-    def __init__(self):
-        self._name = 'John Doe'
-        self._age = 99
-        self._phone = '000'
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">name</span>(self, name):
+        self<span style="color:#f92672">.</span>_name <span style="color:#f92672">=</span> name
+        <span style="color:#66d9ef">return</span> self
 
-    def name(self, name):
-        self._name = name
-        return self
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">age</span>(self, age):
+        self<span style="color:#f92672">.</span>_age <span style="color:#f92672">=</span> age
+        <span style="color:#66d9ef">return</span> self
 
-    def age(self, age):
-        self._age = age
-        return self
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">phone</span>(self, phone):
+        self<span style="color:#f92672">.</span>_phone <span style="color:#f92672">=</span> phone
+        <span style="color:#66d9ef">return</span> self
 
-    def phone(self, phone):
-        self._phone = phone
-        return self
-
-    def build(self):
-        return Person(self._name, self._age, self._phone)
-</code></pre>
-
-<pre><code class="language-python">if __name__ == '__main__':
-    print(PersonBuilder()
-        .name('jancsi')
-        .age(12)
-        .phone('11223344')
-        .age(18)
-        .build())            
-    # =&gt; [name=jancsi; age=18; phone=11223344]
-    print(PersonBuilder()
-        .age(12)
-        .phone('11223344')
-        .age(18)
-        .build())            
-    # =&gt; [name=John Doe; age=18; phone=11223344]
-    print(PersonBuilder()
-        .build())            
-    # =&gt; [name=John Doe; age=99; phone=000]
-</code></pre>
-
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">build</span>(self):
+        <span style="color:#66d9ef">return</span> Person(self<span style="color:#f92672">.</span>_name, self<span style="color:#f92672">.</span>_age, self<span style="color:#f92672">.</span>_phone)</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
+    <span style="color:#66d9ef">print</span>(PersonBuilder()
+        <span style="color:#f92672">.</span>name(<span style="color:#e6db74">&#39;jancsi&#39;</span>)
+        <span style="color:#f92672">.</span>age(<span style="color:#ae81ff">12</span>)
+        <span style="color:#f92672">.</span>phone(<span style="color:#e6db74">&#39;11223344&#39;</span>)
+        <span style="color:#f92672">.</span>age(<span style="color:#ae81ff">18</span>)
+        <span style="color:#f92672">.</span>build())            
+    <span style="color:#75715e"># =&gt; [name=jancsi; age=18; phone=11223344]</span>
+    <span style="color:#66d9ef">print</span>(PersonBuilder()
+        <span style="color:#f92672">.</span>age(<span style="color:#ae81ff">12</span>)
+        <span style="color:#f92672">.</span>phone(<span style="color:#e6db74">&#39;11223344&#39;</span>)
+        <span style="color:#f92672">.</span>age(<span style="color:#ae81ff">18</span>)
+        <span style="color:#f92672">.</span>build())            
+    <span style="color:#75715e"># =&gt; [name=John Doe; age=18; phone=11223344]</span>
+    <span style="color:#66d9ef">print</span>(PersonBuilder()
+        <span style="color:#f92672">.</span>build())            
+    <span style="color:#75715e"># =&gt; [name=John Doe; age=99; phone=000]</span></code></pre></div>
 <h2 id="the-one-with-named-parameters">The One with Named Parameters</h2>
 
 <p>Though builder is very flexible, it is inevitable to have some default values for those fields that are not set during the building.</p>
 
 <p><strong>Task</strong>: How to do this without builder?<br />
 <strong>Approach</strong>: Let us use default values in constructor parameter list.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Person</span>:
+    <span style="color:#66d9ef">def</span> __init__(self, name<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;John Doe&#39;</span>, age<span style="color:#f92672">=</span><span style="color:#ae81ff">99</span>, phone<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;000&#39;</span>):
+        self<span style="color:#f92672">.</span>_name <span style="color:#f92672">=</span> name
+        self<span style="color:#f92672">.</span>_age <span style="color:#f92672">=</span> age
+        self<span style="color:#f92672">.</span>_phone <span style="color:#f92672">=</span> phone
 
-<pre><code class="language-python">class Person:
-    def __init__(self, name='John Doe', age=99, phone='000'):
-        self._name = name
-        self._age = age
-        self._phone = phone
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">name</span>(self):
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_name
 
-    def name(self):
-        return self._name
-
-    def age(self):
-        return self._age
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">age</span>(self):
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_age
     
-    def phone(self):
-        return self._phone
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">phone</span>(self):
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_phone
 
-    def __str__(self):
-        return '[name={}; age={}; phone={}]'.format(
-          self._name, 
-          self._age, 
-          self._phone)
-</code></pre>
-
-<pre><code class="language-python">if __name__ == '__main__':
-    print(Person())                        
-    # =&gt; [name=John Doe; age=99; phone=000]
-    print(Person(phone='123456', age=45))  
-    # =&gt; [name=John Doe; age=45; phone=123456]
-    print(Person('jancsi', 54, '312333'))  
-    # =&gt; [name=jancsi; age=54; phone=312333]
-</code></pre>
-
+    <span style="color:#66d9ef">def</span> __str__(self):
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;[name={}; age={}; phone={}]&#39;</span><span style="color:#f92672">.</span>format(
+          self<span style="color:#f92672">.</span>_name, 
+          self<span style="color:#f92672">.</span>_age, 
+          self<span style="color:#f92672">.</span>_phone)</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
+    <span style="color:#66d9ef">print</span>(Person())                        
+    <span style="color:#75715e"># =&gt; [name=John Doe; age=99; phone=000]</span>
+    <span style="color:#66d9ef">print</span>(Person(phone<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;123456&#39;</span>, age<span style="color:#f92672">=</span><span style="color:#ae81ff">45</span>))  
+    <span style="color:#75715e"># =&gt; [name=John Doe; age=45; phone=123456]</span>
+    <span style="color:#66d9ef">print</span>(Person(<span style="color:#e6db74">&#39;jancsi&#39;</span>, <span style="color:#ae81ff">54</span>, <span style="color:#e6db74">&#39;312333&#39;</span>))  
+    <span style="color:#75715e"># =&gt; [name=jancsi; age=54; phone=312333]</span></code></pre></div>
 <h2 id="the-classic">The Classic</h2>
 
 <p><strong>Task</strong>: Let us implement a classic car builder.<br />
 <strong>Solution</strong>: Take the example from <em>Gang of Four</em>!</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Car</span>:
+    <span style="color:#66d9ef">def</span> __init__(self, wheel<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>, seat<span style="color:#f92672">=</span><span style="color:#ae81ff">4</span>, color<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;red&#39;</span>):
+        self<span style="color:#f92672">.</span>wheel <span style="color:#f92672">=</span> wheel
+        self<span style="color:#f92672">.</span>seat <span style="color:#f92672">=</span> seat
+        self<span style="color:#f92672">.</span>color <span style="color:#f92672">=</span> color
 
-<pre><code class="language-python">class Car:
-    def __init__(self, wheel=4, seat=4, color='red'):
-        self.wheel = wheel
-        self.seat = seat
-        self.color = color
+    <span style="color:#66d9ef">def</span> __str__(self):
+        <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;[wheels: {}, seats: {}, color: {}]&#39;</span><span style="color:#f92672">.</span>format(
+          self<span style="color:#f92672">.</span>wheel, 
+          self<span style="color:#f92672">.</span>seat, 
+          self<span style="color:#f92672">.</span>color)</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Builder</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">set_wheels</span>(self, wheel): <span style="color:#66d9ef">pass</span>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">set_seats</span>(self, seat): <span style="color:#66d9ef">pass</span>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">set_color</span>(self, color): <span style="color:#66d9ef">pass</span></code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CarBuilder</span>(Builder):
 
-    def __str__(self):
-        return '[wheels: {}, seats: {}, color: {}]'.format(
-          self.wheel, 
-          self.seat, 
-          self.color)
-</code></pre>
+    <span style="color:#66d9ef">def</span> __init__(self):
+        self<span style="color:#f92672">.</span>car <span style="color:#f92672">=</span> Car()
 
-<pre><code class="language-python">class Builder:
-    def set_wheels(self, wheel): pass
-    def set_seats(self, seat): pass
-    def set_color(self, color): pass
-</code></pre>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">set_wheels</span>(self, wheel):
+        self<span style="color:#f92672">.</span>car<span style="color:#f92672">.</span>wheel <span style="color:#f92672">=</span> wheel
 
-<pre><code class="language-python">class CarBuilder(Builder):
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">set_seats</span>(self, seat):
+        self<span style="color:#f92672">.</span>car<span style="color:#f92672">.</span>seat <span style="color:#f92672">=</span> seat
 
-    def __init__(self):
-        self.car = Car()
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">set_color</span>(self, color):
+        self<span style="color:#f92672">.</span>car<span style="color:#f92672">.</span>color <span style="color:#f92672">=</span> color
 
-    def set_wheels(self, wheel):
-        self.car.wheel = wheel
-
-    def set_seats(self, seat):
-        self.car.seat = seat
-
-    def set_color(self, color):
-        self.car.color = color
-
-    def get_result(self):
-        return self.car
-</code></pre>
-
-<pre><code class="language-python">class CarBuilderDirector:
-    def build(self):
-        builder = CarBuilder()
-        builder.set_wheels(8)
-        builder.set_seats(4)
-        builder.set_color(&quot;Red&quot;)
-        return builder.get_result()
-</code></pre>
-
-<pre><code class="language-python">if __name__ == '__main__':
-    car = CarBuilderDirector().build()
-    print(car)      
-    # =&gt; [wheels: 8, seats: 4, color: Red]
-</code></pre>
-
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">get_result</span>(self):
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>car</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">CarBuilderDirector</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">build</span>(self):
+        builder <span style="color:#f92672">=</span> CarBuilder()
+        builder<span style="color:#f92672">.</span>set_wheels(<span style="color:#ae81ff">8</span>)
+        builder<span style="color:#f92672">.</span>set_seats(<span style="color:#ae81ff">4</span>)
+        builder<span style="color:#f92672">.</span>set_color(<span style="color:#e6db74">&#34;Red&#34;</span>)
+        <span style="color:#66d9ef">return</span> builder<span style="color:#f92672">.</span>get_result()</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
+    car <span style="color:#f92672">=</span> CarBuilderDirector()<span style="color:#f92672">.</span>build()
+    <span style="color:#66d9ef">print</span>(car)      
+    <span style="color:#75715e"># =&gt; [wheels: 8, seats: 4, color: Red]</span></code></pre></div>
 <h2 id="the-builder-with-builders">The Builder with Builders</h2>
 
 <p><strong>Task</strong>: Implement a <em>Response object</em> builder. It has a status code, a header and a body part. Create a builder that can build multiple part of an object.<br />
@@ -224,172 +195,144 @@
 <blockquote>
 <p>Using just <code>HeaderBuilder#add(key, value)</code> instead of using header specific setters.</p>
 </blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Builder</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">build</span>(self): <span style="color:#66d9ef">pass</span></code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HeaderBuilder</span>(Builder):
+    <span style="color:#66d9ef">def</span> __init__(self):
+        self<span style="color:#f92672">.</span>_header <span style="color:#f92672">=</span> {}
 
-<pre><code class="language-python">class Builder:
-    def build(self): pass
-</code></pre>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add</span>(self, key, value):
+        self<span style="color:#f92672">.</span>_header[key] <span style="color:#f92672">=</span> value
+        <span style="color:#66d9ef">return</span> self
 
-<pre><code class="language-python">class HeaderBuilder(Builder):
-    def __init__(self):
-        self._header = {}
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">build</span>(self):
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_header</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BodyBuilder</span>(Builder):
+    <span style="color:#66d9ef">def</span> __init__(self):
+        self<span style="color:#f92672">.</span>_body <span style="color:#f92672">=</span> []
 
-    def add(self, key, value):
-        self._header[key] = value
-        return self
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add</span>(self, content):
+        self<span style="color:#f92672">.</span>_body<span style="color:#f92672">.</span>append(content)
+        <span style="color:#66d9ef">return</span> self
 
-    def build(self):
-        return self._header
-</code></pre>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">build</span>(self):
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_body</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ResponseBuilder</span>(Builder):
+    <span style="color:#66d9ef">def</span> __init__(self):
+        self<span style="color:#f92672">.</span>_header <span style="color:#f92672">=</span> None
+        self<span style="color:#f92672">.</span>_body <span style="color:#f92672">=</span> None
+        self<span style="color:#f92672">.</span>_status <span style="color:#f92672">=</span> None
 
-<pre><code class="language-python">class BodyBuilder(Builder):
-    def __init__(self):
-        self._body = []
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">header</span>(self, header):
+        self<span style="color:#f92672">.</span>_header <span style="color:#f92672">=</span> header
+        <span style="color:#66d9ef">return</span> self
 
-    def add(self, content):
-        self._body.append(content)
-        return self
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">body</span>(self, body):
+        self<span style="color:#f92672">.</span>_body <span style="color:#f92672">=</span> body
+        <span style="color:#66d9ef">return</span> self
 
-    def build(self):
-        return self._body
-</code></pre>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">status</span>(self, status):
+        self<span style="color:#f92672">.</span>_status <span style="color:#f92672">=</span> status
+        <span style="color:#66d9ef">return</span> self
 
-<pre><code class="language-python">class ResponseBuilder(Builder):
-    def __init__(self):
-        self._header = None
-        self._body = None
-        self._status = None
-
-    def header(self, header):
-        self._header = header
-        return self
-
-    def body(self, body):
-        self._body = body
-        return self
-
-    def status(self, status):
-        self._status = status
-        return self
-
-    def build(self):
-        ret = {}
-        ret['statusCode'] = self._status
-        ret['header'] = self._header
-        ret['body'] = self._body
-        return ret
-
-</code></pre>
-
-<pre><code class="language-python">if __name__ == '__main__':
-    print(ResponseBuilder()
-            .header(
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">build</span>(self):
+        ret <span style="color:#f92672">=</span> {}
+        ret[<span style="color:#e6db74">&#39;statusCode&#39;</span>] <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_status
+        ret[<span style="color:#e6db74">&#39;header&#39;</span>] <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_header
+        ret[<span style="color:#e6db74">&#39;body&#39;</span>] <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_body
+        <span style="color:#66d9ef">return</span> ret</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;__main__&#39;</span>:
+    <span style="color:#66d9ef">print</span>(ResponseBuilder()
+            <span style="color:#f92672">.</span>header(
                 HeaderBuilder()
-                    .add('Accept', '*')
-                    .add('Age', 12)
-                    .build()
+                    <span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#39;Accept&#39;</span>, <span style="color:#e6db74">&#39;*&#39;</span>)
+                    <span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#39;Age&#39;</span>, <span style="color:#ae81ff">12</span>)
+                    <span style="color:#f92672">.</span>build()
             )
-            .body(
+            <span style="color:#f92672">.</span>body(
                 BodyBuilder()
-                    .add('some message comes here')
-                    .add('another message here...')
-                    .build()
+                    <span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#39;some message comes here&#39;</span>)
+                    <span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#39;another message here...&#39;</span>)
+                    <span style="color:#f92672">.</span>build()
             )
-            .status(200)
-            .build()
+            <span style="color:#f92672">.</span>status(<span style="color:#ae81ff">200</span>)
+            <span style="color:#f92672">.</span>build()
     )                   
-    # =&gt; {'statusCode': 200, 'header': {'Accept': '*', 'Age': 12}, 'body': ['some message comes here', 'another message here...']}
-</code></pre>
-
+    <span style="color:#75715e"># =&gt; {&#39;statusCode&#39;: 200, &#39;header&#39;: {&#39;Accept&#39;: &#39;*&#39;, &#39;Age&#39;: 12}, &#39;body&#39;: [&#39;some message comes here&#39;, &#39;another message here...&#39;]}</span></code></pre></div>
 <h2 id="the-multibuilder">The Multibuilder</h2>
 
 <p><strong>Task</strong>: Create a builder that can build multiple part of an object at one time whitout using so called subbuilders.<br />
 <strong>Approach</strong>: Let us chain everything up and memorize the already created objects.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">HeaderBuilder</span>:
+    <span style="color:#66d9ef">def</span> __init__(self):
+        self<span style="color:#f92672">.</span>_header <span style="color:#f92672">=</span> {}
 
-<pre><code class="language-python">class HeaderBuilder:
-    def __init__(self):
-        self._header = {}
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add</span>(self, key, value):
+        self<span style="color:#f92672">.</span>_header[key] <span style="color:#f92672">=</span> value
+        <span style="color:#66d9ef">return</span> self
 
-    def add(self, key, value):
-        self._header[key] = value
-        return self
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">body</span>(self):
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_body
 
-    def body(self):
-        return self._body
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">build</span>(self):
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>status(<span style="color:#ae81ff">200</span>)
 
-    def build(self):
-        return self.status(200)
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">status</span>(self, code):
+        ret <span style="color:#f92672">=</span> {}
+        ret[<span style="color:#e6db74">&#39;status&#39;</span>] <span style="color:#f92672">=</span> code
+        ret[<span style="color:#e6db74">&#39;header&#39;</span>] <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_header
+        ret[<span style="color:#e6db74">&#39;body&#39;</span>] <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_body<span style="color:#f92672">.</span>__dict__<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;_body&#39;</span>)
+        <span style="color:#66d9ef">return</span> ret
 
-    def status(self, code):
-        ret = {}
-        ret['status'] = code
-        ret['header'] = self._header
-        ret['body'] = self._body.__dict__.get('_body')
-        return ret
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">set_body</span>(self, body):
+        self<span style="color:#f92672">.</span>_body <span style="color:#f92672">=</span> body</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">BodyBuilder</span>:
+    <span style="color:#66d9ef">def</span> __init__(self):
+        self<span style="color:#f92672">.</span>_body <span style="color:#f92672">=</span> [] 
 
-    def set_body(self, body):
-        self._body = body
-</code></pre>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">add</span>(self, value):
+        self<span style="color:#f92672">.</span>_body<span style="color:#f92672">.</span>append(value)
+        <span style="color:#66d9ef">return</span> self
 
-<pre><code class="language-python">class BodyBuilder:
-    def __init__(self):
-        self._body = [] 
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">header</span>(self):
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>_header
 
-    def add(self, value):
-        self._body.append(value)
-        return self
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">build</span>(self):
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>status(<span style="color:#ae81ff">200</span>)
 
-    def header(self):
-        return self._header
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">status</span>(self, code):
+        ret <span style="color:#f92672">=</span> {}
+        ret[<span style="color:#e6db74">&#39;status&#39;</span>] <span style="color:#f92672">=</span> code
+        ret[<span style="color:#e6db74">&#39;header&#39;</span>] <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_header<span style="color:#f92672">.</span>__dict__<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;_header&#39;</span>)
+        ret[<span style="color:#e6db74">&#39;body&#39;</span>] <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>_body
+        <span style="color:#66d9ef">return</span> ret
 
-    def build(self):
-        return self.status(200)
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">set_header</span>(self, header):
+        self<span style="color:#f92672">.</span>_header <span style="color:#f92672">=</span> header</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">ResponseBuilder</span>:
 
-    def status(self, code):
-        ret = {}
-        ret['status'] = code
-        ret['header'] = self._header.__dict__.get('_header')
-        ret['body'] = self._body
-        return ret
+    <span style="color:#66d9ef">def</span> __init__(self):
+        self<span style="color:#f92672">.</span>__header <span style="color:#f92672">=</span> HeaderBuilder()
+        self<span style="color:#f92672">.</span>__body <span style="color:#f92672">=</span> BodyBuilder()
+        self<span style="color:#f92672">.</span>__body<span style="color:#f92672">.</span>set_header(self<span style="color:#f92672">.</span>__header)
+        self<span style="color:#f92672">.</span>__header<span style="color:#f92672">.</span>set_body(self<span style="color:#f92672">.</span>__body)
 
-    def set_header(self, header):
-        self._header = header
-</code></pre>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">header</span>(self):
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>__header
 
-<pre><code class="language-python">class ResponseBuilder:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">body</span>(self):
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>__body</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">if</span> __name__ <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;__main__&#34;</span>:
+    <span style="color:#66d9ef">print</span>(ResponseBuilder()
+            <span style="color:#f92672">.</span>header()
+                <span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#39;Access-Control-Allow-Origin&#39;</span>, <span style="color:#e6db74">&#39;*&#39;</span>)
+                <span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#39;Accept&#39;</span>, <span style="color:#e6db74">&#39;*&#39;</span>)
+            <span style="color:#f92672">.</span>body()
+                <span style="color:#f92672">.</span>add(json<span style="color:#f92672">.</span>dumps(<span style="color:#e6db74">&#39;hello&#39;</span>, default<span style="color:#f92672">=</span>str))
+            <span style="color:#f92672">.</span>status(<span style="color:#ae81ff">204</span>))
 
-    def __init__(self):
-        self.__header = HeaderBuilder()
-        self.__body = BodyBuilder()
-        self.__body.set_header(self.__header)
-        self.__header.set_body(self.__body)
-
-    def header(self):
-        return self.__header
-
-    def body(self):
-        return self.__body
-</code></pre>
-
-<pre><code class="language-python">if __name__ == &quot;__main__&quot;:
-    print(ResponseBuilder()
-            .header()
-                .add('Access-Control-Allow-Origin', '*')
-                .add('Accept', '*')
-            .body()
-                .add(json.dumps('hello', default=str))
-            .status(204))
-
-    print(ResponseBuilder()
-            .header()
-                .add('Age', '12')
-                .add('Accept', '*')
-            .body()
-                .add('message comes here!')
-            .header()
-                .add('Access-Control-Allow-Origin', '*')
-            .build()) # status is default to 200
-</code></pre>
-
+    <span style="color:#66d9ef">print</span>(ResponseBuilder()
+            <span style="color:#f92672">.</span>header()
+                <span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#39;Age&#39;</span>, <span style="color:#e6db74">&#39;12&#39;</span>)
+                <span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#39;Accept&#39;</span>, <span style="color:#e6db74">&#39;*&#39;</span>)
+            <span style="color:#f92672">.</span>body()
+                <span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#39;message comes here!&#39;</span>)
+            <span style="color:#f92672">.</span>header()
+                <span style="color:#f92672">.</span>add(<span style="color:#e6db74">&#39;Access-Control-Allow-Origin&#39;</span>, <span style="color:#e6db74">&#39;*&#39;</span>)
+            <span style="color:#f92672">.</span>build()) <span style="color:#75715e"># status is default to 200</span></code></pre></div>
 <p>All these approaches are found in <a href="https://github.com/torokmark/builders_in_python">https://github.com/torokmark/builders_in_python</a></p>
 
   </div>
