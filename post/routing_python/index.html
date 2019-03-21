@@ -125,11 +125,12 @@ So this way one path could have a <code>POST</code> and a <code>GET</code> or an
 same time.</p>
 
 <p>A node looks like as follows:</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">(value<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span> resource_path<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/&#39;</span> callbacks<span style="color:#f92672">=</span>{} children: [
-  (value<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;users&#34;</span> resource_path<span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/users&#39;</span> callbacks<span style="color:#f92672">=</span>{<span style="color:#e6db74">&#39;GET&#39;</span>: {callback<span style="color:#f92672">=</span>
-  <span style="color:#66d9ef">lambda</span><span style="color:#f92672">-</span>expression,
-  params<span style="color:#f92672">=</span>{}}}  children: [])
-])</code></pre></div>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-js" data-lang="js">(<span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;/&#34;</span> <span style="color:#a6e22e">resource_path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/&#39;</span> <span style="color:#a6e22e">callbacks</span><span style="color:#f92672">=</span>{} <span style="color:#a6e22e">children</span><span style="color:#f92672">:</span> [
+  (<span style="color:#a6e22e">value</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;users&#34;</span> <span style="color:#a6e22e">resource_path</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#39;/users&#39;</span> <span style="color:#a6e22e">callbacks</span><span style="color:#f92672">=</span>{<span style="color:#e6db74">&#39;GET&#39;</span><span style="color:#f92672">:</span> {<span style="color:#a6e22e">callback</span><span style="color:#f92672">=</span>
+  <span style="color:#a6e22e">lambda</span><span style="color:#f92672">-</span><span style="color:#a6e22e">expression</span>,
+  <span style="color:#a6e22e">params</span><span style="color:#f92672">=</span>{}}}  <span style="color:#a6e22e">children</span><span style="color:#f92672">:</span> [])
+])
+</code></pre></div>
 <p>The routing tree has two methods that can build the tree up or find the
 appropriate path.</p>
 
@@ -140,7 +141,58 @@ appropriate path.</p>
 
 <p>Both methods traverse the tree recursively, finding matching parts.
 If parts found, and no other path left, it returns the appropriate value, or it goes
-towards to one of the children or it creates/returns new path from that point if necessary.</p>
+towards to one of the children if necessary.</p>
+
+<h4 id="add-route-with-pathparam">Add route with pathparam</h4>
+
+<p>Pathparam is also part of the representation so it goes as a node value, like
+<code>{id}</code>.
+This implementation requires that no multiple pathparam names are allowed.
+That means no <code>{id}</code> and <code>{user_id}</code> are allowed at the same time.</p>
+
+<h4 id="process-a-call">Process a call</h4>
+
+<p>Routing trees <code>find</code> method is responsible for getting back the lambda call
+based on the route path and the method. If one of them are differ from what the
+tree contains, <code>find</code> raise an error accordingly.</p>
+
+<p>At first, <code>find</code> checks wether the path on a given node could match. If so, it
+traverse through children searching for exact matching. If no matching found on
+the level, it considers the path as a pathparam and goes towards the children of
+the pathparam node.</p>
+
+<h4 id="validation">Validation</h4>
+
+<p><code>register</code> as well as <code>process</code> have their own validators against injections and malicious
+characters that can mess up with the database.</p>
+
+<p>Here I used very simple validation by using regex, but it is alterable according
+to the needs.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">PATH_PARAM_PATTERN <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;^{([a-zA-Z0-9]+)}$&#39;</span>
+PATH_PART_PATTERN <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;^[a-zA-Z0-9\-]+$&#39;</span>
+
+QUERY_KEY_PATTERN <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;^[a-zA-Z0-9]+$&#39;</span>
+QUERY_VALUE_PATTERN <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;(^[a-zA-Z0-9\-@\. ]+$)&#39;</span></code></pre></div>
+<p>The implementation gives a chance to fine-tune the validation by introducing
+param specific patterns. These could be placed in either <code>validate_route_register</code> or
+<code>validate_route_process</code> or in both.</p>
+
+<h4 id="what-it-does-not-contain">What it does not contain</h4>
+
+<p>It is an experimental project so it lacks some other features.
+The implementation of these features does not require much alteration on the
+code, tough I leave it for others. The list below.</p>
+
+<ul>
+<li>Process request body and send data as JSON</li>
+<li>Optional params for <code>PATCH</code></li>
+<li>Validate params to avoid updating id</li>
+<li>Context param of handler func</li>
+<li>Builder for response (which can be found in my other post)</li>
+</ul>
+
+<p><strong>In this post we saw one approach of implementing routing in python, how to
+declare route with method, params and lambda, and took a look on how to process it.</strong></p>
 
 <p>For further reading and for the implementation you can visit <a href="https://github.com/torokmark/routing_python">https://github.com/torokmark/routing_python</a>.</p>
 
