@@ -12,11 +12,11 @@
     
     
     <item>
-      <title>Routing in Python</title>
-      <link>/post/routing_python/</link>
+      <title>How to implement routing with n-ary tree</title>
+      <link>/post/n-ary-routing/</link>
       <pubDate>Tue, 19 Mar 2019 12:00:00 +0100</pubDate>
       
-      <guid>/post/routing_python/</guid>
+      <guid>/post/n-ary-routing/</guid>
       <description>Routing mechanism is one of the main parts of a web service. Here I provide one approach to achieve this. This implementation is based on n-ary tree and tree search.
 Many ways are available to handle routes, from regex to n-ary trees to parse registered route one by one.
 Different ways N-ary Trees In this approach we can consider the root node as / and all children nodes as route parts are separated by /.</description>
