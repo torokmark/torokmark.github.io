@@ -6,9 +6,55 @@
     <description>Recent content in Categories on T[h]inking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Mon, 01 Oct 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Best Praciteces</title>
+      <link>/categories/best-praciteces/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/best-praciteces/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Design Patterns</title>
+      <link>/categories/design-patterns/</link>
+      <pubDate>Tue, 08 Jan 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/categories/design-patterns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java</title>
+      <link>/categories/java/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>/categories/python/</link>
+      <pubDate>Tue, 19 Mar 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/categories/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Routing</title>
+      <link>/categories/routing/</link>
+      <pubDate>Tue, 19 Mar 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/categories/routing/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

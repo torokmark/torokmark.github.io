@@ -6,9 +6,64 @@
     <description>Recent content in Tags on T[h]inking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Tue, 08 Jan 2019 12:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Builder</title>
+      <link>/tags/builder/</link>
+      <pubDate>Tue, 08 Jan 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/builder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Entity</title>
+      <link>/tags/entity/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/entity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hibernate</title>
+      <link>/tags/hibernate/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/hibernate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Multibuilder</title>
+      <link>/tags/multibuilder/</link>
+      <pubDate>Tue, 08 Jan 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/multibuilder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>N Ary Tree</title>
+      <link>/tags/n-ary-tree/</link>
+      <pubDate>Tue, 19 Mar 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/n-ary-tree/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spring</title>
+      <link>/tags/spring/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/spring/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

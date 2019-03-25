@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on T[h]inking</title>
-    <link>/post/</link>
-    <description>Recent content in Posts on T[h]inking</description>
+    <title>Python on T[h]inking</title>
+    <link>/categories/python/</link>
+    <description>Recent content in Python on T[h]inking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 19 Mar 2019 12:00:00 +0100</lastBuildDate>
     
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/python/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -32,15 +32,6 @@ Different ways N-ary Trees In this approach we can consider the root node as / a
 Builder pattern comes in handy when we need to set a lot of fields of an object and we do not want to use many methods with multiple parameters.
 All implementations are found in this repo: https://github.com/torokmark/builders_in_python
 The Simple One Task: Let us implement a Person with the following fields like name, age, phone.</description>
-    </item>
-    
-    <item>
-      <title>Best practices to write an Entity in Spring/Hibernate</title>
-      <link>/post/entity-best-practices/</link>
-      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/entity-best-practices/</guid>
-      <description>Every entity has to have a public default contstructor fetchType = FetchType.LAZY on @OneToOne, @OneToMany and @ManyToOne and other associations (EAGER is the default except @OneToMany) If an association is not mandatory:  optional = false on association annotations @Column and @JoinColumn should contain nullable = false  Entity should implement Persistable&amp;lt;IDTYPE&amp;gt; interface  Create own interface with default implementation:   public interface Identifiable extends Persistable&amp;lt;Long&amp;gt; { default isNew() { return getId() == null; } }  All ids should be boxed like Long, Integer, String, etc.</description>
     </item>
     
   </channel>
