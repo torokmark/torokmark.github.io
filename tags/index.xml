@@ -6,10 +6,19 @@
     <description>Recent content in Tags on T[h]inking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 08 Jan 2019 12:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 27 Mar 2019 12:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Array</title>
+      <link>/tags/array/</link>
+      <pubDate>Wed, 27 Mar 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/array/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>Builder</title>
@@ -17,6 +26,15 @@
       <pubDate>Tue, 08 Jan 2019 12:00:00 +0100</pubDate>
       
       <guid>/tags/builder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Composition</title>
+      <link>/tags/composition/</link>
+      <pubDate>Wed, 27 Mar 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/composition/</guid>
       <description></description>
     </item>
     
@@ -35,6 +53,15 @@
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/hibernate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Inheritance</title>
+      <link>/tags/inheritance/</link>
+      <pubDate>Wed, 27 Mar 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/inheritance/</guid>
       <description></description>
     </item>
     

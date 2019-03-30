@@ -6,10 +6,21 @@
     <description>Recent content in Posts on T[h]inking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Mar 2019 12:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 27 Mar 2019 12:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Implementing custom array in Python</title>
+      <link>/post/implementing-custom-array/</link>
+      <pubDate>Wed, 27 Mar 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/post/implementing-custom-array/</guid>
+      <description>Python provides three basic datastructures, dictionary, list, and tuple. If we need another datastruct which is different from the mentioned three, we have to implement ourones.
+As I started using python in my daily work, more and more questions had cropped up about the language and its refinement. One of them was to implement a custom array.
+What we would like to achieve is to have a datastruct which behaves like an array.</description>
+    </item>
     
     <item>
       <title>How to implement routing with n-ary tree</title>
@@ -41,6 +52,15 @@ The Simple One Task: Let us implement a Person with the following fields like na
       
       <guid>/post/entity-best-practices/</guid>
       <description>Every entity has to have a public default contstructor fetchType = FetchType.LAZY on @OneToOne, @OneToMany and @ManyToOne and other associations (EAGER is the default except @OneToMany) If an association is not mandatory:  optional = false on association annotations @Column and @JoinColumn should contain nullable = false  Entity should implement Persistable&amp;lt;IDTYPE&amp;gt; interface  Create own interface with default implementation:   public interface Identifiable extends Persistable&amp;lt;Long&amp;gt; { default isNew() { return getId() == null; } }  All ids should be boxed like Long, Integer, String, etc.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>/post/bash-testing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/post/bash-testing/</guid>
+      <description></description>
     </item>
     
   </channel>
