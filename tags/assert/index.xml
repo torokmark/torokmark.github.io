@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Assert on T[h]inking</title>
+    <link>/tags/assert/</link>
+    <description>Recent content in Assert on T[h]inking</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 30 Mar 2019 12:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/tags/assert/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Assertion framework in shell script</title>
+      <link>/post/assert-for-shell/</link>
+      <pubDate>Sat, 30 Mar 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/post/assert-for-shell/</guid>
+      <description>A little lib that helps us checking our scripts with a unit test-like way.
+The Missing Tool Unit testing is part of a lot of projects&amp;rsquo; toolset. Though some part of the source code requires more attention than it gets payed. Shell scripts belong to them.
+How can we make sure that our scripts do what we expect they do?
+How can we make sure they are valid, return the right result&amp;hellip;?</description>
+    </item>
+    
+  </channel>
+</rss>
