@@ -13,10 +13,10 @@
     
     <item>
       <title>Assertion framework in shell script</title>
-      <link>/post/assert-for-shell/</link>
+      <link>/post/assertion-framework-in-shell-script/</link>
       <pubDate>Sun, 31 Mar 2019 12:00:00 +0100</pubDate>
       
-      <guid>/post/assert-for-shell/</guid>
+      <guid>/post/assertion-framework-in-shell-script/</guid>
       <description>A little lib that helps us checking our scripts with a unit test-like way.
 The Missing Tool Unit testing is part of a lot of projects&amp;rsquo; toolset. Though some part of the source code requires more attention than it gets payed. Shell scripts belong to them.
 How can we make sure that our scripts do what we expect they do?
