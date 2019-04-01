@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/post/assert-for-shell/</loc>
+    <lastmod>2019-03-31T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/implementing-custom-array/</loc>
     <lastmod>2019-03-27T12:00:00+01:00</lastmod>
   </url>
@@ -34,6 +39,30 @@
   </url>
   
   <url>
+    <loc>/tags/assert/</loc>
+    <lastmod>2019-03-31T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/assert/</loc>
+    <lastmod>2019-03-31T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/assert_equal/</loc>
+    <lastmod>2019-03-31T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/bash/</loc>
+    <lastmod>2019-03-31T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/categories/best-praciteces/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -47,7 +76,7 @@
   
   <url>
     <loc>/categories/</loc>
-    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2019-03-31T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -107,7 +136,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2019-03-27T12:00:00+01:00</lastmod>
+    <lastmod>2019-03-31T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -124,6 +153,12 @@
   </url>
   
   <url>
+    <loc>/categories/shell/</loc>
+    <lastmod>2019-03-31T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/spring/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
     <priority>0</priority>
@@ -131,7 +166,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-03-27T12:00:00+01:00</lastmod>
+    <lastmod>2019-03-31T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   

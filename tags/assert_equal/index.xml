@@ -6,7 +6,7 @@
     <description>Recent content in Assert_equal on T[h]inking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 30 Mar 2019 12:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 31 Mar 2019 12:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/tags/assert_equal/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Assertion framework in shell script</title>
       <link>/post/assert-for-shell/</link>
-      <pubDate>Sat, 30 Mar 2019 12:00:00 +0100</pubDate>
+      <pubDate>Sun, 31 Mar 2019 12:00:00 +0100</pubDate>
       
       <guid>/post/assert-for-shell/</guid>
       <description>A little lib that helps us checking our scripts with a unit test-like way.
