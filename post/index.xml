@@ -29,7 +29,7 @@ How can we make sure they are valid, return the right result&amp;hellip;?</descr
       <pubDate>Wed, 27 Mar 2019 12:00:00 +0100</pubDate>
       
       <guid>/post/implementing-custom-array/</guid>
-      <description>Python provides three basic datastructures, dictionary, list, and tuple. If we need another datastruct which is different from the mentioned three, we have to implement ourones.
+      <description>Python provides basic datastructures like dictionary, list, set, and tuple. If we need another datastruct which is different from the mentioned three, we have to implement ourones.
 As I started using python in my daily work, more and more questions had cropped up about the language and its refinement. One of them was to implement a custom array.
 What we would like to achieve is to have a datastruct which behaves like an array.</description>
     </item>
