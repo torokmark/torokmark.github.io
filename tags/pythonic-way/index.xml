@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pythonic Way on T[h]inking</title>
+    <link>/tags/pythonic-way/</link>
+    <description>Recent content in Pythonic Way on T[h]inking</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 09 Apr 2019 12:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/tags/pythonic-way/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Pythonic way of count</title>
+      <link>/post/pythonic-way-count/</link>
+      <pubDate>Tue, 09 Apr 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/post/pythonic-way-count/</guid>
+      <description>Writing code in a clean way differs in every language. Python also has its own style. Additionally python is famous about its one-liners
+Pythonic way is an approach of how to use the language and how to take adventage of its syntax and semantic. Python can give a very elegant way of one-liners to achieve something that most of the languages can do, but not as short and still readable way as python does it.</description>
+    </item>
+    
+  </channel>
+</rss>

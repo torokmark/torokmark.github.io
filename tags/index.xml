@@ -57,6 +57,15 @@
     </item>
     
     <item>
+      <title>Count</title>
+      <link>/tags/count/</link>
+      <pubDate>Tue, 09 Apr 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/count/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Entity</title>
       <link>/tags/entity/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
@@ -98,6 +107,15 @@
       <pubDate>Tue, 19 Mar 2019 12:00:00 +0100</pubDate>
       
       <guid>/tags/n-ary-tree/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Pythonic Way</title>
+      <link>/tags/pythonic-way/</link>
+      <pubDate>Tue, 09 Apr 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/pythonic-way/</guid>
       <description></description>
     </item>
     
