@@ -88,7 +88,7 @@ animals<span style="color:#f92672">[</span><span style="color:#e6db74">&#39;rept
 <h3 id="solution-in-ruby">Solution in Ruby</h3>
 
 <p>Ruby introduced the safe navigation operator <code>&amp;</code> in version 2.3, with which we
-we can handle null objects.</p>
+can handle null objects.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-ruby" data-lang="ruby">people<span style="color:#f92672">.</span>each <span style="color:#66d9ef">do</span> <span style="color:#f92672">|</span>person<span style="color:#f92672">|</span>
 	p person<span style="color:#f92672">&amp;.</span>address<span style="color:#f92672">&amp;.</span>street
 <span style="color:#66d9ef">end</span>
