@@ -39,6 +39,15 @@
     </item>
     
     <item>
+      <title>Csharp</title>
+      <link>/categories/csharp/</link>
+      <pubDate>Wed, 24 Jul 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/categories/csharp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Design Patterns</title>
       <link>/categories/design-patterns/</link>
       <pubDate>Tue, 08 Jan 2019 12:00:00 +0100</pubDate>
@@ -57,18 +66,36 @@
     </item>
     
     <item>
+      <title>Groovy</title>
+      <link>/categories/groovy/</link>
+      <pubDate>Wed, 24 Jul 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/categories/groovy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Java</title>
       <link>/categories/java/</link>
-      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 24 Jul 2019 12:00:00 +0100</pubDate>
       
       <guid>/categories/java/</guid>
       <description></description>
     </item>
     
     <item>
+      <title>Javascript</title>
+      <link>/categories/javascript/</link>
+      <pubDate>Wed, 24 Jul 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/categories/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Python</title>
       <link>/categories/python/</link>
-      <pubDate>Tue, 09 Apr 2019 12:00:00 +0100</pubDate>
+      <pubDate>Wed, 24 Jul 2019 12:00:00 +0100</pubDate>
       
       <guid>/categories/python/</guid>
       <description></description>
@@ -80,6 +107,15 @@
       <pubDate>Tue, 19 Mar 2019 12:00:00 +0100</pubDate>
       
       <guid>/categories/routing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Ruby</title>
+      <link>/categories/ruby/</link>
+      <pubDate>Mon, 17 Jun 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/categories/ruby/</guid>
       <description></description>
     </item>
     

@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/post/safe-navigation-in-languages/</loc>
+    <lastmod>2019-07-24T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/safe-navigation-in-ruby/</loc>
+    <lastmod>2019-06-17T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/pythonic-way-count/</loc>
     <lastmod>2019-04-09T12:00:00+01:00</lastmod>
   </url>
@@ -44,13 +54,13 @@
   </url>
   
   <url>
-    <loc>/categories/assert/</loc>
+    <loc>/tags/assert/</loc>
     <lastmod>2019-03-31T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/assert/</loc>
+    <loc>/categories/assert/</loc>
     <lastmod>2019-03-31T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -98,6 +108,12 @@
   </url>
   
   <url>
+    <loc>/categories/csharp/</loc>
+    <lastmod>2019-07-24T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/categories/design-patterns/</loc>
     <lastmod>2019-01-08T12:00:00+01:00</lastmod>
     <priority>0</priority>
@@ -110,8 +126,32 @@
   </url>
   
   <url>
+    <loc>/tags/dictionary/</loc>
+    <lastmod>2019-07-24T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/embedded-objects/</loc>
+    <lastmod>2019-07-24T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/entity/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/groovy/</loc>
+    <lastmod>2019-07-24T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/hash/</loc>
+    <lastmod>2019-07-24T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -129,7 +169,19 @@
   
   <url>
     <loc>/categories/java/</loc>
-    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
+    <lastmod>2019-07-24T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/javascript/</loc>
+    <lastmod>2019-07-24T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/map/</loc>
+    <lastmod>2019-07-24T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -147,13 +199,13 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2019-04-09T12:00:00+01:00</lastmod>
+    <lastmod>2019-07-24T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/python/</loc>
-    <lastmod>2019-04-09T12:00:00+01:00</lastmod>
+    <lastmod>2019-07-24T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -166,6 +218,18 @@
   <url>
     <loc>/categories/routing/</loc>
     <lastmod>2019-03-19T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/ruby/</loc>
+    <lastmod>2019-06-17T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/safe-navigation/</loc>
+    <lastmod>2019-07-24T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -183,7 +247,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-04-09T12:00:00+01:00</lastmod>
+    <lastmod>2019-07-24T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   

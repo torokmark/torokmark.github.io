@@ -66,11 +66,38 @@
     </item>
     
     <item>
+      <title>Dictionary</title>
+      <link>/tags/dictionary/</link>
+      <pubDate>Wed, 24 Jul 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/dictionary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Embedded Objects</title>
+      <link>/tags/embedded-objects/</link>
+      <pubDate>Wed, 24 Jul 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/embedded-objects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Entity</title>
       <link>/tags/entity/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/entity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hash</title>
+      <link>/tags/hash/</link>
+      <pubDate>Wed, 24 Jul 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/hash/</guid>
       <description></description>
     </item>
     
@@ -89,6 +116,15 @@
       <pubDate>Wed, 27 Mar 2019 12:00:00 +0100</pubDate>
       
       <guid>/tags/inheritance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Map</title>
+      <link>/tags/map/</link>
+      <pubDate>Wed, 24 Jul 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/map/</guid>
       <description></description>
     </item>
     
@@ -116,6 +152,15 @@
       <pubDate>Tue, 09 Apr 2019 12:00:00 +0100</pubDate>
       
       <guid>/tags/pythonic-way/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Safe Navigation</title>
+      <link>/tags/safe-navigation/</link>
+      <pubDate>Wed, 24 Jul 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/safe-navigation/</guid>
       <description></description>
     </item>
     
