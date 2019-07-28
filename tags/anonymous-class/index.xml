@@ -6,7 +6,7 @@
     <description>Recent content in Anonymous Class on T[h]inking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jul 2019 00:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Sun, 28 Jul 2019 12:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/tags/anonymous-class/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Do you know Java: Double Brace Initialization</title>
       <link>/post/do-you-know-java-double-brace-initialization/</link>
-      <pubDate>Sun, 28 Jul 2019 00:00:00 +0100</pubDate>
+      <pubDate>Sun, 28 Jul 2019 12:00:00 +0100</pubDate>
       
       <guid>/post/do-you-know-java-double-brace-initialization/</guid>
       <description>One of the most popular languages, though Java is full of interesting parts that look wierd or unusual at first glance. In the sequence I call Do you know Java, I would like to present these less known or unexplained parts of the languages. Double brace initialization is a very comfortable way to add values to a collection or pairs to a map instance instead of having multiple statements next to each other.</description>

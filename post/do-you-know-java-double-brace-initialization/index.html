@@ -71,10 +71,11 @@ map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><sp
 <span style="color:#f92672">}};</span></code></pre></div>
 <h2 id="how-it-works">How it works</h2>
 
-<p>The inner braces belong to the init block of the anonymous inner class.
-The <code>put</code> method is called on the <code>super</code> of <code>map</code> object.</p>
+<p>Inner braces belong to the init block of the anonymous class derived from <code>HashMap</code>.
+<code>put</code> method is called on <code>super</code> of <code>map</code> object not on the instance of the new
+instance of the inherited class.</p>
 
-<p><strong>So we have got some insight how to work with double brace initialization.</strong></p>
+<p><strong>Double brace initialization in a form of adding elements to a collection at initilization time.</strong></p>
 
 <p>Code can be found: <a href="https://github.com/torokmark/do-you-know-java">https://github.com/torokmark/do-you-know-java</a></p>
 
