@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Main Class on T[h]inking</title>
+    <link>/tags/main-class/</link>
+    <description>Recent content in Main Class on T[h]inking</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 09 Aug 2019 12:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/tags/main-class/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Do you know Java: Entry Point in Interface or Enum</title>
+      <link>/post/do-you-know-java-entry-point-in-interface/</link>
+      <pubDate>Fri, 09 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/post/do-you-know-java-entry-point-in-interface/</guid>
+      <description>All Java applications start with a class and an entry point in it. We can change the class type to others.
+All Java applications start at one mutual point. That is a class which has at least one static method, called main as an entry point of the app. This method is called by JRE after the class is loaded when we execute java command with the appropriate name of the class.</description>
+    </item>
+    
+  </channel>
+</rss>

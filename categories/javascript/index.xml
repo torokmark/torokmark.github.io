@@ -6,7 +6,7 @@
     <description>Recent content in Javascript on T[h]inking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 24 Jul 2019 12:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 05 Aug 2019 12:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/categories/javascript/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Safe navigation in languages</title>
       <link>/post/safe-navigation-in-languages/</link>
-      <pubDate>Wed, 24 Jul 2019 12:00:00 +0100</pubDate>
+      <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
       
       <guid>/post/safe-navigation-in-languages/</guid>
       <description>As we saw in the previous post, Ruby development team introduced a safe navigation operator to get rid of painful chaining of objects, which could raise NPE in case of null object in the middle. But Ruby is not the only language that came up with this idea. Most of the languages have introduced this operator, usually called null propagation, or some other approaches to achieve the same goal.</description>

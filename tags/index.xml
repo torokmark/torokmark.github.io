@@ -48,6 +48,15 @@
     </item>
     
     <item>
+      <title>Benchmark</title>
+      <link>/tags/benchmark/</link>
+      <pubDate>Sat, 03 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/benchmark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Builder</title>
       <link>/tags/builder/</link>
       <pubDate>Tue, 08 Jan 2019 12:00:00 +0100</pubDate>
@@ -86,7 +95,7 @@
     <item>
       <title>Dictionary</title>
       <link>/tags/dictionary/</link>
-      <pubDate>Wed, 24 Jul 2019 12:00:00 +0100</pubDate>
+      <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
       
       <guid>/tags/dictionary/</guid>
       <description></description>
@@ -104,7 +113,7 @@
     <item>
       <title>Embedded Objects</title>
       <link>/tags/embedded-objects/</link>
-      <pubDate>Wed, 24 Jul 2019 12:00:00 +0100</pubDate>
+      <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
       
       <guid>/tags/embedded-objects/</guid>
       <description></description>
@@ -120,9 +129,27 @@
     </item>
     
     <item>
+      <title>Entry Point</title>
+      <link>/tags/entry-point/</link>
+      <pubDate>Fri, 09 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/entry-point/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Enum</title>
+      <link>/tags/enum/</link>
+      <pubDate>Fri, 09 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/enum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Hash</title>
       <link>/tags/hash/</link>
-      <pubDate>Wed, 24 Jul 2019 12:00:00 +0100</pubDate>
+      <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
       
       <guid>/tags/hash/</guid>
       <description></description>
@@ -156,9 +183,27 @@
     </item>
     
     <item>
+      <title>Interface</title>
+      <link>/tags/interface/</link>
+      <pubDate>Fri, 09 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/interface/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Main Class</title>
+      <link>/tags/main-class/</link>
+      <pubDate>Fri, 09 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/main-class/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Map</title>
       <link>/tags/map/</link>
-      <pubDate>Wed, 24 Jul 2019 12:00:00 +0100</pubDate>
+      <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
       
       <guid>/tags/map/</guid>
       <description></description>
@@ -194,7 +239,7 @@
     <item>
       <title>Safe Navigation</title>
       <link>/tags/safe-navigation/</link>
-      <pubDate>Wed, 24 Jul 2019 12:00:00 +0100</pubDate>
+      <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
       
       <guid>/tags/safe-navigation/</guid>
       <description></description>
@@ -206,6 +251,15 @@
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>/tags/spring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tool</title>
+      <link>/tags/tool/</link>
+      <pubDate>Sat, 03 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/tool/</guid>
       <description></description>
     </item>
     

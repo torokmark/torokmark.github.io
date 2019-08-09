@@ -6,10 +6,40 @@
     <description>Recent content on T[h]inking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jul 2019 12:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 09 Aug 2019 12:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Do you know Java: Entry Point in Interface or Enum</title>
+      <link>/post/do-you-know-java-entry-point-in-interface/</link>
+      <pubDate>Fri, 09 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/post/do-you-know-java-entry-point-in-interface/</guid>
+      <description>All Java applications start with a class and an entry point in it. We can change the class type to others.
+All Java applications start at one mutual point. That is a class which has at least one static method, called main as an entry point of the app. This method is called by JRE after the class is loaded when we execute java command with the appropriate name of the class.</description>
+    </item>
+    
+    <item>
+      <title>Safe navigation in languages</title>
+      <link>/post/safe-navigation-in-languages/</link>
+      <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/post/safe-navigation-in-languages/</guid>
+      <description>As we saw in the previous post, Ruby development team introduced a safe navigation operator to get rid of painful chaining of objects, which could raise NPE in case of null object in the middle. But Ruby is not the only language that came up with this idea. Most of the languages have introduced this operator, usually called null propagation, or some other approaches to achieve the same goal.</description>
+    </item>
+    
+    <item>
+      <title>Benchmarking Ruby Control Flows and Datastructures</title>
+      <link>/post/ruby-benchmark-control-flows/</link>
+      <pubDate>Sat, 03 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/post/ruby-benchmark-control-flows/</guid>
+      <description>Flexibility of Ruby brings many ways to achieve the same results, whether it is a loop, selection of elements from datastructures, or assignment of values.
+Performance is one of the major metrics of an application. Ruby provides a module, natively brought by the language, called Benchmark, which helps us to observe the code and reflects the potential bottlenecks.
+Sometimes that is very suprising which statement executes faster and which of them provides less performance.</description>
+    </item>
     
     <item>
       <title>Do you know Java: Double Brace Initialization</title>
@@ -17,16 +47,8 @@
       <pubDate>Sun, 28 Jul 2019 12:00:00 +0100</pubDate>
       
       <guid>/post/do-you-know-java-double-brace-initialization/</guid>
-      <description>One of the most popular languages, though Java is full of interesting parts that look wierd or unusual at first glance. In the sequence I call Do you know Java, I would like to present these less known or unexplained parts of the languages. Double brace initialization is a very comfortable way to add values to a collection or pairs to a map instance instead of having multiple statements next to each other.</description>
-    </item>
-    
-    <item>
-      <title>Safe navigation in languages</title>
-      <link>/post/safe-navigation-in-languages/</link>
-      <pubDate>Wed, 24 Jul 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/post/safe-navigation-in-languages/</guid>
-      <description>As we saw in the previous post, Ruby development team introduced a safe navigation operator to get rid of painful chaining of objects, which could raise NPE in case of null object in the middle. But Ruby is not the only language that came up with this idea. Most of the languages have introduced this operator, usually called null propagation, or some other approaches to achieve the same goal.</description>
+      <description>Double brace initialization is a very comfortable way to add values to a collection or pairs to a map instance instead of having multiple statements next to each other.
+One of the most popular languages, though Java is full of interesting parts that look wierd or unusual at first glance. In the sequence I call Do you know Java, I would like to present these less known or unexplained parts of the languages.</description>
     </item>
     
     <item>

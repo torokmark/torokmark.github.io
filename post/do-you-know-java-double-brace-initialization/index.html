@@ -50,32 +50,32 @@
   <div class="blog-post-content">
     
 
-<p><strong>One of the most popular languages, though Java is full of interesting parts
-that look wierd or unusual at first glance. In the sequence I call <em>Do you know Java</em>,
-I would like to present these less known or unexplained parts of the languages.
-Double brace initialization is a very comfortable way to add values to a collection
+<p><strong>Double brace initialization is a very comfortable way to add values to a collection
 or pairs to a map instance instead of having multiple statements next to each other.</strong></p>
 
-<h2 id="the-usual-way">The usual way</h2>
+<p>One of the most popular languages, though Java is full of interesting parts
+that look wierd or unusual at first glance. In the sequence I call <em>Do you know Java</em>,
+I would like to present these less known or unexplained parts of the languages.</p>
+
+<h4 id="the-usual-way">The usual way</h4>
 
 <p>Usually to initialize a collection or a map we do:</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> Integer<span style="color:#f92672">&gt;</span> map <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> Integer<span style="color:#f92672">&gt;();</span>
 map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;apple&#34;</span><span style="color:#f92672">,</span> 2<span style="color:#f92672">);</span>
 map<span style="color:#f92672">.</span><span style="color:#a6e22e">put</span><span style="color:#f92672">(</span><span style="color:#e6db74">&#34;melon&#34;</span><span style="color:#f92672">,</span> 5<span style="color:#f92672">);</span></code></pre></div>
-<h2 id="double-braces">Double Braces</h2>
+<h4 id="double-braces">Double Braces</h4>
 
 <p>Double brace initialization brings the opportunity to do this at the so-called same time.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Map<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> Integer<span style="color:#f92672">&gt;</span> map <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> HashMap<span style="color:#f92672">&lt;</span>String<span style="color:#f92672">,</span> Integer<span style="color:#f92672">&gt;()</span> <span style="color:#f92672">{{</span>
   put<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;apple&#34;</span><span style="color:#f92672">,</span> 2<span style="color:#f92672">);</span>
   put<span style="color:#f92672">(</span><span style="color:#e6db74">&#34;melon&#34;</span><span style="color:#f92672">,</span> 5<span style="color:#f92672">);</span>
 <span style="color:#f92672">}};</span></code></pre></div>
-<h2 id="how-it-works">How it works</h2>
+<h4 id="how-it-works">How it works</h4>
 
 <p>Inner braces belong to the init block of the anonymous class derived from <code>HashMap</code>.
-<code>put</code> method is called on <code>super</code> of <code>map</code> object not on the instance of the new
-instance of the inherited class.</p>
+Its <code>put</code> method is called on the <code>super</code> of our <code>map</code> object.</p>
 
-<p><strong>Double brace initialization in a form of adding elements to a collection at initilization time.</strong></p>
+<p><strong>Double brace initialization is a form of adding elements to a collection at initilization time.</strong></p>
 
 <p>Code can be found: <a href="https://github.com/torokmark/do-you-know-java">https://github.com/torokmark/do-you-know-java</a></p>
 

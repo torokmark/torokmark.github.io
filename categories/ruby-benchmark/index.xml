@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ruby on T[h]inking</title>
-    <link>/categories/ruby/</link>
-    <description>Recent content in Ruby on T[h]inking</description>
+    <title>Ruby Benchmark on T[h]inking</title>
+    <link>/categories/ruby-benchmark/</link>
+    <description>Recent content in Ruby Benchmark on T[h]inking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 03 Aug 2019 12:00:00 +0100</lastBuildDate>
     
-	<atom:link href="/categories/ruby/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/categories/ruby-benchmark/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -20,16 +20,6 @@
       <description>Flexibility of Ruby brings many ways to achieve the same results, whether it is a loop, selection of elements from datastructures, or assignment of values.
 Performance is one of the major metrics of an application. Ruby provides a module, natively brought by the language, called Benchmark, which helps us to observe the code and reflects the potential bottlenecks.
 Sometimes that is very suprising which statement executes faster and which of them provides less performance.</description>
-    </item>
-    
-    <item>
-      <title>Safe navigation in Ruby</title>
-      <link>/post/safe-navigation-in-ruby/</link>
-      <pubDate>Mon, 17 Jun 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/post/safe-navigation-in-ruby/</guid>
-      <description>Navigation through embedded objects can suprise us with an error if one of the fields, which are objects as well, is null. We are in the same situation if we have a hash object and want to get a value by key if key does not exist. The burning situation crops up if we chain up methods next to each other.
-In this post I write some approaches, how to keep our code still clean, readable and safe if we liked to chain up calls next one another on an object or on a key-value pair container.</description>
     </item>
     
   </channel>
