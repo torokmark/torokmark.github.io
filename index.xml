@@ -6,10 +6,20 @@
     <description>Recent content on T[h]inking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Aug 2019 12:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 15 Aug 2019 12:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Container types in shell script</title>
+      <link>/post/container-types-in-shell-script/</link>
+      <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/post/container-types-in-shell-script/</guid>
+      <description>Container types like map, set, or queue help us to deal with bunch of data though shell script does not provide these functionalities by default. Even though that does not we have the opportunity to keep our code readable and maintainable.
+From time to time we need map, queue or any other kind of collections during our work. Shell script is definitely not the right choice to write applications but it may happen that we need some of the previously mentioned types to help our work.</description>
+    </item>
     
     <item>
       <title>Do you know Java: Entry Point in Interface or Enum</title>
@@ -18,7 +28,7 @@
       
       <guid>/post/do-you-know-java-entry-point-in-interface/</guid>
       <description>All Java applications start with a class and an entry point in it. We can change the class type to others.
-All Java applications start at one mutual point. That is a class which has at least one static method, called main as an entry point of the app. This method is called by JRE after the class is loaded when we execute java command with the appropriate name of the class.</description>
+All Java applications start at one common point. That is a class which has at least one static method, called main as an entry point of the app. This method is called by JRE after the class is loaded when we execute java command with the appropriate name of the class.</description>
     </item>
     
     <item>

@@ -6,10 +6,20 @@
     <description>Recent content in Bash on T[h]inking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 Mar 2019 12:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 15 Aug 2019 12:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/categories/bash/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Container types in shell script</title>
+      <link>/post/container-types-in-shell-script/</link>
+      <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/post/container-types-in-shell-script/</guid>
+      <description>Container types like map, set, or queue help us to deal with bunch of data though shell script does not provide these functionalities by default. Even though that does not we have the opportunity to keep our code readable and maintainable.
+From time to time we need map, queue or any other kind of collections during our work. Shell script is definitely not the right choice to write applications but it may happen that we need some of the previously mentioned types to help our work.</description>
+    </item>
     
     <item>
       <title>Assertion framework in shell script</title>

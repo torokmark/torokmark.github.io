@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/post/container-types-in-shell-script/</loc>
+    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/do-you-know-java-entry-point-in-interface/</loc>
     <lastmod>2019-08-09T12:00:00+01:00</lastmod>
   </url>
@@ -94,7 +99,7 @@
   
   <url>
     <loc>/categories/bash/</loc>
-    <lastmod>2019-03-31T12:00:00+01:00</lastmod>
+    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -125,6 +130,12 @@
   <url>
     <loc>/tags/composition/</loc>
     <lastmod>2019-03-27T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/container-type/</loc>
+    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -256,7 +267,7 @@
   
   <url>
     <loc>/tags/map/</loc>
-    <lastmod>2019-08-05T12:00:00+01:00</lastmod>
+    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -274,7 +285,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2019-08-09T12:00:00+01:00</lastmod>
+    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -287,6 +298,12 @@
   <url>
     <loc>/tags/pythonic-way/</loc>
     <lastmod>2019-04-09T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/queue/</loc>
+    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -315,8 +332,14 @@
   </url>
   
   <url>
+    <loc>/tags/set/</loc>
+    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/categories/shell/</loc>
-    <lastmod>2019-03-31T12:00:00+01:00</lastmod>
+    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -327,8 +350,20 @@
   </url>
   
   <url>
+    <loc>/tags/stack/</loc>
+    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/string/</loc>
+    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/</loc>
-    <lastmod>2019-08-09T12:00:00+01:00</lastmod>
+    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   

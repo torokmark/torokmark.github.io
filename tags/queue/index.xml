@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Shell on T[h]inking</title>
-    <link>/categories/shell/</link>
-    <description>Recent content in Shell on T[h]inking</description>
+    <title>Queue on T[h]inking</title>
+    <link>/tags/queue/</link>
+    <description>Recent content in Queue on T[h]inking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 15 Aug 2019 12:00:00 +0100</lastBuildDate>
     
-	<atom:link href="/categories/shell/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/queue/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,18 +19,6 @@
       <guid>/post/container-types-in-shell-script/</guid>
       <description>Container types like map, set, or queue help us to deal with bunch of data though shell script does not provide these functionalities by default. Even though that does not we have the opportunity to keep our code readable and maintainable.
 From time to time we need map, queue or any other kind of collections during our work. Shell script is definitely not the right choice to write applications but it may happen that we need some of the previously mentioned types to help our work.</description>
-    </item>
-    
-    <item>
-      <title>Assertion framework in shell script</title>
-      <link>/post/assertion-framework-in-shell-script/</link>
-      <pubDate>Sun, 31 Mar 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/post/assertion-framework-in-shell-script/</guid>
-      <description>A little lib that helps us checking our scripts with a unit test-like way.
-The Missing Tool Unit testing is part of a lot of projects&amp;rsquo; toolset. Though some part of the source code requires more attention than it gets payed. Shell scripts belong to them.
-How can we make sure that our scripts do what we expect they do?
-How can we make sure they are valid, return the right result&amp;hellip;?</description>
     </item>
     
   </channel>
