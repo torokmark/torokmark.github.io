@@ -17,7 +17,7 @@
       <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
       
       <guid>/post/container-types-in-shell-script/</guid>
-      <description>Container types like map, set, or queue help us to deal with bunch of data though shell script does not provide these functionalities by default. Even though that does not we have the opportunity to keep our code readable and maintainable.
+      <description>Container types like map, set, or queue help us to deal with bunch of data though shell script does not provide these functionalities by default. However, we have the opportunity to keep our code readable and maintainable.
 From time to time we need map, queue or any other kind of collections during our work. Shell script is definitely not the right choice to write applications but it may happen that we need some of the previously mentioned types to help our work.</description>
     </item>
     
