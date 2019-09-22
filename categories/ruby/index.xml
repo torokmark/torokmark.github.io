@@ -6,10 +6,21 @@
     <description>Recent content in Ruby on T[h]inking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 03 Aug 2019 12:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Fri, 23 Aug 2019 12:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/categories/ruby/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ruby or operator precedence</title>
+      <link>/post/ruby-or-operator-precedence/</link>
+      <pubDate>Fri, 23 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/post/ruby-or-operator-precedence/</guid>
+      <description>Operators have precedence and sometimes they can give us hard time to figure out why our code works as it does.
+Ruby has three or operators, |, ||, and the readable or. All of them have different precedences. That is, the precedence, that makes some trouble if we do not care about which one we use.
+The evaluation of logical operators are left-associative, that means the far left operator is evaluated at first, than its result will be the left operand of the next operator and so on.</description>
+    </item>
     
     <item>
       <title>Benchmarking Ruby Control Flows and Datastructures</title>

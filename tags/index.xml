@@ -201,6 +201,15 @@
     </item>
     
     <item>
+      <title>Literal</title>
+      <link>/tags/literal/</link>
+      <pubDate>Thu, 05 Sep 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/literal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Main Class</title>
       <link>/tags/main-class/</link>
       <pubDate>Fri, 09 Aug 2019 12:00:00 +0100</pubDate>
@@ -233,6 +242,33 @@
       <pubDate>Tue, 19 Mar 2019 12:00:00 +0100</pubDate>
       
       <guid>/tags/n-ary-tree/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Numeric Literal</title>
+      <link>/tags/numeric-literal/</link>
+      <pubDate>Thu, 05 Sep 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/numeric-literal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Operator Precedence</title>
+      <link>/tags/operator-precedence/</link>
+      <pubDate>Fri, 23 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/operator-precedence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Or Operator</title>
+      <link>/tags/or-operator/</link>
+      <pubDate>Fri, 23 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/or-operator/</guid>
       <description></description>
     </item>
     
@@ -273,6 +309,15 @@
     </item>
     
     <item>
+      <title>Single Source File Code</title>
+      <link>/tags/single-source-file-code/</link>
+      <pubDate>Wed, 28 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/single-source-file-code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Spring</title>
       <link>/tags/spring/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
@@ -305,6 +350,15 @@
       <pubDate>Sat, 03 Aug 2019 12:00:00 +0100</pubDate>
       
       <guid>/tags/tool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Underscore</title>
+      <link>/tags/underscore/</link>
+      <pubDate>Thu, 05 Sep 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/underscore/</guid>
       <description></description>
     </item>
     

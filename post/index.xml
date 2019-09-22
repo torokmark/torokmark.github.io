@@ -6,10 +6,43 @@
     <description>Recent content in Posts on T[h]inking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Aug 2019 12:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Thu, 05 Sep 2019 12:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Do you know Java: Underscores in Numeric Literals</title>
+      <link>/post/do-you-know-java-underscores-in-numeric-literals/</link>
+      <pubDate>Thu, 05 Sep 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/post/do-you-know-java-underscores-in-numeric-literals/</guid>
+      <description>Underscore can be used in numeric literals to group digits in a numeric value. This way that can enhance code readability, decrease mistyping and helps visually keeping numeric values in range.
+Code readability is one of the most important viewpoints of software development. The more readable the code is, the faster that can be understood by developers.
+Java 7 introduced underscore as a comfortable way to separate digits of a numeric value into groups.</description>
+    </item>
+    
+    <item>
+      <title>Do you know Java: Single Source File Code</title>
+      <link>/post/do-you-know-java-single-source-file-code/</link>
+      <pubDate>Wed, 28 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/post/do-you-know-java-single-source-file-code/</guid>
+      <description>Java 11 introduced a new way of executing applications. That gives us the opportunity to do it without excplicitely compiling it. What&amp;rsquo;s more, Java code can be run as a script.
+In Java, compilation and execution of an app are two different steps. The java command gives us the feeling that we work with an interpreter.
+The Pre-Java-11 era Compilation of the source code and execution of the app are separated commands before Java 11, as we see here:</description>
+    </item>
+    
+    <item>
+      <title>Ruby or operator precedence</title>
+      <link>/post/ruby-or-operator-precedence/</link>
+      <pubDate>Fri, 23 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/post/ruby-or-operator-precedence/</guid>
+      <description>Operators have precedence and sometimes they can give us hard time to figure out why our code works as it does.
+Ruby has three or operators, |, ||, and the readable or. All of them have different precedences. That is, the precedence, that makes some trouble if we do not care about which one we use.
+The evaluation of logical operators are left-associative, that means the far left operator is evaluated at first, than its result will be the left operand of the next operator and so on.</description>
+    </item>
     
     <item>
       <title>Container types in shell script</title>
