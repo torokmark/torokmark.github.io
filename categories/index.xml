@@ -68,7 +68,7 @@
     <item>
       <title>Do You Know Java</title>
       <link>/categories/do-you-know-java/</link>
-      <pubDate>Thu, 05 Sep 2019 12:00:00 +0100</pubDate>
+      <pubDate>Tue, 15 Oct 2019 12:00:00 +0100</pubDate>
       
       <guid>/categories/do-you-know-java/</guid>
       <description></description>
@@ -86,7 +86,7 @@
     <item>
       <title>Java</title>
       <link>/categories/java/</link>
-      <pubDate>Thu, 05 Sep 2019 12:00:00 +0100</pubDate>
+      <pubDate>Tue, 15 Oct 2019 12:00:00 +0100</pubDate>
       
       <guid>/categories/java/</guid>
       <description></description>
@@ -102,9 +102,18 @@
     </item>
     
     <item>
+      <title>Metaprogramming</title>
+      <link>/categories/metaprogramming/</link>
+      <pubDate>Sat, 19 Oct 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/categories/metaprogramming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Python</title>
       <link>/categories/python/</link>
-      <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
+      <pubDate>Sat, 19 Oct 2019 12:00:00 +0100</pubDate>
       
       <guid>/categories/python/</guid>
       <description></description>

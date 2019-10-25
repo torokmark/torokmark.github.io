@@ -23,7 +23,7 @@
     <item>
       <title>Array</title>
       <link>/tags/array/</link>
-      <pubDate>Wed, 27 Mar 2019 12:00:00 +0100</pubDate>
+      <pubDate>Tue, 15 Oct 2019 12:00:00 +0100</pubDate>
       
       <guid>/tags/array/</guid>
       <description></description>
@@ -140,7 +140,7 @@
     <item>
       <title>Entry Point</title>
       <link>/tags/entry-point/</link>
-      <pubDate>Fri, 09 Aug 2019 12:00:00 +0100</pubDate>
+      <pubDate>Tue, 15 Oct 2019 12:00:00 +0100</pubDate>
       
       <guid>/tags/entry-point/</guid>
       <description></description>
@@ -224,6 +224,15 @@
       <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
       
       <guid>/tags/map/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Metaprogramming</title>
+      <link>/tags/metaprogramming/</link>
+      <pubDate>Sat, 19 Oct 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/metaprogramming/</guid>
       <description></description>
     </item>
     
@@ -345,6 +354,15 @@
     </item>
     
     <item>
+      <title>Struct</title>
+      <link>/tags/struct/</link>
+      <pubDate>Sat, 19 Oct 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/struct/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Tool</title>
       <link>/tags/tool/</link>
       <pubDate>Sat, 03 Aug 2019 12:00:00 +0100</pubDate>
@@ -359,6 +377,15 @@
       <pubDate>Thu, 05 Sep 2019 12:00:00 +0100</pubDate>
       
       <guid>/tags/underscore/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Varargs</title>
+      <link>/tags/varargs/</link>
+      <pubDate>Tue, 15 Oct 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/varargs/</guid>
       <description></description>
     </item>
     

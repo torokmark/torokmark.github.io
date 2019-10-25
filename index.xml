@@ -6,10 +6,31 @@
     <description>Recent content on T[h]inking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Sep 2019 12:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 19 Oct 2019 12:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ruby-like struct in Python</title>
+      <link>/post/python-struct/</link>
+      <pubDate>Sat, 19 Oct 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/post/python-struct/</guid>
+      <description>Ruby provides a very flexible way to create new types with certain fields with Struct. Though Python does not have this functionality naturally, with esu package we can do the same.
+Ruby types have rich API which is brought by the design, and the language features as well. Even though Python is very dynamic and flexible as well, some of the features are lacking in the languages.
+In this post I would like to show you a Python package, name is esu, which brings a struct that can provide almost the same functionality.</description>
+    </item>
+    
+    <item>
+      <title>Do you know Java: Varargs as Entry Point Parameter</title>
+      <link>/post/do-you-know-java-varargs-in-entry-point/</link>
+      <pubDate>Tue, 15 Oct 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/post/do-you-know-java-varargs-in-entry-point/</guid>
+      <description>Java 5 was one of those versions that brought much more features and syntactic sugars than any other of them. Varargs is one of those. This provides a very comfortable way to pass different number of arguments to a method. Can we use it anywhere?
+Varargs is just a syntactic sugar, it can be used in a more flexible way than its predecessor, the typed array. It has the same characteristics which means it supports indexing, it has an attribute called length, it is iterable.</description>
+    </item>
     
     <item>
       <title>Do you know Java: Underscores in Numeric Literals</title>

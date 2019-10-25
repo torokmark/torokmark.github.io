@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/post/python-struct/</loc>
+    <lastmod>2019-10-19T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/do-you-know-java-varargs-in-entry-point/</loc>
+    <lastmod>2019-10-15T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/do-you-know-java-underscores-in-numeric-literals/</loc>
     <lastmod>2019-09-05T12:00:00+01:00</lastmod>
   </url>
@@ -90,7 +100,7 @@
   
   <url>
     <loc>/tags/array/</loc>
-    <lastmod>2019-03-27T12:00:00+01:00</lastmod>
+    <lastmod>2019-10-15T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -192,7 +202,7 @@
   
   <url>
     <loc>/categories/do-you-know-java/</loc>
-    <lastmod>2019-09-05T12:00:00+01:00</lastmod>
+    <lastmod>2019-10-15T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -216,7 +226,7 @@
   
   <url>
     <loc>/tags/entry-point/</loc>
-    <lastmod>2019-08-09T12:00:00+01:00</lastmod>
+    <lastmod>2019-10-15T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -264,7 +274,7 @@
   
   <url>
     <loc>/categories/java/</loc>
-    <lastmod>2019-09-05T12:00:00+01:00</lastmod>
+    <lastmod>2019-10-15T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -289,6 +299,18 @@
   <url>
     <loc>/tags/map/</loc>
     <lastmod>2019-08-15T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/metaprogramming/</loc>
+    <lastmod>2019-10-19T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/categories/metaprogramming/</loc>
+    <lastmod>2019-10-19T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -324,13 +346,13 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2019-09-05T12:00:00+01:00</lastmod>
+    <lastmod>2019-10-19T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>/categories/python/</loc>
-    <lastmod>2019-08-05T12:00:00+01:00</lastmod>
+    <lastmod>2019-10-19T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -407,8 +429,14 @@
   </url>
   
   <url>
+    <loc>/tags/struct/</loc>
+    <lastmod>2019-10-19T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/</loc>
-    <lastmod>2019-09-05T12:00:00+01:00</lastmod>
+    <lastmod>2019-10-19T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -427,6 +455,12 @@
   <url>
     <loc>/tags/underscore/</loc>
     <lastmod>2019-09-05T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/varargs/</loc>
+    <lastmod>2019-10-15T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
