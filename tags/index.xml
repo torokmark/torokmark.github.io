@@ -230,7 +230,7 @@
     <item>
       <title>Metaprogramming</title>
       <link>/tags/metaprogramming/</link>
-      <pubDate>Sat, 19 Oct 2019 12:00:00 +0100</pubDate>
+      <pubDate>Sat, 26 Oct 2019 12:00:00 +0100</pubDate>
       
       <guid>/tags/metaprogramming/</guid>
       <description></description>
@@ -260,6 +260,15 @@
       <pubDate>Thu, 05 Sep 2019 12:00:00 +0100</pubDate>
       
       <guid>/tags/numeric-literal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Openstruct</title>
+      <link>/tags/openstruct/</link>
+      <pubDate>Sat, 26 Oct 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/openstruct/</guid>
       <description></description>
     </item>
     
@@ -356,7 +365,7 @@
     <item>
       <title>Struct</title>
       <link>/tags/struct/</link>
-      <pubDate>Sat, 19 Oct 2019 12:00:00 +0100</pubDate>
+      <pubDate>Sat, 26 Oct 2019 12:00:00 +0100</pubDate>
       
       <guid>/tags/struct/</guid>
       <description></description>
