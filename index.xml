@@ -205,6 +205,15 @@ Software tinker and DevOps thinker.</description>
     </item>
     
     <item>
+      <title>Contact</title>
+      <link>/contact/</link>
+      <pubDate>Tue, 01 Jan 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/contact/</guid>
+      <description> GitHub :: https://github.com/torokmark RSS :: ~/index.xml Gitter :: https://gitter.im/torokmark-dev  </description>
+    </item>
+    
+    <item>
       <title>Best practices to write an Entity in Spring/Hibernate</title>
       <link>/post/entity-best-practices/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
