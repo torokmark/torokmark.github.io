@@ -6,10 +6,20 @@
     <description>Recent content in Do You Know Java on T[h]inking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Oct 2019 12:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 28 Oct 2019 12:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/categories/do-you-know-java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Do you know Java: Underscore as identifier</title>
+      <link>/post/do-you-know-java-underscore-as-identifier/</link>
+      <pubDate>Mon, 28 Oct 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/post/do-you-know-java-underscore-as-identifier/</guid>
+      <description>We could use underscore as a variable name until Java 7, but it cannot be used as an identifier from Java 9 and upwards.
+Java has strict rules about how to name a variable, which characters are accepted in it or which one can be the first one. Underscore is a legal character among alphabetic characters and numbers. What if I did not use any other chars just underscore? Is that still valid variable name?</description>
+    </item>
     
     <item>
       <title>Do you know Java: Varargs as Entry Point Parameter</title>
