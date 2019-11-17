@@ -57,7 +57,7 @@ used as an identifier from Java 9 and upwards.</strong></p>
 <p>Java has strict rules about how to name a variable, which characters are accepted in it
 or which one can be the first one. Underscore is a legal character among alphabetic
 characters and numbers. What if I did not use any other chars just underscore?
-Is that still valid variable name? Let us see what the compilor says.</p>
+Is that still valid variable name? Let us see what the compiler says.</p>
 
 <h3 id="single-underscore">Single Underscore</h3>
 
@@ -97,19 +97,12 @@ Is that still valid variable name? Let us see what the compilor says.</p>
 <span style="color:#f92672">}</span></code></pre></div>
 <p><strong>Java 7</strong></p>
 
-<p>Compiling the above code with Java 7, we get very similar to the previous one.</p>
-
-<pre><code>
-</code></pre>
-
-<p>No warnings here again!</p>
+<p>Compiling the above code with Java 7, we get very similar to the previous one. No warnings again!</p>
 
 <p><strong>Java 9</strong></p>
 
-<pre><code>
-</code></pre>
-
-<p>Though we get error if we use single underscore, but it compiles swimmingly if identifier consits of multiple underscores.</p>
+<p>The result of the compilation here in case of Java 9 is more interesting.
+Though we get error if we use single underscore, but it compiles swimmingly if identifier consits of multiple underscores.</p>
 
 <p><strong>Though we cannot use single underscore from Java 9 as variable name, we still have the opportunity to use
 multiple underscores concatenated next one another as an identifier.</strong></p>
