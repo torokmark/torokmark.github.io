@@ -2,6 +2,7 @@ body {
     font-family: 'Ubuntu', sans-serif;
     margin: auto;
     max-width: 50em;
+    background-color: #FFFFFF;
 }
 
 #page-title {

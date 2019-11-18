@@ -6,10 +6,22 @@
     <description>Recent content on T[h]inking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 28 Oct 2019 12:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 18 Nov 2019 12:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Do you know Java: One more more more time</title>
+      <link>/post/do-you-know-java-one-more-more-more-time/</link>
+      <pubDate>Mon, 18 Nov 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/post/do-you-know-java-one-more-more-more-time/</guid>
+      <description>Operators have arity. Sometimes we can make patterns out of them. Which is funny.
+Every operator has an arity in Java. They can be either unary, binary, and ternary operators. Arity decides how many operands are accepted in the operation. This brings us the next riddle.
+The Riddle What is the output of the next operation?
+class Main { public static void main(String[] args) { int n = 0; n = 1 + + + + + + 1; System.</description>
+    </item>
     
     <item>
       <title>Do you know Java: Underscore as identifier</title>

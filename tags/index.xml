@@ -57,6 +57,15 @@
     </item>
     
     <item>
+      <title>Binary Operator</title>
+      <link>/tags/binary-operator/</link>
+      <pubDate>Mon, 18 Nov 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/binary-operator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Builder</title>
       <link>/tags/builder/</link>
       <pubDate>Tue, 08 Jan 2019 12:00:00 +0100</pubDate>
@@ -282,6 +291,15 @@
     </item>
     
     <item>
+      <title>Operator</title>
+      <link>/tags/operator/</link>
+      <pubDate>Mon, 18 Nov 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/operator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Operator Precedence</title>
       <link>/tags/operator-precedence/</link>
       <pubDate>Fri, 23 Aug 2019 12:00:00 +0100</pubDate>
@@ -386,6 +404,15 @@
       <pubDate>Sat, 03 Aug 2019 12:00:00 +0100</pubDate>
       
       <guid>/tags/tool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Unary Operator</title>
+      <link>/tags/unary-operator/</link>
+      <pubDate>Mon, 18 Nov 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/unary-operator/</guid>
       <description></description>
     </item>
     
