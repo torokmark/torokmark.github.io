@@ -38,7 +38,7 @@
   </url>
   
   <url>
-    <loc>/post/ruby-or-operator-precedence/</loc>
+    <loc>/post/rubys-or-operator-precedence/</loc>
     <lastmod>2019-08-23T12:00:00+01:00</lastmod>
   </url>
   
@@ -125,13 +125,13 @@
   </url>
   
   <url>
-    <loc>/categories/assert/</loc>
+    <loc>/tags/assert/</loc>
     <lastmod>2019-03-31T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/assert/</loc>
+    <loc>/categories/assert/</loc>
     <lastmod>2019-03-31T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -335,13 +335,13 @@
   </url>
   
   <url>
-    <loc>/categories/metaprogramming/</loc>
+    <loc>/tags/metaprogramming/</loc>
     <lastmod>2019-10-26T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/metaprogramming/</loc>
+    <loc>/categories/metaprogramming/</loc>
     <lastmod>2019-10-26T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>

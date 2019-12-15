@@ -20,7 +20,7 @@
       <description>Operators have arity. Sometimes we can make patterns out of them. Which is funny.
 Every operator has an arity in Java. They can be either unary, binary, and ternary operators. Arity decides how many operands are accepted in the operation. This brings us the next riddle.
 The Riddle What is the output of the next operation?
-class Main { public static void main(String[] args) { int n = 0; n = n + + + + + + n; System.</description>
+class Main { public static void main(String[] args) { int n = 0; int i = 1; n = i + + + + + + i; System.</description>
     </item>
     
     <item>
@@ -88,11 +88,11 @@ The Pre-Java-11 era Compilation of the source code and execution of the app are 
     </item>
     
     <item>
-      <title>Ruby or operator precedence</title>
-      <link>/post/ruby-or-operator-precedence/</link>
+      <title>Ruby&#39;s or operator precedence</title>
+      <link>/post/rubys-or-operator-precedence/</link>
       <pubDate>Fri, 23 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/post/ruby-or-operator-precedence/</guid>
+      <guid>/post/rubys-or-operator-precedence/</guid>
       <description>Operators have precedence and sometimes they can give us hard time to figure out why our code works as it does.
 Ruby has three or operators, |, ||, and the readable or. All of them have different precedences. That is, the precedence, that makes some trouble if we do not care about which one we use.
 The evaluation of logical operators are left-associative, that means the far left operator is evaluated at first, than its result will be the left operand of the next operator and so on.</description>
