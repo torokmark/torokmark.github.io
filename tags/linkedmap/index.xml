@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linkedmap on T[h]inking</title>
+    <link>/tags/linkedmap/</link>
+    <description>Recent content in Linkedmap on T[h]inking</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 15 Dec 2019 12:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/tags/linkedmap/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Interview: Implement a HashMap-like data structure in Java</title>
+      <link>/post/interview-map/</link>
+      <pubDate>Sun, 15 Dec 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/post/interview-map/</guid>
+      <description>HashMap is one of the most used Map type in Java. A good experiment to implement our own one.
+Not so long ago, I took a sit in an interview, and the interviewer asked me to implement a HashMap-like container which contains Integer types keys and Integer values. The trick was that I could not use any containers from the Collection API framework.
+Steps we have to consider: * Basic API for our map!</description>
+    </item>
+    
+  </channel>
+</rss>
