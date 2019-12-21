@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/post/do-you-know-java-parameter-validation/</loc>
+    <lastmod>2019-12-21T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/interview-map/</loc>
     <lastmod>2019-12-15T12:00:00+01:00</lastmod>
   </url>
@@ -124,6 +129,12 @@
   </url>
   
   <url>
+    <loc>/tags/argument/</loc>
+    <lastmod>2019-12-21T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/array/</loc>
     <lastmod>2019-10-15T12:00:00+01:00</lastmod>
     <priority>0</priority>
@@ -131,7 +142,7 @@
   
   <url>
     <loc>/tags/assert/</loc>
-    <lastmod>2019-03-31T12:00:00+01:00</lastmod>
+    <lastmod>2019-12-21T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -144,6 +155,12 @@
   <url>
     <loc>/tags/assert_equal/</loc>
     <lastmod>2019-03-31T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/assertion/</loc>
+    <lastmod>2019-12-21T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -239,7 +256,7 @@
   
   <url>
     <loc>/categories/do-you-know-java/</loc>
-    <lastmod>2019-11-18T12:00:00+01:00</lastmod>
+    <lastmod>2019-12-21T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -270,6 +287,12 @@
   <url>
     <loc>/tags/enum/</loc>
     <lastmod>2019-08-09T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/exception/</loc>
+    <lastmod>2019-12-21T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -329,7 +352,7 @@
   
   <url>
     <loc>/categories/java/</loc>
-    <lastmod>2019-12-15T12:00:00+01:00</lastmod>
+    <lastmod>2019-12-21T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -418,8 +441,14 @@
   </url>
   
   <url>
+    <loc>/tags/parameter/</loc>
+    <lastmod>2019-12-21T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/post/</loc>
-    <lastmod>2019-12-15T12:00:00+01:00</lastmod>
+    <lastmod>2019-12-21T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -509,7 +538,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2019-12-15T12:00:00+01:00</lastmod>
+    <lastmod>2019-12-21T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   

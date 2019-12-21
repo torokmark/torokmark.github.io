@@ -6,10 +6,21 @@
     <description>Recent content in Do You Know Java on T[h]inking</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Nov 2019 12:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 21 Dec 2019 12:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/categories/do-you-know-java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Do you know Java: Parameter validation</title>
+      <link>/post/do-you-know-java-parameter-validation/</link>
+      <pubDate>Sat, 21 Dec 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/post/do-you-know-java-parameter-validation/</guid>
+      <description>Checking method parameters is crutial to avoid inconvinient situations with null pointers or undesired values. Assertion and exception handlings are two ways to give feedbacks to users about parameters.
+What if we are intended to validate the parameters of a function? What if we liked to set up preconditions? How can we avoid working with null objects?
+In this post we take a look at two approaches. At first, we check how we can check parameters with assertion and what its pros and cons are.</description>
+    </item>
     
     <item>
       <title>Do you know Java: One more more more time</title>
