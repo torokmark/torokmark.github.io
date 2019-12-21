@@ -61,37 +61,37 @@
   <div class="blog-post-content">
     
 
-<p><strong>Checking method parameters is crutial to avoid inconvinient situations with null
-pointers or undesired values. Assertion and exception handlings are two ways
-to give feedbacks to users about parameters.</strong></p>
+<p><strong>Checking method parameters is crutial to avoid inconvenient situations with null
+pointers or undesired values. Assertion and exception handling are two ways
+to give feedback to users about parameters.</strong></p>
 
 <p>What if we are intended to validate the parameters of a function? What if we
 liked to set up preconditions? How can we avoid working with null objects?</p>
 
-<p>In this post we take a look at two approaches. At first, we check how
+<p>In this post we take a look at two approaches. At first, we see how
 we can check parameters with assertion and what its pros and cons are. Then we
 see how to use exception handling for the same purpose.</p>
 
 <h4 id="assertion">Assertion</h4>
 
-<p>Java provides an <code>assert</code> keyword to check logical expressions as shown below.
+<p>Java provides an <code>assert</code> keyword to use it against logical expressions as shown below.
 The drawback of this approach is that assertion mechanism can be switched off
 in runtime. What&rsquo;s more, switched off is the default state of asserts.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">print</span><span style="color:#f92672">(</span>Person person<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
     <span style="color:#66d9ef">assert</span> <span style="color:#66d9ef">null</span> <span style="color:#f92672">==</span> person <span style="color:#f92672">:</span> NULL_CHECK_MSG<span style="color:#f92672">;</span>
     <span style="color:#75715e">// ...
 </span><span style="color:#75715e"></span><span style="color:#f92672">}</span></code></pre></div>
-<p>So, once we want to use it, we have to execute the following command with
+<p>So, once we want to use it, we have to execute <code>java</code> command with
 <code>-enableassertions</code> or <code>-ea</code>:</p>
 
 <pre><code>java -ea Main
 </code></pre>
 
-<p>If the condition fails then <code>AssertionError</code> is raised.</p>
+<p>If condition fails then <code>AssertionError</code> is raised.</p>
 
 <h4 id="illegalargumentexception">IllegalArgumentException</h4>
 
-<p>While assertions is switchable, we can disable that in compile time, exception
+<p>While assertions is switchable, we can disable that in runtime, exception
 handling is completely part of the code with language level features
 (inheritance, ctor, overloading, parameter passing).</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java"><span style="color:#66d9ef">public</span> <span style="color:#66d9ef">void</span> <span style="color:#a6e22e">print</span><span style="color:#f92672">(</span>Person person<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
