@@ -102,6 +102,15 @@
     </item>
     
     <item>
+      <title>Command</title>
+      <link>/tags/command/</link>
+      <pubDate>Sun, 05 Jan 2020 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/command/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Composition</title>
       <link>/tags/composition/</link>
       <pubDate>Wed, 27 Mar 2019 12:00:00 +0100</pubDate>
@@ -282,6 +291,15 @@
     </item>
     
     <item>
+      <title>Jshell</title>
+      <link>/tags/jshell/</link>
+      <pubDate>Sun, 05 Jan 2020 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/jshell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Linkedmap</title>
       <link>/tags/linkedmap/</link>
       <pubDate>Sun, 15 Dec 2019 12:00:00 +0100</pubDate>
@@ -431,6 +449,15 @@
       <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
       
       <guid>/tags/set/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Shell</title>
+      <link>/tags/shell/</link>
+      <pubDate>Sun, 05 Jan 2020 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/shell/</guid>
       <description></description>
     </item>
     
