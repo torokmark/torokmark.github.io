@@ -46,7 +46,7 @@
         </nav>
 
         <section id="page-title">
-          <h1><a href="/">T[h]inking</a></h1>
+          <h1><a href="/">T[h]ink]er[ing</a></h1>
           <span id="author-name">
             <h6><a href="/about/"></a></h6>
           </span>
@@ -85,10 +85,18 @@ String<span style="color:#f92672">[]</span> fruits <span style="color:#f92672">=
 tools<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> Integer<span style="color:#f92672">.</span><span style="color:#a6e22e">MAX_VALUE</span><span style="color:#f92672">;</span>  <span style="color:#75715e">// tools: type: Object[], value: {&#34;hammer&#34;, Integer(1)}
 </span><span style="color:#75715e"></span>
 tools <span style="color:#f92672">=</span> fruits<span style="color:#f92672">;</span>  <span style="color:#f92672">//</span> tools: type: String<span style="color:#f92672">[],</span> value: <span style="color:#f92672">{</span><span style="color:#e6db74">&#34;apple&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;plum&#34;</span><span style="color:#f92672">}</span></code></pre></div>
-<p>Here, <code>tools</code> is a reference to an array containing <code>String</code> objects, if we
-assign an element to the array with type which is subtype of <code>Object</code>, which
-is accepted in compile-time, it raises exception since the dynamic type is <code>String[]</code></p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">tools<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> Integer<span style="color:#f92672">.</span><span style="color:#a6e22e">MAX_VALUE</span><span style="color:#f92672">;</span></code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Exception in thread <span style="color:#e6db74">&#34;main&#34;</span> java<span style="color:#f92672">.</span><span style="color:#a6e22e">lang</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ArrayStoreException</span><span style="color:#f92672">:</span> java<span style="color:#f92672">.</span><span style="color:#a6e22e">lang</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Integer</span></code></pre></div>
+<p>Here, <code>tools</code> is a reference to an array that contains <code>String</code> objects.
+Since the static type of the elements in the array is <code>Object</code>, we can easily
+assign new element to the array which type is either <code>Object</code> or one of its
+subtype.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Object<span style="color:#f92672">[]</span> tools <span style="color:#f92672">=</span> <span style="color:#f92672">{</span><span style="color:#e6db74">&#34;hammer&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;screwdriver&#34;</span><span style="color:#f92672">};</span>
+String<span style="color:#f92672">[]</span> fruits <span style="color:#f92672">=</span> <span style="color:#f92672">{</span><span style="color:#e6db74">&#34;apple&#34;</span><span style="color:#f92672">,</span> <span style="color:#e6db74">&#34;plum&#34;</span><span style="color:#f92672">};</span>
+
+tools<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> Integer<span style="color:#f92672">.</span><span style="color:#a6e22e">MAX_VALUE</span><span style="color:#f92672">;</span>  <span style="color:#75715e">// tools: type: Object[], value: {&#34;hammer&#34;, Integer(1)}
+</span><span style="color:#75715e"></span>
+tools <span style="color:#f92672">=</span> fruits<span style="color:#f92672">;</span>  <span style="color:#75715e">// tools: type: String[], value: {&#34;apple&#34;, &#34;plum&#34;}
+</span><span style="color:#75715e"></span>
+tools<span style="color:#f92672">[</span>1<span style="color:#f92672">]</span> <span style="color:#f92672">=</span> Integer<span style="color:#f92672">.</span><span style="color:#a6e22e">MAX_VALUE</span><span style="color:#f92672">;</span></code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Exception in thread <span style="color:#e6db74">&#34;main&#34;</span> java<span style="color:#f92672">.</span><span style="color:#a6e22e">lang</span><span style="color:#f92672">.</span><span style="color:#a6e22e">ArrayStoreException</span><span style="color:#f92672">:</span> java<span style="color:#f92672">.</span><span style="color:#a6e22e">lang</span><span style="color:#f92672">.</span><span style="color:#a6e22e">Integer</span></code></pre></div>
 <ul>
 <li>Though, static type is <code>Object[]</code>, its dynamic type is <code>String[]</code></li>
 <li>No compile time exception! Exception occured in runtime! It is way too late!</li>
@@ -110,7 +118,7 @@ read and write operations in compie-time.</strong></p>
       <footer>
         <hr>
         <small>
-          &copy; 2019 .
+          &copy; 2020 .
           Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> using the <a href="https://github.com/arjunkrishnababu96/basics" target="_blank">Basics</a> theme.
         </small>
       </footer>
