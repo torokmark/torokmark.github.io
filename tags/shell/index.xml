@@ -23,5 +23,14 @@ Shell To enter the shell, we should type jshell in the command line and hit ente
 | Welcome to JShell -- Version 13 | For an introduction type: /help intro jshell&amp;gt;  | Welcome to JShell -- Version 13 | For an introduction type: /help intro jshell&amp;gt; int i = 1 + 2; i ==&amp;gt; 3 jshell&amp;gt; System.</description>
     </item>
     
+    <item>
+      <title>Do you know Java: JShell</title>
+      <link>/post/do-you-know-java-static-launcher/</link>
+      <pubDate>Sun, 05 Jan 2020 12:00:00 +0100</pubDate>
+      
+      <guid>/post/do-you-know-java-static-launcher/</guid>
+      <description>draft</description>
+    </item>
+    
   </channel>
 </rss>

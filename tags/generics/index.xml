@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Generics on T[h]ink]er[ing</title>
+    <link>/tags/generics/</link>
+    <description>Recent content in Generics on T[h]ink]er[ing</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 08 Feb 2020 12:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/tags/generics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Do you know Java: PECS</title>
+      <link>/post/do-you-know-java-pecs/</link>
+      <pubDate>Sat, 08 Feb 2020 12:00:00 +0100</pubDate>
+      
+      <guid>/post/do-you-know-java-pecs/</guid>
+      <description>Do you remember the rule of PECS? If not, read the post quickly!
+PECS stands for Produce-Extend, Consume-Super. What does that mean? Let us see an example with types from the standard.
+Object void add(List&amp;lt;Object&amp;gt; list) { list.add(&amp;#34;string&amp;#34;); list.add(1); } Passing the followings are:
+add(new ArrayList&amp;lt;Object&amp;gt;()); // not type safe add(new ArrayList&amp;lt;String&amp;gt;()); // compile time error The first is not type safe, the second one does not compile, since ArrayList&amp;lt;String&amp;gt; is not the subtype of List&amp;lt;Object&amp;gt;.</description>
+    </item>
+    
+  </channel>
+</rss>

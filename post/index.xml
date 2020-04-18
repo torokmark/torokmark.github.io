@@ -6,10 +6,22 @@
     <description>Recent content in Posts on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 05 Jan 2020 12:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 08 Feb 2020 12:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Do you know Java: PECS</title>
+      <link>/post/do-you-know-java-pecs/</link>
+      <pubDate>Sat, 08 Feb 2020 12:00:00 +0100</pubDate>
+      
+      <guid>/post/do-you-know-java-pecs/</guid>
+      <description>Do you remember the rule of PECS? If not, read the post quickly!
+PECS stands for Produce-Extend, Consume-Super. What does that mean? Let us see an example with types from the standard.
+Object void add(List&amp;lt;Object&amp;gt; list) { list.add(&amp;#34;string&amp;#34;); list.add(1); } Passing the followings are:
+add(new ArrayList&amp;lt;Object&amp;gt;()); // not type safe add(new ArrayList&amp;lt;String&amp;gt;()); // compile time error The first is not type safe, the second one does not compile, since ArrayList&amp;lt;String&amp;gt; is not the subtype of List&amp;lt;Object&amp;gt;.</description>
+    </item>
     
     <item>
       <title>Do you know Java: JShell</title>
@@ -21,6 +33,15 @@
 JShell interpreter and CLI were introduced in Java 9. That come handy when we would like to execute a statement, or call a subroutine to get their results.
 Shell To enter the shell, we should type jshell in the command line and hit enter.
 | Welcome to JShell -- Version 13 | For an introduction type: /help intro jshell&amp;gt;  | Welcome to JShell -- Version 13 | For an introduction type: /help intro jshell&amp;gt; int i = 1 + 2; i ==&amp;gt; 3 jshell&amp;gt; System.</description>
+    </item>
+    
+    <item>
+      <title>Do you know Java: JShell</title>
+      <link>/post/do-you-know-java-static-launcher/</link>
+      <pubDate>Sun, 05 Jan 2020 12:00:00 +0100</pubDate>
+      
+      <guid>/post/do-you-know-java-static-launcher/</guid>
+      <description>draft</description>
     </item>
     
     <item>

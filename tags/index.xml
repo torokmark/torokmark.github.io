@@ -120,6 +120,15 @@
     </item>
     
     <item>
+      <title>Consumer</title>
+      <link>/tags/consumer/</link>
+      <pubDate>Sat, 08 Feb 2020 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/consumer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Container Type</title>
       <link>/tags/container-type/</link>
       <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
@@ -224,6 +233,15 @@
       <pubDate>Sat, 21 Dec 2019 12:00:00 +0100</pubDate>
       
       <guid>/tags/exception/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Generics</title>
+      <link>/tags/generics/</link>
+      <pubDate>Sat, 08 Feb 2020 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/generics/</guid>
       <description></description>
     </item>
     
@@ -417,6 +435,15 @@
     </item>
     
     <item>
+      <title>Producer</title>
+      <link>/tags/producer/</link>
+      <pubDate>Sat, 08 Feb 2020 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/producer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Pythonic Way</title>
       <link>/tags/pythonic-way/</link>
       <pubDate>Tue, 09 Apr 2019 12:00:00 +0100</pubDate>
@@ -557,6 +584,15 @@
       <pubDate>Mon, 28 Oct 2019 12:00:00 +0100</pubDate>
       
       <guid>/tags/variable-name/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Wildcard</title>
+      <link>/tags/wildcard/</link>
+      <pubDate>Sat, 08 Feb 2020 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/wildcard/</guid>
       <description></description>
     </item>
     
