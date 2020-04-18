@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reflection on T[h]ink]er[ing</title>
+    <link>/tags/reflection/</link>
+    <description>Recent content in Reflection on T[h]ink]er[ing</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 18 Feb 2020 12:00:00 +0100</lastBuildDate>
+    
+	<atom:link href="/tags/reflection/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Do you know Java: Instance from static launcher</title>
+      <link>/post/do-you-know-java-static-launcher/</link>
+      <pubDate>Tue, 18 Feb 2020 12:00:00 +0100</pubDate>
+      
+      <guid>/post/do-you-know-java-static-launcher/</guid>
+      <description>Instanciate the current class from its entry point by using static method. Interesting, isn&amp;rsquo;t it?
+I came across with JavaFX recently, and I saw an example about how to use it. This made me think, and brought the following question in my mind. How can we make an instance of the class that is the starting point of our application and how can we call its instance methods.
+Let us see the code that we have if we start building a javafx application.</description>
+    </item>
+    
+  </channel>
+</rss>

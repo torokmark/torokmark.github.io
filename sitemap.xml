@@ -3,17 +3,17 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/post/do-you-know-java-static-launcher/</loc>
+    <lastmod>2020-02-18T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/do-you-know-java-pecs/</loc>
     <lastmod>2020-02-08T12:00:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>/post/do-you-know-java-jshell/</loc>
-    <lastmod>2020-01-05T12:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/post/do-you-know-java-static-launcher/</loc>
     <lastmod>2020-01-05T12:00:00+01:00</lastmod>
   </url>
   
@@ -167,14 +167,14 @@
   </url>
   
   <url>
-    <loc>/categories/assert/</loc>
-    <lastmod>2019-03-31T12:00:00+01:00</lastmod>
+    <loc>/tags/assert/</loc>
+    <lastmod>2019-12-21T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/assert/</loc>
-    <lastmod>2019-12-21T12:00:00+01:00</lastmod>
+    <loc>/categories/assert/</loc>
+    <lastmod>2019-03-31T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -294,7 +294,7 @@
   
   <url>
     <loc>/categories/do-you-know-java/</loc>
-    <lastmod>2020-02-08T12:00:00+01:00</lastmod>
+    <lastmod>2020-02-18T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -389,6 +389,12 @@
   </url>
   
   <url>
+    <loc>/tags/instanciation/</loc>
+    <lastmod>2020-02-18T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/interface/</loc>
     <lastmod>2019-08-09T12:00:00+01:00</lastmod>
     <priority>0</priority>
@@ -402,7 +408,7 @@
   
   <url>
     <loc>/categories/java/</loc>
-    <lastmod>2020-02-08T12:00:00+01:00</lastmod>
+    <lastmod>2020-02-18T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -443,13 +449,13 @@
   </url>
   
   <url>
-    <loc>/categories/metaprogramming/</loc>
+    <loc>/tags/metaprogramming/</loc>
     <lastmod>2019-10-26T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/metaprogramming/</loc>
+    <loc>/categories/metaprogramming/</loc>
     <lastmod>2019-10-26T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
@@ -504,7 +510,7 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2020-02-08T12:00:00+01:00</lastmod>
+    <lastmod>2020-02-18T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -529,6 +535,12 @@
   <url>
     <loc>/tags/queue/</loc>
     <lastmod>2019-08-15T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/reflection/</loc>
+    <lastmod>2020-02-18T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -563,14 +575,14 @@
   </url>
   
   <url>
-    <loc>/categories/shell/</loc>
-    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
+    <loc>/tags/shell/</loc>
+    <lastmod>2020-01-05T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/shell/</loc>
-    <lastmod>2020-01-05T12:00:00+01:00</lastmod>
+    <loc>/categories/shell/</loc>
+    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -589,6 +601,18 @@
   <url>
     <loc>/tags/stack/</loc>
     <lastmod>2019-08-15T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/stacktrace/</loc>
+    <lastmod>2020-02-18T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/static/</loc>
+    <lastmod>2020-02-18T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -612,7 +636,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-02-08T12:00:00+01:00</lastmod>
+    <lastmod>2020-02-18T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
