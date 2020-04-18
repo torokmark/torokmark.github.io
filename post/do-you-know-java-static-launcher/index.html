@@ -61,7 +61,7 @@
   <div class="blog-post-content">
     
 
-<p><strong>Instanciate the current class from its entry point by using static method. Interesting, isn&rsquo;t it?</strong></p>
+<p><strong>Instantiate the current class from its entry point by using static method. Interesting, isn&rsquo;t it?</strong></p>
 
 <p>I came across with <em>JavaFX</em> recently, and I saw an example about how to use it. This made me think,
 and brought the following question in my mind. How can we make an instance of the class that is
@@ -86,7 +86,7 @@ In <code>launch</code> method we have to call <code>start</code> somehow.</p>
 
 <ol>
 <li>We should figure out where <code>launch</code> is called.</li>
-<li>Instanciate the class.</li>
+<li>Instantiate the class.</li>
 <li>Call <code>start</code> on the instance.</li>
 </ol>
 
@@ -99,7 +99,7 @@ In <code>launch</code> method we have to call <code>start</code> somehow.</p>
 The index of <code>1</code> returns the caller as a <code>StackTraceElement</code> which will be <code>Hello</code> in our example.</p>
 </blockquote>
 
-<h4 id="instanciation">Instanciation</h4>
+<h4 id="instantiation">Instantiation</h4>
 
 <p>Now, we know the name of our class. Reflection can help us to make an instance out of it.</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-java" data-lang="java">Class<span style="color:#f92672">.</span><span style="color:#a6e22e">forName</span><span style="color:#f92672">(</span>className<span style="color:#f92672">).</span><span style="color:#a6e22e">getDeclaredConstructor</span><span style="color:#f92672">().</span><span style="color:#a6e22e">newInstance</span><span style="color:#f92672">();</span></code></pre></div>
