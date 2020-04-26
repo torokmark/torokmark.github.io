@@ -8,6 +8,16 @@
   </url>
   
   <url>
+    <loc>/post/do-you-know-java-try-with-resource/</loc>
+    <lastmod>2020-04-24T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/post/do-you-know-java-catch-multiple-exceptions/</loc>
+    <lastmod>2020-03-25T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/do-you-know-java-static-launcher/</loc>
     <lastmod>2020-02-18T12:00:00+01:00</lastmod>
   </url>
@@ -352,6 +362,18 @@
   </url>
   
   <url>
+    <loc>/tags/exception-handling/</loc>
+    <lastmod>2020-04-24T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/finally/</loc>
+    <lastmod>2020-04-24T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/generics/</loc>
     <lastmod>2020-02-08T12:00:00+01:00</lastmod>
     <priority>0</priority>
@@ -426,6 +448,12 @@
   <url>
     <loc>/categories/java/</loc>
     <lastmod>2020-04-25T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/java7/</loc>
+    <lastmod>2020-03-25T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -672,6 +700,12 @@
   <url>
     <loc>/tags/tool/</loc>
     <lastmod>2019-08-03T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/try-with-resource/</loc>
+    <lastmod>2020-04-24T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
