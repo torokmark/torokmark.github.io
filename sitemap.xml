@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/post/do-you-know-java-execute-shell-commands/</loc>
+    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/post/do-you-know-java-daemon-thread/</loc>
     <lastmod>2020-04-25T12:00:00+01:00</lastmod>
   </url>
@@ -243,7 +248,7 @@
   
   <url>
     <loc>/tags/command/</loc>
-    <lastmod>2020-01-05T12:00:00+01:00</lastmod>
+    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -315,7 +320,7 @@
   
   <url>
     <loc>/categories/do-you-know-java/</loc>
-    <lastmod>2020-04-25T12:00:00+01:00</lastmod>
+    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -447,7 +452,7 @@
   
   <url>
     <loc>/categories/java/</loc>
-    <lastmod>2020-04-25T12:00:00+01:00</lastmod>
+    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -555,7 +560,13 @@
   
   <url>
     <loc>/post/</loc>
-    <lastmod>2020-04-25T12:00:00+01:00</lastmod>
+    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/process/</loc>
+    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -608,8 +619,20 @@
   </url>
   
   <url>
+    <loc>/tags/runtime/</loc>
+    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>/tags/safe-navigation/</loc>
     <lastmod>2019-08-05T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/script/</loc>
+    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -628,6 +651,18 @@
   <url>
     <loc>/categories/shell/</loc>
     <lastmod>2019-08-15T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/shell-command/</loc>
+    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>/tags/shell-script/</loc>
+    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -681,7 +716,7 @@
   
   <url>
     <loc>/</loc>
-    <lastmod>2020-04-25T12:00:00+01:00</lastmod>
+    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Command on T[h]ink]er[ing</title>
-    <link>/tags/command/</link>
-    <description>Recent content in Command on T[h]ink]er[ing</description>
+    <title>Process on T[h]ink]er[ing</title>
+    <link>/tags/process/</link>
+    <description>Recent content in Process on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 28 Apr 2020 12:00:00 +0100</lastBuildDate>
     
-	<atom:link href="/tags/command/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/process/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -22,18 +22,6 @@ In this post I am showing two ways to execute shell scripts or shell commands fr
 ProcessBuilder ProcessBuilder class has been created to create and handle operating system processes.
 ProcessBuilder#start method creates a single native process. Let us see how to do it.
 ProcessBuilder builder = new ProcessBuilder(); builder.command(&amp;#34;bash&amp;#34;, &amp;#34;-c&amp;#34;, &amp;#34;ping google.</description>
-    </item>
-    
-    <item>
-      <title>Do you know Java: JShell</title>
-      <link>/post/do-you-know-java-jshell/</link>
-      <pubDate>Sun, 05 Jan 2020 12:00:00 +0100</pubDate>
-      
-      <guid>/post/do-you-know-java-jshell/</guid>
-      <description>JShell interpreter can process Java statements without requiring them to be placed in class and method body.
-JShell interpreter and CLI were introduced in Java 9. That come handy when we would like to execute a statement, or call a subroutine to get their results.
-Shell To enter the shell, we should type jshell in the command line and hit enter.
-| Welcome to JShell -- Version 13 | For an introduction type: /help intro jshell&amp;gt;  | Welcome to JShell -- Version 13 | For an introduction type: /help intro jshell&amp;gt; int i = 1 + 2; i ==&amp;gt; 3 jshell&amp;gt; System.</description>
     </item>
     
   </channel>
