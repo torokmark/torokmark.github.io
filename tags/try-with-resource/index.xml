@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>try-with-resource on T[h]ink]er[ing</title>
-    <link>/tags/try-with-resource/</link>
+    <link>torokmark.github.io/tags/try-with-resource/</link>
     <description>Recent content in try-with-resource on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 24 Apr 2020 12:00:00 +0100</lastBuildDate>
     
-	<atom:link href="/tags/try-with-resource/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="torokmark.github.io/tags/try-with-resource/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Do you know Java: Use try-with-resource</title>
-      <link>/posts/do-you-know-java-try-with-resource/</link>
+      <link>torokmark.github.io/posts/do-you-know-java-try-with-resource/</link>
       <pubDate>Fri, 24 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/posts/do-you-know-java-try-with-resource/</guid>
+      <guid>torokmark.github.io/posts/do-you-know-java-try-with-resource/</guid>
       <description>Try-with-resource gives a safer way to handle exceptions and resources.
 A quite big drawback of try-catch-finally that we have to close resource at the end, otherwise the resource remains locked - not always, but sometimes!
 So either we try not to forget to close the resouce, and place finally at the end, or apply something that does this job instead of us.

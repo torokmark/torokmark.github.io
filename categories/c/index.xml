@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>c on T[h]ink]er[ing</title>
-    <link>/categories/c/</link>
+    <link>torokmark.github.io/categories/c/</link>
     <description>Recent content in c on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 29 Apr 2020 12:00:00 +0100</lastBuildDate>
     
-	<atom:link href="/categories/c/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="torokmark.github.io/categories/c/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Easter Egg in C</title>
-      <link>/posts/easter-egg-in-c/</link>
+      <link>torokmark.github.io/posts/easter-egg-in-c/</link>
       <pubDate>Wed, 29 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/posts/easter-egg-in-c/</guid>
+      <guid>torokmark.github.io/posts/easter-egg-in-c/</guid>
       <description>What does the following code print out?
 #include &amp;lt;stdio.h&amp;gt;#define _ F--&amp;gt;00||F-OO--; int F=00,OO=00;main(){F_OO();printf(&amp;#34;%1.3f\n&amp;#34;,4.*-F/OO/OO);}F_OO() { _-_-_-_ _-_-_-_-_-_-_-_-_ _-_-_-_-_-_-_-_-_-_-_-_ _-_-_-_-_-_-_-_-_-_-_-_-_-_ _-_-_-_-_-_-_-_-_-_-_-_-_-_-_ _-_-_-_-_-_-_-_-_-_-_-_-_-_-_ _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_ _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_ _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_ _-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_ _-_-_-_-_-_-_-_-_-_-_-_-_-_-_ _-_-_-_-_-_-_-_-_-_-_-_-_-_-_ _-_-_-_-_-_-_-_-_-_-_-_-_-_ _-_-_-_-_-_-_-_-_-_-_-_ _-_-_-_-_-_-_-_ _-_-_-_ } </description>
     </item>

@@ -2,174 +2,174 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on T[h]ink]er[ing</title>
-    <link>/categories/</link>
+    <link>torokmark.github.io/categories/</link>
     <description>Recent content in Categories on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 29 Apr 2020 12:00:00 +0100</lastBuildDate>
     
-	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="torokmark.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>c</title>
-      <link>/categories/c/</link>
+      <link>torokmark.github.io/categories/c/</link>
       <pubDate>Wed, 29 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/categories/c/</guid>
+      <guid>torokmark.github.io/categories/c/</guid>
       <description></description>
     </item>
     
     <item>
       <title>do you know java</title>
-      <link>/categories/do-you-know-java/</link>
+      <link>torokmark.github.io/categories/do-you-know-java/</link>
       <pubDate>Tue, 28 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/categories/do-you-know-java/</guid>
+      <guid>torokmark.github.io/categories/do-you-know-java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>java</title>
-      <link>/categories/java/</link>
+      <link>torokmark.github.io/categories/java/</link>
       <pubDate>Tue, 28 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/categories/java/</guid>
+      <guid>torokmark.github.io/categories/java/</guid>
       <description></description>
     </item>
     
     <item>
       <title>interview</title>
-      <link>/categories/interview/</link>
+      <link>torokmark.github.io/categories/interview/</link>
       <pubDate>Sun, 15 Dec 2019 12:00:00 +0100</pubDate>
       
-      <guid>/categories/interview/</guid>
+      <guid>torokmark.github.io/categories/interview/</guid>
       <description></description>
     </item>
     
     <item>
       <title>metaprogramming</title>
-      <link>/categories/metaprogramming/</link>
+      <link>torokmark.github.io/categories/metaprogramming/</link>
       <pubDate>Sat, 26 Oct 2019 12:00:00 +0100</pubDate>
       
-      <guid>/categories/metaprogramming/</guid>
+      <guid>torokmark.github.io/categories/metaprogramming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>python</title>
-      <link>/categories/python/</link>
+      <link>torokmark.github.io/categories/python/</link>
       <pubDate>Sat, 26 Oct 2019 12:00:00 +0100</pubDate>
       
-      <guid>/categories/python/</guid>
+      <guid>torokmark.github.io/categories/python/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ruby</title>
-      <link>/categories/ruby/</link>
+      <link>torokmark.github.io/categories/ruby/</link>
       <pubDate>Fri, 23 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/categories/ruby/</guid>
+      <guid>torokmark.github.io/categories/ruby/</guid>
       <description></description>
     </item>
     
     <item>
       <title>bash</title>
-      <link>/categories/bash/</link>
+      <link>torokmark.github.io/categories/bash/</link>
       <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/categories/bash/</guid>
+      <guid>torokmark.github.io/categories/bash/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shell</title>
-      <link>/categories/shell/</link>
+      <link>torokmark.github.io/categories/shell/</link>
       <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/categories/shell/</guid>
+      <guid>torokmark.github.io/categories/shell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>csharp</title>
-      <link>/categories/csharp/</link>
+      <link>torokmark.github.io/categories/csharp/</link>
       <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/categories/csharp/</guid>
+      <guid>torokmark.github.io/categories/csharp/</guid>
       <description></description>
     </item>
     
     <item>
       <title>groovy</title>
-      <link>/categories/groovy/</link>
+      <link>torokmark.github.io/categories/groovy/</link>
       <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/categories/groovy/</guid>
+      <guid>torokmark.github.io/categories/groovy/</guid>
       <description></description>
     </item>
     
     <item>
       <title>javascript</title>
-      <link>/categories/javascript/</link>
+      <link>torokmark.github.io/categories/javascript/</link>
       <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/categories/javascript/</guid>
+      <guid>torokmark.github.io/categories/javascript/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ruby benchmark</title>
-      <link>/categories/ruby-benchmark/</link>
+      <link>torokmark.github.io/categories/ruby-benchmark/</link>
       <pubDate>Sat, 03 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/categories/ruby-benchmark/</guid>
+      <guid>torokmark.github.io/categories/ruby-benchmark/</guid>
       <description></description>
     </item>
     
     <item>
       <title>assert</title>
-      <link>/categories/assert/</link>
+      <link>torokmark.github.io/categories/assert/</link>
       <pubDate>Sun, 31 Mar 2019 12:00:00 +0100</pubDate>
       
-      <guid>/categories/assert/</guid>
+      <guid>torokmark.github.io/categories/assert/</guid>
       <description></description>
     </item>
     
     <item>
       <title>design principle</title>
-      <link>/categories/design-principle/</link>
+      <link>torokmark.github.io/categories/design-principle/</link>
       <pubDate>Wed, 27 Mar 2019 12:00:00 +0100</pubDate>
       
-      <guid>/categories/design-principle/</guid>
+      <guid>torokmark.github.io/categories/design-principle/</guid>
       <description></description>
     </item>
     
     <item>
       <title>routing</title>
-      <link>/categories/routing/</link>
+      <link>torokmark.github.io/categories/routing/</link>
       <pubDate>Tue, 19 Mar 2019 12:00:00 +0100</pubDate>
       
-      <guid>/categories/routing/</guid>
+      <guid>torokmark.github.io/categories/routing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>design patterns</title>
-      <link>/categories/design-patterns/</link>
+      <link>torokmark.github.io/categories/design-patterns/</link>
       <pubDate>Tue, 08 Jan 2019 12:00:00 +0100</pubDate>
       
-      <guid>/categories/design-patterns/</guid>
+      <guid>torokmark.github.io/categories/design-patterns/</guid>
       <description></description>
     </item>
     
     <item>
       <title>best praciteces</title>
-      <link>/categories/best-praciteces/</link>
+      <link>torokmark.github.io/categories/best-praciteces/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/categories/best-praciteces/</guid>
+      <guid>torokmark.github.io/categories/best-praciteces/</guid>
       <description></description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>binary operator on T[h]ink]er[ing</title>
-    <link>/tags/binary-operator/</link>
+    <link>torokmark.github.io/tags/binary-operator/</link>
     <description>Recent content in binary operator on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 18 Nov 2019 12:00:00 +0100</lastBuildDate>
     
-	<atom:link href="/tags/binary-operator/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="torokmark.github.io/tags/binary-operator/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Do you know Java: One more more more time</title>
-      <link>/posts/do-you-know-java-one-more-more-more-time/</link>
+      <link>torokmark.github.io/posts/do-you-know-java-one-more-more-more-time/</link>
       <pubDate>Mon, 18 Nov 2019 12:00:00 +0100</pubDate>
       
-      <guid>/posts/do-you-know-java-one-more-more-more-time/</guid>
+      <guid>torokmark.github.io/posts/do-you-know-java-one-more-more-more-time/</guid>
       <description>Operators have arity. Sometimes we can make patterns out of them. Which is funny.
 Every operator has an arity in Java. They can be either unary, binary, and ternary operators. Arity decides how many operands are accepted in the operation. This brings us the next riddle.
 The Riddle What is the output of the next operation?

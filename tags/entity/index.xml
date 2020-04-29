@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>entity on T[h]ink]er[ing</title>
-    <link>/tags/entity/</link>
+    <link>torokmark.github.io/tags/entity/</link>
     <description>Recent content in entity on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 01 Oct 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="/tags/entity/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="torokmark.github.io/tags/entity/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Best practices to write an Entity in Spring/Hibernate</title>
-      <link>/posts/entity-best-practices/</link>
+      <link>torokmark.github.io/posts/entity-best-practices/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/posts/entity-best-practices/</guid>
+      <guid>torokmark.github.io/posts/entity-best-practices/</guid>
       <description>Every entity has to have a public default contstructor fetchType = FetchType.LAZY on @OneToOne, @OneToMany and @ManyToOne and other associations (EAGER is the default except @OneToMany) If an association is not mandatory:  optional = false on association annotations @Column and @JoinColumn should contain nullable = false   Entity should implement Persistable&amp;lt;IDTYPE&amp;gt; interface  Create own interface with default implementation:    public interface Identifiable extends Persistable&amp;lt;Long&amp;gt; { default isNew() { return getId() == null; } }  All ids should be boxed like Long, Integer, String, etc.</description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>enum on T[h]ink]er[ing</title>
-    <link>/tags/enum/</link>
+    <link>torokmark.github.io/tags/enum/</link>
     <description>Recent content in enum on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 09 Aug 2019 12:00:00 +0100</lastBuildDate>
     
-	<atom:link href="/tags/enum/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="torokmark.github.io/tags/enum/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Do you know Java: Entry Point in Interface or Enum</title>
-      <link>/posts/do-you-know-java-entry-point-in-interface/</link>
+      <link>torokmark.github.io/posts/do-you-know-java-entry-point-in-interface/</link>
       <pubDate>Fri, 09 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/posts/do-you-know-java-entry-point-in-interface/</guid>
+      <guid>torokmark.github.io/posts/do-you-know-java-entry-point-in-interface/</guid>
       <description>All Java applications start with a class and an entry point in it. We can change the class type to others.
 All Java applications start at one common point. That is a class which has at least one static method, called main as an entry point of the app. This method is called by JRE after the class is loaded when we execute java command with the appropriate name of the class.</description>
     </item>

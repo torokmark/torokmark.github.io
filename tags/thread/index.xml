@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>thread on T[h]ink]er[ing</title>
-    <link>/tags/thread/</link>
+    <link>torokmark.github.io/tags/thread/</link>
     <description>Recent content in thread on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 25 Apr 2020 12:00:00 +0100</lastBuildDate>
     
-	<atom:link href="/tags/thread/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="torokmark.github.io/tags/thread/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Do you know Java: Daemon Thread</title>
-      <link>/posts/do-you-know-java-daemon-thread/</link>
+      <link>torokmark.github.io/posts/do-you-know-java-daemon-thread/</link>
       <pubDate>Sat, 25 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/posts/do-you-know-java-daemon-thread/</guid>
+      <guid>torokmark.github.io/posts/do-you-know-java-daemon-thread/</guid>
       <description>Application terminates when all threads are terminated. But what if some of them run endlessly?
 Sometimes threads run until a condition is met, sometimes they run endlessly.
 Once a thread is created and then started, it runs parallel with the main execution. Our app terminates when all threads are terminated including our main method as well.

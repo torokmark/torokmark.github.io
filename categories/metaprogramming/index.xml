@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>metaprogramming on T[h]ink]er[ing</title>
-    <link>/categories/metaprogramming/</link>
+    <link>torokmark.github.io/categories/metaprogramming/</link>
     <description>Recent content in metaprogramming on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 26 Oct 2019 12:00:00 +0100</lastBuildDate>
     
-	<atom:link href="/categories/metaprogramming/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="torokmark.github.io/categories/metaprogramming/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ruby-like struct in Python #2</title>
-      <link>/posts/python-struct-2/</link>
+      <link>torokmark.github.io/posts/python-struct-2/</link>
       <pubDate>Sat, 26 Oct 2019 12:00:00 +0100</pubDate>
       
-      <guid>/posts/python-struct-2/</guid>
+      <guid>torokmark.github.io/posts/python-struct-2/</guid>
       <description>Ruby provides a very handy type called OpenStruct to create objects. It brings the opportunity to add fields to objects during the runtime. Here is its Python counterpart.
 In the previous post I showed Struct from esu which helps creating new types with fields and methods. That has a sibling, called OpenStruct which helps creating objects on the fly.
 Usage Ruby&amp;rsquo;s OpenStruct (doc:2.6.5) inspired it, and it looks as follows.</description>
@@ -24,10 +24,10 @@ Usage Ruby&amp;rsquo;s OpenStruct (doc:2.6.5) inspired it, and it looks as follo
     
     <item>
       <title>Ruby-like struct in Python</title>
-      <link>/posts/python-struct/</link>
+      <link>torokmark.github.io/posts/python-struct/</link>
       <pubDate>Sat, 19 Oct 2019 12:00:00 +0100</pubDate>
       
-      <guid>/posts/python-struct/</guid>
+      <guid>torokmark.github.io/posts/python-struct/</guid>
       <description>Ruby provides a very flexible way to create new types with certain fields with Struct. Though Python does not have this functionality naturally, with esu package we can do the same.
 Ruby types have rich API which is brought by the design, and the language features as well. Even though Python is very dynamic and flexible as well, some of the features are lacking in the languages.
 In this post I would like to show you a Python package, name is esu, which brings a struct that can provide almost the same functionality.</description>

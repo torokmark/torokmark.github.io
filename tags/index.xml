@@ -2,759 +2,759 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on T[h]ink]er[ing</title>
-    <link>/tags/</link>
+    <link>torokmark.github.io/tags/</link>
     <description>Recent content in Tags on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 29 Apr 2020 12:00:00 +0100</lastBuildDate>
     
-	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="torokmark.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>easter egg</title>
-      <link>/tags/easter-egg/</link>
+      <link>torokmark.github.io/tags/easter-egg/</link>
       <pubDate>Wed, 29 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/easter-egg/</guid>
+      <guid>torokmark.github.io/tags/easter-egg/</guid>
       <description></description>
     </item>
     
     <item>
       <title>riddle</title>
-      <link>/tags/riddle/</link>
+      <link>torokmark.github.io/tags/riddle/</link>
       <pubDate>Wed, 29 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/riddle/</guid>
+      <guid>torokmark.github.io/tags/riddle/</guid>
       <description></description>
     </item>
     
     <item>
       <title>command</title>
-      <link>/tags/command/</link>
+      <link>torokmark.github.io/tags/command/</link>
       <pubDate>Tue, 28 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/command/</guid>
+      <guid>torokmark.github.io/tags/command/</guid>
       <description></description>
     </item>
     
     <item>
       <title>process</title>
-      <link>/tags/process/</link>
+      <link>torokmark.github.io/tags/process/</link>
       <pubDate>Tue, 28 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/process/</guid>
+      <guid>torokmark.github.io/tags/process/</guid>
       <description></description>
     </item>
     
     <item>
       <title>runtime</title>
-      <link>/tags/runtime/</link>
+      <link>torokmark.github.io/tags/runtime/</link>
       <pubDate>Tue, 28 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/runtime/</guid>
+      <guid>torokmark.github.io/tags/runtime/</guid>
       <description></description>
     </item>
     
     <item>
       <title>script</title>
-      <link>/tags/script/</link>
+      <link>torokmark.github.io/tags/script/</link>
       <pubDate>Tue, 28 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/script/</guid>
+      <guid>torokmark.github.io/tags/script/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shell</title>
-      <link>/tags/shell/</link>
+      <link>torokmark.github.io/tags/shell/</link>
       <pubDate>Tue, 28 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/shell/</guid>
+      <guid>torokmark.github.io/tags/shell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shell command</title>
-      <link>/tags/shell-command/</link>
+      <link>torokmark.github.io/tags/shell-command/</link>
       <pubDate>Tue, 28 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/shell-command/</guid>
+      <guid>torokmark.github.io/tags/shell-command/</guid>
       <description></description>
     </item>
     
     <item>
       <title>shell script</title>
-      <link>/tags/shell-script/</link>
+      <link>torokmark.github.io/tags/shell-script/</link>
       <pubDate>Tue, 28 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/shell-script/</guid>
+      <guid>torokmark.github.io/tags/shell-script/</guid>
       <description></description>
     </item>
     
     <item>
       <title>daemon thread</title>
-      <link>/tags/daemon-thread/</link>
+      <link>torokmark.github.io/tags/daemon-thread/</link>
       <pubDate>Sat, 25 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/daemon-thread/</guid>
+      <guid>torokmark.github.io/tags/daemon-thread/</guid>
       <description></description>
     </item>
     
     <item>
       <title>infinite</title>
-      <link>/tags/infinite/</link>
+      <link>torokmark.github.io/tags/infinite/</link>
       <pubDate>Sat, 25 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/infinite/</guid>
+      <guid>torokmark.github.io/tags/infinite/</guid>
       <description></description>
     </item>
     
     <item>
       <title>thread</title>
-      <link>/tags/thread/</link>
+      <link>torokmark.github.io/tags/thread/</link>
       <pubDate>Sat, 25 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/thread/</guid>
+      <guid>torokmark.github.io/tags/thread/</guid>
       <description></description>
     </item>
     
     <item>
       <title>exception</title>
-      <link>/tags/exception/</link>
+      <link>torokmark.github.io/tags/exception/</link>
       <pubDate>Fri, 24 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/exception/</guid>
+      <guid>torokmark.github.io/tags/exception/</guid>
       <description></description>
     </item>
     
     <item>
       <title>exception handling</title>
-      <link>/tags/exception-handling/</link>
+      <link>torokmark.github.io/tags/exception-handling/</link>
       <pubDate>Fri, 24 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/exception-handling/</guid>
+      <guid>torokmark.github.io/tags/exception-handling/</guid>
       <description></description>
     </item>
     
     <item>
       <title>finally</title>
-      <link>/tags/finally/</link>
+      <link>torokmark.github.io/tags/finally/</link>
       <pubDate>Fri, 24 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/finally/</guid>
+      <guid>torokmark.github.io/tags/finally/</guid>
       <description></description>
     </item>
     
     <item>
       <title>try-with-resource</title>
-      <link>/tags/try-with-resource/</link>
+      <link>torokmark.github.io/tags/try-with-resource/</link>
       <pubDate>Fri, 24 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/try-with-resource/</guid>
+      <guid>torokmark.github.io/tags/try-with-resource/</guid>
       <description></description>
     </item>
     
     <item>
       <title>java7</title>
-      <link>/tags/java7/</link>
+      <link>torokmark.github.io/tags/java7/</link>
       <pubDate>Wed, 25 Mar 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/java7/</guid>
+      <guid>torokmark.github.io/tags/java7/</guid>
       <description></description>
     </item>
     
     <item>
       <title>instantiation</title>
-      <link>/tags/instantiation/</link>
+      <link>torokmark.github.io/tags/instantiation/</link>
       <pubDate>Tue, 18 Feb 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/instantiation/</guid>
+      <guid>torokmark.github.io/tags/instantiation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>reflection</title>
-      <link>/tags/reflection/</link>
+      <link>torokmark.github.io/tags/reflection/</link>
       <pubDate>Tue, 18 Feb 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/reflection/</guid>
+      <guid>torokmark.github.io/tags/reflection/</guid>
       <description></description>
     </item>
     
     <item>
       <title>stack</title>
-      <link>/tags/stack/</link>
+      <link>torokmark.github.io/tags/stack/</link>
       <pubDate>Tue, 18 Feb 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/stack/</guid>
+      <guid>torokmark.github.io/tags/stack/</guid>
       <description></description>
     </item>
     
     <item>
       <title>stacktrace</title>
-      <link>/tags/stacktrace/</link>
+      <link>torokmark.github.io/tags/stacktrace/</link>
       <pubDate>Tue, 18 Feb 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/stacktrace/</guid>
+      <guid>torokmark.github.io/tags/stacktrace/</guid>
       <description></description>
     </item>
     
     <item>
       <title>static</title>
-      <link>/tags/static/</link>
+      <link>torokmark.github.io/tags/static/</link>
       <pubDate>Tue, 18 Feb 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/static/</guid>
+      <guid>torokmark.github.io/tags/static/</guid>
       <description></description>
     </item>
     
     <item>
       <title>consumer</title>
-      <link>/tags/consumer/</link>
+      <link>torokmark.github.io/tags/consumer/</link>
       <pubDate>Sat, 08 Feb 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/consumer/</guid>
+      <guid>torokmark.github.io/tags/consumer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>generics</title>
-      <link>/tags/generics/</link>
+      <link>torokmark.github.io/tags/generics/</link>
       <pubDate>Sat, 08 Feb 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/generics/</guid>
+      <guid>torokmark.github.io/tags/generics/</guid>
       <description></description>
     </item>
     
     <item>
       <title>producer</title>
-      <link>/tags/producer/</link>
+      <link>torokmark.github.io/tags/producer/</link>
       <pubDate>Sat, 08 Feb 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/producer/</guid>
+      <guid>torokmark.github.io/tags/producer/</guid>
       <description></description>
     </item>
     
     <item>
       <title>wildcard</title>
-      <link>/tags/wildcard/</link>
+      <link>torokmark.github.io/tags/wildcard/</link>
       <pubDate>Sat, 08 Feb 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/wildcard/</guid>
+      <guid>torokmark.github.io/tags/wildcard/</guid>
       <description></description>
     </item>
     
     <item>
       <title>jshell</title>
-      <link>/tags/jshell/</link>
+      <link>torokmark.github.io/tags/jshell/</link>
       <pubDate>Sun, 05 Jan 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/jshell/</guid>
+      <guid>torokmark.github.io/tags/jshell/</guid>
       <description></description>
     </item>
     
     <item>
       <title>array</title>
-      <link>/tags/array/</link>
+      <link>torokmark.github.io/tags/array/</link>
       <pubDate>Sat, 28 Dec 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/array/</guid>
+      <guid>torokmark.github.io/tags/array/</guid>
       <description></description>
     </item>
     
     <item>
       <title>arraystoreexception</title>
-      <link>/tags/arraystoreexception/</link>
+      <link>torokmark.github.io/tags/arraystoreexception/</link>
       <pubDate>Sat, 28 Dec 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/arraystoreexception/</guid>
+      <guid>torokmark.github.io/tags/arraystoreexception/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dynamic type</title>
-      <link>/tags/dynamic-type/</link>
+      <link>torokmark.github.io/tags/dynamic-type/</link>
       <pubDate>Sat, 28 Dec 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/dynamic-type/</guid>
+      <guid>torokmark.github.io/tags/dynamic-type/</guid>
       <description></description>
     </item>
     
     <item>
       <title>static type</title>
-      <link>/tags/static-type/</link>
+      <link>torokmark.github.io/tags/static-type/</link>
       <pubDate>Sat, 28 Dec 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/static-type/</guid>
+      <guid>torokmark.github.io/tags/static-type/</guid>
       <description></description>
     </item>
     
     <item>
       <title>argument</title>
-      <link>/tags/argument/</link>
+      <link>torokmark.github.io/tags/argument/</link>
       <pubDate>Sat, 21 Dec 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/argument/</guid>
+      <guid>torokmark.github.io/tags/argument/</guid>
       <description></description>
     </item>
     
     <item>
       <title>assert</title>
-      <link>/tags/assert/</link>
+      <link>torokmark.github.io/tags/assert/</link>
       <pubDate>Sat, 21 Dec 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/assert/</guid>
+      <guid>torokmark.github.io/tags/assert/</guid>
       <description></description>
     </item>
     
     <item>
       <title>assertion</title>
-      <link>/tags/assertion/</link>
+      <link>torokmark.github.io/tags/assertion/</link>
       <pubDate>Sat, 21 Dec 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/assertion/</guid>
+      <guid>torokmark.github.io/tags/assertion/</guid>
       <description></description>
     </item>
     
     <item>
       <title>parameter</title>
-      <link>/tags/parameter/</link>
+      <link>torokmark.github.io/tags/parameter/</link>
       <pubDate>Sat, 21 Dec 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/parameter/</guid>
+      <guid>torokmark.github.io/tags/parameter/</guid>
       <description></description>
     </item>
     
     <item>
       <title>data structure</title>
-      <link>/tags/data-structure/</link>
+      <link>torokmark.github.io/tags/data-structure/</link>
       <pubDate>Sun, 15 Dec 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/data-structure/</guid>
+      <guid>torokmark.github.io/tags/data-structure/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hash</title>
-      <link>/tags/hash/</link>
+      <link>torokmark.github.io/tags/hash/</link>
       <pubDate>Sun, 15 Dec 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/hash/</guid>
+      <guid>torokmark.github.io/tags/hash/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hashmap</title>
-      <link>/tags/hashmap/</link>
+      <link>torokmark.github.io/tags/hashmap/</link>
       <pubDate>Sun, 15 Dec 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/hashmap/</guid>
+      <guid>torokmark.github.io/tags/hashmap/</guid>
       <description></description>
     </item>
     
     <item>
       <title>linkedmap</title>
-      <link>/tags/linkedmap/</link>
+      <link>torokmark.github.io/tags/linkedmap/</link>
       <pubDate>Sun, 15 Dec 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/linkedmap/</guid>
+      <guid>torokmark.github.io/tags/linkedmap/</guid>
       <description></description>
     </item>
     
     <item>
       <title>binary operator</title>
-      <link>/tags/binary-operator/</link>
+      <link>torokmark.github.io/tags/binary-operator/</link>
       <pubDate>Mon, 18 Nov 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/binary-operator/</guid>
+      <guid>torokmark.github.io/tags/binary-operator/</guid>
       <description></description>
     </item>
     
     <item>
       <title>operator</title>
-      <link>/tags/operator/</link>
+      <link>torokmark.github.io/tags/operator/</link>
       <pubDate>Mon, 18 Nov 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/operator/</guid>
+      <guid>torokmark.github.io/tags/operator/</guid>
       <description></description>
     </item>
     
     <item>
       <title>unary operator</title>
-      <link>/tags/unary-operator/</link>
+      <link>torokmark.github.io/tags/unary-operator/</link>
       <pubDate>Mon, 18 Nov 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/unary-operator/</guid>
+      <guid>torokmark.github.io/tags/unary-operator/</guid>
       <description></description>
     </item>
     
     <item>
       <title>identifier</title>
-      <link>/tags/identifier/</link>
+      <link>torokmark.github.io/tags/identifier/</link>
       <pubDate>Mon, 28 Oct 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/identifier/</guid>
+      <guid>torokmark.github.io/tags/identifier/</guid>
       <description></description>
     </item>
     
     <item>
       <title>underscore</title>
-      <link>/tags/underscore/</link>
+      <link>torokmark.github.io/tags/underscore/</link>
       <pubDate>Mon, 28 Oct 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/underscore/</guid>
+      <guid>torokmark.github.io/tags/underscore/</guid>
       <description></description>
     </item>
     
     <item>
       <title>variable name</title>
-      <link>/tags/variable-name/</link>
+      <link>torokmark.github.io/tags/variable-name/</link>
       <pubDate>Mon, 28 Oct 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/variable-name/</guid>
+      <guid>torokmark.github.io/tags/variable-name/</guid>
       <description></description>
     </item>
     
     <item>
       <title>metaprogramming</title>
-      <link>/tags/metaprogramming/</link>
+      <link>torokmark.github.io/tags/metaprogramming/</link>
       <pubDate>Sat, 26 Oct 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/metaprogramming/</guid>
+      <guid>torokmark.github.io/tags/metaprogramming/</guid>
       <description></description>
     </item>
     
     <item>
       <title>openstruct</title>
-      <link>/tags/openstruct/</link>
+      <link>torokmark.github.io/tags/openstruct/</link>
       <pubDate>Sat, 26 Oct 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/openstruct/</guid>
+      <guid>torokmark.github.io/tags/openstruct/</guid>
       <description></description>
     </item>
     
     <item>
       <title>struct</title>
-      <link>/tags/struct/</link>
+      <link>torokmark.github.io/tags/struct/</link>
       <pubDate>Sat, 26 Oct 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/struct/</guid>
+      <guid>torokmark.github.io/tags/struct/</guid>
       <description></description>
     </item>
     
     <item>
       <title>entry point</title>
-      <link>/tags/entry-point/</link>
+      <link>torokmark.github.io/tags/entry-point/</link>
       <pubDate>Tue, 15 Oct 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/entry-point/</guid>
+      <guid>torokmark.github.io/tags/entry-point/</guid>
       <description></description>
     </item>
     
     <item>
       <title>varargs</title>
-      <link>/tags/varargs/</link>
+      <link>torokmark.github.io/tags/varargs/</link>
       <pubDate>Tue, 15 Oct 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/varargs/</guid>
+      <guid>torokmark.github.io/tags/varargs/</guid>
       <description></description>
     </item>
     
     <item>
       <title>literal</title>
-      <link>/tags/literal/</link>
+      <link>torokmark.github.io/tags/literal/</link>
       <pubDate>Thu, 05 Sep 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/literal/</guid>
+      <guid>torokmark.github.io/tags/literal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>numeric literal</title>
-      <link>/tags/numeric-literal/</link>
+      <link>torokmark.github.io/tags/numeric-literal/</link>
       <pubDate>Thu, 05 Sep 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/numeric-literal/</guid>
+      <guid>torokmark.github.io/tags/numeric-literal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>single source file code</title>
-      <link>/tags/single-source-file-code/</link>
+      <link>torokmark.github.io/tags/single-source-file-code/</link>
       <pubDate>Wed, 28 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/single-source-file-code/</guid>
+      <guid>torokmark.github.io/tags/single-source-file-code/</guid>
       <description></description>
     </item>
     
     <item>
       <title>operator precedence</title>
-      <link>/tags/operator-precedence/</link>
+      <link>torokmark.github.io/tags/operator-precedence/</link>
       <pubDate>Fri, 23 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/operator-precedence/</guid>
+      <guid>torokmark.github.io/tags/operator-precedence/</guid>
       <description></description>
     </item>
     
     <item>
       <title>or operator</title>
-      <link>/tags/or-operator/</link>
+      <link>torokmark.github.io/tags/or-operator/</link>
       <pubDate>Fri, 23 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/or-operator/</guid>
+      <guid>torokmark.github.io/tags/or-operator/</guid>
       <description></description>
     </item>
     
     <item>
       <title>container type</title>
-      <link>/tags/container-type/</link>
+      <link>torokmark.github.io/tags/container-type/</link>
       <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/container-type/</guid>
+      <guid>torokmark.github.io/tags/container-type/</guid>
       <description></description>
     </item>
     
     <item>
       <title>map</title>
-      <link>/tags/map/</link>
+      <link>torokmark.github.io/tags/map/</link>
       <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/map/</guid>
+      <guid>torokmark.github.io/tags/map/</guid>
       <description></description>
     </item>
     
     <item>
       <title>queue</title>
-      <link>/tags/queue/</link>
+      <link>torokmark.github.io/tags/queue/</link>
       <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/queue/</guid>
+      <guid>torokmark.github.io/tags/queue/</guid>
       <description></description>
     </item>
     
     <item>
       <title>set</title>
-      <link>/tags/set/</link>
+      <link>torokmark.github.io/tags/set/</link>
       <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/set/</guid>
+      <guid>torokmark.github.io/tags/set/</guid>
       <description></description>
     </item>
     
     <item>
       <title>string</title>
-      <link>/tags/string/</link>
+      <link>torokmark.github.io/tags/string/</link>
       <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/string/</guid>
+      <guid>torokmark.github.io/tags/string/</guid>
       <description></description>
     </item>
     
     <item>
       <title>enum</title>
-      <link>/tags/enum/</link>
+      <link>torokmark.github.io/tags/enum/</link>
       <pubDate>Fri, 09 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/enum/</guid>
+      <guid>torokmark.github.io/tags/enum/</guid>
       <description></description>
     </item>
     
     <item>
       <title>interface</title>
-      <link>/tags/interface/</link>
+      <link>torokmark.github.io/tags/interface/</link>
       <pubDate>Fri, 09 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/interface/</guid>
+      <guid>torokmark.github.io/tags/interface/</guid>
       <description></description>
     </item>
     
     <item>
       <title>main class</title>
-      <link>/tags/main-class/</link>
+      <link>torokmark.github.io/tags/main-class/</link>
       <pubDate>Fri, 09 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/main-class/</guid>
+      <guid>torokmark.github.io/tags/main-class/</guid>
       <description></description>
     </item>
     
     <item>
       <title>dictionary</title>
-      <link>/tags/dictionary/</link>
+      <link>torokmark.github.io/tags/dictionary/</link>
       <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/dictionary/</guid>
+      <guid>torokmark.github.io/tags/dictionary/</guid>
       <description></description>
     </item>
     
     <item>
       <title>embedded objects</title>
-      <link>/tags/embedded-objects/</link>
+      <link>torokmark.github.io/tags/embedded-objects/</link>
       <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/embedded-objects/</guid>
+      <guid>torokmark.github.io/tags/embedded-objects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>safe navigation</title>
-      <link>/tags/safe-navigation/</link>
+      <link>torokmark.github.io/tags/safe-navigation/</link>
       <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/safe-navigation/</guid>
+      <guid>torokmark.github.io/tags/safe-navigation/</guid>
       <description></description>
     </item>
     
     <item>
       <title>benchmark</title>
-      <link>/tags/benchmark/</link>
+      <link>torokmark.github.io/tags/benchmark/</link>
       <pubDate>Sat, 03 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/benchmark/</guid>
+      <guid>torokmark.github.io/tags/benchmark/</guid>
       <description></description>
     </item>
     
     <item>
       <title>tool</title>
-      <link>/tags/tool/</link>
+      <link>torokmark.github.io/tags/tool/</link>
       <pubDate>Sat, 03 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/tool/</guid>
+      <guid>torokmark.github.io/tags/tool/</guid>
       <description></description>
     </item>
     
     <item>
       <title>anonymous class</title>
-      <link>/tags/anonymous-class/</link>
+      <link>torokmark.github.io/tags/anonymous-class/</link>
       <pubDate>Sun, 28 Jul 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/anonymous-class/</guid>
+      <guid>torokmark.github.io/tags/anonymous-class/</guid>
       <description></description>
     </item>
     
     <item>
       <title>derived class</title>
-      <link>/tags/derived-class/</link>
+      <link>torokmark.github.io/tags/derived-class/</link>
       <pubDate>Sun, 28 Jul 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/derived-class/</guid>
+      <guid>torokmark.github.io/tags/derived-class/</guid>
       <description></description>
     </item>
     
     <item>
       <title>double brace initialization</title>
-      <link>/tags/double-brace-initialization/</link>
+      <link>torokmark.github.io/tags/double-brace-initialization/</link>
       <pubDate>Sun, 28 Jul 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/double-brace-initialization/</guid>
+      <guid>torokmark.github.io/tags/double-brace-initialization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>initialization</title>
-      <link>/tags/initialization/</link>
+      <link>torokmark.github.io/tags/initialization/</link>
       <pubDate>Sun, 28 Jul 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/initialization/</guid>
+      <guid>torokmark.github.io/tags/initialization/</guid>
       <description></description>
     </item>
     
     <item>
       <title>count</title>
-      <link>/tags/count/</link>
+      <link>torokmark.github.io/tags/count/</link>
       <pubDate>Tue, 09 Apr 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/count/</guid>
+      <guid>torokmark.github.io/tags/count/</guid>
       <description></description>
     </item>
     
     <item>
       <title>pythonic way</title>
-      <link>/tags/pythonic-way/</link>
+      <link>torokmark.github.io/tags/pythonic-way/</link>
       <pubDate>Tue, 09 Apr 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/pythonic-way/</guid>
+      <guid>torokmark.github.io/tags/pythonic-way/</guid>
       <description></description>
     </item>
     
     <item>
       <title>assert_equal</title>
-      <link>/tags/assert_equal/</link>
+      <link>torokmark.github.io/tags/assert_equal/</link>
       <pubDate>Sun, 31 Mar 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/assert_equal/</guid>
+      <guid>torokmark.github.io/tags/assert_equal/</guid>
       <description></description>
     </item>
     
     <item>
       <title>composition</title>
-      <link>/tags/composition/</link>
+      <link>torokmark.github.io/tags/composition/</link>
       <pubDate>Wed, 27 Mar 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/composition/</guid>
+      <guid>torokmark.github.io/tags/composition/</guid>
       <description></description>
     </item>
     
     <item>
       <title>inheritance</title>
-      <link>/tags/inheritance/</link>
+      <link>torokmark.github.io/tags/inheritance/</link>
       <pubDate>Wed, 27 Mar 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/inheritance/</guid>
+      <guid>torokmark.github.io/tags/inheritance/</guid>
       <description></description>
     </item>
     
     <item>
       <title>n-ary tree</title>
-      <link>/tags/n-ary-tree/</link>
+      <link>torokmark.github.io/tags/n-ary-tree/</link>
       <pubDate>Tue, 19 Mar 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/n-ary-tree/</guid>
+      <guid>torokmark.github.io/tags/n-ary-tree/</guid>
       <description></description>
     </item>
     
     <item>
       <title>builder</title>
-      <link>/tags/builder/</link>
+      <link>torokmark.github.io/tags/builder/</link>
       <pubDate>Tue, 08 Jan 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/builder/</guid>
+      <guid>torokmark.github.io/tags/builder/</guid>
       <description></description>
     </item>
     
     <item>
       <title>multibuilder</title>
-      <link>/tags/multibuilder/</link>
+      <link>torokmark.github.io/tags/multibuilder/</link>
       <pubDate>Tue, 08 Jan 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/multibuilder/</guid>
+      <guid>torokmark.github.io/tags/multibuilder/</guid>
       <description></description>
     </item>
     
     <item>
       <title>entity</title>
-      <link>/tags/entity/</link>
+      <link>torokmark.github.io/tags/entity/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/entity/</guid>
+      <guid>torokmark.github.io/tags/entity/</guid>
       <description></description>
     </item>
     
     <item>
       <title>hibernate</title>
-      <link>/tags/hibernate/</link>
+      <link>torokmark.github.io/tags/hibernate/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/hibernate/</guid>
+      <guid>torokmark.github.io/tags/hibernate/</guid>
       <description></description>
     </item>
     
     <item>
       <title>spring</title>
-      <link>/tags/spring/</link>
+      <link>torokmark.github.io/tags/spring/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
-      <guid>/tags/spring/</guid>
+      <guid>torokmark.github.io/tags/spring/</guid>
       <description></description>
     </item>
     
