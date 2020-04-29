@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>array on T[h]ink]er[ing</title>
-    <link>torokmark.github.io/tags/array/</link>
+    <link>https://torokmark.github.io/tags/array/</link>
     <description>Recent content in array on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 28 Dec 2019 12:00:00 +0100</lastBuildDate>
     
-	<atom:link href="torokmark.github.io/tags/array/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://torokmark.github.io/tags/array/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Do you know Java: Arrays as Generic Containers</title>
-      <link>torokmark.github.io/posts/do-you-know-java-arrays-as-generic-containers/</link>
+      <link>https://torokmark.github.io/posts/do-you-know-java-arrays-as-generic-containers/</link>
       <pubDate>Sat, 28 Dec 2019 12:00:00 +0100</pubDate>
       
-      <guid>torokmark.github.io/posts/do-you-know-java-arrays-as-generic-containers/</guid>
+      <guid>https://torokmark.github.io/posts/do-you-know-java-arrays-as-generic-containers/</guid>
       <description>We can assign different type of elements to an array even the operation is accepted in compile-time, that raises error in run-time.
 Sometimes Java is tricky, even it has static type system, we can assign different type of elements to an array, which is accepted in compile time, even array contains different type than the types of the element.
 Covariance Let S &amp;lt;: T mean that S is subtype of T and covariant is S &amp;lt;: T =&amp;gt; S&#39; &amp;lt;: T&#39;.</description>
@@ -24,20 +24,20 @@ Covariance Let S &amp;lt;: T mean that S is subtype of T and covariant is S &amp
     
     <item>
       <title>Do you know Java: Varargs as Entry Point Parameter</title>
-      <link>torokmark.github.io/posts/do-you-know-java-varargs-in-entry-point/</link>
+      <link>https://torokmark.github.io/posts/do-you-know-java-varargs-in-entry-point/</link>
       <pubDate>Tue, 15 Oct 2019 12:00:00 +0100</pubDate>
       
-      <guid>torokmark.github.io/posts/do-you-know-java-varargs-in-entry-point/</guid>
+      <guid>https://torokmark.github.io/posts/do-you-know-java-varargs-in-entry-point/</guid>
       <description>Java 5 was one of those versions that brought much more features and syntactic sugars than any other of them. Varargs is one of those. This provides a very comfortable way to pass different number of arguments to a method. Can we use it anywhere?
 Varargs is just a syntactic sugar, it can be used in a more flexible way than its predecessor, the typed array. It has the same characteristics which means it supports indexing, it has an attribute called length, it is iterable.</description>
     </item>
     
     <item>
       <title>Implementing custom array in Python</title>
-      <link>torokmark.github.io/posts/implementing-custom-array/</link>
+      <link>https://torokmark.github.io/posts/implementing-custom-array/</link>
       <pubDate>Wed, 27 Mar 2019 12:00:00 +0100</pubDate>
       
-      <guid>torokmark.github.io/posts/implementing-custom-array/</guid>
+      <guid>https://torokmark.github.io/posts/implementing-custom-array/</guid>
       <description>Python provides basic datastructures like dictionary, list, set, and tuple. If we need another datastruct which is different from the mentioned three, we have to implement ourones.
 As I started using python in my daily work, more and more questions had cropped up about the language and its refinement. One of them was to implement a custom array.
 What we would like to achieve is to have a datastruct which behaves like an array.</description>

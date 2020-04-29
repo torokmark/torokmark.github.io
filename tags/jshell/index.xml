@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>jshell on T[h]ink]er[ing</title>
-    <link>torokmark.github.io/tags/jshell/</link>
+    <link>https://torokmark.github.io/tags/jshell/</link>
     <description>Recent content in jshell on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 05 Jan 2020 12:00:00 +0100</lastBuildDate>
     
-	<atom:link href="torokmark.github.io/tags/jshell/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://torokmark.github.io/tags/jshell/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Do you know Java: JShell</title>
-      <link>torokmark.github.io/posts/do-you-know-java-jshell/</link>
+      <link>https://torokmark.github.io/posts/do-you-know-java-jshell/</link>
       <pubDate>Sun, 05 Jan 2020 12:00:00 +0100</pubDate>
       
-      <guid>torokmark.github.io/posts/do-you-know-java-jshell/</guid>
+      <guid>https://torokmark.github.io/posts/do-you-know-java-jshell/</guid>
       <description>JShell interpreter can process Java statements without requiring them to be placed in class and method body.
 JShell interpreter and CLI were introduced in Java 9. That come handy when we would like to execute a statement, or call a subroutine to get their results.
 Shell To enter the shell, we should type jshell in the command line and hit enter.

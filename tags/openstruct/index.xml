@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>openstruct on T[h]ink]er[ing</title>
-    <link>torokmark.github.io/tags/openstruct/</link>
+    <link>https://torokmark.github.io/tags/openstruct/</link>
     <description>Recent content in openstruct on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 26 Oct 2019 12:00:00 +0100</lastBuildDate>
     
-	<atom:link href="torokmark.github.io/tags/openstruct/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://torokmark.github.io/tags/openstruct/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Ruby-like struct in Python #2</title>
-      <link>torokmark.github.io/posts/python-struct-2/</link>
+      <link>https://torokmark.github.io/posts/python-struct-2/</link>
       <pubDate>Sat, 26 Oct 2019 12:00:00 +0100</pubDate>
       
-      <guid>torokmark.github.io/posts/python-struct-2/</guid>
+      <guid>https://torokmark.github.io/posts/python-struct-2/</guid>
       <description>Ruby provides a very handy type called OpenStruct to create objects. It brings the opportunity to add fields to objects during the runtime. Here is its Python counterpart.
 In the previous post I showed Struct from esu which helps creating new types with fields and methods. That has a sibling, called OpenStruct which helps creating objects on the fly.
 Usage Ruby&amp;rsquo;s OpenStruct (doc:2.6.5) inspired it, and it looks as follows.</description>

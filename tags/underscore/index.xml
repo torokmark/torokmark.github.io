@@ -2,31 +2,31 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>underscore on T[h]ink]er[ing</title>
-    <link>torokmark.github.io/tags/underscore/</link>
+    <link>https://torokmark.github.io/tags/underscore/</link>
     <description>Recent content in underscore on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 28 Oct 2019 12:00:00 +0100</lastBuildDate>
     
-	<atom:link href="torokmark.github.io/tags/underscore/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://torokmark.github.io/tags/underscore/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Do you know Java: Underscore as identifier</title>
-      <link>torokmark.github.io/posts/do-you-know-java-underscore-as-identifier/</link>
+      <link>https://torokmark.github.io/posts/do-you-know-java-underscore-as-identifier/</link>
       <pubDate>Mon, 28 Oct 2019 12:00:00 +0100</pubDate>
       
-      <guid>torokmark.github.io/posts/do-you-know-java-underscore-as-identifier/</guid>
+      <guid>https://torokmark.github.io/posts/do-you-know-java-underscore-as-identifier/</guid>
       <description>We could use underscore as a variable name until Java 7, but it cannot be used as an identifier from Java 9 and upwards.
 Java has strict rules about how to name a variable, which characters are accepted in it or which one can be the first one. Underscore is a legal character among alphabetic characters and numbers. What if I did not use any other chars just underscore? Is that still valid variable name?</description>
     </item>
     
     <item>
       <title>Do you know Java: Underscores in Numeric Literals</title>
-      <link>torokmark.github.io/posts/do-you-know-java-underscores-in-numeric-literals/</link>
+      <link>https://torokmark.github.io/posts/do-you-know-java-underscores-in-numeric-literals/</link>
       <pubDate>Thu, 05 Sep 2019 12:00:00 +0100</pubDate>
       
-      <guid>torokmark.github.io/posts/do-you-know-java-underscores-in-numeric-literals/</guid>
+      <guid>https://torokmark.github.io/posts/do-you-know-java-underscores-in-numeric-literals/</guid>
       <description>Underscore can be used in numeric literals to group digits in a numeric value. This way that can enhance code readability, decrease mistyping and helps visually keeping numeric values in range.
 Code readability is one of the most important viewpoints of software development. The more readable the code is, the faster that can be understood by developers.
 Java 7 introduced underscore as a comfortable way to separate digits of a numeric value into groups.</description>

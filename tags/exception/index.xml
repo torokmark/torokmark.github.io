@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>exception on T[h]ink]er[ing</title>
-    <link>torokmark.github.io/tags/exception/</link>
+    <link>https://torokmark.github.io/tags/exception/</link>
     <description>Recent content in exception on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 24 Apr 2020 12:00:00 +0100</lastBuildDate>
     
-	<atom:link href="torokmark.github.io/tags/exception/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://torokmark.github.io/tags/exception/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Do you know Java: Parameter validation</title>
-      <link>torokmark.github.io/posts/do-you-know-java-parameter-validation/</link>
+      <link>https://torokmark.github.io/posts/do-you-know-java-parameter-validation/</link>
       <pubDate>Sat, 21 Dec 2019 12:00:00 +0100</pubDate>
       
-      <guid>torokmark.github.io/posts/do-you-know-java-parameter-validation/</guid>
+      <guid>https://torokmark.github.io/posts/do-you-know-java-parameter-validation/</guid>
       <description>Checking method parameters is crutial to avoid inconvenient situations with null pointers or undesired values. Assertion and exception handling are two ways to give feedback to users about parameters.
 What if we are intended to validate the parameters of a function? What if we liked to set up preconditions? How can we avoid working with null objects?
 In this post we take a look at two approaches. At first, we see how we can check parameters with assertion and what its pros and cons are.</description>
