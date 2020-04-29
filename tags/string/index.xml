@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>String on T[h]ink]er[ing</title>
+    <title>string on T[h]ink]er[ing</title>
     <link>/tags/string/</link>
-    <description>Recent content in String on T[h]ink]er[ing</description>
+    <description>Recent content in string on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 15 Aug 2019 12:00:00 +0100</lastBuildDate>
@@ -13,10 +13,10 @@
     
     <item>
       <title>Container types in shell script</title>
-      <link>/post/container-types-in-shell-script/</link>
+      <link>/posts/container-types-in-shell-script/</link>
       <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/post/container-types-in-shell-script/</guid>
+      <guid>/posts/container-types-in-shell-script/</guid>
       <description>Shell script does not support container types like map, set, or queue, though with a third-party lib, presented here, we can use them in our scripts.
 From time to time we need map, queue or any other kind of collections during our work. Shell script is definitely not the right choice to write applications but it may happen that we need some of the previously mentioned types to help our work.</description>
     </item>

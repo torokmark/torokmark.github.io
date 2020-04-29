@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154887805-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-154887805-1');
+        </script>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet"> 
+
+        <title>Implementing custom array in Python</title>
+
+        <link rel="stylesheet" href="/css/stylesheet.css">
+    </head>
+    <body>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light">
+
+          
+          <span class="navbar-brand mb-0 h1"></span>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation" name="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link " href="/">Home</a>
+              
+              
+              <a class="nav-item nav-link " href="/contact/">Contact</a>
+              <a class="nav-item nav-link " href="/about/">About</a>
+            </div>
+          </div>
+        </nav>
+
+        <section id="page-title">
+          <h1><a href="/">T[h]ink]er[ing</a></h1>
+          <span id="author-name">
+            <h6><a href="/about/"></a></h6>
+          </span>
+        </section>
+
+
+<div class="blog-post">
+  <h1>Implementing custom array in Python</h1>
+  <div class="blog-post-subheader">
+    <time>27 Mar 2019</time>
+  </div>
+  <div class="blog-post-content">
+    <p><strong>Python provides basic datastructures like <em>dictionary</em>, <em>list</em>, <em>set</em>, and <em>tuple</em>.
+If we need another datastruct which is different from the mentioned three, we
+have to implement ourones.</strong></p>
+<p>As I started using python in my daily work, more and more questions had cropped
+up about the language and its refinement. One of them was to implement a custom
+array.</p>
+<p>What we would like to achieve is to have a datastruct which behaves like an
+array. That means, it is:</p>
+<ul>
+<li><strong>iterable</strong>: iteration happens over <code>for</code> loop</li>
+<li><strong>subscriptable</strong>: <code>[:]</code> notation can be applied on it</li>
+<li><strong>support indexing</strong>: can support index notation, <code>[n]</code>, for both reading and
+writing</li>
+<li><strong>length</strong>: <code>len</code> built-in  function returns the number of elements of the
+array</li>
+</ul>
+<h3 id="the-goal">The Goal</h3>
+<p>The goal is to have all the abovementioned functionalities but do not have
+others that make representation available for users outside of the scope of the
+class.</p>
+<p>The test is found below. So we want to have all of them like <code>iter</code>, <code>len</code>,
+<code>[n]</code>, or <code>[:]</code> but not want to have <code>extend</code> or other list related methods.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="c1"># test_composits.py</span>
+<span class="kn">from</span> <span class="nn">expects</span> <span class="kn">import</span> <span class="o">*</span>
+
+<span class="kn">from</span> <span class="nn">composites</span> <span class="kn">import</span> <span class="n">Composite</span>
+
+<span class="n">arr</span> <span class="o">=</span> <span class="n">Composite</span><span class="p">()</span>
+
+<span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="n">arr</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2</span>
+<span class="n">arr</span><span class="p">[</span><span class="mi">2</span><span class="p">]</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="o">+</span><span class="mi">2</span>
+<span class="n">arr</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;a&#39;</span>
+<span class="n">arr</span><span class="p">[</span><span class="mi">4</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="n">arr</span><span class="p">[</span><span class="mi">7</span><span class="p">]</span> <span class="o">=</span> <span class="n">Composite</span>
+
+<span class="n">expect</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">))</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">equal</span><span class="p">(</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">expect</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="nb">iter</span><span class="p">(</span><span class="n">arr</span><span class="p">))</span><span class="o">.</span><span class="n">not_to</span><span class="p">(</span><span class="n">raise_error</span><span class="p">(</span><span class="ne">TypeError</span><span class="p">))</span>
+<span class="n">expect</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="p">[</span><span class="n">i</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">arr</span><span class="p">])</span><span class="o">.</span><span class="n">not_to</span><span class="p">(</span><span class="n">raise_error</span><span class="p">(</span><span class="ne">TypeError</span><span class="p">))</span>
+<span class="n">expect</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="nb">next</span><span class="p">(</span><span class="n">arr</span><span class="p">))</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">raise_error</span><span class="p">(</span><span class="ne">TypeError</span><span class="p">))</span>
+
+<span class="n">expect</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="nb">len</span><span class="p">(</span><span class="n">arr</span><span class="p">))</span><span class="o">.</span><span class="n">not_to</span><span class="p">(</span><span class="n">raise_error</span><span class="p">(</span><span class="ne">TypeError</span><span class="p">))</span>
+<span class="n">expect</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">arr</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span><span class="o">.</span><span class="n">not_to</span><span class="p">(</span><span class="n">raise_error</span><span class="p">(</span><span class="ne">TypeError</span><span class="p">))</span>
+<span class="n">expect</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="mi">1</span><span class="p">])</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">equal</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+<span class="n">expect</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">arr</span><span class="p">[:])</span><span class="o">.</span><span class="n">not_to</span><span class="p">(</span><span class="n">raise_error</span><span class="p">(</span><span class="ne">TypeError</span><span class="p">))</span>
+<span class="n">expect</span><span class="p">(</span><span class="n">arr</span><span class="p">[</span><span class="mi">0</span><span class="p">:</span><span class="mi">2</span><span class="p">])</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">equal</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]))</span>
+<span class="n">expect</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">arr</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]))</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">raise_error</span><span class="p">(</span><span class="ne">AttributeError</span><span class="p">))</span>
+<span class="n">expect</span><span class="p">(</span><span class="k">lambda</span><span class="p">:</span> <span class="n">arr</span><span class="o">.</span><span class="n">__array</span><span class="p">)</span><span class="o">.</span><span class="n">to</span><span class="p">(</span><span class="n">raise_error</span><span class="p">(</span><span class="ne">AttributeError</span><span class="p">))</span>
+</code></pre></div><h3 id="the-inherited">The Inherited</h3>
+<p>The most straightforward way would be to implement a custom array that is
+inherited from <code>list</code>. The only drawback with this is that we get more
+functions than we want to, so <code>extend</code> is also part of the class.</p>
+<p>Since all methods come that <code>list</code> possesses, our test code fails.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Inherited</span><span class="p">(</span><span class="nb">list</span><span class="p">):</span>
+    <span class="k">pass</span>
+</code></pre></div><h3 id="the-composed">The Composed</h3>
+<p>The <em>composition over inheritance</em> design principle is a well-knonw approach if
+we want to achieve a behaviour that we mentioned above.</p>
+<p>With composition we can hide undesired functionalities of an object and provide
+just those that we would like to publish to outside.</p>
+<p>The tests are the same, so let us see what we have to implement to get a full
+functional object with the covated behaviour.</p>
+<h4 id="1-the-representation">1. The representation</h4>
+<p>The representation inside is a list, but this won&rsquo;t be available from outside.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Composite</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__array</span> <span class="o">=</span> <span class="p">[]</span>
+</code></pre></div><h4 id="2-length">2. Length</h4>
+<p>To make <code>len(a)</code> available on our custom object, the <code>__len__</code> method should be
+implemented.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="p">)</span>
+</code></pre></div><h4 id="3-index-and-subscription">3. Index and subscription</h4>
+<p>To support indexing or subscription it is enough to implement <code>__getitem__</code>
+method.</p>
+<p>To make a support on <code>for</code> loop, class has to implement either <code>__getitem__</code> or
+<code>__iter__</code> methods.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+</code></pre></div><p>To support item assignment, <code>__setitem__</code> method has to be implemented as
+well. The simplest approach would be <code>self.__array[key] = value</code>. But what if we
+would like to assign a value to an index where index is not initialized
+beforehand.</p>
+<blockquote>
+<p>Here the type of the index is not considered as anything else just integer</p>
+</blockquote>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="fm">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+    <span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
+        <span class="k">assert</span> <span class="n">key</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;key must be 0 or positive&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="o">.</span><span class="n">extend</span><span class="p">(((</span><span class="n">key</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="p">))</span> <span class="o">*</span> <span class="p">[</span><span class="bp">None</span><span class="p">])</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__array</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+</code></pre></div><h4 id="4-iterator">4. Iterator</h4>
+<p><code>__getitem__</code> method is like a good army-knife, it could solve almost anything
+we needed here.</p>
+<p>Let us see what we have in the instance of the class, if we call <code>dir()</code>
+built-in function, it prints an array of methods of the instance. <code>__iter__</code> is
+not in there, though we can provide an iterator object.</p>
+<p>As mentioned above, <code>for</code> loop iterates over the instance, but to get the
+iterator object, we have to call <code>iter()</code> built-in on it. By using the iterator
+object, <code>next()</code> built-in is also available to get the next value.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">arr_it</span> <span class="o">=</span> <span class="nb">iter</span><span class="p">(</span><span class="n">arr</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">arr_it</span><span class="p">))</span> <span class="c1"># =&gt; 1</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">arr</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="bp">None</span><span class="p">:</span> 
+        <span class="k">break</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="c1"># =&gt; 1, 2, &lt;iter....&gt; , ...</span>
+
+<span class="k">print</span><span class="p">(</span><span class="nb">next</span><span class="p">(</span><span class="n">arr_it</span><span class="p">))</span> <span class="c1"># =&gt; 2</span>
+</code></pre></div><p>Be careful, if you want to make your class to work as an iterator.
+To do this, the class has to implement <code>__iter__</code> and <code>__next__</code> methods.</p>
+<p>This case, <code>for</code> loop uses <code>__next__</code> for stepping instead of <code>__getitem__</code>.
+The drawback of this approach is when <code>break</code> statement jumps out of the loop
+and iteration stops at one point, the next <code>for</code> loop starts the iteration from
+that point instead of starting it from the beginning. An example is below:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">ArrayIt</span><span class="p">:</span>
+  <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">values</span> <span class="o">=</span> <span class="p">[]):</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">array</span> <span class="o">=</span> <span class="n">values</span>
+    <span class="bp">self</span><span class="o">.</span><span class="n">current</span> <span class="o">=</span> <span class="mi">0</span>
+
+  <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+    <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">array</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+
+  <span class="k">def</span> <span class="fm">__iter__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">return</span> <span class="bp">self</span>
+
+  <span class="k">def</span> <span class="nf">__next__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+    <span class="k">try</span><span class="p">:</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">current</span> <span class="o">+=</span> <span class="mi">1</span>
+      <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">array</span><span class="p">[</span><span class="bp">self</span><span class="o">.</span><span class="n">current</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span>
+    <span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
+      <span class="bp">self</span><span class="o">.</span><span class="n">current</span> <span class="o">=</span> <span class="mi">0</span>
+      <span class="k">raise</span> <span class="ne">StopIteration</span>
+
+<span class="n">it</span> <span class="o">=</span> <span class="n">ArrayIt</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">])</span>
+<span class="k">print</span><span class="p">(</span><span class="n">it</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span> <span class="c1"># =&gt; 3</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">it</span><span class="p">:</span>
+  <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">5</span><span class="p">:</span>
+    <span class="k">break</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="c1"># =&gt; 1, 2, 3, 4</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">it</span><span class="p">:</span>
+  <span class="k">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span> <span class="c1"># =&gt; 6, 7</span>
+</code></pre></div><p>So once again, having a class that implements <code>__getitem__</code> (indexable) and
+<code>__next__</code> along with <code>__iter__</code> (iterator) next to it at one time brings this
+behaviour.</p>
+<h3 id="the-full-code">The Full Code</h3>
+<p>The full implementation of our array class without it being an iterator is
+below:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Composite</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">array</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">def</span> <span class="fm">__len__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">array</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="fm">__getitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">array</span><span class="p">[</span><span class="n">key</span><span class="p">]</span>
+
+    <span class="k">def</span> <span class="fm">__setitem__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="k">try</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">array</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="k">except</span> <span class="ne">IndexError</span><span class="p">:</span>
+            <span class="k">assert</span> <span class="n">key</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">,</span> <span class="s1">&#39;key must be 0 or positive&#39;</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">array</span><span class="o">.</span><span class="n">extend</span><span class="p">(((</span><span class="n">key</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="nb">len</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">array</span><span class="p">))</span> <span class="o">*</span> <span class="p">[</span><span class="bp">None</span><span class="p">])</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">array</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+</code></pre></div><p>Source codes can be found under here: <a href="https://github.com/torokmark/python_custom_array">https://github.com/torokmark/python_custom_array</a></p>
+<p>Documentation can be found here:</p>
+<ul>
+<li><a href="https://www.python.org/dev/peps/pep-0234/#python-api-specification">https://www.python.org/dev/peps/pep-0234/#python-api-specification</a></li>
+<li><a href="https://docs.python.org/3/reference/datamodel.html#emulating-container-types">https://docs.python.org/3/reference/datamodel.html#emulating-container-types</a></li>
+<li><a href="https://docs.python.org/3/tutorial/datastructures.html">https://docs.python.org/3/tutorial/datastructures.html</a></li>
+</ul>
+
+  </div>
+</div>
+
+      <footer>
+        <hr>
+        <small>
+          &copy; 2020 .
+          Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> using the <a href="https://github.com/arjunkrishnababu96/basics" target="_blank">Basics</a> theme.
+        </small>
+      </footer>
+    </div> 
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
+

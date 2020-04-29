@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Numeric Literal on T[h]ink]er[ing</title>
+    <title>numeric literal on T[h]ink]er[ing</title>
     <link>/tags/numeric-literal/</link>
-    <description>Recent content in Numeric Literal on T[h]ink]er[ing</description>
+    <description>Recent content in numeric literal on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 05 Sep 2019 12:00:00 +0100</lastBuildDate>
@@ -13,10 +13,10 @@
     
     <item>
       <title>Do you know Java: Underscores in Numeric Literals</title>
-      <link>/post/do-you-know-java-underscores-in-numeric-literals/</link>
+      <link>/posts/do-you-know-java-underscores-in-numeric-literals/</link>
       <pubDate>Thu, 05 Sep 2019 12:00:00 +0100</pubDate>
       
-      <guid>/post/do-you-know-java-underscores-in-numeric-literals/</guid>
+      <guid>/posts/do-you-know-java-underscores-in-numeric-literals/</guid>
       <description>Underscore can be used in numeric literals to group digits in a numeric value. This way that can enhance code readability, decrease mistyping and helps visually keeping numeric values in range.
 Code readability is one of the most important viewpoints of software development. The more readable the code is, the faster that can be understood by developers.
 Java 7 introduced underscore as a comfortable way to separate digits of a numeric value into groups.</description>

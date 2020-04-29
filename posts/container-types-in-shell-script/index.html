@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154887805-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-154887805-1');
+        </script>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet"> 
+
+        <title>Container types in shell script</title>
+
+        <link rel="stylesheet" href="/css/stylesheet.css">
+    </head>
+    <body>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light">
+
+          
+          <span class="navbar-brand mb-0 h1"></span>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation" name="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link " href="/">Home</a>
+              
+              
+              <a class="nav-item nav-link " href="/contact/">Contact</a>
+              <a class="nav-item nav-link " href="/about/">About</a>
+            </div>
+          </div>
+        </nav>
+
+        <section id="page-title">
+          <h1><a href="/">T[h]ink]er[ing</a></h1>
+          <span id="author-name">
+            <h6><a href="/about/"></a></h6>
+          </span>
+        </section>
+
+
+<div class="blog-post">
+  <h1>Container types in shell script</h1>
+  <div class="blog-post-subheader">
+    <time>15 Aug 2019</time>
+  </div>
+  <div class="blog-post-content">
+    <p><strong>Shell script does not support container types like map, set, or queue, though
+with a third-party lib, presented here, we can use them in our scripts.</strong></p>
+<p>From time to time we need <em>map</em>, <em>queue</em> or any other kind of collections during
+our work. Shell script is definitely not the right choice to write applications
+but it may happen that we need some of the previously mentioned types to help
+our work.</p>
+<p>Though shell script weakly supports types at all, we can use <em>queues</em>, <em>stacks</em>,
+<em>maps</em> in an easy, readable, and maintanable way. In this post I present a module
+that can provide these functionalities to us. And we still in shell script.</p>
+<h3 id="container-types">Container Types</h3>
+<p>All types are collection types, like <code>map</code>, <code>queue</code>, <code>stack</code> or <code>set</code> or as we
+call it <code>aggregate</code> since <code>set</code> is a built-in function.</p>
+<h4 id="map">Map</h4>
+<p>Map provides a container over key-value pairs with well-known methods.</p>
+<p>As a usage, see below:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="nb">source</span> <span class="s1">&#39;map.sh&#39;</span>
+
+map create fruits
+map add fruits apple <span class="m">2</span> <span class="c1"># where apple is key and 2 is value</span>
+map size fruits <span class="c1"># returns 1</span>
+map get fruits apple <span class="c1"># 2</span>
+map values fruits <span class="c1"># 2</span>
+</code></pre></div><p>Map&rsquo;s API: <a href="https://github.com/torokmark/utils.sh/wiki/Map">https://github.com/torokmark/utils.sh/wiki/Map</a></p>
+<h4 id="aggregate">Aggregate</h4>
+<p>Aggregate is none other than the classic set. All elements are unique in this
+datastructure.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="nb">source</span> <span class="s1">&#39;aggregate.sh&#39;</span>
+
+aggregate add fruits apple
+aggregate add fruits apple
+aggregate size fruits <span class="c1"># 1</span>
+aggregate empty fruits <span class="c1"># false</span>
+
+aggregate contains fruits vegetables union_set
+aggregate intersection fruits vegetables intersection_set
+aggregate difference fruits vegetables
+
+aggregate destroy fruits
+</code></pre></div><p>Aggregate&rsquo;s API: <a href="https://github.com/torokmark/utils.sh/wiki/Aggregate">https://github.com/torokmark/utils.sh/wiki/Aggregate</a></p>
+<h4 id="stack">Stack</h4>
+<p>Stack is a classic LIFO datastructure with its well-known methods.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="nb">source</span> <span class="s1">&#39;stack.sh&#39;</span>
+
+stack create fruits
+stack push fruits apple
+stack push fruits pear
+stack size fruits <span class="c1"># 2</span>
+stack top fruits <span class="c1"># pear</span>
+stack empty fruits <span class="c1"># false</span>
+stack destroy fruits
+</code></pre></div><p>Stack&rsquo;s API: <a href="https://github.com/torokmark/utils.sh/wiki/Stack">https://github.com/torokmark/utils.sh/wiki/Stack</a></p>
+<h4 id="queue">Queue</h4>
+<p>Queue is a FIFO datastructure with appropriate methods to put, remove data or
+destroy the queue itself.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="nb">source</span> <span class="s1">&#39;queue.sh&#39;</span>
+<span class="c1"># I create a queue called fruits</span>
+queue create fruits
+<span class="c1"># put an element to queue</span>
+queue enqueue fruits apple
+queue peek fruits
+queue destroy fruits
+</code></pre></div><p>Queue&rsquo;s API: <a href="https://github.com/torokmark/utils.sh/wiki/Queue">https://github.com/torokmark/utils.sh/wiki/Queue</a></p>
+<p>Source code is available here: <a href="https://github.com/torokmark/utils.sh">https://github.com/torokmark/utils.sh</a><br>
+Github page is avaliable here: <a href="https://torokmark.github.io/utils.sh">https://torokmark.github.io/utils.sh</a></p>
+
+  </div>
+</div>
+
+      <footer>
+        <hr>
+        <small>
+          &copy; 2020 .
+          Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> using the <a href="https://github.com/arjunkrishnababu96/basics" target="_blank">Basics</a> theme.
+        </small>
+      </footer>
+    </div> 
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
+

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Design Patterns on T[h]ink]er[ing</title>
+    <title>design patterns on T[h]ink]er[ing</title>
     <link>/categories/design-patterns/</link>
-    <description>Recent content in Design Patterns on T[h]ink]er[ing</description>
+    <description>Recent content in design patterns on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 08 Jan 2019 12:00:00 +0100</lastBuildDate>
@@ -13,10 +13,10 @@
     
     <item>
       <title>The Multibuilder Pattern</title>
-      <link>/post/multibuilder-pattern/</link>
+      <link>/posts/multibuilder-pattern/</link>
       <pubDate>Tue, 08 Jan 2019 12:00:00 +0100</pubDate>
       
-      <guid>/post/multibuilder-pattern/</guid>
+      <guid>/posts/multibuilder-pattern/</guid>
       <description>In this post I would like to present a couple of solutions for builder pattern in python, and finally I show how I implemented a builder that I call multibuilder pattern.
 Builder pattern comes in handy when we need to set a lot of fields of an object and we do not want to use many methods with multiple parameters.
 All implementations are found in this repo: https://github.com/torokmark/builders_in_python

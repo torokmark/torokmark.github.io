@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Dynamic Type on T[h]ink]er[ing</title>
+    <title>dynamic type on T[h]ink]er[ing</title>
     <link>/tags/dynamic-type/</link>
-    <description>Recent content in Dynamic Type on T[h]ink]er[ing</description>
+    <description>Recent content in dynamic type on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 28 Dec 2019 12:00:00 +0100</lastBuildDate>
@@ -13,10 +13,10 @@
     
     <item>
       <title>Do you know Java: Arrays as Generic Containers</title>
-      <link>/post/do-you-know-java-arrays-as-generic-containers/</link>
+      <link>/posts/do-you-know-java-arrays-as-generic-containers/</link>
       <pubDate>Sat, 28 Dec 2019 12:00:00 +0100</pubDate>
       
-      <guid>/post/do-you-know-java-arrays-as-generic-containers/</guid>
+      <guid>/posts/do-you-know-java-arrays-as-generic-containers/</guid>
       <description>We can assign different type of elements to an array even the operation is accepted in compile-time, that raises error in run-time.
 Sometimes Java is tricky, even it has static type system, we can assign different type of elements to an array, which is accepted in compile time, even array contains different type than the types of the element.
 Covariance Let S &amp;lt;: T mean that S is subtype of T and covariant is S &amp;lt;: T =&amp;gt; S&#39; &amp;lt;: T&#39;.</description>

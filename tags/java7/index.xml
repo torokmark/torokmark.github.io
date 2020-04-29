@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Java7 on T[h]ink]er[ing</title>
+    <title>java7 on T[h]ink]er[ing</title>
     <link>/tags/java7/</link>
-    <description>Recent content in Java7 on T[h]ink]er[ing</description>
+    <description>Recent content in java7 on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Wed, 25 Mar 2020 12:00:00 +0100</lastBuildDate>
@@ -13,10 +13,10 @@
     
     <item>
       <title>Do you know Java: Catch Multiple Exceptions</title>
-      <link>/post/do-you-know-java-catch-multiple-exceptions/</link>
+      <link>/posts/do-you-know-java-catch-multiple-exceptions/</link>
       <pubDate>Wed, 25 Mar 2020 12:00:00 +0100</pubDate>
       
-      <guid>/post/do-you-know-java-catch-multiple-exceptions/</guid>
+      <guid>/posts/do-you-know-java-catch-multiple-exceptions/</guid>
       <description>Catching multiple exceptions is very useful when we are intended to do the same operations when they are raised.
 The feature introduced in Java 7 and by using it we can place exceptions in the same catch branch.
 The old way looked like as follows.

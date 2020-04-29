@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Javascript on T[h]ink]er[ing</title>
+    <title>javascript on T[h]ink]er[ing</title>
     <link>/categories/javascript/</link>
-    <description>Recent content in Javascript on T[h]ink]er[ing</description>
+    <description>Recent content in javascript on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 05 Aug 2019 12:00:00 +0100</lastBuildDate>
@@ -13,11 +13,12 @@
     
     <item>
       <title>Safe navigation in languages</title>
-      <link>/post/safe-navigation-in-languages/</link>
+      <link>/posts/safe-navigation-in-languages/</link>
       <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/post/safe-navigation-in-languages/</guid>
-      <description>As we saw in the previous post, Ruby development team introduced a safe navigation operator to get rid of painful chaining of objects, which could raise NPE in case of null object in the middle. But Ruby is not the only language that came up with this idea. Most of the languages have introduced this operator, usually called null propagation, or some other approaches to achieve the same goal.</description>
+      <guid>/posts/safe-navigation-in-languages/</guid>
+      <description>As we saw in the previous post, Ruby development team introduced a safe navigation operator to get rid of painful chaining of objects, which could raise NPE in case of null object in the middle. But Ruby is not the only language that came up with this idea. Most of the languages have introduced this operator, usually called null propagation, or some other approaches to achieve the same goal.
+In this post I write some snippets to demonstrate what other languages provide to prevent the exception raised by referencing to a null object.</description>
     </item>
     
   </channel>

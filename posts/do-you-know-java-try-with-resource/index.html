@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154887805-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-154887805-1');
+        </script>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet"> 
+
+        <title>Do you know Java: Use try-with-resource</title>
+
+        <link rel="stylesheet" href="/css/stylesheet.css">
+    </head>
+    <body>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light">
+
+          
+          <span class="navbar-brand mb-0 h1"></span>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation" name="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link " href="/">Home</a>
+              
+              
+              <a class="nav-item nav-link " href="/contact/">Contact</a>
+              <a class="nav-item nav-link " href="/about/">About</a>
+            </div>
+          </div>
+        </nav>
+
+        <section id="page-title">
+          <h1><a href="/">T[h]ink]er[ing</a></h1>
+          <span id="author-name">
+            <h6><a href="/about/"></a></h6>
+          </span>
+        </section>
+
+
+<div class="blog-post">
+  <h1>Do you know Java: Use try-with-resource</h1>
+  <div class="blog-post-subheader">
+    <time>24 Apr 2020</time>
+  </div>
+  <div class="blog-post-content">
+    <p><strong>Try-with-resource gives a safer way to handle exceptions and resources.</strong></p>
+<p>A quite big drawback of <em>try-catch-finally</em> that we have to close resource at
+the end, otherwise the resource remains locked - not always, but sometimes!</p>
+<p>So either we try not to forget to close the resouce, and place finally at the end,
+or apply something that does this job instead of us.</p>
+<h4 id="try-catch-finally">Try-Catch-Finally</h4>
+<p>The hard part comes in <code>finally</code>, which encloses a <em>try-catch</em>, and null check
+is very easy to forget.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">BufferedReader</span> <span class="n">br</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span> <span class="c1">// has to be initialized
+</span><span class="c1"></span><span class="k">try</span> <span class="o">{</span>
+    <span class="n">br</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="n">CharArrayReader</span><span class="o">(</span><span class="s">&#34;apple&#34;</span><span class="o">.</span><span class="na">toCharArray</span><span class="o">()));</span>
+    <span class="c1">// ...
+</span><span class="c1"></span><span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+<span class="o">}</span> <span class="k">finally</span> <span class="o">{</span>
+    <span class="k">try</span> <span class="o">{</span>  <span class="c1">// try-catch
+</span><span class="c1"></span>        <span class="k">if</span> <span class="o">(</span><span class="n">br</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// null-check comes handy!
+</span><span class="c1"></span>            <span class="n">br</span><span class="o">.</span><span class="na">close</span><span class="o">();</span> <span class="c1">// to be handled or declared
+</span><span class="c1"></span>        <span class="o">}</span>
+    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><h4 id="try-with-resource">Try-With-Resource</h4>
+<p>By using <em>try-with-resource</em>, we can take off this burden off our shoulders.
+That is a much shorter and cleaner way to achieve the same without risking
+that we leave resources unclosed and no need to check nulls either.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="k">try</span> <span class="o">(</span><span class="n">BufferedReader</span> <span class="n">br</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="n">CharArrayReader</span><span class="o">(</span><span class="s">&#34;apple&#34;</span><span class="o">.</span><span class="na">toCharArray</span><span class="o">())))</span> <span class="o">{</span>
+    <span class="c1">// ...
+</span><span class="c1"></span><span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+<span class="o">}</span>
+</code></pre></div><ol>
+<li>No need to write <code>finally</code></li>
+<li>Resource will be automatically closed (depends on the implementation)</li>
+<li>Resource has to implement <code>AutoClosable</code> interface</li>
+</ol>
+<h4 id="autoclosable">AutoClosable</h4>
+<p>What kinf of classes fit in the header of try-with-resource? Those that implement <code>AutoClosable</code></p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ClosableResource</span> <span class="kd">implements</span> <span class="n">AutoCloseable</span> <span class="o">{</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">close</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;closed!&#34;</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p><code>close</code> method is called automatically.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="k">try</span> <span class="o">(</span><span class="n">ClosableResource</span> <span class="n">cr</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ClosableResource</span><span class="o">())</span> <span class="o">{</span>
+    <span class="c1">// ...
+</span><span class="c1"></span><span class="o">}</span> <span class="k">catch</span> <span class="o">(...)</span> <span class="o">{</span>
+    <span class="c1">// ...
+</span><span class="c1"></span><span class="o">}</span>
+</code></pre></div><h4 id="closable-vs-autoclosable">Closable vs AutoClosable</h4>
+<p><code>AutoClosable</code> is the superinterface of <code>Closable</code>.</p>
+<p>While <code>Closable#close</code> throws <code>IOException</code>, the <code>AutoClosable#close</code> throws exceptions
+derived from <code>Exception</code>.</p>
+<p>Doc of <a href="https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/AutoCloseable.html">AutoClosable</a><br>
+Doc of <a href="https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/io/Closeable.html">Closable</a><br>
+Further reading about <a href="https://docs.oracle.com/javase/tutorial/essential/exceptions/tryResourceClose.html">try-with-resource</a></p>
+<p>Code can be found: <a href="https://github.com/torokmark/do-you-know-java">https://github.com/torokmark/do-you-know-java</a></p>
+
+  </div>
+</div>
+
+      <footer>
+        <hr>
+        <small>
+          &copy; 2020 .
+          Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> using the <a href="https://github.com/arjunkrishnababu96/basics" target="_blank">Basics</a> theme.
+        </small>
+      </footer>
+    </div> 
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
+

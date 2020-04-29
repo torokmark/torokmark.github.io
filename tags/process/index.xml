@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Process on T[h]ink]er[ing</title>
+    <title>process on T[h]ink]er[ing</title>
     <link>/tags/process/</link>
-    <description>Recent content in Process on T[h]ink]er[ing</description>
+    <description>Recent content in process on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Tue, 28 Apr 2020 12:00:00 +0100</lastBuildDate>
@@ -13,15 +13,15 @@
     
     <item>
       <title>Do you know Java: Execute Shell Commands</title>
-      <link>/post/do-you-know-java-execute-shell-commands/</link>
+      <link>/posts/do-you-know-java-execute-shell-commands/</link>
       <pubDate>Tue, 28 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/post/do-you-know-java-execute-shell-commands/</guid>
+      <guid>/posts/do-you-know-java-execute-shell-commands/</guid>
       <description>Two ways are shown here about how to execute shell scripts and commands with Java.
 In this post I am showing two ways to execute shell scripts or shell commands from a Java app.
 ProcessBuilder ProcessBuilder class has been created to create and handle operating system processes.
 ProcessBuilder#start method creates a single native process. Let us see how to do it.
-ProcessBuilder builder = new ProcessBuilder(); builder.command(&amp;#34;bash&amp;#34;, &amp;#34;-c&amp;#34;, &amp;#34;ping google.</description>
+ProcessBuilder builder = new ProcessBuilder(); builder.command(&amp;#34;bash&amp;#34;, &amp;#34;-c&amp;#34;, &amp;#34;ping google.com&amp;#34;); Process process; try { process = builder.</description>
     </item>
     
   </channel>

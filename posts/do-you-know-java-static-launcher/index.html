@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154887805-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-154887805-1');
+        </script>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet"> 
+
+        <title>Do you know Java: Instance from static launcher</title>
+
+        <link rel="stylesheet" href="/css/stylesheet.css">
+    </head>
+    <body>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light">
+
+          
+          <span class="navbar-brand mb-0 h1"></span>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation" name="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link " href="/">Home</a>
+              
+              
+              <a class="nav-item nav-link " href="/contact/">Contact</a>
+              <a class="nav-item nav-link " href="/about/">About</a>
+            </div>
+          </div>
+        </nav>
+
+        <section id="page-title">
+          <h1><a href="/">T[h]ink]er[ing</a></h1>
+          <span id="author-name">
+            <h6><a href="/about/"></a></h6>
+          </span>
+        </section>
+
+
+<div class="blog-post">
+  <h1>Do you know Java: Instance from static launcher</h1>
+  <div class="blog-post-subheader">
+    <time>18 Feb 2020</time>
+  </div>
+  <div class="blog-post-content">
+    <p><strong>Instantiate the current class from its entry point by using static method. Interesting, isn&rsquo;t it?</strong></p>
+<p>I came across with <em>JavaFX</em> recently, and I saw an example about how to use it. This made me think,
+and brought the following question in my mind. How can we make an instance of the class that is
+the starting point of our application and how can we call its instance methods.</p>
+<p>Let us see the code that we have if we start building a <em>javafx</em> application.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">Hello</span> <span class="kd">extends</span> <span class="n">Application</span> <span class="o">{</span>
+   
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">start</span><span class="o">(</span><span class="n">Stage</span> <span class="n">stage</span><span class="o">)</span> <span class="o">{</span>
+           
+    <span class="o">}</span>
+
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">launch</span><span class="o">(</span><span class="n">args</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>As it seems, <code>Application</code> has a <code>static</code> <code>launch</code> method and an instance level <code>start</code> method.
+In <code>launch</code> method we have to call <code>start</code> somehow.</p>
+<p>Here, I am presenting one approach to solve this.</p>
+<ol>
+<li>We should figure out where <code>launch</code> is called.</li>
+<li>Instantiate the class.</li>
+<li>Call <code>start</code> on the instance.</li>
+</ol>
+<h4 id="where-we-are-at">Where we are at.</h4>
+<p>Stacktrace can be a good start to figure out which class where we are at.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="k">new</span> <span class="n">Throwable</span><span class="o">().</span><span class="na">getStackTrace</span><span class="o">()[</span><span class="n">1</span><span class="o">].</span><span class="na">getClassName</span><span class="o">();</span>
+</code></pre></div><blockquote>
+<p>Instance of <code>Throwable</code> is not thrown!
+The index of <code>1</code> returns the caller as a <code>StackTraceElement</code> which will be <code>Hello</code> in our example.</p>
+</blockquote>
+<h4 id="instantiation">Instantiation</h4>
+<p>Now, we know the name of our class. Reflection can help us to make an instance out of it.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">Class</span><span class="o">.</span><span class="na">forName</span><span class="o">(</span><span class="n">className</span><span class="o">).</span><span class="na">getDeclaredConstructor</span><span class="o">().</span><span class="na">newInstance</span><span class="o">();</span>
+</code></pre></div><h4 id="call-start-method">Call <code>start</code> method</h4>
+<p>As we get the instance, and cast it to <code>Application</code>. Thanks for dynamic binding,
+called <code>start</code> method is the one that we implemented in the child class.</p>
+<h4 id="put-together">Put together</h4>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">String</span> <span class="n">className</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Throwable</span><span class="o">().</span><span class="na">getStackTrace</span><span class="o">()[</span><span class="n">1</span><span class="o">].</span><span class="na">getClassName</span><span class="o">();</span>
+<span class="n">Application</span> <span class="n">app</span><span class="o">;</span>
+<span class="n">app</span> <span class="o">=</span> <span class="o">(</span><span class="n">Application</span><span class="o">)</span> <span class="n">Class</span><span class="o">.</span><span class="na">forName</span><span class="o">(</span><span class="n">className</span><span class="o">).</span><span class="na">getDeclaredConstructor</span><span class="o">().</span><span class="na">newInstance</span><span class="o">();</span>
+<span class="n">app</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+</code></pre></div><p><a href="https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Throwable.html">Java 13 doc : Throwable</a><br>
+<a href="https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/StackTraceElement.html">Java 13 doc : StackTraceElement</a><br>
+<a href="https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Class.html">Java 13 doc : Class</a></p>
+<p><strong>Using stacktrace and reflection can be handy many times, as we saw here as well!</strong></p>
+<p>Code can be found: <a href="https://github.com/torokmark/do-you-know-java">https://github.com/torokmark/do-you-know-java</a></p>
+
+  </div>
+</div>
+
+      <footer>
+        <hr>
+        <small>
+          &copy; 2020 .
+          Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> using the <a href="https://github.com/arjunkrishnababu96/basics" target="_blank">Basics</a> theme.
+        </small>
+      </footer>
+    </div> 
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
+

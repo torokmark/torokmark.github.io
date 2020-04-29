@@ -1,149 +1,654 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/post/do-you-know-java-execute-shell-commands/</loc>
+    <loc>/categories/c/</loc>
+    <lastmod>2020-04-29T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/</loc>
+    <lastmod>2020-04-29T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/easter-egg/</loc>
+    <lastmod>2020-04-29T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/easter-egg-in-c/</loc>
+    <lastmod>2020-04-29T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/</loc>
+    <lastmod>2020-04-29T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/riddle/</loc>
+    <lastmod>2020-04-29T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/</loc>
+    <lastmod>2020-04-29T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/command/</loc>
     <lastmod>2020-04-28T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/do-you-know-java-daemon-thread/</loc>
+    <loc>/categories/do-you-know-java/</loc>
+    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/do-you-know-java-execute-shell-commands/</loc>
+    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/java/</loc>
+    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/process/</loc>
+    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/runtime/</loc>
+    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/script/</loc>
+    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/shell/</loc>
+    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/shell-command/</loc>
+    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/shell-script/</loc>
+    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/daemon-thread/</loc>
     <lastmod>2020-04-25T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/do-you-know-java-try-with-resource/</loc>
+    <loc>/posts/do-you-know-java-daemon-thread/</loc>
+    <lastmod>2020-04-25T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/infinite/</loc>
+    <lastmod>2020-04-25T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/thread/</loc>
+    <lastmod>2020-04-25T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/do-you-know-java-try-with-resource/</loc>
     <lastmod>2020-04-24T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/do-you-know-java-catch-multiple-exceptions/</loc>
+    <loc>/tags/exception/</loc>
+    <lastmod>2020-04-24T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/exception-handling/</loc>
+    <lastmod>2020-04-24T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/finally/</loc>
+    <lastmod>2020-04-24T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/try-with-resource/</loc>
+    <lastmod>2020-04-24T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/do-you-know-java-catch-multiple-exceptions/</loc>
     <lastmod>2020-03-25T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/do-you-know-java-static-launcher/</loc>
+    <loc>/tags/java7/</loc>
+    <lastmod>2020-03-25T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/do-you-know-java-static-launcher/</loc>
     <lastmod>2020-02-18T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/do-you-know-java-pecs/</loc>
+    <loc>/tags/instantiation/</loc>
+    <lastmod>2020-02-18T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/reflection/</loc>
+    <lastmod>2020-02-18T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/stack/</loc>
+    <lastmod>2020-02-18T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/stacktrace/</loc>
+    <lastmod>2020-02-18T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/static/</loc>
+    <lastmod>2020-02-18T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/consumer/</loc>
     <lastmod>2020-02-08T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/do-you-know-java-jshell/</loc>
+    <loc>/posts/do-you-know-java-pecs/</loc>
+    <lastmod>2020-02-08T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/generics/</loc>
+    <lastmod>2020-02-08T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/producer/</loc>
+    <lastmod>2020-02-08T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/wildcard/</loc>
+    <lastmod>2020-02-08T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/do-you-know-java-jshell/</loc>
     <lastmod>2020-01-05T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/do-you-know-java-arrays-as-generic-containers/</loc>
+    <loc>/tags/jshell/</loc>
+    <lastmod>2020-01-05T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/array/</loc>
     <lastmod>2019-12-28T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/do-you-know-java-parameter-validation/</loc>
+    <loc>/tags/arraystoreexception/</loc>
+    <lastmod>2019-12-28T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/do-you-know-java-arrays-as-generic-containers/</loc>
+    <lastmod>2019-12-28T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/dynamic-type/</loc>
+    <lastmod>2019-12-28T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/static-type/</loc>
+    <lastmod>2019-12-28T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/argument/</loc>
     <lastmod>2019-12-21T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/interview-map/</loc>
+    <loc>/tags/assert/</loc>
+    <lastmod>2019-12-21T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/assertion/</loc>
+    <lastmod>2019-12-21T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/do-you-know-java-parameter-validation/</loc>
+    <lastmod>2019-12-21T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/parameter/</loc>
+    <lastmod>2019-12-21T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/data-structure/</loc>
     <lastmod>2019-12-15T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/do-you-know-java-one-more-more-more-time/</loc>
+    <loc>/tags/hash/</loc>
+    <lastmod>2019-12-15T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/hashmap/</loc>
+    <lastmod>2019-12-15T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/interview/</loc>
+    <lastmod>2019-12-15T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/interview-map/</loc>
+    <lastmod>2019-12-15T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/linkedmap/</loc>
+    <lastmod>2019-12-15T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/binary-operator/</loc>
     <lastmod>2019-11-18T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/do-you-know-java-underscore-as-identifier/</loc>
+    <loc>/posts/do-you-know-java-one-more-more-more-time/</loc>
+    <lastmod>2019-11-18T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/operator/</loc>
+    <lastmod>2019-11-18T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/unary-operator/</loc>
+    <lastmod>2019-11-18T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/do-you-know-java-underscore-as-identifier/</loc>
     <lastmod>2019-10-28T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/python-struct-2/</loc>
+    <loc>/tags/identifier/</loc>
+    <lastmod>2019-10-28T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/underscore/</loc>
+    <lastmod>2019-10-28T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/variable-name/</loc>
+    <lastmod>2019-10-28T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/metaprogramming/</loc>
     <lastmod>2019-10-26T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/python-struct/</loc>
+    <loc>/categories/metaprogramming/</loc>
+    <lastmod>2019-10-26T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/openstruct/</loc>
+    <lastmod>2019-10-26T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/python/</loc>
+    <lastmod>2019-10-26T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/python-struct-2/</loc>
+    <lastmod>2019-10-26T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/struct/</loc>
+    <lastmod>2019-10-26T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/python-struct/</loc>
     <lastmod>2019-10-19T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/do-you-know-java-varargs-in-entry-point/</loc>
+    <loc>/posts/do-you-know-java-varargs-in-entry-point/</loc>
     <lastmod>2019-10-15T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/do-you-know-java-underscores-in-numeric-literals/</loc>
+    <loc>/tags/entry-point/</loc>
+    <lastmod>2019-10-15T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/varargs/</loc>
+    <lastmod>2019-10-15T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/do-you-know-java-underscores-in-numeric-literals/</loc>
     <lastmod>2019-09-05T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/do-you-know-java-single-source-file-code/</loc>
+    <loc>/tags/literal/</loc>
+    <lastmod>2019-09-05T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/numeric-literal/</loc>
+    <lastmod>2019-09-05T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/do-you-know-java-single-source-file-code/</loc>
     <lastmod>2019-08-28T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/rubys-or-operator-precedence/</loc>
+    <loc>/tags/single-source-file-code/</loc>
+    <lastmod>2019-08-28T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/operator-precedence/</loc>
     <lastmod>2019-08-23T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/container-types-in-shell-script/</loc>
+    <loc>/tags/or-operator/</loc>
+    <lastmod>2019-08-23T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/ruby/</loc>
+    <lastmod>2019-08-23T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/rubys-or-operator-precedence/</loc>
+    <lastmod>2019-08-23T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/bash/</loc>
     <lastmod>2019-08-15T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/do-you-know-java-entry-point-in-interface/</loc>
+    <loc>/tags/container-type/</loc>
+    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/container-types-in-shell-script/</loc>
+    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/map/</loc>
+    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/queue/</loc>
+    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/set/</loc>
+    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/shell/</loc>
+    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/string/</loc>
+    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/do-you-know-java-entry-point-in-interface/</loc>
     <lastmod>2019-08-09T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/safe-navigation-in-languages/</loc>
+    <loc>/tags/enum/</loc>
+    <lastmod>2019-08-09T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/interface/</loc>
+    <lastmod>2019-08-09T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/main-class/</loc>
+    <lastmod>2019-08-09T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/csharp/</loc>
     <lastmod>2019-08-05T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/ruby-benchmark-control-flows/</loc>
+    <loc>/tags/dictionary/</loc>
+    <lastmod>2019-08-05T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/embedded-objects/</loc>
+    <lastmod>2019-08-05T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/groovy/</loc>
+    <lastmod>2019-08-05T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/javascript/</loc>
+    <lastmod>2019-08-05T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/safe-navigation/</loc>
+    <lastmod>2019-08-05T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/safe-navigation-in-languages/</loc>
+    <lastmod>2019-08-05T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/benchmark/</loc>
     <lastmod>2019-08-03T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/do-you-know-java-double-brace-initialization/</loc>
+    <loc>/posts/ruby-benchmark-control-flows/</loc>
+    <lastmod>2019-08-03T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/ruby-benchmark/</loc>
+    <lastmod>2019-08-03T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/tool/</loc>
+    <lastmod>2019-08-03T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/anonymous-class/</loc>
     <lastmod>2019-07-28T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/safe-navigation-in-ruby/</loc>
+    <loc>/tags/derived-class/</loc>
+    <lastmod>2019-07-28T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/do-you-know-java-double-brace-initialization/</loc>
+    <lastmod>2019-07-28T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/double-brace-initialization/</loc>
+    <lastmod>2019-07-28T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/initialization/</loc>
+    <lastmod>2019-07-28T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/safe-navigation-in-ruby/</loc>
     <lastmod>2019-06-17T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/pythonic-way-count/</loc>
+    <loc>/tags/count/</loc>
     <lastmod>2019-04-09T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/assertion-framework-in-shell-script/</loc>
+    <loc>/tags/pythonic-way/</loc>
+    <lastmod>2019-04-09T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/pythonic-way-count/</loc>
+    <lastmod>2019-04-09T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/assert/</loc>
     <lastmod>2019-03-31T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/implementing-custom-array/</loc>
+    <loc>/tags/assert_equal/</loc>
+    <lastmod>2019-03-31T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/assertion-framework-in-shell-script/</loc>
+    <lastmod>2019-03-31T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/composition/</loc>
     <lastmod>2019-03-27T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/n-ary-routing/</loc>
+    <loc>/categories/design-principle/</loc>
+    <lastmod>2019-03-27T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/implementing-custom-array/</loc>
+    <lastmod>2019-03-27T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/inheritance/</loc>
+    <lastmod>2019-03-27T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/n-ary-routing/</loc>
     <lastmod>2019-03-19T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/multibuilder-pattern/</loc>
+    <loc>/tags/n-ary-tree/</loc>
+    <lastmod>2019-03-19T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/routing/</loc>
+    <lastmod>2019-03-19T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/builder/</loc>
+    <lastmod>2019-01-08T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/categories/design-patterns/</loc>
+    <lastmod>2019-01-08T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/multibuilder/</loc>
+    <lastmod>2019-01-08T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/posts/multibuilder-pattern/</loc>
     <lastmod>2019-01-08T12:00:00+01:00</lastmod>
   </url>
   
@@ -153,625 +658,38 @@
   </url>
   
   <url>
+    <loc>/</loc>
+    <lastmod>2019-01-01T17:51:15+01:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/contact/</loc>
     <lastmod>2019-01-01T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>/post/entity-best-practices/</loc>
-    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>/tags/anonymous-class/</loc>
-    <lastmod>2019-07-28T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/argument/</loc>
-    <lastmod>2019-12-21T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/array/</loc>
-    <lastmod>2019-12-28T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/arraystoreexception/</loc>
-    <lastmod>2019-12-28T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/assert/</loc>
-    <lastmod>2019-12-21T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/assert/</loc>
-    <lastmod>2019-03-31T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/assert_equal/</loc>
-    <lastmod>2019-03-31T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/assertion/</loc>
-    <lastmod>2019-12-21T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/bash/</loc>
-    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/benchmark/</loc>
-    <lastmod>2019-08-03T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>/categories/best-praciteces/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
-    <loc>/tags/binary-operator/</loc>
-    <lastmod>2019-11-18T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/builder/</loc>
-    <lastmod>2019-01-08T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/</loc>
-    <lastmod>2019-03-31T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/command/</loc>
-    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/composition/</loc>
-    <lastmod>2019-03-27T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/consumer/</loc>
-    <lastmod>2020-02-08T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/container-type/</loc>
-    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/count/</loc>
-    <lastmod>2019-04-09T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/csharp/</loc>
-    <lastmod>2019-08-05T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/daemon-thread/</loc>
-    <lastmod>2020-04-25T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/data-structure/</loc>
-    <lastmod>2019-12-15T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/derived-class/</loc>
-    <lastmod>2019-07-28T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/design-patterns/</loc>
-    <lastmod>2019-01-08T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/design-principle/</loc>
-    <lastmod>2019-03-27T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/dictionary/</loc>
-    <lastmod>2019-08-05T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/do-you-know-java/</loc>
-    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/double-brace-initialization/</loc>
-    <lastmod>2019-07-28T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/dynamic-type/</loc>
-    <lastmod>2019-12-28T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/embedded-objects/</loc>
-    <lastmod>2019-08-05T12:00:00+01:00</lastmod>
-    <priority>0</priority>
+    <loc>/posts/entity-best-practices/</loc>
+    <lastmod>2018-10-01T00:00:00+00:00</lastmod>
   </url>
   
   <url>
     <loc>/tags/entity/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/entry-point/</loc>
-    <lastmod>2019-10-15T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/enum/</loc>
-    <lastmod>2019-08-09T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/exception/</loc>
-    <lastmod>2019-12-21T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/exception-handling/</loc>
-    <lastmod>2020-04-24T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/finally/</loc>
-    <lastmod>2020-04-24T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/generics/</loc>
-    <lastmod>2020-02-08T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/groovy/</loc>
-    <lastmod>2019-08-05T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/hash/</loc>
-    <lastmod>2019-08-05T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/hashmap/</loc>
-    <lastmod>2019-12-15T12:00:00+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/hibernate/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/identifier/</loc>
-    <lastmod>2019-10-28T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/infinite/</loc>
-    <lastmod>2020-04-25T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/inheritance/</loc>
-    <lastmod>2019-03-27T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/initialization/</loc>
-    <lastmod>2019-07-28T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/instantiation/</loc>
-    <lastmod>2020-02-18T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/interface/</loc>
-    <lastmod>2019-08-09T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/interview/</loc>
-    <lastmod>2019-12-15T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/java/</loc>
-    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/java7/</loc>
-    <lastmod>2020-03-25T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/javascript/</loc>
-    <lastmod>2019-08-05T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/jshell/</loc>
-    <lastmod>2020-01-05T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/linkedmap/</loc>
-    <lastmod>2019-12-15T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/literal/</loc>
-    <lastmod>2019-09-05T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/main-class/</loc>
-    <lastmod>2019-08-09T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/map/</loc>
-    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/metaprogramming/</loc>
-    <lastmod>2019-10-26T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/metaprogramming/</loc>
-    <lastmod>2019-10-26T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/multibuilder/</loc>
-    <lastmod>2019-01-08T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/n-ary-tree/</loc>
-    <lastmod>2019-03-19T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/numeric-literal/</loc>
-    <lastmod>2019-09-05T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/openstruct/</loc>
-    <lastmod>2019-10-26T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/operator/</loc>
-    <lastmod>2019-11-18T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/operator-precedence/</loc>
-    <lastmod>2019-08-23T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/or-operator/</loc>
-    <lastmod>2019-08-23T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/parameter/</loc>
-    <lastmod>2019-12-21T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/post/</loc>
-    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/process/</loc>
-    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/producer/</loc>
-    <lastmod>2020-02-08T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/python/</loc>
-    <lastmod>2019-10-26T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/pythonic-way/</loc>
-    <lastmod>2019-04-09T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/queue/</loc>
-    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/reflection/</loc>
-    <lastmod>2020-02-18T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/routing/</loc>
-    <lastmod>2019-03-19T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/ruby/</loc>
-    <lastmod>2019-08-23T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/ruby-benchmark/</loc>
-    <lastmod>2019-08-03T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/runtime/</loc>
-    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/safe-navigation/</loc>
-    <lastmod>2019-08-05T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/script/</loc>
-    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/set/</loc>
-    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/shell/</loc>
-    <lastmod>2020-01-05T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/categories/shell/</loc>
-    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/shell-command/</loc>
-    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/shell-script/</loc>
-    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/single-source-file-code/</loc>
-    <lastmod>2019-08-28T12:00:00+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
     <loc>/tags/spring/</loc>
     <lastmod>2018-10-01T00:00:00+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/stack/</loc>
-    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/stacktrace/</loc>
-    <lastmod>2020-02-18T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/static/</loc>
-    <lastmod>2020-02-18T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/static-type/</loc>
-    <lastmod>2019-12-28T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/string/</loc>
-    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/struct/</loc>
-    <lastmod>2019-10-26T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/</loc>
-    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/</loc>
-    <lastmod>2019-07-28T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/thread/</loc>
-    <lastmod>2020-04-25T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/tool/</loc>
-    <lastmod>2019-08-03T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/try-with-resource/</loc>
-    <lastmod>2020-04-24T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/unary-operator/</loc>
-    <lastmod>2019-11-18T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/underscore/</loc>
-    <lastmod>2019-10-28T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/varargs/</loc>
-    <lastmod>2019-10-15T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/variable-name/</loc>
-    <lastmod>2019-10-28T12:00:00+01:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>/tags/wildcard/</loc>
-    <lastmod>2020-02-08T12:00:00+01:00</lastmod>
-    <priority>0</priority>
   </url>
   
 </urlset>

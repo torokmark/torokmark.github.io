@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Assert on T[h]ink]er[ing</title>
+    <title>assert on T[h]ink]er[ing</title>
     <link>/tags/assert/</link>
-    <description>Recent content in Assert on T[h]ink]er[ing</description>
+    <description>Recent content in assert on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 21 Dec 2019 12:00:00 +0100</lastBuildDate>
@@ -13,10 +13,10 @@
     
     <item>
       <title>Do you know Java: Parameter validation</title>
-      <link>/post/do-you-know-java-parameter-validation/</link>
+      <link>/posts/do-you-know-java-parameter-validation/</link>
       <pubDate>Sat, 21 Dec 2019 12:00:00 +0100</pubDate>
       
-      <guid>/post/do-you-know-java-parameter-validation/</guid>
+      <guid>/posts/do-you-know-java-parameter-validation/</guid>
       <description>Checking method parameters is crutial to avoid inconvenient situations with null pointers or undesired values. Assertion and exception handling are two ways to give feedback to users about parameters.
 What if we are intended to validate the parameters of a function? What if we liked to set up preconditions? How can we avoid working with null objects?
 In this post we take a look at two approaches. At first, we see how we can check parameters with assertion and what its pros and cons are.</description>
@@ -24,10 +24,10 @@ In this post we take a look at two approaches. At first, we see how we can check
     
     <item>
       <title>Assertion framework in shell script</title>
-      <link>/post/assertion-framework-in-shell-script/</link>
+      <link>/posts/assertion-framework-in-shell-script/</link>
       <pubDate>Sun, 31 Mar 2019 12:00:00 +0100</pubDate>
       
-      <guid>/post/assertion-framework-in-shell-script/</guid>
+      <guid>/posts/assertion-framework-in-shell-script/</guid>
       <description>A little lib that helps us checking our scripts with a unit test-like way.
 The Missing Tool Unit testing is part of a lot of projects&amp;rsquo; toolset. Though some part of the source code requires more attention than it gets payed. Shell scripts belong to them.
 How can we make sure that our scripts do what we expect they do?

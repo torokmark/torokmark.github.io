@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tool on T[h]ink]er[ing</title>
+    <title>tool on T[h]ink]er[ing</title>
     <link>/tags/tool/</link>
-    <description>Recent content in Tool on T[h]ink]er[ing</description>
+    <description>Recent content in tool on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 03 Aug 2019 12:00:00 +0100</lastBuildDate>
@@ -13,10 +13,10 @@
     
     <item>
       <title>Benchmarking Ruby Control Flows and Datastructures</title>
-      <link>/post/ruby-benchmark-control-flows/</link>
+      <link>/posts/ruby-benchmark-control-flows/</link>
       <pubDate>Sat, 03 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/post/ruby-benchmark-control-flows/</guid>
+      <guid>/posts/ruby-benchmark-control-flows/</guid>
       <description>Flexibility of Ruby brings many ways to achieve the same results, whether it is a loop, selection of elements from datastructures, or assignment of values.
 Performance is one of the major metrics of an application. Ruby provides a module, natively brought by the language, called Benchmark, which helps us to observe the code and reflects the potential bottlenecks.
 Sometimes that is very suprising which statement executes faster and which of them provides less performance.</description>

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Initialization on T[h]ink]er[ing</title>
+    <title>initialization on T[h]ink]er[ing</title>
     <link>/tags/initialization/</link>
-    <description>Recent content in Initialization on T[h]ink]er[ing</description>
+    <description>Recent content in initialization on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Jul 2019 12:00:00 +0100</lastBuildDate>
@@ -13,10 +13,10 @@
     
     <item>
       <title>Do you know Java: Double Brace Initialization</title>
-      <link>/post/do-you-know-java-double-brace-initialization/</link>
+      <link>/posts/do-you-know-java-double-brace-initialization/</link>
       <pubDate>Sun, 28 Jul 2019 12:00:00 +0100</pubDate>
       
-      <guid>/post/do-you-know-java-double-brace-initialization/</guid>
+      <guid>/posts/do-you-know-java-double-brace-initialization/</guid>
       <description>Double brace initialization is a very comfortable way to add values to a collection or pairs to a map instance instead of having multiple statements next to each other.
 One of the most popular languages, though Java is full of interesting parts that look wierd or unusual at first glance. In the sequence I call Do you know Java, I would like to present these less known or unexplained parts of the languages.</description>
     </item>

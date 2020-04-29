@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154887805-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-154887805-1');
+        </script>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet"> 
+
+        <title>Do you know Java: Single Source File Code</title>
+
+        <link rel="stylesheet" href="/css/stylesheet.css">
+    </head>
+    <body>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light">
+
+          
+          <span class="navbar-brand mb-0 h1"></span>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation" name="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link " href="/">Home</a>
+              
+              
+              <a class="nav-item nav-link " href="/contact/">Contact</a>
+              <a class="nav-item nav-link " href="/about/">About</a>
+            </div>
+          </div>
+        </nav>
+
+        <section id="page-title">
+          <h1><a href="/">T[h]ink]er[ing</a></h1>
+          <span id="author-name">
+            <h6><a href="/about/"></a></h6>
+          </span>
+        </section>
+
+
+<div class="blog-post">
+  <h1>Do you know Java: Single Source File Code</h1>
+  <div class="blog-post-subheader">
+    <time>28 Aug 2019</time>
+  </div>
+  <div class="blog-post-content">
+    <p><strong>Java 11 introduced a new way of executing applications. That gives us the
+opportunity to do it without excplicitely compiling it. What&rsquo;s more, Java code
+can be run as a script.</strong></p>
+<p>In Java, compilation and execution of an app are two different steps.
+The <code>java</code> command gives us the feeling that we work with an interpreter.</p>
+<h4 id="the-pre-java-11-era">The Pre-Java-11 era</h4>
+<p>Compilation of the source code and execution of the app are separated commands
+before Java 11, as we see here:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ javac Hello.java
+$ java Hello
+Hello World!
+</code></pre></div><h4 id="the-java-11-era">The Java 11 era</h4>
+<p>Java 11 compiles the code and then executes it in one step, though it does not
+generate <code>.class</code> file.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ java Hello.java
+Hello World!
+</code></pre></div><p>Java is strongly engaged to backward compatibility, hence, to use this <em>one-step</em>
+approach with other versions as well, we can use <code>--source</code> option to specify
+which version we are inteded to use.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ java Hello.java --source <span class="m">9</span>
+Hello World!
+</code></pre></div><p>Good old jars are used in the same way as they have been used previously:</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh">$ java -cp guava-28.0-jre.jar HelloList.java
+</code></pre></div><h4 id="shebang">Shebang</h4>
+<p>Shell scripts start with a commented line at the beginning of the file, in general.
+This commented line holds information to the executor about interpreter and its
+location. It can be <em>bash</em>, <em>python</em>, <em>ruby</em>, <em>perl</em>, you can name it.</p>
+<p>Java also can provide this functionality to execute applications.</p>
+<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="cp">#!/bin/java --source 11
+</span><span class="cp"></span>
+class Shebang <span class="o">{</span>
+    public static void main<span class="o">(</span>String<span class="o">[]</span> args<span class="o">)</span> <span class="o">{</span>
+        System.out.println<span class="o">(</span><span class="s2">&#34;Shebangs! Shebangs!&#34;</span><span class="o">)</span><span class="p">;</span>
+        System.out.println<span class="o">(</span><span class="s2">&#34;Num of arguments: &#34;</span> + args.length<span class="o">)</span><span class="p">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>I have to mention the followings:</p>
+<ul>
+<li>the source file has to be executable. To achieve this, execute <code>chmod +x Shebang</code> or <code>chmod 744 Shebang</code>,</li>
+<li>extension has to be nothing, <code>.sh</code> or some other, <code>.exe</code> is also good choice but not <code>.java</code>,</li>
+<li><code>--source</code> option is mandatory here, otherwise <code>ClassNotFoundException</code> exception is raised,</li>
+<li>with this option we can define which Java version we are intended to use.</li>
+</ul>
+<p><strong>Java 11 has brought a lot of funny features like <code>java</code> command can compile and execute
+the source file in one step. Source code is executable when shebang is on the top.</strong></p>
+<p>Code can be found: <a href="https://github.com/torokmark/do-you-know-java">https://github.com/torokmark/do-you-know-java</a></p>
+
+  </div>
+</div>
+
+      <footer>
+        <hr>
+        <small>
+          &copy; 2020 .
+          Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> using the <a href="https://github.com/arjunkrishnababu96/basics" target="_blank">Basics</a> theme.
+        </small>
+      </footer>
+    </div> 
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
+

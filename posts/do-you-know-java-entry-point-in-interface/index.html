@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154887805-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-154887805-1');
+        </script>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet"> 
+
+        <title>Do you know Java: Entry Point in Interface or Enum</title>
+
+        <link rel="stylesheet" href="/css/stylesheet.css">
+    </head>
+    <body>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light">
+
+          
+          <span class="navbar-brand mb-0 h1"></span>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation" name="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link " href="/">Home</a>
+              
+              
+              <a class="nav-item nav-link " href="/contact/">Contact</a>
+              <a class="nav-item nav-link " href="/about/">About</a>
+            </div>
+          </div>
+        </nav>
+
+        <section id="page-title">
+          <h1><a href="/">T[h]ink]er[ing</a></h1>
+          <span id="author-name">
+            <h6><a href="/about/"></a></h6>
+          </span>
+        </section>
+
+
+<div class="blog-post">
+  <h1>Do you know Java: Entry Point in Interface or Enum</h1>
+  <div class="blog-post-subheader">
+    <time>09 Aug 2019</time>
+  </div>
+  <div class="blog-post-content">
+    <p><strong>All Java applications start with a class and an entry point in it.
+We can change the class type to others.</strong></p>
+<p>All Java applications start at one common point. That is a class which has at
+least one static method, called <code>main</code> as an entry point of the app.
+This method is called by JRE after the class is loaded when we execute
+<code>java</code> command with the appropriate name of the class.</p>
+<p>Java has more than just primitive types and class types. There are interfaces,
+enums, different kind of reference types. Is it possible to use other types
+in the place of class to make the entry point available for JRE for calling it?</p>
+<h4 id="the-usual-way">The usual way</h4>
+<p>A well-known <em>Hello World</em> looks like this:</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Hello World!&#34;</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>After executing it, <code>Hello World!</code> is printed to the standard output.</p>
+<h4 id="interface">Interface</h4>
+<p>We have more choice than just a class to place code in it.
+Thank to Java 8 and onwards, interface is available to place static method in it.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">interface</span> <span class="nc">Main</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Hello Interface!&#34;</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>JRE calls the entry point as <code>Main.main(...)</code> without caring about the kind of <code>Main</code>.
+After the binary got executed, <code>Hello Interface!</code> pops up on the std out.</p>
+<h4 id="enum">Enum</h4>
+<p><code>enum</code> is also a class type, with some extras. All types that are defined as <code>enum</code>
+implicitly inhereted from <code>Enum</code> special class.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">enum</span> <span class="n">Main</span> <span class="o">{</span>
+    <span class="n">MAIN</span><span class="o">;</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Hello Enum!&#34;</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p><code>enum</code> requires to have at least one object, so the only reason why <code>MAIN</code> is there is this one.
+It can be empty object as well (<code>;</code>).
+It prints <code>Hello Enum!</code> to std out after we executed the <code>java Main</code> command.</p>
+<h4 id="compare-them">Compare them</h4>
+<p>The most common type where we place the entry point is definitely <strong>class</strong> type.
+Though class is very tempting to put a constructor and then instanciate the class
+inside the entry point. Grrhh! Do not do that! Keep it as clean as possible!
+Let <code>Main</code> be as a container of <code>main</code> method and that&rsquo;s it!</p>
+<p><strong>Interface</strong> does not allow us to define a constructor inside and instanciate it in
+<code>main</code> method. Obviously, it could be as an anonymous inner class, but also ugly.
+Hope, that is ugly enough for developers to not to do that. Definitely that is a code smell.</p>
+<p><strong>Enum</strong> brings the need to introduce at least one object with makes the code botched.
+Totally superfluous and misleading, hence <code>enum</code> is also not the choosen one.</p>
+<p><strong>Though I would go for interface, since it seems as the safest and less tempting for further
+code mish-mashing. On the other side this approach can be very misleading for
+those developers who are new in the world of Java 8.</strong></p>
+<p>Code can be found: <a href="https://github.com/torokmark/do-you-know-java">https://github.com/torokmark/do-you-know-java</a></p>
+
+  </div>
+</div>
+
+      <footer>
+        <hr>
+        <small>
+          &copy; 2020 .
+          Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> using the <a href="https://github.com/arjunkrishnababu96/basics" target="_blank">Basics</a> theme.
+        </small>
+      </footer>
+    </div> 
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
+

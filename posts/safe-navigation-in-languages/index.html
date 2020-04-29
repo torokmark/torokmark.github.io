@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154887805-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-154887805-1');
+        </script>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet"> 
+
+        <title>Safe navigation in languages</title>
+
+        <link rel="stylesheet" href="/css/stylesheet.css">
+    </head>
+    <body>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light">
+
+          
+          <span class="navbar-brand mb-0 h1"></span>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation" name="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link " href="/">Home</a>
+              
+              
+              <a class="nav-item nav-link " href="/contact/">Contact</a>
+              <a class="nav-item nav-link " href="/about/">About</a>
+            </div>
+          </div>
+        </nav>
+
+        <section id="page-title">
+          <h1><a href="/">T[h]ink]er[ing</a></h1>
+          <span id="author-name">
+            <h6><a href="/about/"></a></h6>
+          </span>
+        </section>
+
+
+<div class="blog-post">
+  <h1>Safe navigation in languages</h1>
+  <div class="blog-post-subheader">
+    <time>05 Aug 2019</time>
+  </div>
+  <div class="blog-post-content">
+    <p><strong>As we saw in the previous post, Ruby development team introduced a safe
+navigation operator to get rid of painful chaining of objects, which
+could raise NPE in case of null object in the middle.
+But Ruby is not the only language that came up with this idea. Most of the
+languages have introduced this operator, usually called null propagation,
+or some other approaches to achieve the same goal.</strong></p>
+<p>In this post I write some snippets to demonstrate what other languages provide
+to prevent the exception raised by referencing to a null object.</p>
+<p>Demonstration of the core problem again, comes below:</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">Person</span> <span class="n">john</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="o">(</span><span class="s">&#34;John&#34;</span><span class="o">,</span> <span class="n">54</span><span class="o">,</span> <span class="k">new</span> <span class="n">Address</span><span class="o">(</span><span class="s">&#34;Paris&#34;</span><span class="o">,</span> <span class="s">&#34;Champs-Elysee&#34;</span><span class="o">,</span> <span class="n">54</span><span class="o">));</span>
+<span class="n">Person</span> <span class="n">joe</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="o">(</span><span class="s">&#34;Joe&#34;</span><span class="o">,</span> <span class="n">54</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
+
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">john</span><span class="o">.</span><span class="na">getAddress</span><span class="o">().</span><span class="na">getStreet</span><span class="o">());</span> <span class="c1">// emits the street name
+</span><span class="c1"></span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">joe</span><span class="o">.</span><span class="na">getAddress</span><span class="o">().</span><span class="na">getStreet</span><span class="o">());</span> <span class="c1">// raises NPE
+</span></code></pre></div><p>And in case of hash, the same problem looks like that:</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Map</span><span class="o">&gt;</span> <span class="n">hsh</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Map</span><span class="o">&gt;();</span>
+
+<span class="c1">// ... add some pairs
+</span><span class="c1"></span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">hsh</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s">&#34;London&#34;</span><span class="o">).</span><span class="na">get</span><span class="o">(</span><span class="s">&#34;john&#34;</span><span class="o">));</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">hsh</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s">&#34;Paris&#34;</span><span class="o">).</span><span class="na">get</span><span class="o">(</span><span class="s">&#34;john&#34;</span><span class="o">));</span> <span class="c1">// raises NPE
+</span></code></pre></div><p>For testing I used a <code>Person</code> object which embeds an <code>Address</code> object which
+has some fields. I would like to get back the value of a field in the embedded
+object through the instance of <code>Person</code>.</p>
+<h3 id="java">Java</h3>
+<p>Java 8 introduced <code>Optional</code> type and method references. Combining these two
+we can safely traverse over the embedded objects without fearing to get NPE.</p>
+<p>If one of the values is null, it returns <code>'N/A'</code> by default.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">String</span> <span class="n">street</span> <span class="o">=</span> <span class="n">Optional</span><span class="o">.</span><span class="na">of</span><span class="o">(</span><span class="n">john</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">map</span><span class="o">(</span><span class="n">Person</span><span class="o">::</span><span class="n">getAddress</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">map</span><span class="o">(</span><span class="n">Address</span><span class="o">::</span><span class="n">getStreet</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">orElse</span><span class="o">(</span><span class="s">&#34;N/A&#34;</span><span class="o">);</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">street</span><span class="o">);</span>
+    <span class="n">street</span> <span class="o">=</span> <span class="n">Optional</span><span class="o">.</span><span class="na">of</span><span class="o">(</span><span class="n">joe</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">map</span><span class="o">(</span><span class="n">Person</span><span class="o">::</span><span class="n">getAddress</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">map</span><span class="o">(</span><span class="n">Address</span><span class="o">::</span><span class="n">getStreet</span><span class="o">)</span>
+        <span class="o">.</span><span class="na">orElse</span><span class="o">(</span><span class="s">&#34;N/A&#34;</span><span class="o">);</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">street</span><span class="o">);</span>
+</code></pre></div><p>In Java 8, a very handy method of <code>Map</code> got introduced, called <code>getOrDefault</code>.
+In case of it looks like as follows:</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">hsh</span><span class="o">.</span><span class="na">getOrDefault</span><span class="o">(</span><span class="s">&#34;London&#34;</span><span class="o">,</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Integer</span><span class="o">&gt;()).</span><span class="na">getOrDefault</span><span class="o">(</span><span class="s">&#34;john&#34;</span><span class="o">,</span> <span class="o">-</span><span class="n">1</span><span class="o">));</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">hsh</span><span class="o">.</span><span class="na">getOrDefault</span><span class="o">(</span><span class="s">&#34;Paris&#34;</span><span class="o">,</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Integer</span><span class="o">&gt;()).</span><span class="na">getOrDefault</span><span class="o">(</span><span class="s">&#34;john&#34;</span><span class="o">,</span> <span class="o">-</span><span class="n">1</span><span class="o">));</span>
+</code></pre></div><h3 id="groovy">Groovy</h3>
+<p>Groovy brings safe navigation operator as part of the language.</p>
+<div class="highlight"><pre class="chroma"><code class="language-groovy" data-lang="groovy"><span class="n">john</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="o">(</span><span class="s2">&#34;john&#34;</span><span class="o">,</span> <span class="mi">54</span><span class="o">,</span> <span class="k">new</span> <span class="n">Address</span><span class="o">(</span><span class="s2">&#34;London&#34;</span><span class="o">,</span> <span class="s2">&#34;Baker&#34;</span><span class="o">,</span> <span class="mi">221</span><span class="o">))</span>
+<span class="n">println</span><span class="o">(</span><span class="n">john</span><span class="o">.</span><span class="na">address</span><span class="o">.</span><span class="na">street</span><span class="o">)</span> <span class="c1">// Baker
+</span><span class="c1"></span><span class="n">joe</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="o">(</span><span class="s2">&#34;joe&#34;</span><span class="o">,</span> <span class="mi">54</span><span class="o">,</span> <span class="kc">null</span><span class="o">)</span>
+<span class="n">println</span><span class="o">(</span><span class="n">joe</span><span class="o">?.</span><span class="na">address</span><span class="o">?.</span><span class="na">street</span><span class="o">)</span> <span class="c1">// though address is null it is not raising NPE
+</span></code></pre></div><p>Here there are two options, one would go for <code>getAt</code> and null propagation
+operator (<code>?.</code> ) is applied on the returned object. Unfortunately it does
+not return a default object. <code>get</code> method returns its second parameter if key
+does not exist.</p>
+<div class="highlight"><pre class="chroma"><code class="language-groovy" data-lang="groovy"><span class="n">println</span><span class="o">(</span><span class="n">cities</span><span class="o">.</span><span class="na">getAt</span><span class="o">(</span><span class="s1">&#39;Paris&#39;</span><span class="o">)?.</span><span class="na">getAt</span><span class="o">(</span><span class="s1">&#39;joe&#39;</span><span class="o">)?.</span><span class="na">getAt</span><span class="o">(</span><span class="s1">&#39;age&#39;</span><span class="o">))</span>
+<span class="n">println</span><span class="o">(</span><span class="n">cities</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s1">&#39;Paris&#39;</span><span class="o">,</span> <span class="o">[:]).</span><span class="na">get</span><span class="o">(</span><span class="s1">&#39;joe&#39;</span><span class="o">,</span> <span class="o">[:]).</span><span class="na">get</span><span class="o">(</span><span class="s1">&#39;age&#39;</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">))</span>
+</code></pre></div><h3 id="python">Python</h3>
+<p>Python does not support null propagation on embedded objects, but it supports
+returning default values if key does not exist in the dictionary.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="n">cities</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;London&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;joe&#39;</span><span class="p">))</span>
+<span class="k">print</span><span class="p">(</span><span class="n">cities</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;Paris&#39;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;joe&#39;</span><span class="p">,</span> <span class="s1">&#39;N/A&#39;</span><span class="p">))</span>
+</code></pre></div><h3 id="c-">C#</h3>
+<p>Safe navigation in C# looks like:</p>
+<div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">john</span><span class="p">?.</span><span class="n">Address</span><span class="p">?.</span><span class="n">Street</span> <span class="p">??</span> <span class="s">&#34;Portobello&#34;</span><span class="p">);</span>
+<span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">joe</span><span class="p">?.</span><span class="n">Address</span><span class="p">?.</span><span class="n">Street</span> <span class="p">??</span> <span class="s">&#34;Portobello&#34;</span><span class="p">);</span>
+</code></pre></div><p>The <code>??</code> operator ensures that in case of null or falsy value, the printed text
+will be the right operand.</p>
+<p>Though C# provides <code>TryGetValue</code>  which can be used for getting default values,
+though it is not available for chaining.</p>
+<h3 id="javascript">Javascript</h3>
+<p>Both the dot notation and index support are available in Javascript to read
+fields of an object. Since objects acts as a dictionary, index support can be
+used to reach fields.</p>
+<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(((</span><span class="nx">joe</span> <span class="o">||</span> <span class="p">{}).</span><span class="nx">address</span> <span class="o">||</span> <span class="p">{}).</span><span class="nx">street</span> <span class="o">||</span> <span class="s1">&#39;Portobello&#39;</span><span class="p">);</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(((</span><span class="nx">joe</span> <span class="o">||</span> <span class="p">{})[</span><span class="s1">&#39;address&#39;</span><span class="p">]</span> <span class="o">||</span> <span class="p">{})[</span><span class="s1">&#39;street&#39;</span><span class="p">]</span> <span class="o">||</span> <span class="s1">&#39;Portobello&#39;</span> <span class="p">)</span>
+</code></pre></div><p><strong>In this post we have got some ideas how to handle null propagation in
+different languages.</strong></p>
+<p><em>I took the latest versions of the languages. If you are awaire of additional
+solutions either in these languages or in others, feel free to fork-add-pr!</em></p>
+<p>Codes can be found: <a href="https://github.com/torokmark/safe-navigation-in-languages">https://github.com/torokmark/safe-navigation-in-languages</a></p>
+
+  </div>
+</div>
+
+      <footer>
+        <hr>
+        <small>
+          &copy; 2020 .
+          Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> using the <a href="https://github.com/arjunkrishnababu96/basics" target="_blank">Basics</a> theme.
+        </small>
+      </footer>
+    </div> 
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
+

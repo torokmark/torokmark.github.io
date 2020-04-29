@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on T[h]ink]er[ing</title>
@@ -6,67 +6,22 @@
     <description>Recent content in Categories on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 31 Mar 2019 12:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2020 12:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Assert</title>
-      <link>/categories/assert/</link>
-      <pubDate>Sun, 31 Mar 2019 12:00:00 +0100</pubDate>
+      <title>c</title>
+      <link>/categories/c/</link>
+      <pubDate>Wed, 29 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/categories/assert/</guid>
+      <guid>/categories/c/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Bash</title>
-      <link>/categories/bash/</link>
-      <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/categories/bash/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Best Praciteces</title>
-      <link>/categories/best-praciteces/</link>
-      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/categories/best-praciteces/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Csharp</title>
-      <link>/categories/csharp/</link>
-      <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/categories/csharp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Design Patterns</title>
-      <link>/categories/design-patterns/</link>
-      <pubDate>Tue, 08 Jan 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/categories/design-patterns/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Design Principle</title>
-      <link>/categories/design-principle/</link>
-      <pubDate>Wed, 27 Mar 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/categories/design-principle/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Do You Know Java</title>
+      <title>do you know java</title>
       <link>/categories/do-you-know-java/</link>
       <pubDate>Tue, 28 Apr 2020 12:00:00 +0100</pubDate>
       
@@ -75,25 +30,7 @@
     </item>
     
     <item>
-      <title>Groovy</title>
-      <link>/categories/groovy/</link>
-      <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/categories/groovy/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Interview</title>
-      <link>/categories/interview/</link>
-      <pubDate>Sun, 15 Dec 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/categories/interview/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Java</title>
+      <title>java</title>
       <link>/categories/java/</link>
       <pubDate>Tue, 28 Apr 2020 12:00:00 +0100</pubDate>
       
@@ -102,16 +39,16 @@
     </item>
     
     <item>
-      <title>Javascript</title>
-      <link>/categories/javascript/</link>
-      <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
+      <title>interview</title>
+      <link>/categories/interview/</link>
+      <pubDate>Sun, 15 Dec 2019 12:00:00 +0100</pubDate>
       
-      <guid>/categories/javascript/</guid>
+      <guid>/categories/interview/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Metaprogramming</title>
+      <title>metaprogramming</title>
       <link>/categories/metaprogramming/</link>
       <pubDate>Sat, 26 Oct 2019 12:00:00 +0100</pubDate>
       
@@ -120,7 +57,7 @@
     </item>
     
     <item>
-      <title>Python</title>
+      <title>python</title>
       <link>/categories/python/</link>
       <pubDate>Sat, 26 Oct 2019 12:00:00 +0100</pubDate>
       
@@ -129,16 +66,7 @@
     </item>
     
     <item>
-      <title>Routing</title>
-      <link>/categories/routing/</link>
-      <pubDate>Tue, 19 Mar 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/categories/routing/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Ruby</title>
+      <title>ruby</title>
       <link>/categories/ruby/</link>
       <pubDate>Fri, 23 Aug 2019 12:00:00 +0100</pubDate>
       
@@ -147,7 +75,52 @@
     </item>
     
     <item>
-      <title>Ruby Benchmark</title>
+      <title>bash</title>
+      <link>/categories/bash/</link>
+      <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/categories/bash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shell</title>
+      <link>/categories/shell/</link>
+      <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/categories/shell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>csharp</title>
+      <link>/categories/csharp/</link>
+      <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/categories/csharp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>groovy</title>
+      <link>/categories/groovy/</link>
+      <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/categories/groovy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>javascript</title>
+      <link>/categories/javascript/</link>
+      <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/categories/javascript/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ruby benchmark</title>
       <link>/categories/ruby-benchmark/</link>
       <pubDate>Sat, 03 Aug 2019 12:00:00 +0100</pubDate>
       
@@ -156,11 +129,47 @@
     </item>
     
     <item>
-      <title>Shell</title>
-      <link>/categories/shell/</link>
-      <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
+      <title>assert</title>
+      <link>/categories/assert/</link>
+      <pubDate>Sun, 31 Mar 2019 12:00:00 +0100</pubDate>
       
-      <guid>/categories/shell/</guid>
+      <guid>/categories/assert/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>design principle</title>
+      <link>/categories/design-principle/</link>
+      <pubDate>Wed, 27 Mar 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/categories/design-principle/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>routing</title>
+      <link>/categories/routing/</link>
+      <pubDate>Tue, 19 Mar 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/categories/routing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>design patterns</title>
+      <link>/categories/design-patterns/</link>
+      <pubDate>Tue, 08 Jan 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/categories/design-patterns/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>best praciteces</title>
+      <link>/categories/best-praciteces/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/best-praciteces/</guid>
       <description></description>
     </item>
     

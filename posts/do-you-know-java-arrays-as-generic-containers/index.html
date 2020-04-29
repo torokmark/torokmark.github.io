@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154887805-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-154887805-1');
+        </script>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet"> 
+
+        <title>Do you know Java: Arrays as Generic Containers</title>
+
+        <link rel="stylesheet" href="/css/stylesheet.css">
+    </head>
+    <body>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light">
+
+          
+          <span class="navbar-brand mb-0 h1"></span>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation" name="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link " href="/">Home</a>
+              
+              
+              <a class="nav-item nav-link " href="/contact/">Contact</a>
+              <a class="nav-item nav-link " href="/about/">About</a>
+            </div>
+          </div>
+        </nav>
+
+        <section id="page-title">
+          <h1><a href="/">T[h]ink]er[ing</a></h1>
+          <span id="author-name">
+            <h6><a href="/about/"></a></h6>
+          </span>
+        </section>
+
+
+<div class="blog-post">
+  <h1>Do you know Java: Arrays as Generic Containers</h1>
+  <div class="blog-post-subheader">
+    <time>28 Dec 2019</time>
+  </div>
+  <div class="blog-post-content">
+    <p><strong>We can assign different type of elements to an array even the operation is accepted
+in compile-time, that raises error in run-time.</strong></p>
+<p>Sometimes Java is tricky, even it has static type system, we can assign
+different type of elements to an array, which is accepted in compile time, even
+array contains different type than the types of the element.</p>
+<h3 id="covariance">Covariance</h3>
+<p>Let <code>S &lt;: T</code> mean that <code>S</code> is subtype of <code>T</code> and <em>covariant</em> is <code>S &lt;: T =&gt; S' &lt;: T'</code>.</p>
+<p>In Java, array subtyping is <em>covariant</em>, that means that type <code>S[]</code> is considered
+to be a subtype of <code>T[]</code> whenever <code>S</code> is a subtype of <code>T</code>. Hence, <code>S &lt;: T =&gt; S[] &lt;: T[]</code>.</p>
+<h3 id="how-it-works">How it works</h3>
+<p>Since, <code>String &lt;: Object</code>, then <code>String[] &lt;: Object[]</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">String</span> <span class="n">fruit</span> <span class="o">=</span> <span class="s">&#34;apple&#34;</span><span class="o">;</span>
+<span class="n">Object</span> <span class="n">tool</span> <span class="o">=</span> <span class="n">fruit</span><span class="o">;</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">Object</span><span class="o">[]</span> <span class="n">tools</span> <span class="o">=</span> <span class="o">{</span><span class="s">&#34;hammer&#34;</span><span class="o">,</span> <span class="s">&#34;screwdriver&#34;</span><span class="o">};</span>
+<span class="n">String</span><span class="o">[]</span> <span class="n">fruits</span> <span class="o">=</span> <span class="o">{</span><span class="s">&#34;apple&#34;</span><span class="o">,</span> <span class="s">&#34;plum&#34;</span><span class="o">};</span>
+
+<span class="n">tools</span><span class="o">[</span><span class="n">1</span><span class="o">]</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">MAX_VALUE</span><span class="o">;</span>  <span class="c1">// tools: type: Object[], value: {&#34;hammer&#34;, Integer(1)}
+</span><span class="c1"></span>
+<span class="n">tools</span> <span class="o">=</span> <span class="n">fruits</span><span class="o">;</span>  <span class="c1">// tools: type: String[], value: {&#34;apple&#34;, &#34;plum&#34;}
+</span></code></pre></div><p>Here, <code>tools</code> is a reference to an array that contains <code>String</code> objects.
+Since the static type of the elements in the array is <code>Object</code>, we can easily
+assign new element to the array which type is either <code>Object</code> or one of its
+subtype.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">Object</span><span class="o">[]</span> <span class="n">tools</span> <span class="o">=</span> <span class="o">{</span><span class="s">&#34;hammer&#34;</span><span class="o">,</span> <span class="s">&#34;screwdriver&#34;</span><span class="o">};</span>
+<span class="n">String</span><span class="o">[]</span> <span class="n">fruits</span> <span class="o">=</span> <span class="o">{</span><span class="s">&#34;apple&#34;</span><span class="o">,</span> <span class="s">&#34;plum&#34;</span><span class="o">};</span>
+
+<span class="n">tools</span><span class="o">[</span><span class="n">1</span><span class="o">]</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">MAX_VALUE</span><span class="o">;</span>  <span class="c1">// tools: type: Object[], value: {&#34;hammer&#34;, Integer(1)}
+</span><span class="c1"></span>
+<span class="n">tools</span> <span class="o">=</span> <span class="n">fruits</span><span class="o">;</span>  <span class="c1">// tools: type: String[], value: {&#34;apple&#34;, &#34;plum&#34;}
+</span><span class="c1"></span>
+<span class="n">tools</span><span class="o">[</span><span class="n">1</span><span class="o">]</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">MAX_VALUE</span><span class="o">;</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">Exception</span> <span class="n">in</span> <span class="n">thread</span> <span class="s">&#34;main&#34;</span> <span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">ArrayStoreException</span><span class="o">:</span> <span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">Integer</span>
+</code></pre></div><ul>
+<li>Though, static type is <code>Object[]</code>, its dynamic type is <code>String[]</code></li>
+<li>No compile time exception! Exception occured in runtime! It is way too late!</li>
+</ul>
+<p>Unfortunately, arrays as containers are not type-safe, and we, developers, have to
+take the responsibility to make sure that read and write operations are type-safe.
+It does not support rich functionality like <code>List</code>, <code>Set</code>, or <code>Queue</code> do, and
+we are responsible to extend that if number of elements reach the capacity.</p>
+<p><strong>Arrays as generic containers are not type-safe, and do not support type-safe
+read and write operations in compie-time.</strong></p>
+<p>Code can be found: <a href="https://github.com/torokmark/do-you-know-java">https://github.com/torokmark/do-you-know-java</a></p>
+
+  </div>
+</div>
+
+      <footer>
+        <hr>
+        <small>
+          &copy; 2020 .
+          Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> using the <a href="https://github.com/arjunkrishnababu96/basics" target="_blank">Basics</a> theme.
+        </small>
+      </footer>
+    </div> 
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
+

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on T[h]ink]er[ing</title>
@@ -6,103 +6,31 @@
     <description>Recent content in Tags on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 28 Jul 2019 12:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Wed, 29 Apr 2020 12:00:00 +0100</lastBuildDate>
     
 	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Anonymous Class</title>
-      <link>/tags/anonymous-class/</link>
-      <pubDate>Sun, 28 Jul 2019 12:00:00 +0100</pubDate>
+      <title>easter egg</title>
+      <link>/tags/easter-egg/</link>
+      <pubDate>Wed, 29 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/anonymous-class/</guid>
+      <guid>/tags/easter-egg/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Argument</title>
-      <link>/tags/argument/</link>
-      <pubDate>Sat, 21 Dec 2019 12:00:00 +0100</pubDate>
+      <title>riddle</title>
+      <link>/tags/riddle/</link>
+      <pubDate>Wed, 29 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/argument/</guid>
+      <guid>/tags/riddle/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Array</title>
-      <link>/tags/array/</link>
-      <pubDate>Sat, 28 Dec 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/array/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Arraystoreexception</title>
-      <link>/tags/arraystoreexception/</link>
-      <pubDate>Sat, 28 Dec 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/arraystoreexception/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Assert</title>
-      <link>/tags/assert/</link>
-      <pubDate>Sat, 21 Dec 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/assert/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Assert_equal</title>
-      <link>/tags/assert_equal/</link>
-      <pubDate>Sun, 31 Mar 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/assert_equal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Assertion</title>
-      <link>/tags/assertion/</link>
-      <pubDate>Sat, 21 Dec 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/assertion/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Benchmark</title>
-      <link>/tags/benchmark/</link>
-      <pubDate>Sat, 03 Aug 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/benchmark/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Binary Operator</title>
-      <link>/tags/binary-operator/</link>
-      <pubDate>Mon, 18 Nov 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/binary-operator/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Builder</title>
-      <link>/tags/builder/</link>
-      <pubDate>Tue, 08 Jan 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/builder/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Command</title>
+      <title>command</title>
       <link>/tags/command/</link>
       <pubDate>Tue, 28 Apr 2020 12:00:00 +0100</pubDate>
       
@@ -111,385 +39,7 @@
     </item>
     
     <item>
-      <title>Composition</title>
-      <link>/tags/composition/</link>
-      <pubDate>Wed, 27 Mar 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/composition/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Consumer</title>
-      <link>/tags/consumer/</link>
-      <pubDate>Sat, 08 Feb 2020 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/consumer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Container Type</title>
-      <link>/tags/container-type/</link>
-      <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/container-type/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Count</title>
-      <link>/tags/count/</link>
-      <pubDate>Tue, 09 Apr 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/count/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Daemon Thread</title>
-      <link>/tags/daemon-thread/</link>
-      <pubDate>Sat, 25 Apr 2020 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/daemon-thread/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data Structure</title>
-      <link>/tags/data-structure/</link>
-      <pubDate>Sun, 15 Dec 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/data-structure/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Derived Class</title>
-      <link>/tags/derived-class/</link>
-      <pubDate>Sun, 28 Jul 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/derived-class/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dictionary</title>
-      <link>/tags/dictionary/</link>
-      <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/dictionary/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Double Brace Initialization</title>
-      <link>/tags/double-brace-initialization/</link>
-      <pubDate>Sun, 28 Jul 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/double-brace-initialization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Dynamic Type</title>
-      <link>/tags/dynamic-type/</link>
-      <pubDate>Sat, 28 Dec 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/dynamic-type/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Embedded Objects</title>
-      <link>/tags/embedded-objects/</link>
-      <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/embedded-objects/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Entity</title>
-      <link>/tags/entity/</link>
-      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/entity/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Entry Point</title>
-      <link>/tags/entry-point/</link>
-      <pubDate>Tue, 15 Oct 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/entry-point/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Enum</title>
-      <link>/tags/enum/</link>
-      <pubDate>Fri, 09 Aug 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/enum/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Exception</title>
-      <link>/tags/exception/</link>
-      <pubDate>Sat, 21 Dec 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/exception/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Exception Handling</title>
-      <link>/tags/exception-handling/</link>
-      <pubDate>Fri, 24 Apr 2020 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/exception-handling/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Finally</title>
-      <link>/tags/finally/</link>
-      <pubDate>Fri, 24 Apr 2020 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/finally/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Generics</title>
-      <link>/tags/generics/</link>
-      <pubDate>Sat, 08 Feb 2020 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/generics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hash</title>
-      <link>/tags/hash/</link>
-      <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/hash/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hashmap</title>
-      <link>/tags/hashmap/</link>
-      <pubDate>Sun, 15 Dec 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/hashmap/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Hibernate</title>
-      <link>/tags/hibernate/</link>
-      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/tags/hibernate/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Identifier</title>
-      <link>/tags/identifier/</link>
-      <pubDate>Mon, 28 Oct 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/identifier/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Infinite</title>
-      <link>/tags/infinite/</link>
-      <pubDate>Sat, 25 Apr 2020 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/infinite/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Inheritance</title>
-      <link>/tags/inheritance/</link>
-      <pubDate>Wed, 27 Mar 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/inheritance/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Initialization</title>
-      <link>/tags/initialization/</link>
-      <pubDate>Sun, 28 Jul 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/initialization/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Instantiation</title>
-      <link>/tags/instantiation/</link>
-      <pubDate>Tue, 18 Feb 2020 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/instantiation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Interface</title>
-      <link>/tags/interface/</link>
-      <pubDate>Fri, 09 Aug 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/interface/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Java7</title>
-      <link>/tags/java7/</link>
-      <pubDate>Wed, 25 Mar 2020 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/java7/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Jshell</title>
-      <link>/tags/jshell/</link>
-      <pubDate>Sun, 05 Jan 2020 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/jshell/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Linkedmap</title>
-      <link>/tags/linkedmap/</link>
-      <pubDate>Sun, 15 Dec 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/linkedmap/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Literal</title>
-      <link>/tags/literal/</link>
-      <pubDate>Thu, 05 Sep 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/literal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Main Class</title>
-      <link>/tags/main-class/</link>
-      <pubDate>Fri, 09 Aug 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/main-class/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Map</title>
-      <link>/tags/map/</link>
-      <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/map/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Metaprogramming</title>
-      <link>/tags/metaprogramming/</link>
-      <pubDate>Sat, 26 Oct 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/metaprogramming/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Multibuilder</title>
-      <link>/tags/multibuilder/</link>
-      <pubDate>Tue, 08 Jan 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/multibuilder/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>N Ary Tree</title>
-      <link>/tags/n-ary-tree/</link>
-      <pubDate>Tue, 19 Mar 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/n-ary-tree/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Numeric Literal</title>
-      <link>/tags/numeric-literal/</link>
-      <pubDate>Thu, 05 Sep 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/numeric-literal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Openstruct</title>
-      <link>/tags/openstruct/</link>
-      <pubDate>Sat, 26 Oct 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/openstruct/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Operator</title>
-      <link>/tags/operator/</link>
-      <pubDate>Mon, 18 Nov 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/operator/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Operator Precedence</title>
-      <link>/tags/operator-precedence/</link>
-      <pubDate>Fri, 23 Aug 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/operator-precedence/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Or Operator</title>
-      <link>/tags/or-operator/</link>
-      <pubDate>Fri, 23 Aug 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/or-operator/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Parameter</title>
-      <link>/tags/parameter/</link>
-      <pubDate>Sat, 21 Dec 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/parameter/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Process</title>
+      <title>process</title>
       <link>/tags/process/</link>
       <pubDate>Tue, 28 Apr 2020 12:00:00 +0100</pubDate>
       
@@ -498,43 +48,7 @@
     </item>
     
     <item>
-      <title>Producer</title>
-      <link>/tags/producer/</link>
-      <pubDate>Sat, 08 Feb 2020 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/producer/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Pythonic Way</title>
-      <link>/tags/pythonic-way/</link>
-      <pubDate>Tue, 09 Apr 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/pythonic-way/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Queue</title>
-      <link>/tags/queue/</link>
-      <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/queue/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Reflection</title>
-      <link>/tags/reflection/</link>
-      <pubDate>Tue, 18 Feb 2020 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/reflection/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Runtime</title>
+      <title>runtime</title>
       <link>/tags/runtime/</link>
       <pubDate>Tue, 28 Apr 2020 12:00:00 +0100</pubDate>
       
@@ -543,16 +57,7 @@
     </item>
     
     <item>
-      <title>Safe Navigation</title>
-      <link>/tags/safe-navigation/</link>
-      <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/safe-navigation/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Script</title>
+      <title>script</title>
       <link>/tags/script/</link>
       <pubDate>Tue, 28 Apr 2020 12:00:00 +0100</pubDate>
       
@@ -561,25 +66,16 @@
     </item>
     
     <item>
-      <title>Set</title>
-      <link>/tags/set/</link>
-      <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/set/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Shell</title>
+      <title>shell</title>
       <link>/tags/shell/</link>
-      <pubDate>Sun, 05 Jan 2020 12:00:00 +0100</pubDate>
+      <pubDate>Tue, 28 Apr 2020 12:00:00 +0100</pubDate>
       
       <guid>/tags/shell/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Shell Command</title>
+      <title>shell command</title>
       <link>/tags/shell-command/</link>
       <pubDate>Tue, 28 Apr 2020 12:00:00 +0100</pubDate>
       
@@ -588,7 +84,7 @@
     </item>
     
     <item>
-      <title>Shell Script</title>
+      <title>shell script</title>
       <link>/tags/shell-script/</link>
       <pubDate>Tue, 28 Apr 2020 12:00:00 +0100</pubDate>
       
@@ -597,79 +93,25 @@
     </item>
     
     <item>
-      <title>Single Source File Code</title>
-      <link>/tags/single-source-file-code/</link>
-      <pubDate>Wed, 28 Aug 2019 12:00:00 +0100</pubDate>
+      <title>daemon thread</title>
+      <link>/tags/daemon-thread/</link>
+      <pubDate>Sat, 25 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/single-source-file-code/</guid>
+      <guid>/tags/daemon-thread/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Spring</title>
-      <link>/tags/spring/</link>
-      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      <title>infinite</title>
+      <link>/tags/infinite/</link>
+      <pubDate>Sat, 25 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/spring/</guid>
+      <guid>/tags/infinite/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Stack</title>
-      <link>/tags/stack/</link>
-      <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/stack/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Stacktrace</title>
-      <link>/tags/stacktrace/</link>
-      <pubDate>Tue, 18 Feb 2020 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/stacktrace/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Static</title>
-      <link>/tags/static/</link>
-      <pubDate>Tue, 18 Feb 2020 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/static/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Static Type</title>
-      <link>/tags/static-type/</link>
-      <pubDate>Sat, 28 Dec 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/static-type/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>String</title>
-      <link>/tags/string/</link>
-      <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/string/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Struct</title>
-      <link>/tags/struct/</link>
-      <pubDate>Sat, 26 Oct 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/struct/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Thread</title>
+      <title>thread</title>
       <link>/tags/thread/</link>
       <pubDate>Sat, 25 Apr 2020 12:00:00 +0100</pubDate>
       
@@ -678,16 +120,34 @@
     </item>
     
     <item>
-      <title>Tool</title>
-      <link>/tags/tool/</link>
-      <pubDate>Sat, 03 Aug 2019 12:00:00 +0100</pubDate>
+      <title>exception</title>
+      <link>/tags/exception/</link>
+      <pubDate>Fri, 24 Apr 2020 12:00:00 +0100</pubDate>
       
-      <guid>/tags/tool/</guid>
+      <guid>/tags/exception/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Try With Resource</title>
+      <title>exception handling</title>
+      <link>/tags/exception-handling/</link>
+      <pubDate>Fri, 24 Apr 2020 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/exception-handling/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>finally</title>
+      <link>/tags/finally/</link>
+      <pubDate>Fri, 24 Apr 2020 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/finally/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>try-with-resource</title>
       <link>/tags/try-with-resource/</link>
       <pubDate>Fri, 24 Apr 2020 12:00:00 +0100</pubDate>
       
@@ -696,7 +156,232 @@
     </item>
     
     <item>
-      <title>Unary Operator</title>
+      <title>java7</title>
+      <link>/tags/java7/</link>
+      <pubDate>Wed, 25 Mar 2020 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/java7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>instantiation</title>
+      <link>/tags/instantiation/</link>
+      <pubDate>Tue, 18 Feb 2020 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/instantiation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>reflection</title>
+      <link>/tags/reflection/</link>
+      <pubDate>Tue, 18 Feb 2020 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/reflection/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stack</title>
+      <link>/tags/stack/</link>
+      <pubDate>Tue, 18 Feb 2020 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/stack/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stacktrace</title>
+      <link>/tags/stacktrace/</link>
+      <pubDate>Tue, 18 Feb 2020 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/stacktrace/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>static</title>
+      <link>/tags/static/</link>
+      <pubDate>Tue, 18 Feb 2020 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/static/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>consumer</title>
+      <link>/tags/consumer/</link>
+      <pubDate>Sat, 08 Feb 2020 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/consumer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>generics</title>
+      <link>/tags/generics/</link>
+      <pubDate>Sat, 08 Feb 2020 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/generics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>producer</title>
+      <link>/tags/producer/</link>
+      <pubDate>Sat, 08 Feb 2020 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/producer/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>wildcard</title>
+      <link>/tags/wildcard/</link>
+      <pubDate>Sat, 08 Feb 2020 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/wildcard/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>jshell</title>
+      <link>/tags/jshell/</link>
+      <pubDate>Sun, 05 Jan 2020 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/jshell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>array</title>
+      <link>/tags/array/</link>
+      <pubDate>Sat, 28 Dec 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/array/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>arraystoreexception</title>
+      <link>/tags/arraystoreexception/</link>
+      <pubDate>Sat, 28 Dec 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/arraystoreexception/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dynamic type</title>
+      <link>/tags/dynamic-type/</link>
+      <pubDate>Sat, 28 Dec 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/dynamic-type/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>static type</title>
+      <link>/tags/static-type/</link>
+      <pubDate>Sat, 28 Dec 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/static-type/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>argument</title>
+      <link>/tags/argument/</link>
+      <pubDate>Sat, 21 Dec 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/argument/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>assert</title>
+      <link>/tags/assert/</link>
+      <pubDate>Sat, 21 Dec 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/assert/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>assertion</title>
+      <link>/tags/assertion/</link>
+      <pubDate>Sat, 21 Dec 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/assertion/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>parameter</title>
+      <link>/tags/parameter/</link>
+      <pubDate>Sat, 21 Dec 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/parameter/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>data structure</title>
+      <link>/tags/data-structure/</link>
+      <pubDate>Sun, 15 Dec 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/data-structure/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hash</title>
+      <link>/tags/hash/</link>
+      <pubDate>Sun, 15 Dec 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/hash/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hashmap</title>
+      <link>/tags/hashmap/</link>
+      <pubDate>Sun, 15 Dec 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/hashmap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linkedmap</title>
+      <link>/tags/linkedmap/</link>
+      <pubDate>Sun, 15 Dec 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/linkedmap/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>binary operator</title>
+      <link>/tags/binary-operator/</link>
+      <pubDate>Mon, 18 Nov 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/binary-operator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>operator</title>
+      <link>/tags/operator/</link>
+      <pubDate>Mon, 18 Nov 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/operator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>unary operator</title>
       <link>/tags/unary-operator/</link>
       <pubDate>Mon, 18 Nov 2019 12:00:00 +0100</pubDate>
       
@@ -705,7 +390,16 @@
     </item>
     
     <item>
-      <title>Underscore</title>
+      <title>identifier</title>
+      <link>/tags/identifier/</link>
+      <pubDate>Mon, 28 Oct 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/identifier/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>underscore</title>
       <link>/tags/underscore/</link>
       <pubDate>Mon, 28 Oct 2019 12:00:00 +0100</pubDate>
       
@@ -714,16 +408,7 @@
     </item>
     
     <item>
-      <title>Varargs</title>
-      <link>/tags/varargs/</link>
-      <pubDate>Tue, 15 Oct 2019 12:00:00 +0100</pubDate>
-      
-      <guid>/tags/varargs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Variable Name</title>
+      <title>variable name</title>
       <link>/tags/variable-name/</link>
       <pubDate>Mon, 28 Oct 2019 12:00:00 +0100</pubDate>
       
@@ -732,11 +417,344 @@
     </item>
     
     <item>
-      <title>Wildcard</title>
-      <link>/tags/wildcard/</link>
-      <pubDate>Sat, 08 Feb 2020 12:00:00 +0100</pubDate>
+      <title>metaprogramming</title>
+      <link>/tags/metaprogramming/</link>
+      <pubDate>Sat, 26 Oct 2019 12:00:00 +0100</pubDate>
       
-      <guid>/tags/wildcard/</guid>
+      <guid>/tags/metaprogramming/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>openstruct</title>
+      <link>/tags/openstruct/</link>
+      <pubDate>Sat, 26 Oct 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/openstruct/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>struct</title>
+      <link>/tags/struct/</link>
+      <pubDate>Sat, 26 Oct 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/struct/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>entry point</title>
+      <link>/tags/entry-point/</link>
+      <pubDate>Tue, 15 Oct 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/entry-point/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>varargs</title>
+      <link>/tags/varargs/</link>
+      <pubDate>Tue, 15 Oct 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/varargs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>literal</title>
+      <link>/tags/literal/</link>
+      <pubDate>Thu, 05 Sep 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/literal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>numeric literal</title>
+      <link>/tags/numeric-literal/</link>
+      <pubDate>Thu, 05 Sep 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/numeric-literal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>single source file code</title>
+      <link>/tags/single-source-file-code/</link>
+      <pubDate>Wed, 28 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/single-source-file-code/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>operator precedence</title>
+      <link>/tags/operator-precedence/</link>
+      <pubDate>Fri, 23 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/operator-precedence/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>or operator</title>
+      <link>/tags/or-operator/</link>
+      <pubDate>Fri, 23 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/or-operator/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>container type</title>
+      <link>/tags/container-type/</link>
+      <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/container-type/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>map</title>
+      <link>/tags/map/</link>
+      <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/map/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>queue</title>
+      <link>/tags/queue/</link>
+      <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/queue/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>set</title>
+      <link>/tags/set/</link>
+      <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/set/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>string</title>
+      <link>/tags/string/</link>
+      <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/string/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>enum</title>
+      <link>/tags/enum/</link>
+      <pubDate>Fri, 09 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/enum/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>interface</title>
+      <link>/tags/interface/</link>
+      <pubDate>Fri, 09 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/interface/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>main class</title>
+      <link>/tags/main-class/</link>
+      <pubDate>Fri, 09 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/main-class/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dictionary</title>
+      <link>/tags/dictionary/</link>
+      <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/dictionary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>embedded objects</title>
+      <link>/tags/embedded-objects/</link>
+      <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/embedded-objects/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>safe navigation</title>
+      <link>/tags/safe-navigation/</link>
+      <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/safe-navigation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>benchmark</title>
+      <link>/tags/benchmark/</link>
+      <pubDate>Sat, 03 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/benchmark/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>tool</title>
+      <link>/tags/tool/</link>
+      <pubDate>Sat, 03 Aug 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/tool/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>anonymous class</title>
+      <link>/tags/anonymous-class/</link>
+      <pubDate>Sun, 28 Jul 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/anonymous-class/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>derived class</title>
+      <link>/tags/derived-class/</link>
+      <pubDate>Sun, 28 Jul 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/derived-class/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>double brace initialization</title>
+      <link>/tags/double-brace-initialization/</link>
+      <pubDate>Sun, 28 Jul 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/double-brace-initialization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>initialization</title>
+      <link>/tags/initialization/</link>
+      <pubDate>Sun, 28 Jul 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/initialization/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>count</title>
+      <link>/tags/count/</link>
+      <pubDate>Tue, 09 Apr 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/count/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>pythonic way</title>
+      <link>/tags/pythonic-way/</link>
+      <pubDate>Tue, 09 Apr 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/pythonic-way/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>assert_equal</title>
+      <link>/tags/assert_equal/</link>
+      <pubDate>Sun, 31 Mar 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/assert_equal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>composition</title>
+      <link>/tags/composition/</link>
+      <pubDate>Wed, 27 Mar 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/composition/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>inheritance</title>
+      <link>/tags/inheritance/</link>
+      <pubDate>Wed, 27 Mar 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/inheritance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>n-ary tree</title>
+      <link>/tags/n-ary-tree/</link>
+      <pubDate>Tue, 19 Mar 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/n-ary-tree/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>builder</title>
+      <link>/tags/builder/</link>
+      <pubDate>Tue, 08 Jan 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/builder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>multibuilder</title>
+      <link>/tags/multibuilder/</link>
+      <pubDate>Tue, 08 Jan 2019 12:00:00 +0100</pubDate>
+      
+      <guid>/tags/multibuilder/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>entity</title>
+      <link>/tags/entity/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/entity/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hibernate</title>
+      <link>/tags/hibernate/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/hibernate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spring</title>
+      <link>/tags/spring/</link>
+      <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/spring/</guid>
       <description></description>
     </item>
     

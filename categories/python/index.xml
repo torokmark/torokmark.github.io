@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Python on T[h]ink]er[ing</title>
+    <title>python on T[h]ink]er[ing</title>
     <link>/categories/python/</link>
-    <description>Recent content in Python on T[h]ink]er[ing</description>
+    <description>Recent content in python on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sat, 26 Oct 2019 12:00:00 +0100</lastBuildDate>
@@ -13,10 +13,10 @@
     
     <item>
       <title>Ruby-like struct in Python #2</title>
-      <link>/post/python-struct-2/</link>
+      <link>/posts/python-struct-2/</link>
       <pubDate>Sat, 26 Oct 2019 12:00:00 +0100</pubDate>
       
-      <guid>/post/python-struct-2/</guid>
+      <guid>/posts/python-struct-2/</guid>
       <description>Ruby provides a very handy type called OpenStruct to create objects. It brings the opportunity to add fields to objects during the runtime. Here is its Python counterpart.
 In the previous post I showed Struct from esu which helps creating new types with fields and methods. That has a sibling, called OpenStruct which helps creating objects on the fly.
 Usage Ruby&amp;rsquo;s OpenStruct (doc:2.6.5) inspired it, and it looks as follows.</description>
@@ -24,10 +24,10 @@ Usage Ruby&amp;rsquo;s OpenStruct (doc:2.6.5) inspired it, and it looks as follo
     
     <item>
       <title>Ruby-like struct in Python</title>
-      <link>/post/python-struct/</link>
+      <link>/posts/python-struct/</link>
       <pubDate>Sat, 19 Oct 2019 12:00:00 +0100</pubDate>
       
-      <guid>/post/python-struct/</guid>
+      <guid>/posts/python-struct/</guid>
       <description>Ruby provides a very flexible way to create new types with certain fields with Struct. Though Python does not have this functionality naturally, with esu package we can do the same.
 Ruby types have rich API which is brought by the design, and the language features as well. Even though Python is very dynamic and flexible as well, some of the features are lacking in the languages.
 In this post I would like to show you a Python package, name is esu, which brings a struct that can provide almost the same functionality.</description>
@@ -35,29 +35,30 @@ In this post I would like to show you a Python package, name is esu, which bring
     
     <item>
       <title>Safe navigation in languages</title>
-      <link>/post/safe-navigation-in-languages/</link>
+      <link>/posts/safe-navigation-in-languages/</link>
       <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
       
-      <guid>/post/safe-navigation-in-languages/</guid>
-      <description>As we saw in the previous post, Ruby development team introduced a safe navigation operator to get rid of painful chaining of objects, which could raise NPE in case of null object in the middle. But Ruby is not the only language that came up with this idea. Most of the languages have introduced this operator, usually called null propagation, or some other approaches to achieve the same goal.</description>
+      <guid>/posts/safe-navigation-in-languages/</guid>
+      <description>As we saw in the previous post, Ruby development team introduced a safe navigation operator to get rid of painful chaining of objects, which could raise NPE in case of null object in the middle. But Ruby is not the only language that came up with this idea. Most of the languages have introduced this operator, usually called null propagation, or some other approaches to achieve the same goal.
+In this post I write some snippets to demonstrate what other languages provide to prevent the exception raised by referencing to a null object.</description>
     </item>
     
     <item>
       <title>Pythonic way of count</title>
-      <link>/post/pythonic-way-count/</link>
+      <link>/posts/pythonic-way-count/</link>
       <pubDate>Tue, 09 Apr 2019 12:00:00 +0100</pubDate>
       
-      <guid>/post/pythonic-way-count/</guid>
+      <guid>/posts/pythonic-way-count/</guid>
       <description>Writing code in a clean way differs in every language. Python also has its own style. Additionally, python is famous about its one-liners.
 Pythonic way is an approach of how to use the language and how to take adventage of its syntax and semantic. Python can give a very elegant way of one-liners to achieve something that most of the languages can do, but not as short and still readable way as python does it.</description>
     </item>
     
     <item>
       <title>Implementing custom array in Python</title>
-      <link>/post/implementing-custom-array/</link>
+      <link>/posts/implementing-custom-array/</link>
       <pubDate>Wed, 27 Mar 2019 12:00:00 +0100</pubDate>
       
-      <guid>/post/implementing-custom-array/</guid>
+      <guid>/posts/implementing-custom-array/</guid>
       <description>Python provides basic datastructures like dictionary, list, set, and tuple. If we need another datastruct which is different from the mentioned three, we have to implement ourones.
 As I started using python in my daily work, more and more questions had cropped up about the language and its refinement. One of them was to implement a custom array.
 What we would like to achieve is to have a datastruct which behaves like an array.</description>
@@ -65,10 +66,10 @@ What we would like to achieve is to have a datastruct which behaves like an arra
     
     <item>
       <title>How to implement routing with n-ary tree</title>
-      <link>/post/n-ary-routing/</link>
+      <link>/posts/n-ary-routing/</link>
       <pubDate>Tue, 19 Mar 2019 12:00:00 +0100</pubDate>
       
-      <guid>/post/n-ary-routing/</guid>
+      <guid>/posts/n-ary-routing/</guid>
       <description>Routing mechanism is one of the main parts of a web service. Here I provide one approach to achieve this. This implementation is based on n-ary tree and tree search.
 Many ways are available to handle routes, from regex to n-ary trees to parse registered route one by one.
 Different ways N-ary Trees In this approach we can consider the root node as / and all children nodes as route parts are separated by /.</description>
@@ -76,10 +77,10 @@ Different ways N-ary Trees In this approach we can consider the root node as / a
     
     <item>
       <title>The Multibuilder Pattern</title>
-      <link>/post/multibuilder-pattern/</link>
+      <link>/posts/multibuilder-pattern/</link>
       <pubDate>Tue, 08 Jan 2019 12:00:00 +0100</pubDate>
       
-      <guid>/post/multibuilder-pattern/</guid>
+      <guid>/posts/multibuilder-pattern/</guid>
       <description>In this post I would like to present a couple of solutions for builder pattern in python, and finally I show how I implemented a builder that I call multibuilder pattern.
 Builder pattern comes in handy when we need to set a lot of fields of an object and we do not want to use many methods with multiple parameters.
 All implementations are found in this repo: https://github.com/torokmark/builders_in_python

@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154887805-1"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-154887805-1');
+        </script>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+        <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet"> 
+
+        <title>The Multibuilder Pattern</title>
+
+        <link rel="stylesheet" href="/css/stylesheet.css">
+    </head>
+    <body>
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-md navbar-light">
+
+          
+          <span class="navbar-brand mb-0 h1"></span>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation" name="button">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a class="nav-item nav-link " href="/">Home</a>
+              
+              
+              <a class="nav-item nav-link " href="/contact/">Contact</a>
+              <a class="nav-item nav-link " href="/about/">About</a>
+            </div>
+          </div>
+        </nav>
+
+        <section id="page-title">
+          <h1><a href="/">T[h]ink]er[ing</a></h1>
+          <span id="author-name">
+            <h6><a href="/about/"></a></h6>
+          </span>
+        </section>
+
+
+<div class="blog-post">
+  <h1>The Multibuilder Pattern</h1>
+  <div class="blog-post-subheader">
+    <time>08 Jan 2019</time>
+  </div>
+  <div class="blog-post-content">
+    <p><strong>In this post I would like to present a couple of solutions for builder pattern in python,
+and finally I show how I implemented a builder that I call multibuilder pattern.</strong></p>
+<p>Builder pattern comes in handy when we need to set a lot of fields of an object and we do not want to use many methods with multiple parameters.</p>
+<p>All implementations are found in this repo: <a href="https://github.com/torokmark/builders_in_python">https://github.com/torokmark/builders_in_python</a></p>
+<h2 id="the-simple-one">The Simple One</h2>
+<p><strong>Task</strong>: Let us implement a <code>Person</code> with the following fields like <code>name</code>, <code>age</code>, <code>phone</code>.<br>
+<strong>Approach</strong>: Make a <code>PersonBuilder</code> with methods according to the fields in <code>Person</code>, plus a <code>build</code> which returns an object of <code>Person</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">,</span> <span class="n">age</span><span class="p">,</span> <span class="n">phone</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_age</span> <span class="o">=</span> <span class="n">age</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_phone</span> <span class="o">=</span> <span class="n">phone</span>
+
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span>
+
+    <span class="k">def</span> <span class="nf">age</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_age</span>
+    
+    <span class="k">def</span> <span class="nf">phone</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_phone</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;[name={}; age={}; phone={}]&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_age</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_phone</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">PersonBuilder</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="s1">&#39;John Doe&#39;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_age</span> <span class="o">=</span> <span class="mi">99</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_phone</span> <span class="o">=</span> <span class="s1">&#39;000&#39;</span>
+
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">age</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">age</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_age</span> <span class="o">=</span> <span class="n">age</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">phone</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">phone</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_phone</span> <span class="o">=</span> <span class="n">phone</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">Person</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">_name</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_age</span><span class="p">,</span> <span class="bp">self</span><span class="o">.</span><span class="n">_phone</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">PersonBuilder</span><span class="p">()</span>
+        <span class="o">.</span><span class="n">name</span><span class="p">(</span><span class="s1">&#39;jancsi&#39;</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">age</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">phone</span><span class="p">(</span><span class="s1">&#39;11223344&#39;</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">age</span><span class="p">(</span><span class="mi">18</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">build</span><span class="p">())</span>            
+    <span class="c1"># =&gt; [name=jancsi; age=18; phone=11223344]</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">PersonBuilder</span><span class="p">()</span>
+        <span class="o">.</span><span class="n">age</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">phone</span><span class="p">(</span><span class="s1">&#39;11223344&#39;</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">age</span><span class="p">(</span><span class="mi">18</span><span class="p">)</span>
+        <span class="o">.</span><span class="n">build</span><span class="p">())</span>            
+    <span class="c1"># =&gt; [name=John Doe; age=18; phone=11223344]</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">PersonBuilder</span><span class="p">()</span>
+        <span class="o">.</span><span class="n">build</span><span class="p">())</span>            
+    <span class="c1"># =&gt; [name=John Doe; age=99; phone=000]</span>
+</code></pre></div><h2 id="the-one-with-named-parameters">The One with Named Parameters</h2>
+<p>Though builder is very flexible, it is inevitable to have some default values for those fields that are not set during the building.</p>
+<p><strong>Task</strong>: How to do this without builder?<br>
+<strong>Approach</strong>: Let us use default values in constructor parameter list.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Person</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s1">&#39;John Doe&#39;</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">99</span><span class="p">,</span> <span class="n">phone</span><span class="o">=</span><span class="s1">&#39;000&#39;</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_name</span> <span class="o">=</span> <span class="n">name</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_age</span> <span class="o">=</span> <span class="n">age</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_phone</span> <span class="o">=</span> <span class="n">phone</span>
+
+    <span class="k">def</span> <span class="nf">name</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_name</span>
+
+    <span class="k">def</span> <span class="nf">age</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_age</span>
+    
+    <span class="k">def</span> <span class="nf">phone</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_phone</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;[name={}; age={}; phone={}]&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+          <span class="bp">self</span><span class="o">.</span><span class="n">_name</span><span class="p">,</span> 
+          <span class="bp">self</span><span class="o">.</span><span class="n">_age</span><span class="p">,</span> 
+          <span class="bp">self</span><span class="o">.</span><span class="n">_phone</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">Person</span><span class="p">())</span>                        
+    <span class="c1"># =&gt; [name=John Doe; age=99; phone=000]</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">Person</span><span class="p">(</span><span class="n">phone</span><span class="o">=</span><span class="s1">&#39;123456&#39;</span><span class="p">,</span> <span class="n">age</span><span class="o">=</span><span class="mi">45</span><span class="p">))</span>  
+    <span class="c1"># =&gt; [name=John Doe; age=45; phone=123456]</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">Person</span><span class="p">(</span><span class="s1">&#39;jancsi&#39;</span><span class="p">,</span> <span class="mi">54</span><span class="p">,</span> <span class="s1">&#39;312333&#39;</span><span class="p">))</span>  
+    <span class="c1"># =&gt; [name=jancsi; age=54; phone=312333]</span>
+</code></pre></div><h2 id="the-classic">The Classic</h2>
+<p><strong>Task</strong>: Let us implement a classic car builder.<br>
+<strong>Solution</strong>: Take the example from <em>Gang of Four</em>!</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Car</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">wheel</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">seat</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;red&#39;</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">wheel</span> <span class="o">=</span> <span class="n">wheel</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">seat</span> <span class="o">=</span> <span class="n">seat</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="n">color</span>
+
+    <span class="k">def</span> <span class="fm">__str__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="s1">&#39;[wheels: {}, seats: {}, color: {}]&#39;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span>
+          <span class="bp">self</span><span class="o">.</span><span class="n">wheel</span><span class="p">,</span> 
+          <span class="bp">self</span><span class="o">.</span><span class="n">seat</span><span class="p">,</span> 
+          <span class="bp">self</span><span class="o">.</span><span class="n">color</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Builder</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">set_wheels</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">wheel</span><span class="p">):</span> <span class="k">pass</span>
+    <span class="k">def</span> <span class="nf">set_seats</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seat</span><span class="p">):</span> <span class="k">pass</span>
+    <span class="k">def</span> <span class="nf">set_color</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">color</span><span class="p">):</span> <span class="k">pass</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">CarBuilder</span><span class="p">(</span><span class="n">Builder</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">car</span> <span class="o">=</span> <span class="n">Car</span><span class="p">()</span>
+
+    <span class="k">def</span> <span class="nf">set_wheels</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">wheel</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">car</span><span class="o">.</span><span class="n">wheel</span> <span class="o">=</span> <span class="n">wheel</span>
+
+    <span class="k">def</span> <span class="nf">set_seats</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">seat</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">car</span><span class="o">.</span><span class="n">seat</span> <span class="o">=</span> <span class="n">seat</span>
+
+    <span class="k">def</span> <span class="nf">set_color</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">color</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">car</span><span class="o">.</span><span class="n">color</span> <span class="o">=</span> <span class="n">color</span>
+
+    <span class="k">def</span> <span class="nf">get_result</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">car</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">CarBuilderDirector</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">builder</span> <span class="o">=</span> <span class="n">CarBuilder</span><span class="p">()</span>
+        <span class="n">builder</span><span class="o">.</span><span class="n">set_wheels</span><span class="p">(</span><span class="mi">8</span><span class="p">)</span>
+        <span class="n">builder</span><span class="o">.</span><span class="n">set_seats</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+        <span class="n">builder</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="s2">&#34;Red&#34;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">builder</span><span class="o">.</span><span class="n">get_result</span><span class="p">()</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="n">car</span> <span class="o">=</span> <span class="n">CarBuilderDirector</span><span class="p">()</span><span class="o">.</span><span class="n">build</span><span class="p">()</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">car</span><span class="p">)</span>      
+    <span class="c1"># =&gt; [wheels: 8, seats: 4, color: Red]</span>
+</code></pre></div><h2 id="the-builder-with-builders">The Builder with Builders</h2>
+<p><strong>Task</strong>: Implement a <em>Response object</em> builder. It has a status code, a header and a body part. Create a builder that can build multiple part of an object.<br>
+<strong>Approach</strong>: Let us implement so called subbuilders and pass the created objects to an outer builder, which combines them together.</p>
+<blockquote>
+<p>Using just <code>HeaderBuilder#add(key, value)</code> instead of using header specific setters.</p>
+</blockquote>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Builder</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span> <span class="k">pass</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">HeaderBuilder</span><span class="p">(</span><span class="n">Builder</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_header</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_header</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_header</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">BodyBuilder</span><span class="p">(</span><span class="n">Builder</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_body</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">content</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_body</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">content</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_body</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">ResponseBuilder</span><span class="p">(</span><span class="n">Builder</span><span class="p">):</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_header</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_body</span> <span class="o">=</span> <span class="bp">None</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_status</span> <span class="o">=</span> <span class="bp">None</span>
+
+    <span class="k">def</span> <span class="nf">header</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">header</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_header</span> <span class="o">=</span> <span class="n">header</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">body</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">body</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_body</span> <span class="o">=</span> <span class="n">body</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">status</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">status</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_status</span> <span class="o">=</span> <span class="n">status</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="n">ret</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="n">ret</span><span class="p">[</span><span class="s1">&#39;statusCode&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_status</span>
+        <span class="n">ret</span><span class="p">[</span><span class="s1">&#39;header&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_header</span>
+        <span class="n">ret</span><span class="p">[</span><span class="s1">&#39;body&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_body</span>
+        <span class="k">return</span> <span class="n">ret</span>
+
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s1">&#39;__main__&#39;</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">ResponseBuilder</span><span class="p">()</span>
+            <span class="o">.</span><span class="n">header</span><span class="p">(</span>
+                <span class="n">HeaderBuilder</span><span class="p">()</span>
+                    <span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;Accept&#39;</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">)</span>
+                    <span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;Age&#39;</span><span class="p">,</span> <span class="mi">12</span><span class="p">)</span>
+                    <span class="o">.</span><span class="n">build</span><span class="p">()</span>
+            <span class="p">)</span>
+            <span class="o">.</span><span class="n">body</span><span class="p">(</span>
+                <span class="n">BodyBuilder</span><span class="p">()</span>
+                    <span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;some message comes here&#39;</span><span class="p">)</span>
+                    <span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;another message here...&#39;</span><span class="p">)</span>
+                    <span class="o">.</span><span class="n">build</span><span class="p">()</span>
+            <span class="p">)</span>
+            <span class="o">.</span><span class="n">status</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">build</span><span class="p">()</span>
+    <span class="p">)</span>                   
+    <span class="c1"># =&gt; {&#39;statusCode&#39;: 200, &#39;header&#39;: {&#39;Accept&#39;: &#39;*&#39;, &#39;Age&#39;: 12}, &#39;body&#39;: [&#39;some message comes here&#39;, &#39;another message here...&#39;]}</span>
+</code></pre></div><h2 id="the-multibuilder">The Multibuilder</h2>
+<p><strong>Task</strong>: Create a builder that can build multiple part of an object at one time whitout using so called subbuilders.<br>
+<strong>Approach</strong>: Let us chain everything up and memorize the already created objects.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">HeaderBuilder</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_header</span> <span class="o">=</span> <span class="p">{}</span>
+
+    <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">key</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_header</span><span class="p">[</span><span class="n">key</span><span class="p">]</span> <span class="o">=</span> <span class="n">value</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">body</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_body</span>
+
+    <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">status</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">status</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">code</span><span class="p">):</span>
+        <span class="n">ret</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="n">ret</span><span class="p">[</span><span class="s1">&#39;status&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">code</span>
+        <span class="n">ret</span><span class="p">[</span><span class="s1">&#39;header&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_header</span>
+        <span class="n">ret</span><span class="p">[</span><span class="s1">&#39;body&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_body</span><span class="o">.</span><span class="vm">__dict__</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_body&#39;</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">ret</span>
+
+    <span class="k">def</span> <span class="nf">set_body</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">body</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_body</span> <span class="o">=</span> <span class="n">body</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">BodyBuilder</span><span class="p">:</span>
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_body</span> <span class="o">=</span> <span class="p">[]</span> 
+
+    <span class="k">def</span> <span class="nf">add</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">value</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_body</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+        <span class="k">return</span> <span class="bp">self</span>
+
+    <span class="k">def</span> <span class="nf">header</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">_header</span>
+
+    <span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">status</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">status</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">code</span><span class="p">):</span>
+        <span class="n">ret</span> <span class="o">=</span> <span class="p">{}</span>
+        <span class="n">ret</span><span class="p">[</span><span class="s1">&#39;status&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">code</span>
+        <span class="n">ret</span><span class="p">[</span><span class="s1">&#39;header&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_header</span><span class="o">.</span><span class="vm">__dict__</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;_header&#39;</span><span class="p">)</span>
+        <span class="n">ret</span><span class="p">[</span><span class="s1">&#39;body&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_body</span>
+        <span class="k">return</span> <span class="n">ret</span>
+
+    <span class="k">def</span> <span class="nf">set_header</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">header</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_header</span> <span class="o">=</span> <span class="n">header</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">ResponseBuilder</span><span class="p">:</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__header</span> <span class="o">=</span> <span class="n">HeaderBuilder</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__body</span> <span class="o">=</span> <span class="n">BodyBuilder</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__body</span><span class="o">.</span><span class="n">set_header</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__header</span><span class="p">)</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">__header</span><span class="o">.</span><span class="n">set_body</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="n">__body</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">header</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__header</span>
+
+    <span class="k">def</span> <span class="nf">body</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+        <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">__body</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&#34;__main__&#34;</span><span class="p">:</span>
+    <span class="k">print</span><span class="p">(</span><span class="n">ResponseBuilder</span><span class="p">()</span>
+            <span class="o">.</span><span class="n">header</span><span class="p">()</span>
+                <span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;Access-Control-Allow-Origin&#39;</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">)</span>
+                <span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;Accept&#39;</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">body</span><span class="p">()</span>
+                <span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="n">json</span><span class="o">.</span><span class="n">dumps</span><span class="p">(</span><span class="s1">&#39;hello&#39;</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="nb">str</span><span class="p">))</span>
+            <span class="o">.</span><span class="n">status</span><span class="p">(</span><span class="mi">204</span><span class="p">))</span>
+
+    <span class="k">print</span><span class="p">(</span><span class="n">ResponseBuilder</span><span class="p">()</span>
+            <span class="o">.</span><span class="n">header</span><span class="p">()</span>
+                <span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;Age&#39;</span><span class="p">,</span> <span class="s1">&#39;12&#39;</span><span class="p">)</span>
+                <span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;Accept&#39;</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">body</span><span class="p">()</span>
+                <span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;message comes here!&#39;</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">header</span><span class="p">()</span>
+                <span class="o">.</span><span class="n">add</span><span class="p">(</span><span class="s1">&#39;Access-Control-Allow-Origin&#39;</span><span class="p">,</span> <span class="s1">&#39;*&#39;</span><span class="p">)</span>
+            <span class="o">.</span><span class="n">build</span><span class="p">())</span> <span class="c1"># status is default to 200</span>
+</code></pre></div><p>All these approaches are found in <a href="https://github.com/torokmark/builders_in_python">https://github.com/torokmark/builders_in_python</a></p>
+
+  </div>
+</div>
+
+      <footer>
+        <hr>
+        <small>
+          &copy; 2020 .
+          Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> using the <a href="https://github.com/arjunkrishnababu96/basics" target="_blank">Basics</a> theme.
+        </small>
+      </footer>
+    </div> 
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
+
