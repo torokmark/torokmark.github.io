@@ -1,94 +1,111 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154887805-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+<html lang="en-us">
 
-          gtag('config', 'UA-154887805-1');
-        </script>
-        
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-
-        
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet"> 
-
-        <title>How to implement routing with n-ary tree</title>
-
-        <link rel="stylesheet" href="/css/stylesheet.css">
-    </head>
-    <body>
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-md navbar-light">
-
-          
-          <span class="navbar-brand mb-0 h1"></span>
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation" name="button">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-item nav-link " href="/">Home</a>
-              
-              
-              <a class="nav-item nav-link " href="/contact/">Contact</a>
-              <a class="nav-item nav-link " href="/about/">About</a>
-            </div>
-          </div>
-        </nav>
-
-        <section id="page-title">
-          <h1><a href="/">T[h]ink]er[ing</a></h1>
-          <span id="author-name">
-            <h6><a href="/about/"></a></h6>
-          </span>
-        </section>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta itemprop="name" content="How to implement routing with n-ary tree">
+<meta itemprop="description" content="Routing mechanism is one of the main parts of a web service. Here I provide one approach to achieve this. This implementation is based on n-ary tree and tree search.
+Many ways are available to handle routes, from regex to n-ary trees to parse registered route one by one.
+Different ways N-ary Trees In this approach we can consider the root node as / and all children nodes as route parts are separated by /.">
+<meta itemprop="datePublished" content="2019-03-19T12:00:00&#43;01:00" />
+<meta itemprop="dateModified" content="2019-03-19T12:00:00&#43;01:00" />
+<meta itemprop="wordCount" content="902">
 
 
-<div class="blog-post">
-  <h1>How to implement routing with n-ary tree</h1>
-  <div class="blog-post-subheader">
-    <time>19 Mar 2019</time>
-  </div>
-  <div class="blog-post-content">
-    <p><strong>Routing mechanism is one of the main parts of a web service. Here I provide one approach
+
+<meta itemprop="keywords" content="n-ary tree," /><meta property="og:title" content="How to implement routing with n-ary tree" />
+<meta property="og:description" content="Routing mechanism is one of the main parts of a web service. Here I provide one approach to achieve this. This implementation is based on n-ary tree and tree search.
+Many ways are available to handle routes, from regex to n-ary trees to parse registered route one by one.
+Different ways N-ary Trees In this approach we can consider the root node as / and all children nodes as route parts are separated by /." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/n-ary-routing/" />
+<meta property="article:published_time" content="2019-03-19T12:00:00+01:00" />
+<meta property="article:modified_time" content="2019-03-19T12:00:00+01:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="How to implement routing with n-ary tree"/>
+<meta name="twitter:description" content="Routing mechanism is one of the main parts of a web service. Here I provide one approach to achieve this. This implementation is based on n-ary tree and tree search.
+Many ways are available to handle routes, from regex to n-ary trees to parse registered route one by one.
+Different ways N-ary Trees In this approach we can consider the root node as / and all children nodes as route parts are separated by /."/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>How to implement routing with n-ary tree</title>
+	<link rel="stylesheet" href="/css/style.min.657bcb7af31123e4156b1a3d2ff60a636717e54ead74f882136b5114cf72b55e.css" integrity="sha256-ZXvLevMRI+QVaxo9L/YKY2cX5U6tdPiCE2tRFM9ytV4=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="">T[h]ink]er[ing</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="posts/">Posts</a>
+				<a href="about/">About</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://github.com/torokmark" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="posts/">Posts</a></li>
+			<li><a href="about/">About</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Mar 19, 2019</span></div>
+				<h1>How to implement routing with n-ary tree</h1>
+			</header>
+			<div class="content">
+				<p><strong>Routing mechanism is one of the main parts of a web service. Here I provide one approach
 to achieve this. This implementation is based on n-ary tree and tree search.</strong></p>
 <p>Many ways are available to handle <em>routes</em>, from regex to n-ary trees to parse
 registered route one by one.</p>
-<h3 id="different-ways">Different ways</h3>
-<h4 id="n-ary-trees">N-ary Trees</h4>
+<h3 id="different-ways">Different ways<a href="#different-ways" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<h4 id="n-ary-trees">N-ary Trees<a href="#n-ary-trees" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>In this approach we can consider the root node as <code>/</code> and all children nodes as
 route parts are separated by <code>/</code>. Every part is on a separated level of the
 tree. A node contains one route part.</p>
 <p>A route part can be either a string which requires full match or a <em>path param</em>
 which is a string surrounded by curly brackets (<code>{}</code>) also acceptable.</p>
-<h4 id="regex">Regex</h4>
+<h4 id="regex">Regex<a href="#regex" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>All defined routes go into a stack in the order of definition.
 During procession the earlier match is executed or returns the result of the executed lambda.</p>
-<h4 id="parse-one-by-one">Parse one by one</h4>
+<h4 id="parse-one-by-one">Parse one by one<a href="#parse-one-by-one" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>This approach is very similar to the above one but without regex. Let us consider a registered
 route as a key in a dictionary. The value is the lambda which is intended to be executed when
 call falls on the route.</p>
 <p>After iterating over the keys of the dictionary either use regex to identify the
 appropriate route or parse them and process by using string operations (for
 those who are not into regex).</p>
-<h4 id="rule-objects">Rule objects</h4>
+<h4 id="rule-objects">Rule objects<a href="#rule-objects" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>Tornado framework provides a fine-grained mechanism to define and implement routings.
 The framework introduced rules and delegators parse and execute expressions.</p>
-<h3 id="the-approach">The Approach</h3>
+<h3 id="the-approach">The Approach<a href="#the-approach" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>In this solution the n-ary tree approach is chosen. Each node contains one part
 of the route, depth of the tree equals to the longest route splitted by <code>/</code>.
 All children of a node contain the next route part after the node value
 separated by <code>/</code>.</p>
-<h4 id="register-a-route">Register a route</h4>
+<h4 id="register-a-route">Register a route<a href="#register-a-route" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>For route registration we can use the <code>register</code> function. It takes the route
 itself, which will be parsed, splitted and considered as an identifier part.
 The whole identifier of a node is the path inside the tree from the root to the
@@ -105,14 +122,14 @@ lambda.</p>
 <span class="n">routing</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">route</span><span class="o">=</span><span class="s1">&#39;/users/{id}&#39;</span><span class="p">,</span> 
                  <span class="n">callback</span><span class="o">=</span><span class="p">(</span><span class="k">lambda</span> <span class="nb">id</span><span class="p">:</span> <span class="n">users</span><span class="o">.</span><span class="n">get_user</span><span class="p">(</span><span class="nb">id</span><span class="p">)),</span> 
                  <span class="n">method</span><span class="o">=</span><span class="n">routing</span><span class="o">.</span><span class="n">Methods</span><span class="o">.</span><span class="n">GET</span><span class="p">)</span>
-</code></pre></div><h4 id="process-a-route">Process a route</h4>
+</code></pre></div><h4 id="process-a-route">Process a route<a href="#process-a-route" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>The <code>process</code> function takes the three agruments as shown below and returns the
 result of the executed lambda. If lambda returns void than process gives back
 <code>None</code>.</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">request_body</span> <span class="o">=</span> <span class="n">routing</span><span class="o">.</span><span class="n">process</span><span class="p">(</span><span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;path&#39;</span><span class="p">),</span> 
                                <span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;queryStringParameters&#39;</span><span class="p">),</span> 
                                <span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;httpMethod&#39;</span><span class="p">))</span>
-</code></pre></div><h4 id="routing-tree">Routing Tree</h4>
+</code></pre></div><h4 id="routing-tree">Routing Tree<a href="#routing-tree" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>Routing tree represents the registered routes. Each <em>node</em> contains the route part,
 the full path from the root to itself, <em>callbacks</em> and children nodes.</p>
 <p>Callbacks are stored in a dictionary with methods as keys and lambdas as values.
@@ -133,12 +150,12 @@ appropriate path.</p>
 <p>Both methods traverse the tree recursively, finding matching parts.
 If parts found, and no other path left, it returns the appropriate value, or it goes
 towards to one of the children if necessary.</p>
-<h4 id="add-route-with-pathparam">Add route with pathparam</h4>
+<h4 id="add-route-with-pathparam">Add route with pathparam<a href="#add-route-with-pathparam" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>Pathparam is also part of the representation so it goes as a node value, like
 <code>{id}</code>.
 This implementation requires that no multiple pathparam names are allowed.
 That means no <code>{id}</code> and <code>{user_id}</code> are allowed at the same time.</p>
-<h4 id="process-a-call">Process a call</h4>
+<h4 id="process-a-call">Process a call<a href="#process-a-call" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>Routing trees <code>find</code> method is responsible for getting back the lambda call
 based on the route path and the method. If one of them are differ from what the
 tree contains, <code>find</code> raise an error accordingly.</p>
@@ -146,7 +163,7 @@ tree contains, <code>find</code> raise an error accordingly.</p>
 traverse through children searching for exact matching. If no matching found on
 the level, it considers the path as a pathparam and goes towards the children of
 the pathparam node.</p>
-<h4 id="validation">Validation</h4>
+<h4 id="validation">Validation<a href="#validation" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p><code>register</code> as well as <code>process</code> have their own validators against injections and malicious
 characters that can mess up with the database.</p>
 <p>Here I used very simple validation by using regex, but it is alterable according
@@ -159,7 +176,7 @@ to the needs.</p>
 </code></pre></div><p>The implementation gives a chance to fine-tune the validation by introducing
 param specific patterns. These could be placed in either <code>validate_route_register</code> or
 <code>validate_route_process</code> or in both.</p>
-<h4 id="what-it-does-not-contain">What it does not contain</h4>
+<h4 id="what-it-does-not-contain">What it does not contain<a href="#what-it-does-not-contain" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>It is an experimental project so it lacks some other features.
 The implementation of these features does not require much alteration on the
 code, though I leave it for others. The list below.</p>
@@ -174,22 +191,40 @@ code, though I leave it for others. The list below.</p>
 declare route with method, params and lambda, and took a look on how to process it.</strong></p>
 <p>For further reading and for the implementation you can visit <a href="https://github.com/torokmark/routing_python">https://github.com/torokmark/routing_python</a>.</p>
 
-  </div>
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="tags/n-ary-tree">n-ary tree</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>902 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-03-19 12:00 &#43;0100</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="next-post" href="/posts/implementing-custom-array/">
+				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>Implementing custom array in Python</span>
+			</a>
+			<a class="prev-post" href="/posts/multibuilder-pattern/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>The Multibuilder Pattern</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
 </div>
+	</main>
 
-      <footer>
-        <hr>
-        <small>
-          &copy; 2020 .
-          Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> using the <a href="https://github.com/arjunkrishnababu96/basics" target="_blank">Basics</a> theme.
-        </small>
-      </footer>
-    </div> 
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2020 <a href="">Mark Torok</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
 
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  </body>
+
+
+	<script src="/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
+
+</body>
+
 </html>
-

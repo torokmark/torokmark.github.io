@@ -1,65 +1,79 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154887805-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+<html lang="en-us">
 
-          gtag('config', 'UA-154887805-1');
-        </script>
-        
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-
-        
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet"> 
-
-        <title>Safe navigation in languages</title>
-
-        <link rel="stylesheet" href="/css/stylesheet.css">
-    </head>
-    <body>
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-md navbar-light">
-
-          
-          <span class="navbar-brand mb-0 h1"></span>
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation" name="button">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-item nav-link " href="/">Home</a>
-              
-              
-              <a class="nav-item nav-link " href="/contact/">Contact</a>
-              <a class="nav-item nav-link " href="/about/">About</a>
-            </div>
-          </div>
-        </nav>
-
-        <section id="page-title">
-          <h1><a href="/">T[h]ink]er[ing</a></h1>
-          <span id="author-name">
-            <h6><a href="/about/"></a></h6>
-          </span>
-        </section>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta itemprop="name" content="Safe navigation in languages">
+<meta itemprop="description" content="As we saw in the previous post, Ruby development team introduced a safe navigation operator to get rid of painful chaining of objects, which could raise NPE in case of null object in the middle. But Ruby is not the only language that came up with this idea. Most of the languages have introduced this operator, usually called null propagation, or some other approaches to achieve the same goal.
+In this post I write some snippets to demonstrate what other languages provide to prevent the exception raised by referencing to a null object.">
+<meta itemprop="datePublished" content="2019-08-05T12:00:00&#43;01:00" />
+<meta itemprop="dateModified" content="2019-08-05T12:00:00&#43;01:00" />
+<meta itemprop="wordCount" content="535">
 
 
-<div class="blog-post">
-  <h1>Safe navigation in languages</h1>
-  <div class="blog-post-subheader">
-    <time>05 Aug 2019</time>
-  </div>
-  <div class="blog-post-content">
-    <p><strong>As we saw in the previous post, Ruby development team introduced a safe
+
+<meta itemprop="keywords" content="safe navigation,hash,map,dictionary,embedded objects," /><meta property="og:title" content="Safe navigation in languages" />
+<meta property="og:description" content="As we saw in the previous post, Ruby development team introduced a safe navigation operator to get rid of painful chaining of objects, which could raise NPE in case of null object in the middle. But Ruby is not the only language that came up with this idea. Most of the languages have introduced this operator, usually called null propagation, or some other approaches to achieve the same goal.
+In this post I write some snippets to demonstrate what other languages provide to prevent the exception raised by referencing to a null object." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/safe-navigation-in-languages/" />
+<meta property="article:published_time" content="2019-08-05T12:00:00+01:00" />
+<meta property="article:modified_time" content="2019-08-05T12:00:00+01:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Safe navigation in languages"/>
+<meta name="twitter:description" content="As we saw in the previous post, Ruby development team introduced a safe navigation operator to get rid of painful chaining of objects, which could raise NPE in case of null object in the middle. But Ruby is not the only language that came up with this idea. Most of the languages have introduced this operator, usually called null propagation, or some other approaches to achieve the same goal.
+In this post I write some snippets to demonstrate what other languages provide to prevent the exception raised by referencing to a null object."/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>Safe navigation in languages</title>
+	<link rel="stylesheet" href="/css/style.min.657bcb7af31123e4156b1a3d2ff60a636717e54ead74f882136b5114cf72b55e.css" integrity="sha256-ZXvLevMRI+QVaxo9L/YKY2cX5U6tdPiCE2tRFM9ytV4=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="">T[h]ink]er[ing</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="posts/">Posts</a>
+				<a href="about/">About</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://github.com/torokmark" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="posts/">Posts</a></li>
+			<li><a href="about/">About</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Aug 5, 2019</span></div>
+				<h1>Safe navigation in languages</h1>
+			</header>
+			<div class="content">
+				<p><strong>As we saw in the previous post, Ruby development team introduced a safe
 navigation operator to get rid of painful chaining of objects, which
 could raise NPE in case of null object in the middle.
 But Ruby is not the only language that came up with this idea. Most of the
@@ -83,7 +97,7 @@ to prevent the exception raised by referencing to a null object.</p>
 </span></code></pre></div><p>For testing I used a <code>Person</code> object which embeds an <code>Address</code> object which
 has some fields. I would like to get back the value of a field in the embedded
 object through the instance of <code>Person</code>.</p>
-<h3 id="java">Java</h3>
+<h3 id="java">Java<a href="#java" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>Java 8 introduced <code>Optional</code> type and method references. Combining these two
 we can safely traverse over the embedded objects without fearing to get NPE.</p>
 <p>If one of the values is null, it returns <code>'N/A'</code> by default.</p>
@@ -101,7 +115,7 @@ we can safely traverse over the embedded objects without fearing to get NPE.</p>
 In case of it looks like as follows:</p>
 <div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">hsh</span><span class="o">.</span><span class="na">getOrDefault</span><span class="o">(</span><span class="s">&#34;London&#34;</span><span class="o">,</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Integer</span><span class="o">&gt;()).</span><span class="na">getOrDefault</span><span class="o">(</span><span class="s">&#34;john&#34;</span><span class="o">,</span> <span class="o">-</span><span class="n">1</span><span class="o">));</span>
 <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">hsh</span><span class="o">.</span><span class="na">getOrDefault</span><span class="o">(</span><span class="s">&#34;Paris&#34;</span><span class="o">,</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Integer</span><span class="o">&gt;()).</span><span class="na">getOrDefault</span><span class="o">(</span><span class="s">&#34;john&#34;</span><span class="o">,</span> <span class="o">-</span><span class="n">1</span><span class="o">));</span>
-</code></pre></div><h3 id="groovy">Groovy</h3>
+</code></pre></div><h3 id="groovy">Groovy<a href="#groovy" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>Groovy brings safe navigation operator as part of the language.</p>
 <div class="highlight"><pre class="chroma"><code class="language-groovy" data-lang="groovy"><span class="n">john</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="o">(</span><span class="s2">&#34;john&#34;</span><span class="o">,</span> <span class="mi">54</span><span class="o">,</span> <span class="k">new</span> <span class="n">Address</span><span class="o">(</span><span class="s2">&#34;London&#34;</span><span class="o">,</span> <span class="s2">&#34;Baker&#34;</span><span class="o">,</span> <span class="mi">221</span><span class="o">))</span>
 <span class="n">println</span><span class="o">(</span><span class="n">john</span><span class="o">.</span><span class="na">address</span><span class="o">.</span><span class="na">street</span><span class="o">)</span> <span class="c1">// Baker
@@ -113,12 +127,12 @@ not return a default object. <code>get</code> method returns its second paramete
 does not exist.</p>
 <div class="highlight"><pre class="chroma"><code class="language-groovy" data-lang="groovy"><span class="n">println</span><span class="o">(</span><span class="n">cities</span><span class="o">.</span><span class="na">getAt</span><span class="o">(</span><span class="s1">&#39;Paris&#39;</span><span class="o">)?.</span><span class="na">getAt</span><span class="o">(</span><span class="s1">&#39;joe&#39;</span><span class="o">)?.</span><span class="na">getAt</span><span class="o">(</span><span class="s1">&#39;age&#39;</span><span class="o">))</span>
 <span class="n">println</span><span class="o">(</span><span class="n">cities</span><span class="o">.</span><span class="na">get</span><span class="o">(</span><span class="s1">&#39;Paris&#39;</span><span class="o">,</span> <span class="o">[:]).</span><span class="na">get</span><span class="o">(</span><span class="s1">&#39;joe&#39;</span><span class="o">,</span> <span class="o">[:]).</span><span class="na">get</span><span class="o">(</span><span class="s1">&#39;age&#39;</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">))</span>
-</code></pre></div><h3 id="python">Python</h3>
+</code></pre></div><h3 id="python">Python<a href="#python" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>Python does not support null propagation on embedded objects, but it supports
 returning default values if key does not exist in the dictionary.</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="n">cities</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;London&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;joe&#39;</span><span class="p">))</span>
 <span class="k">print</span><span class="p">(</span><span class="n">cities</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;Paris&#39;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;joe&#39;</span><span class="p">,</span> <span class="s1">&#39;N/A&#39;</span><span class="p">))</span>
-</code></pre></div><h3 id="c-">C#</h3>
+</code></pre></div><h3 id="c-">C#<a href="#c-" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>Safe navigation in C# looks like:</p>
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">john</span><span class="p">?.</span><span class="n">Address</span><span class="p">?.</span><span class="n">Street</span> <span class="p">??</span> <span class="s">&#34;Portobello&#34;</span><span class="p">);</span>
 <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">joe</span><span class="p">?.</span><span class="n">Address</span><span class="p">?.</span><span class="n">Street</span> <span class="p">??</span> <span class="s">&#34;Portobello&#34;</span><span class="p">);</span>
@@ -126,7 +140,7 @@ returning default values if key does not exist in the dictionary.</p>
 will be the right operand.</p>
 <p>Though C# provides <code>TryGetValue</code>  which can be used for getting default values,
 though it is not available for chaining.</p>
-<h3 id="javascript">Javascript</h3>
+<h3 id="javascript">Javascript<a href="#javascript" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>Both the dot notation and index support are available in Javascript to read
 fields of an object. Since objects acts as a dictionary, index support can be
 used to reach fields.</p>
@@ -138,22 +152,40 @@ different languages.</strong></p>
 solutions either in these languages or in others, feel free to fork-add-pr!</em></p>
 <p>Codes can be found: <a href="https://github.com/torokmark/safe-navigation-in-languages">https://github.com/torokmark/safe-navigation-in-languages</a></p>
 
-  </div>
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="tags/safe-navigation">safe navigation</a></span><span class="tag"><a href="tags/hash">hash</a></span><span class="tag"><a href="tags/map">map</a></span><span class="tag"><a href="tags/dictionary">dictionary</a></span><span class="tag"><a href="tags/embedded-objects">embedded objects</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>535 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-08-05 13:00 &#43;0200</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="next-post" href="/posts/do-you-know-java-entry-point-in-interface/">
+				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>Do you know Java: Entry Point in Interface or Enum</span>
+			</a>
+			<a class="prev-post" href="/posts/ruby-benchmark-control-flows/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>Benchmarking Ruby Control Flows and Datastructures</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
 </div>
+	</main>
 
-      <footer>
-        <hr>
-        <small>
-          &copy; 2020 .
-          Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> using the <a href="https://github.com/arjunkrishnababu96/basics" target="_blank">Basics</a> theme.
-        </small>
-      </footer>
-    </div> 
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2020 <a href="">Mark Torok</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
 
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  </body>
+
+
+	<script src="/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
+
+</body>
+
 </html>
-

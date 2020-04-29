@@ -1,65 +1,79 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        
-        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-154887805-1"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
+<html lang="en-us">
 
-          gtag('config', 'UA-154887805-1');
-        </script>
-        
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-
-        
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-
-        <link href="https://fonts.googleapis.com/css?family=Ubuntu|Ubuntu+Mono" rel="stylesheet"> 
-
-        <title>Container types in shell script</title>
-
-        <link rel="stylesheet" href="/css/stylesheet.css">
-    </head>
-    <body>
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-md navbar-light">
-
-          
-          <span class="navbar-brand mb-0 h1"></span>
-
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle Navigation" name="button">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-item nav-link " href="/">Home</a>
-              
-              
-              <a class="nav-item nav-link " href="/contact/">Contact</a>
-              <a class="nav-item nav-link " href="/about/">About</a>
-            </div>
-          </div>
-        </nav>
-
-        <section id="page-title">
-          <h1><a href="/">T[h]ink]er[ing</a></h1>
-          <span id="author-name">
-            <h6><a href="/about/"></a></h6>
-          </span>
-        </section>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta itemprop="name" content="Container types in shell script">
+<meta itemprop="description" content="Shell script does not support container types like map, set, or queue, though with a third-party lib, presented here, we can use them in our scripts.
+From time to time we need map, queue or any other kind of collections during our work. Shell script is definitely not the right choice to write applications but it may happen that we need some of the previously mentioned types to help our work.">
+<meta itemprop="datePublished" content="2019-08-15T12:00:00&#43;01:00" />
+<meta itemprop="dateModified" content="2019-08-15T12:00:00&#43;01:00" />
+<meta itemprop="wordCount" content="354">
 
 
-<div class="blog-post">
-  <h1>Container types in shell script</h1>
-  <div class="blog-post-subheader">
-    <time>15 Aug 2019</time>
-  </div>
-  <div class="blog-post-content">
-    <p><strong>Shell script does not support container types like map, set, or queue, though
+
+<meta itemprop="keywords" content="container type,queue,set,map,string,stack," /><meta property="og:title" content="Container types in shell script" />
+<meta property="og:description" content="Shell script does not support container types like map, set, or queue, though with a third-party lib, presented here, we can use them in our scripts.
+From time to time we need map, queue or any other kind of collections during our work. Shell script is definitely not the right choice to write applications but it may happen that we need some of the previously mentioned types to help our work." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/posts/container-types-in-shell-script/" />
+<meta property="article:published_time" content="2019-08-15T12:00:00+01:00" />
+<meta property="article:modified_time" content="2019-08-15T12:00:00+01:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Container types in shell script"/>
+<meta name="twitter:description" content="Shell script does not support container types like map, set, or queue, though with a third-party lib, presented here, we can use them in our scripts.
+From time to time we need map, queue or any other kind of collections during our work. Shell script is definitely not the right choice to write applications but it may happen that we need some of the previously mentioned types to help our work."/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>Container types in shell script</title>
+	<link rel="stylesheet" href="/css/style.min.657bcb7af31123e4156b1a3d2ff60a636717e54ead74f882136b5114cf72b55e.css" integrity="sha256-ZXvLevMRI+QVaxo9L/YKY2cX5U6tdPiCE2tRFM9ytV4=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="">T[h]ink]er[ing</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="posts/">Posts</a>
+				<a href="about/">About</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://github.com/torokmark" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="posts/">Posts</a></li>
+			<li><a href="about/">About</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>Aug 15, 2019</span></div>
+				<h1>Container types in shell script</h1>
+			</header>
+			<div class="content">
+				<p><strong>Shell script does not support container types like map, set, or queue, though
 with a third-party lib, presented here, we can use them in our scripts.</strong></p>
 <p>From time to time we need <em>map</em>, <em>queue</em> or any other kind of collections during
 our work. Shell script is definitely not the right choice to write applications
@@ -68,10 +82,10 @@ our work.</p>
 <p>Though shell script weakly supports types at all, we can use <em>queues</em>, <em>stacks</em>,
 <em>maps</em> in an easy, readable, and maintanable way. In this post I present a module
 that can provide these functionalities to us. And we still in shell script.</p>
-<h3 id="container-types">Container Types</h3>
+<h3 id="container-types">Container Types<a href="#container-types" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>All types are collection types, like <code>map</code>, <code>queue</code>, <code>stack</code> or <code>set</code> or as we
 call it <code>aggregate</code> since <code>set</code> is a built-in function.</p>
-<h4 id="map">Map</h4>
+<h4 id="map">Map<a href="#map" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>Map provides a container over key-value pairs with well-known methods.</p>
 <p>As a usage, see below:</p>
 <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="nb">source</span> <span class="s1">&#39;map.sh&#39;</span>
@@ -82,7 +96,7 @@ map size fruits <span class="c1"># returns 1</span>
 map get fruits apple <span class="c1"># 2</span>
 map values fruits <span class="c1"># 2</span>
 </code></pre></div><p>Map&rsquo;s API: <a href="https://github.com/torokmark/utils.sh/wiki/Map">https://github.com/torokmark/utils.sh/wiki/Map</a></p>
-<h4 id="aggregate">Aggregate</h4>
+<h4 id="aggregate">Aggregate<a href="#aggregate" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>Aggregate is none other than the classic set. All elements are unique in this
 datastructure.</p>
 <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="nb">source</span> <span class="s1">&#39;aggregate.sh&#39;</span>
@@ -98,7 +112,7 @@ aggregate difference fruits vegetables
 
 aggregate destroy fruits
 </code></pre></div><p>Aggregate&rsquo;s API: <a href="https://github.com/torokmark/utils.sh/wiki/Aggregate">https://github.com/torokmark/utils.sh/wiki/Aggregate</a></p>
-<h4 id="stack">Stack</h4>
+<h4 id="stack">Stack<a href="#stack" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>Stack is a classic LIFO datastructure with its well-known methods.</p>
 <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="nb">source</span> <span class="s1">&#39;stack.sh&#39;</span>
 
@@ -110,7 +124,7 @@ stack top fruits <span class="c1"># pear</span>
 stack empty fruits <span class="c1"># false</span>
 stack destroy fruits
 </code></pre></div><p>Stack&rsquo;s API: <a href="https://github.com/torokmark/utils.sh/wiki/Stack">https://github.com/torokmark/utils.sh/wiki/Stack</a></p>
-<h4 id="queue">Queue</h4>
+<h4 id="queue">Queue<a href="#queue" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>Queue is a FIFO datastructure with appropriate methods to put, remove data or
 destroy the queue itself.</p>
 <div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="nb">source</span> <span class="s1">&#39;queue.sh&#39;</span>
@@ -124,22 +138,40 @@ queue destroy fruits
 <p>Source code is available here: <a href="https://github.com/torokmark/utils.sh">https://github.com/torokmark/utils.sh</a><br>
 Github page is avaliable here: <a href="https://torokmark.github.io/utils.sh">https://torokmark.github.io/utils.sh</a></p>
 
-  </div>
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="tags/container-type">container type</a></span><span class="tag"><a href="tags/queue">queue</a></span><span class="tag"><a href="tags/set">set</a></span><span class="tag"><a href="tags/map">map</a></span><span class="tag"><a href="tags/string">string</a></span><span class="tag"><a href="tags/stack">stack</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>354 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-08-15 13:00 &#43;0200</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="next-post" href="/posts/rubys-or-operator-precedence/">
+				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>Ruby&#39;s or operator precedence</span>
+			</a>
+			<a class="prev-post" href="/posts/do-you-know-java-entry-point-in-interface/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>Do you know Java: Entry Point in Interface or Enum</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
 </div>
+	</main>
 
-      <footer>
-        <hr>
-        <small>
-          &copy; 2020 .
-          Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> using the <a href="https://github.com/arjunkrishnababu96/basics" target="_blank">Basics</a> theme.
-        </small>
-      </footer>
-    </div> 
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2020 <a href="">Mark Torok</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
 
-    
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-  </body>
+
+
+	<script src="/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
+
+</body>
+
 </html>
-
