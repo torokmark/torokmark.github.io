@@ -5,8 +5,134 @@
 		<description>Recent content in Posts on T[h]ink]er[ing</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
-		<lastBuildDate>Wed, 29 Apr 2020 12:00:00 +0100</lastBuildDate>
+		<lastBuildDate>Fri, 01 May 2020 12:00:00 +0100</lastBuildDate>
 		<atom:link href="https://torokmark.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Do you know Java: Less known side of Enums</title>
+			<link>https://torokmark.github.io/posts/do-you-know-java-less-known-side-of-enums/</link>
+			<pubDate>Fri, 01 May 2020 12:00:00 +0100</pubDate>
+			
+			<guid>https://torokmark.github.io/posts/do-you-know-java-less-known-side-of-enums/</guid>
+			<description>Enums are easy and straigthforward at first sight, but this type has some hidden sides.
+public enum Day { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY }  For enumeration type, Java has a keyword called enum. That was introduced in Java 1.5. All enum types are implicitly inhereted from Enum class.  Hence, all enum types has all methods that Enum has, like name, ordinal, etc. We cannot extend an enum, and enum does not extend custom types.</description>
+			<content type="html"><![CDATA[<p><strong>Enums are easy and straigthforward at first sight, but this type has some
+hidden sides.</strong></p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">enum</span> <span class="n">Day</span> <span class="o">{</span>
+    <span class="n">MONDAY</span><span class="o">,</span> <span class="n">TUESDAY</span><span class="o">,</span> <span class="n">WEDNESDAY</span><span class="o">,</span> <span class="n">THURSDAY</span><span class="o">,</span> <span class="n">FRIDAY</span><span class="o">,</span> <span class="n">SATURDAY</span><span class="o">,</span> <span class="n">SUNDAY</span>
+<span class="o">}</span>
+</code></pre></div><ol>
+<li>For enumeration type, Java has a keyword called <code>enum</code>.</li>
+<li>That was introduced in Java 1.5.</li>
+<li>All enum types are implicitly inhereted from <code>Enum</code> class.
+<ul>
+<li>Hence, all enum types has all methods that <code>Enum</code> has, like <code>name</code>, <code>ordinal</code>, etc.</li>
+<li>We cannot extend an <code>enum</code>, and <code>enum</code> does not extend custom types.</li>
+</ul>
+</li>
+<li>Enums constructor is not callable.</li>
+<li>Though, it is not callable,
+<ul>
+<li><code>enum</code> has custom constructor,</li>
+<li>constructor can be overridden,</li>
+<li>constructor has to be <em>package-private</em> or <em>private</em>.</li>
+</ul>
+</li>
+<li>Enums can be used in <em>switch statement</em>.</li>
+<li>Enumeration values have an ordinal which represents its place in the enumeration, like an index.</li>
+<li>All enums are <em>comparable</em>, since <code>Enum</code> implements <code>Comparable</code> interface, and <code>compareTo</code> is based on <code>ordinal</code>.</li>
+<li>Two instances of an <code>enum</code> are always equivalent according to <code>==</code> and <code>equals</code> as well.</li>
+<li>All methods except <code>toString</code> are <code>final</code> in <code>Enum</code>.
+<ul>
+<li>Cannot override them in our custom enumeration type.</li>
+</ul>
+</li>
+<li>To get all values (instances) of an <code>enum</code>, we can use a <code>static</code> method, called <code>values</code>.
+<ul>
+<li>Not documented.</li>
+<li>Gives values in the same order as they are declared.</li>
+</ul>
+</li>
+<li>Recommended way to get a value based on <code>String</code> is <code>Enum.valueOf</code>
+<ul>
+<li><code>valueOf(String): T</code> method is also not documented, just mentioned in documentation of <code>Enum</code>.</li>
+</ul>
+</li>
+</ol>
+<h2 id="different-type-of-enums">Different type of enums</h2>
+<h4 id="empty">Empty</h4>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">enum</span> <span class="n">Empty</span> <span class="o">{</span>
+
+<span class="o">}</span>
+
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">Empty</span><span class="o">.</span><span class="na">values</span><span class="o">().</span><span class="na">length</span><span class="o">);</span> <span class="c1">// =&gt; 0
+</span></code></pre></div><h4 id="with-instances">With Instances</h4>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">enum</span> <span class="n">Level</span> <span class="o">{</span>
+    <span class="n">DEBUG</span><span class="o">,</span> <span class="n">INFO</span><span class="o">,</span> <span class="n">WARN</span><span class="o">,</span> <span class="n">ERROR</span><span class="o">,</span> <span class="n">FATAL</span> <span class="c1">//;
+</span><span class="c1"></span><span class="o">}</span>
+</code></pre></div><p>Semicolon (<code>;</code>) is optional if enum does not have anything else just instances.</p>
+<h4 id="with-method">With Method</h4>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">enum</span> <span class="n">Level</span> <span class="o">{</span>
+    <span class="n">DEBUG</span><span class="o">,</span> <span class="n">INFO</span><span class="o">,</span> <span class="n">WARN</span><span class="o">,</span> <span class="n">ERROR</span><span class="o">,</span> <span class="n">FATAL</span><span class="o">;</span> 
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{</span>
+        <span class="c1">// ...
+</span><span class="c1"></span>    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>Here, semicolon is required at the end of the instances.</p>
+<h4 id="order-of-instances">Order of Instances</h4>
+<p>Order of instances are not important except one depends on another.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">enum</span> <span class="n">NextOne</span> <span class="o">{</span>
+    <span class="n">A</span><span class="o">(</span><span class="n">B</span><span class="o">),</span> <span class="n">B</span><span class="o">(</span><span class="n">C</span><span class="o">),</span> <span class="n">C</span><span class="o">(</span><span class="n">A</span><span class="o">);</span>
+
+    <span class="kd">private</span> <span class="n">NextOne</span> <span class="n">next</span><span class="o">;</span>
+
+    <span class="n">NextOne</span><span class="o">(</span><span class="n">NextOne</span> <span class="n">next</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">next</span> <span class="o">=</span> <span class="n">next</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>Compiler cannot inference that object <code>B</code> is an instance of <code>NextOne</code>. That means
+the above code cannot compile.</p>
+<h4 id="methods-overriding">Methods overriding</h4>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">enum</span> <span class="n">Day</span> <span class="o">{</span>
+    <span class="n">MONDAY</span> <span class="o">{</span>
+        <span class="nd">@Override</span>
+        <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="o">()</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="s">&#34;Just another manic Monday.&#34;</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">},</span> <span class="n">TUESDAY</span><span class="o">,</span> <span class="n">WEDNESDAY</span><span class="o">,</span> <span class="n">THURSDAY</span><span class="o">,</span> <span class="n">FRIDAY</span><span class="o">,</span> <span class="n">SATURDAY</span><span class="o">,</span> <span class="n">SUNDAY</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></div><p>Further custom methods are also accepted in the block.</p>
+<h4 id="abstract-methods">Abstract methods</h4>
+<p><code>enum</code> can be extended with <code>abstact</code> methods, though we have to implement it in
+the instances.</p>
+<p><code>enum</code> also can implement interfaces.</p>
+<h4 id="annotation">Annotation</h4>
+<p>We can place annotations on it.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="nd">@Author</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&#34;jancsi&#34;</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kd">enum</span> <span class="n">Day</span> <span class="o">{</span>
+    <span class="c1">// ...
+</span><span class="c1"></span><span class="o">}</span>
+</code></pre></div><h4 id="better-way-than-valueof">Better way than <code>valueOf</code></h4>
+<p>As I have experienced, <code>valueOf</code> is far not the right method to get an <code>enum</code> instance
+based on <code>String</code>. Its drawback is <code>valueOf</code> throws <code>IllegalArgumentException</code>.</p>
+<p>Here is what I use if it is needed. It returns <code>null</code> if <code>String</code> param does not match.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="n">Day</span> <span class="nf">from</span><span class="o">(</span><span class="n">String</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">for</span> <span class="o">(</span><span class="n">Day</span> <span class="n">day</span> <span class="o">:</span> <span class="n">Day</span><span class="o">.</span><span class="na">values</span><span class="o">())</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">day</span><span class="o">.</span><span class="na">name</span><span class="o">().</span><span class="na">equalsIgnoreCase</span><span class="o">(</span><span class="n">value</span><span class="o">))</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="n">day</span><span class="o">;</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+    <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></div><blockquote>
+<p><code>from</code>, <code>parse</code> also a good name! Use meaningful names!</p>
+</blockquote>
+<p><strong>In this post we have seen some less known features of enums.</strong></p>
+<p>Documentation about enums are <a href="https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Enum.html">here</a>.</p>
+<p>Code can be found: <a href="https://github.com/torokmark/do-you-know-java">https://github.com/torokmark/do-you-know-java</a></p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>Easter Egg in C</title>

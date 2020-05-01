@@ -3,12 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://torokmark.github.io/categories/c/</loc>
-    <lastmod>2020-04-29T12:00:00+01:00</lastmod>
+    <loc>https://torokmark.github.io/categories/</loc>
+    <lastmod>2020-05-01T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://torokmark.github.io/categories/</loc>
+    <loc>https://torokmark.github.io/categories/do-you-know-java/</loc>
+    <lastmod>2020-05-01T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://torokmark.github.io/posts/do-you-know-java-less-known-side-of-enums/</loc>
+    <lastmod>2020-05-01T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://torokmark.github.io/tags/enum/</loc>
+    <lastmod>2020-05-01T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://torokmark.github.io/categories/java/</loc>
+    <lastmod>2020-05-01T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://torokmark.github.io/posts/</loc>
+    <lastmod>2020-05-01T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://torokmark.github.io/tags/</loc>
+    <lastmod>2020-05-01T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://torokmark.github.io/categories/c/</loc>
     <lastmod>2020-04-29T12:00:00+01:00</lastmod>
   </url>
   
@@ -23,17 +53,7 @@
   </url>
   
   <url>
-    <loc>https://torokmark.github.io/posts/</loc>
-    <lastmod>2020-04-29T12:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://torokmark.github.io/tags/riddle/</loc>
-    <lastmod>2020-04-29T12:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://torokmark.github.io/tags/</loc>
     <lastmod>2020-04-29T12:00:00+01:00</lastmod>
   </url>
   
@@ -43,17 +63,7 @@
   </url>
   
   <url>
-    <loc>https://torokmark.github.io/categories/do-you-know-java/</loc>
-    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://torokmark.github.io/posts/do-you-know-java-execute-shell-commands/</loc>
-    <lastmod>2020-04-28T12:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://torokmark.github.io/categories/java/</loc>
     <lastmod>2020-04-28T12:00:00+01:00</lastmod>
   </url>
   
@@ -464,11 +474,6 @@
   
   <url>
     <loc>https://torokmark.github.io/posts/do-you-know-java-entry-point-in-interface/</loc>
-    <lastmod>2019-08-09T12:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://torokmark.github.io/tags/enum/</loc>
     <lastmod>2019-08-09T12:00:00+01:00</lastmod>
   </url>
   
