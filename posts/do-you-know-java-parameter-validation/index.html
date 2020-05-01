@@ -11,7 +11,7 @@ What if we are intended to validate the parameters of a function? What if we lik
 In this post we take a look at two approaches. At first, we see how we can check parameters with assertion and what its pros and cons are.">
 <meta itemprop="datePublished" content="2019-12-21T12:00:00&#43;01:00" />
 <meta itemprop="dateModified" content="2019-12-21T12:00:00&#43;01:00" />
-<meta itemprop="wordCount" content="263">
+<meta itemprop="wordCount" content="305">
 
 
 
@@ -106,6 +106,14 @@ handling is completely part of the code with language level features
     <span class="o">}</span>
     <span class="c1">// ...
 </span><span class="c1"></span><span class="o">}</span>
+</code></pre></div><h4 id="objectsrequirenonnull">Objects.requireNonNull<a href="#objectsrequirenonnull" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<p>The best way to validate parameters against <code>null</code> is to use a solutions from
+the standard edition or a framework.</p>
+<p>Here is a solution among many of them.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kt">void</span> <span class="nf">print</span><span class="o">(</span><span class="n">Person</span> <span class="n">person</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">Objects</span><span class="o">.</span><span class="na">requireNonNull</span><span class="o">(</span><span class="n">person</span><span class="o">,</span> <span class="s">&#34;person cannot be null&#34;</span><span class="o">);</span>
+    <span class="c1">// ...
+</span><span class="c1"></span><span class="o">}</span>
 </code></pre></div><p>While assertion is switched off by default in runtime, exception is still part
 of the language. While assertion is an error, <code>IllegalArgumentException</code> is
 an exception. Never handle errors.</p>
@@ -118,7 +126,7 @@ an exception. Never handle errors.</p>
 				<p>
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://torokmark.github.io/tags/exception">exception</a></span><span class="tag"><a href="https://torokmark.github.io/tags/assertion">assertion</a></span><span class="tag"><a href="https://torokmark.github.io/tags/assert">assert</a></span><span class="tag"><a href="https://torokmark.github.io/tags/argument">argument</a></span><span class="tag"><a href="https://torokmark.github.io/tags/parameter">parameter</a></span>
 				</p>
-				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>263 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>305 Words</p>
 				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2019-12-21 12:00 &#43;0100</p>
 			</footer>
 		</article>

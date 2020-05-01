@@ -149,7 +149,7 @@ ended
 <ul>
 <li>Thread is non-daemon by default</li>
 <li>Thread can be set as daemon before start</li>
-<li>JVM terminates when all remaining threads are threads</li>
+<li>JVM terminates when all remaining threads are terminated</li>
 </ul>
 <p><strong>If we want to terminate an infinite thread, we should set it as daemon.</strong></p>
 <p>Documentation about <a href="https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Thread.html#setDaemon(boolean)">Daemon</a></p>
@@ -205,7 +205,7 @@ that we leave resources unclosed and no need to check nulls either.</p>
 <li>Resource has to implement <code>AutoClosable</code> interface</li>
 </ol>
 <h4 id="autoclosable">AutoClosable</h4>
-<p>What kinf of classes fit in the header of try-with-resource? Those that implement <code>AutoClosable</code></p>
+<p>What kinf of classes fit in the header of try-with-resource? Those, that implement <code>AutoClosable</code>.</p>
 <div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ClosableResource</span> <span class="kd">implements</span> <span class="n">AutoCloseable</span> <span class="o">{</span>
     <span class="nd">@Override</span>
     <span class="kd">public</span> <span class="kt">void</span> <span class="nf">close</span><span class="o">()</span> <span class="o">{</span>
@@ -238,7 +238,7 @@ Further reading about <a href="https://docs.oracle.com/javase/tutorial/essential
 			<description>Catching multiple exceptions is very useful when we are intended to do the same operations when they are raised.
 The feature introduced in Java 7 and by using it we can place exceptions in the same catch branch.
 The old way looked like as follows.
-try { } catch (SQLException ex) { logger.log(ex); } catch (RemoteException ex) { logger.log(ex); } catch (NullPointerException ex) { logger.log(ex); } From Java 7 and onwards we can place multiple exceptions in one catch branch.</description>
+try { } catch (SQLException ex) { logger.log(ex); } catch (RemoteException ex) { logger.log(ex); } catch (NullPointerException ex) { logger.log(ex); } In Java 7 and onwards, we can place multiple exceptions in one catch branch.</description>
 			<content type="html"><![CDATA[<p><strong>Catching multiple exceptions is very useful when we are intended to do the same operations when they are raised.</strong></p>
 <p>The feature introduced in Java 7 and by using it we can place exceptions in the same catch branch.</p>
 <p>The old way looked like as follows.</p>
@@ -251,7 +251,7 @@ try { } catch (SQLException ex) { logger.log(ex); } catch (RemoteException ex) {
 <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">NullPointerException</span> <span class="n">ex</span><span class="o">)</span> <span class="o">{</span>
     <span class="n">logger</span><span class="o">.</span><span class="na">log</span><span class="o">(</span><span class="n">ex</span><span class="o">);</span>
 <span class="o">}</span>
-</code></pre></div><p>From Java 7 and onwards we can place multiple exceptions in one catch branch.</p>
+</code></pre></div><p>In Java 7 and onwards, we can place multiple exceptions in one catch branch.</p>
 <div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="k">try</span> <span class="o">{</span>
     <span class="c1">// ...
 </span><span class="c1"></span><span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">SQLException</span> <span class="o">|</span> <span class="n">RemoteException</span> <span class="o">|</span> <span class="n">NullPointerException</span> <span class="n">ex</span><span class="o">)</span> <span class="o">{</span>
@@ -318,7 +318,7 @@ called <code>start</code> method is the one that we implemented in the child cla
 </code></pre></div><p><a href="https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Throwable.html">Java 13 doc : Throwable</a><br>
 <a href="https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/StackTraceElement.html">Java 13 doc : StackTraceElement</a><br>
 <a href="https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Class.html">Java 13 doc : Class</a></p>
-<p><strong>Using stacktrace and reflection can be handy many times, as we saw here as well!</strong></p>
+<p><strong>Stacktrace and reflection can be handy many times, as we saw here as well!</strong></p>
 <p>Code can be found: <a href="https://github.com/torokmark/do-you-know-java">https://github.com/torokmark/do-you-know-java</a></p>
 ]]></content>
 		</item>
@@ -528,6 +528,14 @@ handling is completely part of the code with language level features
     <span class="k">if</span> <span class="o">(</span><span class="kc">null</span> <span class="o">==</span> <span class="n">person</span><span class="o">)</span> <span class="o">{</span>
         <span class="k">throw</span> <span class="k">new</span> <span class="n">IllegalArgumentException</span><span class="o">(</span><span class="n">NULL_CHECK_MSG</span><span class="o">);</span>
     <span class="o">}</span>
+    <span class="c1">// ...
+</span><span class="c1"></span><span class="o">}</span>
+</code></pre></div><h4 id="objectsrequirenonnull">Objects.requireNonNull</h4>
+<p>The best way to validate parameters against <code>null</code> is to use a solutions from
+the standard edition or a framework.</p>
+<p>Here is a solution among many of them.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kt">void</span> <span class="nf">print</span><span class="o">(</span><span class="n">Person</span> <span class="n">person</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">Objects</span><span class="o">.</span><span class="na">requireNonNull</span><span class="o">(</span><span class="n">person</span><span class="o">,</span> <span class="s">&#34;person cannot be null&#34;</span><span class="o">);</span>
     <span class="c1">// ...
 </span><span class="c1"></span><span class="o">}</span>
 </code></pre></div><p>While assertion is switched off by default in runtime, exception is still part
@@ -1206,13 +1214,12 @@ After the binary got executed, <code>Hello Interface!</code> pops up on the std 
 <p><code>enum</code> is also a class type, with some extras. All types that are defined as <code>enum</code>
 implicitly inhereted from <code>Enum</code> special class.</p>
 <div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">enum</span> <span class="n">Main</span> <span class="o">{</span>
-    <span class="n">MAIN</span><span class="o">;</span>
+    <span class="o">;</span>
     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
         <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;Hello Enum!&#34;</span><span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span>
-</code></pre></div><p><code>enum</code> requires to have at least one object, so the only reason why <code>MAIN</code> is there is this one.
-It can be empty object as well (<code>;</code>).
+</code></pre></div><p><code>enum</code> requires to have a semicolon (<code>;</code>) at least if we have methods in the <code>enum</code>.
 It prints <code>Hello Enum!</code> to std out after we executed the <code>java Main</code> command.</p>
 <h4 id="compare-them">Compare them</h4>
 <p>The most common type where we place the entry point is definitely <strong>class</strong> type.

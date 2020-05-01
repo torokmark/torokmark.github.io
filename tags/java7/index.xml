@@ -20,7 +20,7 @@
       <description>Catching multiple exceptions is very useful when we are intended to do the same operations when they are raised.
 The feature introduced in Java 7 and by using it we can place exceptions in the same catch branch.
 The old way looked like as follows.
-try { } catch (SQLException ex) { logger.log(ex); } catch (RemoteException ex) { logger.log(ex); } catch (NullPointerException ex) { logger.log(ex); } From Java 7 and onwards we can place multiple exceptions in one catch branch.</description>
+try { } catch (SQLException ex) { logger.log(ex); } catch (RemoteException ex) { logger.log(ex); } catch (NullPointerException ex) { logger.log(ex); } In Java 7 and onwards, we can place multiple exceptions in one catch branch.</description>
     </item>
     
   </channel>
