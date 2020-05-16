@@ -4,12 +4,67 @@
   
   <url>
     <loc>https://torokmark.github.io/categories/</loc>
-    <lastmod>2020-05-01T12:00:00+01:00</lastmod>
+    <lastmod>2020-05-05T12:00:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://torokmark.github.io/categories/do-you-know-java/</loc>
-    <lastmod>2020-05-01T12:00:00+01:00</lastmod>
+    <lastmod>2020-05-05T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://torokmark.github.io/posts/do-you-know-java-helpful-nullpointerexceptions/</loc>
+    <lastmod>2020-05-05T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://torokmark.github.io/tags/exception/</loc>
+    <lastmod>2020-05-05T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://torokmark.github.io/categories/java/</loc>
+    <lastmod>2020-05-05T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://torokmark.github.io/categories/java14/</loc>
+    <lastmod>2020-05-05T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://torokmark.github.io/tags/nullpointerexception/</loc>
+    <lastmod>2020-05-05T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://torokmark.github.io/posts/</loc>
+    <lastmod>2020-05-05T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://torokmark.github.io/tags/</loc>
+    <lastmod>2020-05-05T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://torokmark.github.io/tags/verbose/</loc>
+    <lastmod>2020-05-05T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://torokmark.github.io/posts/do-you-know-java-i-need-dollars-dollars/</loc>
+    <lastmod>2020-05-02T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://torokmark.github.io/tags/dollar-sign/</loc>
+    <lastmod>2020-05-02T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://torokmark.github.io/tags/identifier/</loc>
+    <lastmod>2020-05-02T12:00:00+01:00</lastmod>
   </url>
   
   <url>
@@ -19,21 +74,6 @@
   
   <url>
     <loc>https://torokmark.github.io/tags/enum/</loc>
-    <lastmod>2020-05-01T12:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://torokmark.github.io/categories/java/</loc>
-    <lastmod>2020-05-01T12:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://torokmark.github.io/posts/</loc>
-    <lastmod>2020-05-01T12:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://torokmark.github.io/tags/</loc>
     <lastmod>2020-05-01T12:00:00+01:00</lastmod>
   </url>
   
@@ -119,11 +159,6 @@
   
   <url>
     <loc>https://torokmark.github.io/posts/do-you-know-java-try-with-resource/</loc>
-    <lastmod>2020-04-24T12:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://torokmark.github.io/tags/exception/</loc>
     <lastmod>2020-04-24T12:00:00+01:00</lastmod>
   </url>
   
@@ -319,11 +354,6 @@
   
   <url>
     <loc>https://torokmark.github.io/posts/do-you-know-java-underscore-as-identifier/</loc>
-    <lastmod>2019-10-28T12:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://torokmark.github.io/tags/identifier/</loc>
     <lastmod>2019-10-28T12:00:00+01:00</lastmod>
   </url>
   

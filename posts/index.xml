@@ -5,8 +5,85 @@
 		<description>Recent content in Posts on T[h]ink]er[ing</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
-		<lastBuildDate>Fri, 01 May 2020 12:00:00 +0100</lastBuildDate>
+		<lastBuildDate>Tue, 05 May 2020 12:00:00 +0100</lastBuildDate>
 		<atom:link href="https://torokmark.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Do you know Java: Helpful NullPointerExceptions</title>
+			<link>https://torokmark.github.io/posts/do-you-know-java-helpful-nullpointerexceptions/</link>
+			<pubDate>Tue, 05 May 2020 12:00:00 +0100</pubDate>
+			
+			<guid>https://torokmark.github.io/posts/do-you-know-java-helpful-nullpointerexceptions/</guid>
+			<description>Java 14 has brought a helpful feature with that we can get information about the source of the raised NullPointerException
+NullPointerException is not very friendly and can occur anywhere. All the placed where we don&amp;rsquo;t want it to be. In this post I will show you how to track down its source.
+The following source code is given:
+String value = null; System.out.println(value.length()); Pre Java 14 Era The good old error message is the following:</description>
+			<content type="html"><![CDATA[<p><strong>Java 14 has brought a helpful feature with that we can get information about
+the source of the raised <code>NullPointerException</code></strong></p>
+<p><code>NullPointerException</code> is not very friendly and can occur anywhere. All the
+placed where we don&rsquo;t want it to be. In this post I will show you how to track
+down its source.</p>
+<p>The following source code is given:</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">String</span> <span class="n">value</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span>
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">value</span><span class="o">.</span><span class="na">length</span><span class="o">());</span>
+</code></pre></div><h4 id="pre-java-14-era">Pre Java 14 Era</h4>
+<p>The good old error message is the following:</p>
+<div class="highlight"><pre class="chroma"><code class="language-txt" data-lang="txt">$ java NPEDemo                                        
+Exception in thread &#34;main&#34; java.lang.NullPointerException
+	at NPEDemo.main(NPEDemo.java:5)
+</code></pre></div><h4 id="java-14-era">Java 14 Era</h4>
+<p>A new command-line option was introduced, called <code>-XX:{+|-}ShowCodeDetailsInExceptionMessages</code>.
+That is <code>false</code> by default, so detailed message won&rsquo;t be shown.</p>
+<div class="highlight"><pre class="chroma"><code class="language-txt" data-lang="txt">$ java -XX:+ShowCodeDetailsInExceptionMessages NPEDemo
+Exception in thread &#34;main&#34; java.lang.NullPointerException: Cannot invoke &#34;String.length()&#34; because &#34;&lt;local1&gt;&#34; is null
+	at NPEDemo.main(NPEDemo.java:5)
+</code></pre></div><p>You can find more here: <a href="https://openjdk.java.net/jeps/358">JEP 358: Helpful NullPointerExceptions</a></p>
+<p><strong>What a good feature has been brought by Java 14!</strong></p>
+<p>Code can be found: <a href="https://github.com/torokmark/do-you-know-java">https://github.com/torokmark/do-you-know-java</a></p>
+]]></content>
+		</item>
+		
+		<item>
+			<title>Do you know Java: I Need Dollars, Dollars, ...</title>
+			<link>https://torokmark.github.io/posts/do-you-know-java-i-need-dollars-dollars/</link>
+			<pubDate>Sat, 02 May 2020 12:00:00 +0100</pubDate>
+			
+			<guid>https://torokmark.github.io/posts/do-you-know-java-i-need-dollars-dollars/</guid>
+			<description>Some special characters are accepted as part of an identifier, dollar sign is among them.
+Have you ever though about to write an application, whichever small that would be, and use as less identifier as possible.
+And what if the identifier is weird itself already?
+class $ { private String $; public void $(String $) { this.$ = $; } public String $() { return this.$; } } public class Main { public static void main(String[] args) { $ $ = new $(); $.</description>
+			<content type="html"><![CDATA[<p><strong>Some special characters are accepted as part of an identifier, dollar sign is
+among them.</strong></p>
+<p>Have you ever though about to write an application, whichever small that would be,
+and use as less identifier as possible.</p>
+<p>And what if the identifier is weird itself already?</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">$</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">$</span><span class="o">;</span>
+    
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">$</span><span class="o">(</span><span class="n">String</span> <span class="n">$</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">.</span><span class="na">$</span> <span class="o">=</span> <span class="n">$</span><span class="o">;</span>
+    <span class="o">}</span>
+    
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">$</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="k">this</span><span class="o">.</span><span class="na">$</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">$</span> <span class="n">$</span> <span class="o">=</span> <span class="k">new</span> <span class="n">$</span><span class="o">();</span>
+        <span class="n">$</span><span class="o">.</span><span class="na">$</span><span class="o">(</span><span class="s">&#34;$&#34;</span><span class="o">);</span>
+        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">$</span><span class="o">.</span><span class="na">$</span><span class="o">());</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><blockquote>
+<p><code>_</code> works similar in pre Java 9 versions, and <code>__</code> works similar in Java 9 and onwards.</p>
+</blockquote>
+<p><strong><code>$</code> character is used as an identifier as many place as it is possible.</strong></p>
+<p>Code can be found: <a href="https://github.com/torokmark/do-you-know-java">https://github.com/torokmark/do-you-know-java</a></p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>Do you know Java: Less known side of Enums</title>

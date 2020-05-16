@@ -6,10 +6,34 @@
     <description>Recent content in java on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 May 2020 12:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2020 12:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://torokmark.github.io/categories/java/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Do you know Java: Helpful NullPointerExceptions</title>
+      <link>https://torokmark.github.io/posts/do-you-know-java-helpful-nullpointerexceptions/</link>
+      <pubDate>Tue, 05 May 2020 12:00:00 +0100</pubDate>
+      
+      <guid>https://torokmark.github.io/posts/do-you-know-java-helpful-nullpointerexceptions/</guid>
+      <description>Java 14 has brought a helpful feature with that we can get information about the source of the raised NullPointerException
+NullPointerException is not very friendly and can occur anywhere. All the placed where we don&amp;rsquo;t want it to be. In this post I will show you how to track down its source.
+The following source code is given:
+String value = null; System.out.println(value.length()); Pre Java 14 Era The good old error message is the following:</description>
+    </item>
+    
+    <item>
+      <title>Do you know Java: I Need Dollars, Dollars, ...</title>
+      <link>https://torokmark.github.io/posts/do-you-know-java-i-need-dollars-dollars/</link>
+      <pubDate>Sat, 02 May 2020 12:00:00 +0100</pubDate>
+      
+      <guid>https://torokmark.github.io/posts/do-you-know-java-i-need-dollars-dollars/</guid>
+      <description>Some special characters are accepted as part of an identifier, dollar sign is among them.
+Have you ever though about to write an application, whichever small that would be, and use as less identifier as possible.
+And what if the identifier is weird itself already?
+class $ { private String $; public void $(String $) { this.$ = $; } public String $() { return this.$; } } public class Main { public static void main(String[] args) { $ $ = new $(); $.</description>
+    </item>
     
     <item>
       <title>Do you know Java: Less known side of Enums</title>

@@ -6,7 +6,7 @@
     <description>Recent content in Categories on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 May 2020 12:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2020 12:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://torokmark.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>do you know java</title>
       <link>https://torokmark.github.io/categories/do-you-know-java/</link>
-      <pubDate>Fri, 01 May 2020 12:00:00 +0100</pubDate>
+      <pubDate>Tue, 05 May 2020 12:00:00 +0100</pubDate>
       
       <guid>https://torokmark.github.io/categories/do-you-know-java/</guid>
       <description></description>
@@ -23,9 +23,18 @@
     <item>
       <title>java</title>
       <link>https://torokmark.github.io/categories/java/</link>
-      <pubDate>Fri, 01 May 2020 12:00:00 +0100</pubDate>
+      <pubDate>Tue, 05 May 2020 12:00:00 +0100</pubDate>
       
       <guid>https://torokmark.github.io/categories/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>java14</title>
+      <link>https://torokmark.github.io/categories/java14/</link>
+      <pubDate>Tue, 05 May 2020 12:00:00 +0100</pubDate>
+      
+      <guid>https://torokmark.github.io/categories/java14/</guid>
       <description></description>
     </item>
     

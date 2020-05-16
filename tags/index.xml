@@ -6,10 +6,55 @@
     <description>Recent content in Tags on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 May 2020 12:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Tue, 05 May 2020 12:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://torokmark.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>exception</title>
+      <link>https://torokmark.github.io/tags/exception/</link>
+      <pubDate>Tue, 05 May 2020 12:00:00 +0100</pubDate>
+      
+      <guid>https://torokmark.github.io/tags/exception/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>nullpointerexception</title>
+      <link>https://torokmark.github.io/tags/nullpointerexception/</link>
+      <pubDate>Tue, 05 May 2020 12:00:00 +0100</pubDate>
+      
+      <guid>https://torokmark.github.io/tags/nullpointerexception/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>verbose</title>
+      <link>https://torokmark.github.io/tags/verbose/</link>
+      <pubDate>Tue, 05 May 2020 12:00:00 +0100</pubDate>
+      
+      <guid>https://torokmark.github.io/tags/verbose/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dollar sign</title>
+      <link>https://torokmark.github.io/tags/dollar-sign/</link>
+      <pubDate>Sat, 02 May 2020 12:00:00 +0100</pubDate>
+      
+      <guid>https://torokmark.github.io/tags/dollar-sign/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>identifier</title>
+      <link>https://torokmark.github.io/tags/identifier/</link>
+      <pubDate>Sat, 02 May 2020 12:00:00 +0100</pubDate>
+      
+      <guid>https://torokmark.github.io/tags/identifier/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>enum</title>
@@ -125,15 +170,6 @@
       <pubDate>Sat, 25 Apr 2020 12:00:00 +0100</pubDate>
       
       <guid>https://torokmark.github.io/tags/thread/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>exception</title>
-      <link>https://torokmark.github.io/tags/exception/</link>
-      <pubDate>Fri, 24 Apr 2020 12:00:00 +0100</pubDate>
-      
-      <guid>https://torokmark.github.io/tags/exception/</guid>
       <description></description>
     </item>
     
@@ -395,15 +431,6 @@
       <pubDate>Mon, 18 Nov 2019 12:00:00 +0100</pubDate>
       
       <guid>https://torokmark.github.io/tags/unary-operator/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>identifier</title>
-      <link>https://torokmark.github.io/tags/identifier/</link>
-      <pubDate>Mon, 28 Oct 2019 12:00:00 +0100</pubDate>
-      
-      <guid>https://torokmark.github.io/tags/identifier/</guid>
       <description></description>
     </item>
     
