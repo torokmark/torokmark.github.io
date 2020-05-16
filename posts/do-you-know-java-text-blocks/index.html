@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta itemprop="name" content="Do you know Java: Text Blocks">
+<meta itemprop="description" content="Text blocks is a new proposed feature, hopefully coming with Java 15.
+Until then, let us see how it looks like in Java 14 as a feature preview.
+Here is how we declare a multiline string value. Once we have to concatenate, and also have to place new line characters (\n).
+String text = &#34;one line\n&#34; &#43; &#34;and\n&#34; &#43; &#34;another&#34;; When text is printed out:
+one line and another The new feature looks like the following.">
+<meta itemprop="datePublished" content="2020-05-03T12:00:00&#43;01:00" />
+<meta itemprop="dateModified" content="2020-05-03T12:00:00&#43;01:00" />
+<meta itemprop="wordCount" content="183">
+
+
+
+<meta itemprop="keywords" content="string,literal,multiline,text block," /><meta property="og:title" content="Do you know Java: Text Blocks" />
+<meta property="og:description" content="Text blocks is a new proposed feature, hopefully coming with Java 15.
+Until then, let us see how it looks like in Java 14 as a feature preview.
+Here is how we declare a multiline string value. Once we have to concatenate, and also have to place new line characters (\n).
+String text = &#34;one line\n&#34; &#43; &#34;and\n&#34; &#43; &#34;another&#34;; When text is printed out:
+one line and another The new feature looks like the following." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://torokmark.github.io/posts/do-you-know-java-text-blocks/" />
+<meta property="article:published_time" content="2020-05-03T12:00:00+01:00" />
+<meta property="article:modified_time" content="2020-05-03T12:00:00+01:00" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Do you know Java: Text Blocks"/>
+<meta name="twitter:description" content="Text blocks is a new proposed feature, hopefully coming with Java 15.
+Until then, let us see how it looks like in Java 14 as a feature preview.
+Here is how we declare a multiline string value. Once we have to concatenate, and also have to place new line characters (\n).
+String text = &#34;one line\n&#34; &#43; &#34;and\n&#34; &#43; &#34;another&#34;; When text is printed out:
+one line and another The new feature looks like the following."/>
+
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/site.webmanifest">
+	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="">
+	<link rel="shortcut icon" href="/favicon.ico">
+
+	<title>Do you know Java: Text Blocks</title>
+	<link rel="stylesheet" href="https://torokmark.github.io/css/style.min.657bcb7af31123e4156b1a3d2ff60a636717e54ead74f882136b5114cf72b55e.css" integrity="sha256-ZXvLevMRI+QVaxo9L/YKY2cX5U6tdPiCE2tRFM9ytV4=" crossorigin="anonymous">
+	
+</head>
+
+<body id="page">
+	
+	<header id="site-header" class="animated slideInUp faster">
+		<div class="hdr-wrapper section-inner">
+			<div class="hdr-left">
+				<div class="site-branding">
+					<a href="https://torokmark.github.io">T[h]ink]er[ing</a>
+				</div>
+				<nav class="site-nav hide-in-mobile">
+					
+				<a href="https://torokmark.github.io/posts">Posts</a>
+				<a href="https://torokmark.github.io/about">About</a>
+
+				</nav>
+			</div>
+			<div class="hdr-right hdr-icons">
+				<span class="hdr-social hide-in-mobile"><a href="https://github.com/torokmark" target="_blank" rel="noopener me" title="Github"><svg xmlns="http://www.w3.org/2000/svg" class="feather" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg></a></span><button id="menu-btn" class="hdr-btn" title="Menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+			</div>
+		</div>
+	</header>
+	<div id="mobile-menu" class="animated fast">
+		<ul>
+			<li><a href="https://torokmark.github.io/posts">Posts</a></li>
+			<li><a href="https://torokmark.github.io/about">About</a></li>
+		</ul>
+	</div>
+
+
+	<main class="site-main section-inner animated fadeIn faster">
+		<article class="thin">
+			<header class="post-header">
+				<div class="post-meta"><span>May 3, 2020</span></div>
+				<h1>Do you know Java: Text Blocks</h1>
+			</header>
+			<div class="content">
+				<p><strong>Text blocks is a new proposed feature, hopefully coming with Java 15.</strong></p>
+<p>Until then, let us see how it looks like in Java 14 as a feature preview.</p>
+<p>Here is how we declare a multiline string value. Once we have to concatenate,
+and also have to place new line characters (<code>\n</code>).</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">String</span> <span class="n">text</span> <span class="o">=</span> <span class="s">&#34;one line\n&#34;</span> <span class="o">+</span>
+              <span class="s">&#34;and\n&#34;</span> <span class="o">+</span>
+              <span class="s">&#34;another&#34;</span><span class="o">;</span>
+</code></pre></div><p>When text is printed out:</p>
+<div class="highlight"><pre class="chroma"><code class="language-txt" data-lang="txt">one line
+and
+another
+</code></pre></div><p>The new feature looks like the following. Much comfortabl compared to the one
+which we can use nowadays.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">String</span> <span class="n">text</span> <span class="o">=</span> <span class="s">&#34;&#34;&#34;
+</span><span class="s">            one line
+</span><span class="s">            and
+</span><span class="s">            another
+</span><span class="s">             &#34;&#34;&#34;</span><span class="o">;</span>
+</code></pre></div><p>And the output is the same.</p>
+<p>Things that we have to mention here. Since, this feature is preview, we have
+to use <code>--enable-preview</code> and <code>--release 14</code> options with <code>javac</code>. Bear in mind
+that indentation matters.</p>
+<div class="highlight"><pre class="chroma"><code class="language-txt" data-lang="txt">$ java --enable-preview --source 14 Main.java                 
+Note: Main.java uses preview language features.
+Note: Recompile with -Xlint:preview for details.
+one line
+and
+another
+</code></pre></div><p><strong>I am looking forward to seeing text block in Java! Hope, it will be shipped with Java 15.</strong></p>
+<p>Further reading about <a href="https://openjdk.java.net/jeps/378">JEP 378: Text Blocks</a></p>
+<p>Code can be found: <a href="https://github.com/torokmark/do-you-know-java">https://github.com/torokmark/do-you-know-java</a></p>
+
+			</div>
+			<hr class="post-end">
+			<footer class="post-info">
+				<p>
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://torokmark.github.io/tags/string">string</a></span><span class="tag"><a href="https://torokmark.github.io/tags/literal">literal</a></span><span class="tag"><a href="https://torokmark.github.io/tags/multiline">multiline</a></span><span class="tag"><a href="https://torokmark.github.io/tags/text-block">text block</a></span>
+				</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>183 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-05-03 13:00 &#43;0200</p>
+			</footer>
+		</article>
+		<div class="post-nav thin">
+			<a class="next-post" href="https://torokmark.github.io/posts/do-you-know-java-helpful-nullpointerexceptions/">
+				<span class="post-nav-label"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-left"><line x1="19" y1="12" x2="5" y2="12"></line><polyline points="12 19 5 12 12 5"></polyline></svg>&nbsp;Newer</span><br><span>Do you know Java: Helpful NullPointerExceptions</span>
+			</a>
+			<a class="prev-post" href="https://torokmark.github.io/posts/do-you-know-java-i-need-dollars-dollars/">
+				<span class="post-nav-label">Older&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg></span><br><span>Do you know Java: I Need Dollars, Dollars, ...</span>
+			</a>
+		</div>
+		<div id="comments" class="thin">
+</div>
+	</main>
+
+	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
+		<p>&copy; 2020 <a href="https://torokmark.github.io">Mark Torok</a></p>
+		<p>
+			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://torokmark.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
+		</p>
+	</footer>
+
+
+
+	<script src="https://torokmark.github.io/js/bundle.min.4a9a0ac3d2217822c7865b4161e6c2a71de1d70492264337755427898dd718f6.js" integrity="sha256-SpoKw9IheCLHhltBYebCpx3h1wSSJkM3dVQniY3XGPY=" crossorigin="anonymous"></script>
+	
+
+</body>
+
+</html>

@@ -6,10 +6,28 @@
     <description>Recent content in Tags on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 05 May 2020 12:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Sat, 16 May 2020 12:00:00 +0100</lastBuildDate>
     
 	<atom:link href="https://torokmark.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>final</title>
+      <link>https://torokmark.github.io/tags/final/</link>
+      <pubDate>Sat, 16 May 2020 12:00:00 +0100</pubDate>
+      
+      <guid>https://torokmark.github.io/tags/final/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>immutable object</title>
+      <link>https://torokmark.github.io/tags/immutable-object/</link>
+      <pubDate>Sat, 16 May 2020 12:00:00 +0100</pubDate>
+      
+      <guid>https://torokmark.github.io/tags/immutable-object/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>exception</title>
@@ -35,6 +53,42 @@
       <pubDate>Tue, 05 May 2020 12:00:00 +0100</pubDate>
       
       <guid>https://torokmark.github.io/tags/verbose/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>literal</title>
+      <link>https://torokmark.github.io/tags/literal/</link>
+      <pubDate>Sun, 03 May 2020 12:00:00 +0100</pubDate>
+      
+      <guid>https://torokmark.github.io/tags/literal/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>multiline</title>
+      <link>https://torokmark.github.io/tags/multiline/</link>
+      <pubDate>Sun, 03 May 2020 12:00:00 +0100</pubDate>
+      
+      <guid>https://torokmark.github.io/tags/multiline/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>string</title>
+      <link>https://torokmark.github.io/tags/string/</link>
+      <pubDate>Sun, 03 May 2020 12:00:00 +0100</pubDate>
+      
+      <guid>https://torokmark.github.io/tags/string/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>text block</title>
+      <link>https://torokmark.github.io/tags/text-block/</link>
+      <pubDate>Sun, 03 May 2020 12:00:00 +0100</pubDate>
+      
+      <guid>https://torokmark.github.io/tags/text-block/</guid>
       <description></description>
     </item>
     
@@ -498,15 +552,6 @@
     </item>
     
     <item>
-      <title>literal</title>
-      <link>https://torokmark.github.io/tags/literal/</link>
-      <pubDate>Thu, 05 Sep 2019 12:00:00 +0100</pubDate>
-      
-      <guid>https://torokmark.github.io/tags/literal/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>numeric literal</title>
       <link>https://torokmark.github.io/tags/numeric-literal/</link>
       <pubDate>Thu, 05 Sep 2019 12:00:00 +0100</pubDate>
@@ -575,15 +620,6 @@
       <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
       
       <guid>https://torokmark.github.io/tags/set/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>string</title>
-      <link>https://torokmark.github.io/tags/string/</link>
-      <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
-      
-      <guid>https://torokmark.github.io/tags/string/</guid>
       <description></description>
     </item>
     
