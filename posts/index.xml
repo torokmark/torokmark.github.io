@@ -5,8 +5,72 @@
 		<description>Recent content in Posts on T[h]ink]er[ing</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
-		<lastBuildDate>Sat, 16 May 2020 12:00:00 +0100</lastBuildDate>
+		<lastBuildDate>Sat, 23 May 2020 12:00:00 +0100</lastBuildDate>
 		<atom:link href="https://torokmark.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Do you know Java: Pattern Matching for instanceof</title>
+			<link>https://torokmark.github.io/posts/do-you-know-java-instanceof-pattern-matching/</link>
+			<pubDate>Sat, 23 May 2020 12:00:00 +0100</pubDate>
+			
+			<guid>https://torokmark.github.io/posts/do-you-know-java-instanceof-pattern-matching/</guid>
+			<description>Java 15 brings a syntactic sugar, called Pattern Matching for instanceof, with which we can shorten the code and make it more safe.
+In prior versions of Java, the instanceof operator workes as follows:
+Object o = &amp;#34;asdf&amp;#34;; if (o instanceof String) { String s = (String) o; System.out.println(o); } Java 15 - and Java 14 as a preview feature - introduces an enhanced instanceof operator, which brings the ability to cast the eximined instance to the type of the right operand.</description>
+			<content type="html"><![CDATA[<p><strong>Java 15 brings a syntactic sugar, called <em>Pattern Matching for instanceof</em>, with which we
+can shorten the code and make it more safe.</strong></p>
+<p>In prior versions of Java, the <code>instanceof</code> operator workes as follows:</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">Object</span> <span class="n">o</span> <span class="o">=</span> <span class="s">&#34;asdf&#34;</span><span class="o">;</span>
+
+<span class="k">if</span> <span class="o">(</span><span class="n">o</span> <span class="k">instanceof</span> <span class="n">String</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">String</span> <span class="n">s</span> <span class="o">=</span> <span class="o">(</span><span class="n">String</span><span class="o">)</span> <span class="n">o</span><span class="o">;</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">o</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div><p>Java 15 - and Java 14 as a preview feature - introduces an enhanced <code>instanceof</code> operator,
+which brings the ability to cast the eximined instance to the type of the right operand.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">Object</span> <span class="n">o</span> <span class="o">=</span> <span class="s">&#34;apple&#34;</span><span class="o">;</span>
+
+<span class="k">if</span> <span class="o">(</span><span class="n">o</span> <span class="k">instanceof</span> <span class="n">String</span> <span class="n">s</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s</span><span class="o">);</span>
+<span class="o">}</span>
+
+<span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">animals</span> <span class="o">=</span> <span class="n">Arrays</span><span class="o">.</span><span class="na">asList</span><span class="o">(</span><span class="s">&#34;cat&#34;</span><span class="o">,</span> <span class="s">&#34;dog&#34;</span><span class="o">);</span>
+
+<span class="k">if</span> <span class="o">(</span><span class="n">animals</span> <span class="k">instanceof</span> <span class="n">List</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">list</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">list</span><span class="o">);</span>
+<span class="o">}</span>
+</code></pre></div><h4 id="scope">Scope</h4>
+<p>Variable <code>s</code> is introduced in the scope of <code>if</code> statement, though it is not available
+in <code>else</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">Object</span> <span class="n">o</span> <span class="o">=</span> <span class="s">&#34;apple&#34;</span><span class="o">;</span>
+
+<span class="k">if</span> <span class="o">(</span><span class="n">o</span> <span class="k">instanceof</span> <span class="n">String</span> <span class="n">s</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s</span><span class="o">);</span>
+<span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+    <span class="c1">// System.out.println(s); // does not compile, s is not known
+</span><span class="c1"></span><span class="o">}</span>
+</code></pre></div><h4 id="shadowing">Shadowing</h4>
+<p>Once a variable - like <code>s</code> in the sample - is introduced on class or instance level,
+then a variable with the same name introduced by <code>instanceof</code> can shadow the previous one
+in <code>if</code> branching.</p>
+<blockquote>
+<p>That does not work with local variables!</p>
+</blockquote>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">private</span> <span class="kd">final</span> <span class="n">String</span> <span class="n">s</span> <span class="o">=</span> <span class="s">&#34;...&#34;</span><span class="o">;</span>
+
+<span class="c1">// ...
+</span><span class="c1"></span><span class="n">Object</span> <span class="n">o</span> <span class="o">=</span> <span class="s">&#34;...&#34;</span><span class="o">;</span>
+
+<span class="k">if</span> <span class="o">(</span><span class="n">o</span> <span class="k">instanceof</span> <span class="n">String</span> <span class="n">s</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s</span><span class="o">);</span>
+<span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s</span><span class="o">);</span> <span class="c1">// it does compile
+</span><span class="c1"></span><span class="o">}</span>
+</code></pre></div><p><strong>I am realy looking forward instanceof operator with pattern matching.</strong></p>
+<p>Further reading about <a href="https://openjdk.java.net/jeps/305">JEP 305: Pattern Matching for instanceof</a></p>
+<p>Code can be found: <a href="https://github.com/torokmark/do-you-know-java">https://github.com/torokmark/do-you-know-java</a></p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>Do you know Java: Immutable Object</title>
