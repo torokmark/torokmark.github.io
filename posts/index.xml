@@ -66,7 +66,11 @@ in <code>if</code> branching.</p>
 <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
     <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s</span><span class="o">);</span> <span class="c1">// it does compile
 </span><span class="c1"></span><span class="o">}</span>
-</code></pre></div><p><strong>I am realy looking forward instanceof operator with pattern matching.</strong></p>
+</code></pre></div><blockquote>
+<p>You can compile previews with <code>javac --enable-preview --release 14 Main.java</code>
+and run with <code>java --enable-preview Main</code></p>
+</blockquote>
+<p><strong>I am realy looking forward instanceof operator with pattern matching.</strong></p>
 <p>Further reading about <a href="https://openjdk.java.net/jeps/305">JEP 305: Pattern Matching for instanceof</a></p>
 <p>Code can be found: <a href="https://github.com/torokmark/do-you-know-java">https://github.com/torokmark/do-you-know-java</a></p>
 ]]></content>

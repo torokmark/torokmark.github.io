@@ -11,7 +11,7 @@ In prior versions of Java, the instanceof operator workes as follows:
 Object o = &#34;asdf&#34;; if (o instanceof String) { String s = (String) o; System.out.println(o); } Java 15 - and Java 14 as a preview feature - introduces an enhanced instanceof operator, which brings the ability to cast the eximined instance to the type of the right operand.">
 <meta itemprop="datePublished" content="2020-05-23T12:00:00&#43;01:00" />
 <meta itemprop="dateModified" content="2020-05-23T12:00:00&#43;01:00" />
-<meta itemprop="wordCount" content="247">
+<meta itemprop="wordCount" content="263">
 
 
 
@@ -125,7 +125,11 @@ in <code>if</code> branching.</p>
 <span class="o">}</span> <span class="k">else</span> <span class="o">{</span>
     <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">s</span><span class="o">);</span> <span class="c1">// it does compile
 </span><span class="c1"></span><span class="o">}</span>
-</code></pre></div><p><strong>I am realy looking forward instanceof operator with pattern matching.</strong></p>
+</code></pre></div><blockquote>
+<p>You can compile previews with <code>javac --enable-preview --release 14 Main.java</code>
+and run with <code>java --enable-preview Main</code></p>
+</blockquote>
+<p><strong>I am realy looking forward instanceof operator with pattern matching.</strong></p>
 <p>Further reading about <a href="https://openjdk.java.net/jeps/305">JEP 305: Pattern Matching for instanceof</a></p>
 <p>Code can be found: <a href="https://github.com/torokmark/do-you-know-java">https://github.com/torokmark/do-you-know-java</a></p>
 
@@ -135,7 +139,7 @@ in <code>if</code> branching.</p>
 				<p>
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://torokmark.github.io/tags/instanceof">instanceof</a></span><span class="tag"><a href="https://torokmark.github.io/tags/cast">cast</a></span>
 				</p>
-				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>247 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>263 Words</p>
 				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-05-23 13:00 &#43;0200</p>
 			</footer>
 		</article>
