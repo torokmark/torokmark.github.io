@@ -3,17 +3,52 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://torokmark.github.io/tags/cast/</loc>
-    <lastmod>2020-05-23T12:00:00+01:00</lastmod>
+    <loc>https://torokmark.github.io/categories/</loc>
+    <lastmod>2020-05-25T12:00:00+01:00</lastmod>
   </url>
   
   <url>
-    <loc>https://torokmark.github.io/categories/</loc>
-    <lastmod>2020-05-23T12:00:00+01:00</lastmod>
+    <loc>https://torokmark.github.io/tags/data-carrier-class/</loc>
+    <lastmod>2020-05-25T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://torokmark.github.io/tags/data-class/</loc>
+    <lastmod>2020-05-25T12:00:00+01:00</lastmod>
   </url>
   
   <url>
     <loc>https://torokmark.github.io/categories/do-you-know-java/</loc>
+    <lastmod>2020-05-25T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://torokmark.github.io/posts/do-you-know-java-records/</loc>
+    <lastmod>2020-05-25T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://torokmark.github.io/categories/java/</loc>
+    <lastmod>2020-05-25T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://torokmark.github.io/posts/</loc>
+    <lastmod>2020-05-25T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://torokmark.github.io/tags/record/</loc>
+    <lastmod>2020-05-25T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://torokmark.github.io/tags/</loc>
+    <lastmod>2020-05-25T12:00:00+01:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://torokmark.github.io/tags/cast/</loc>
     <lastmod>2020-05-23T12:00:00+01:00</lastmod>
   </url>
   
@@ -24,21 +59,6 @@
   
   <url>
     <loc>https://torokmark.github.io/tags/instanceof/</loc>
-    <lastmod>2020-05-23T12:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://torokmark.github.io/categories/java/</loc>
-    <lastmod>2020-05-23T12:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://torokmark.github.io/posts/</loc>
-    <lastmod>2020-05-23T12:00:00+01:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://torokmark.github.io/tags/</loc>
     <lastmod>2020-05-23T12:00:00+01:00</lastmod>
   </url>
   

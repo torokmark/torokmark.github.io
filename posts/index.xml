@@ -5,8 +5,51 @@
 		<description>Recent content in Posts on T[h]ink]er[ing</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
-		<lastBuildDate>Sat, 23 May 2020 12:00:00 +0100</lastBuildDate>
+		<lastBuildDate>Mon, 25 May 2020 12:00:00 +0100</lastBuildDate>
 		<atom:link href="https://torokmark.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Do you know Java: Records</title>
+			<link>https://torokmark.github.io/posts/do-you-know-java-records/</link>
+			<pubDate>Mon, 25 May 2020 12:00:00 +0100</pubDate>
+			
+			<guid>https://torokmark.github.io/posts/do-you-know-java-records/</guid>
+			<description>Java 15 introduces record type.
+Records are a new kind of class in the Java language. The purpose of a record is to declare that a small group of variables is to be regarded as a new kind of entity. As said in JEP 384.
+Simple data carrier classes contain too much boilerplate code compared to the data itself. Fields, getter, setters, ctors, toString, equals, hashCode. On the other hand, quite difficult to figure out what the class represents.</description>
+			<content type="html"><![CDATA[<p><strong>Java 15 introduces record type.</strong></p>
+<p><em>Records are a new kind of class in the Java language. The purpose of a record is
+to declare that a small group of variables is to be regarded as a new kind of entity.</em>
+As said in <em>JEP 384</em>.</p>
+<p>Simple data carrier classes contain too much boilerplate code compared to the data
+itself. Fields, getter, setters, ctors, <code>toString</code>, <code>equals</code>, <code>hashCode</code>.
+On the other hand, quite difficult to figure out what the class represents.</p>
+<p>The new approach looks like the following</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">record</span> <span class="nf">Person</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">,</span> <span class="kt">int</span> <span class="n">age</span><span class="o">)</span> <span class="o">{</span> <span class="o">}</span>
+</code></pre></div><blockquote>
+<p>This approach reminds me to data classes in Kotlin.</p>
+</blockquote>
+<p>Record represents an immutable class, that has a ctor with parameters. Also has
+getters, and the classic three methods from <code>Object</code> that we override.</p>
+<p>The type is <code>final</code> implicitly as well as the fields are.</p>
+<p>Any <code>record</code> implicitly extends <code>java.lang.Record</code> and no explicit inheritance can be
+applied on them, though record accepts interface implementations.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">record</span> <span class="nf">Person</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">,</span> <span class="kt">int</span> <span class="n">age</span><span class="o">)</span> <span class="kd">implements</span> <span class="n">Comparable</span><span class="o">&lt;</span><span class="n">Person</span><span class="o">&gt;</span> <span class="o">{</span>
+    <span class="n">Person</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">this</span><span class="o">(</span><span class="s">&#34;John Doe&#34;</span><span class="o">,</span> <span class="n">0</span><span class="o">);</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">int</span> <span class="nf">compareTo</span><span class="o">(</span><span class="n">Person</span> <span class="n">other</span><span class="o">)</span> <span class="o">{</span>
+        <span class="c1">// ...
+</span><span class="c1"></span>    <span class="o">}</span>
+
+<span class="o">}</span>
+</code></pre></div><p><strong>Though, record is not intended to eliminate boilerplate code, these changes will decrease the code and make it more readable.</strong></p>
+<p>Further reading about <a href="https://openjdk.java.net/jeps/384">JEP 384: Records</a></p>
+<p>Code can be found: <a href="https://github.com/torokmark/do-you-know-java">https://github.com/torokmark/do-you-know-java</a></p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>Do you know Java: Pattern Matching for instanceof</title>
