@@ -6,10 +6,17 @@
     <description>Recent content on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 01 Jan 2019 17:51:15 +0100</lastBuildDate>
-    
-	<atom:link href="https://torokmark.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
+    <lastBuildDate>Wed, 31 Mar 2021 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Do you know Java: Beware of instanceof in equals</title>
+      <link>https://torokmark.github.io/posts/do-you-know-java-beware-of-instanceof-in-equals/</link>
+      <pubDate>Wed, 31 Mar 2021 12:00:00 +0100</pubDate>
+      
+      <guid>https://torokmark.github.io/posts/do-you-know-java-beware-of-instanceof-in-equals/</guid>
+      <description>One of the most important methods is equals. So, it is also important how it is implemented.
+What is the real issue with instanceof and equals? Let us see an implementation of it. First, let us introduce a simple class and its inheritant that demonstrate the usage of equals`.
+public class Mug { private double capacity; // ctor, setter, getter  @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null) { return false; } if (!</description>
+    </item>
     
     <item>
       <title>Do you know Java: Hidden Keywords</title>
@@ -394,7 +401,7 @@ Pythonic way is an approach of how to use the language and how to take adventage
       
       <guid>https://torokmark.github.io/posts/assertion-framework-in-shell-script/</guid>
       <description>A little lib that helps us checking our scripts with a unit test-like way.
-The Missing Tool Unit testing is part of a lot of projects&amp;rsquo; toolset. Though some part of the source code requires more attention than it gets payed. Shell scripts belong to them.
+The Missing Tool Unit testing is part of a lot of projects&#39; toolset. Though some part of the source code requires more attention than it gets payed. Shell scripts belong to them.
 How can we make sure that our scripts do what we expect they do?
 How can we make sure they are valid, return the right result&amp;hellip;?</description>
     </item>

@@ -5,8 +5,109 @@
 		<description>Recent content in Posts on T[h]ink]er[ing</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
-		<lastBuildDate>Mon, 29 Jun 2020 12:00:00 +0100</lastBuildDate>
+		<lastBuildDate>Wed, 31 Mar 2021 12:00:00 +0100</lastBuildDate>
 		<atom:link href="https://torokmark.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Do you know Java: Beware of instanceof in equals</title>
+			<link>https://torokmark.github.io/posts/do-you-know-java-beware-of-instanceof-in-equals/</link>
+			<pubDate>Wed, 31 Mar 2021 12:00:00 +0100</pubDate>
+			
+			<guid>https://torokmark.github.io/posts/do-you-know-java-beware-of-instanceof-in-equals/</guid>
+			<description>One of the most important methods is equals. So, it is also important how it is implemented.
+What is the real issue with instanceof and equals? Let us see an implementation of it. First, let us introduce a simple class and its inheritant that demonstrate the usage of equals`.
+public class Mug { private double capacity; // ctor, setter, getter  @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null) { return false; } if (!</description>
+			<content type="html"><![CDATA[<p><strong>One of the most important methods is <code>equals</code>. So, it is also important how it
+is implemented.</strong></p>
+<p>What is the real issue with <code>instanceof</code> and <code>equals</code>? Let us see an implementation
+of it. First, let us introduce a simple class and its inheritant that demonstrate
+the usage of  equals`.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Mug</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="kt">double</span> <span class="n">capacity</span><span class="o">;</span>
+
+    <span class="c1">// ctor, setter, getter
+</span><span class="c1"></span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">equals</span><span class="o">(</span><span class="n">Object</span> <span class="n">o</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="k">this</span> <span class="o">==</span> <span class="n">o</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">o</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+        <span class="o">}</span>
+        
+        <span class="k">if</span> <span class="o">(!(</span><span class="n">o</span> <span class="k">instanceof</span> <span class="n">Mug</span><span class="o">))</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+        <span class="o">}</span>
+        
+        <span class="n">Mug</span> <span class="n">other</span> <span class="o">=</span> <span class="o">(</span><span class="n">Mug</span><span class="o">)</span> <span class="n">o</span><span class="o">;</span>
+        <span class="k">return</span> <span class="n">other</span><span class="o">.</span><span class="na">capacity</span> <span class="o">==</span> <span class="k">this</span><span class="o">.</span><span class="na">capacity</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>Then we see as:</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">Mug</span> <span class="n">m1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Mug</span><span class="o">(</span><span class="n">1</span><span class="o">.</span><span class="na">2</span><span class="o">);</span>
+<span class="n">Mug</span> <span class="n">m2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Mug</span><span class="o">(</span><span class="n">1</span><span class="o">.</span><span class="na">2</span><span class="o">);</span>
+
+<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">m1</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">m2</span><span class="o">));</span> <span class="c1">// true
+</span><span class="c1"></span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">m2</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">m1</span><span class="o">));</span> <span class="c1">// true
+</span></code></pre></div><p>What if there is an inheritant of <code>Mug</code>? How does <code>equals</code> work in that case?</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">PlasticMug</span> <span class="kd">extends</span> <span class="n">Mug</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="n">String</span> <span class="n">plastic</span><span class="o">;</span>
+
+    <span class="c1">// ctor, setters, getters
+</span><span class="c1"></span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">equals</span><span class="o">(</span><span class="n">Object</span> <span class="n">o</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="k">this</span> <span class="o">==</span> <span class="n">o</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+        <span class="o">}</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">o</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+        <span class="o">}</span>
+
+        <span class="k">if</span> <span class="o">(!(</span><span class="n">o</span> <span class="k">instanceof</span> <span class="n">PlasticMug</span><span class="o">))</span> <span class="o">{</span>
+            <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+        <span class="o">}</span>
+
+        <span class="n">PlasticMug</span> <span class="n">other</span> <span class="o">=</span> <span class="o">(</span><span class="n">PlasticMug</span><span class="o">)</span> <span class="n">o</span><span class="o">;</span>
+        <span class="k">return</span> <span class="n">other</span><span class="o">.</span><span class="na">getCapacity</span><span class="o">()</span> <span class="o">==</span> <span class="k">this</span><span class="o">.</span><span class="na">getCapacity</span><span class="o">()</span> <span class="o">&amp;&amp;</span> <span class="n">other</span><span class="o">.</span><span class="na">plastic</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">plastic</span><span class="o">);</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>As seen above, let us apply the <code>equals</code> on the instances of <code>Mug</code> and <code>PlasticMug</code>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">mug</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">plastic</span><span class="o">));</span> <span class="c1">// true
+</span><span class="c1"></span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">plastic</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">mug</span><span class="o">));</span> <span class="c1">// false
+</span></code></pre></div><p><code>instanceof</code> operator returns <code>true</code> if the type of the object is the same, or
+inherited from the type on right. On the other side, <code>instanceof</code> never returns
+<code>true</code> if the right operand is one of the parents of the type of the object
+sitting on the left side of <code>instanceof</code>.</p>
+<p>How can we fix it?</p>
+<p><code>getClass()</code> method returns the exact class literal of the object whether its
+static type is <code>Object</code>.</p>
+<p>The <code>equals</code> method of <code>Mug</code>. <code>PlasticMug</code> is similar.</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="nd">@Override</span>
+<span class="kd">public</span> <span class="kt">boolean</span> <span class="nf">equals</span><span class="o">(</span><span class="n">Object</span> <span class="n">o</span><span class="o">)</span> <span class="o">{</span>
+    <span class="k">if</span> <span class="o">(</span><span class="k">this</span> <span class="o">==</span> <span class="n">o</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="kc">true</span><span class="o">;</span>
+    <span class="o">}</span>
+    <span class="k">if</span> <span class="o">(</span><span class="n">o</span> <span class="o">==</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+    <span class="o">}</span>
+ 
+    <span class="k">if</span> <span class="o">(</span><span class="n">getClass</span><span class="o">()</span> <span class="o">!=</span> <span class="n">o</span><span class="o">.</span><span class="na">getClass</span><span class="o">())</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="kc">false</span><span class="o">;</span>
+    <span class="o">}</span>
+    
+    <span class="n">Mug</span> <span class="n">other</span> <span class="o">=</span> <span class="o">(</span><span class="n">Mug</span><span class="o">)</span> <span class="n">o</span><span class="o">;</span>
+    <span class="k">return</span> <span class="n">other</span><span class="o">.</span><span class="na">capacity</span> <span class="o">==</span> <span class="k">this</span><span class="o">.</span><span class="na">capacity</span><span class="o">;</span>
+<span class="o">}</span>
+</code></pre></div><p>After changing the two implementations of <code>equals</code>, then the results look as
+follows:</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">mug</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">plastic</span><span class="o">));</span> <span class="c1">// false 
+</span><span class="c1"></span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">plastic</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">mug</span><span class="o">));</span> <span class="c1">// false
+</span></code></pre></div><p><strong>As previously said, beware of using <code>instanceof</code> in <code>equals</code>, and use <code>getClass()</code> method instead.</strong></p>
+<p>Code can be found: <a href="https://github.com/torokmark/do-you-know-java">https://github.com/torokmark/do-you-know-java</a></p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>Do you know Java: Hidden Keywords</title>
@@ -1266,7 +1367,7 @@ default.</p>
 fields as we want to. These names will be available as members of the instance
 created from the new type.</p>
 <h4 id="methods">Methods</h4>
-<p>Methods can be passed as a named parameter of <code>Struct</code>'s ctor for <code>methods</code>
+<p>Methods can be passed as a named parameter of <code>Struct</code>&rsquo;s ctor for <code>methods</code>
 parameter. It is a <code>dict</code>, method name is the key, while the lambda expression
 is the body of the method.</p>
 <p>The lambda expression has to have one argument at least, that will be the <em>self
@@ -1734,7 +1835,7 @@ does not exist.</p>
 returning default values if key does not exist in the dictionary.</p>
 <div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">print</span><span class="p">(</span><span class="n">cities</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;London&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;joe&#39;</span><span class="p">))</span>
 <span class="k">print</span><span class="p">(</span><span class="n">cities</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;Paris&#39;</span><span class="p">,</span> <span class="p">{})</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;joe&#39;</span><span class="p">,</span> <span class="s1">&#39;N/A&#39;</span><span class="p">))</span>
-</code></pre></div><h3 id="c-">C#</h3>
+</code></pre></div><h3 id="c">C#</h3>
 <p>Safe navigation in C# looks like:</p>
 <div class="highlight"><pre class="chroma"><code class="language-csharp" data-lang="csharp"><span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">john</span><span class="p">?.</span><span class="n">Address</span><span class="p">?.</span><span class="n">Street</span> <span class="p">??</span> <span class="s">&#34;Portobello&#34;</span><span class="p">);</span>
 <span class="n">Console</span><span class="p">.</span><span class="n">WriteLine</span><span class="p">(</span><span class="n">joe</span><span class="p">?.</span><span class="n">Address</span><span class="p">?.</span><span class="n">Street</span> <span class="p">??</span> <span class="s">&#34;Portobello&#34;</span><span class="p">);</span>
@@ -1959,12 +2060,12 @@ short and still readable way as python does it.</p>
 			
 			<guid>https://torokmark.github.io/posts/assertion-framework-in-shell-script/</guid>
 			<description>A little lib that helps us checking our scripts with a unit test-like way.
-The Missing Tool Unit testing is part of a lot of projects&amp;rsquo; toolset. Though some part of the source code requires more attention than it gets payed. Shell scripts belong to them.
+The Missing Tool Unit testing is part of a lot of projects&#39; toolset. Though some part of the source code requires more attention than it gets payed. Shell scripts belong to them.
 How can we make sure that our scripts do what we expect they do?
 How can we make sure they are valid, return the right result&amp;hellip;?</description>
 			<content type="html"><![CDATA[<p><strong>A little lib that helps us checking our scripts with a unit test-like way.</strong></p>
 <h3 id="the-missing-tool">The Missing Tool</h3>
-<p>Unit testing is part of a lot of projects&rsquo; toolset. Though some part of the
+<p>Unit testing is part of a lot of projects' toolset. Though some part of the
 source code requires more attention than it gets payed. Shell scripts belong to
 them.</p>
 <p>How can we make sure that our scripts do what we expect they do?<br>

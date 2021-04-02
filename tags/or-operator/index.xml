@@ -6,11 +6,7 @@
     <description>Recent content in or operator on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Aug 2019 12:00:00 +0100</lastBuildDate>
-    
-	<atom:link href="https://torokmark.github.io/tags/or-operator/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Fri, 23 Aug 2019 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/tags/or-operator/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ruby&#39;s or operator precedence</title>
       <link>https://torokmark.github.io/posts/rubys-or-operator-precedence/</link>

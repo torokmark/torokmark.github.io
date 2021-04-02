@@ -6,11 +6,7 @@
     <description>Recent content in numeric literal on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 05 Sep 2019 12:00:00 +0100</lastBuildDate>
-    
-	<atom:link href="https://torokmark.github.io/tags/numeric-literal/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 05 Sep 2019 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/tags/numeric-literal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Do you know Java: Underscores in Numeric Literals</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-underscores-in-numeric-literals/</link>

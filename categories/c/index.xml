@@ -6,11 +6,7 @@
     <description>Recent content in c on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 29 Apr 2020 12:00:00 +0100</lastBuildDate>
-    
-	<atom:link href="https://torokmark.github.io/categories/c/index.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 29 Apr 2020 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/categories/c/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Easter Egg in C</title>
       <link>https://torokmark.github.io/posts/easter-egg-in-c/</link>
