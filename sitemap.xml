@@ -3,7 +3,28 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://torokmark.github.io/categories/</loc>
-    <lastmod>2021-03-31T12:00:00+01:00</lastmod>
+    <lastmod>2021-04-01T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://torokmark.github.io/categories/fix-it-java/</loc>
+    <lastmod>2021-04-01T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://torokmark.github.io/posts/fix-it-java-set-is-bigger/</loc>
+    <lastmod>2021-04-01T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://torokmark.github.io/categories/java-challenge/</loc>
+    <lastmod>2021-04-01T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://torokmark.github.io/posts/</loc>
+    <lastmod>2021-04-01T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://torokmark.github.io/tags/set/</loc>
+    <lastmod>2021-04-01T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://torokmark.github.io/</loc>
+    <lastmod>2021-04-01T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://torokmark.github.io/tags/</loc>
+    <lastmod>2021-04-01T12:00:00+01:00</lastmod>
   </url><url>
     <loc>https://torokmark.github.io/categories/do-you-know-java/</loc>
     <lastmod>2021-03-31T12:00:00+01:00</lastmod>
@@ -21,15 +42,6 @@
     <lastmod>2021-03-31T12:00:00+01:00</lastmod>
   </url><url>
     <loc>https://torokmark.github.io/categories/java/</loc>
-    <lastmod>2021-03-31T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://torokmark.github.io/posts/</loc>
-    <lastmod>2021-03-31T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://torokmark.github.io/</loc>
-    <lastmod>2021-03-31T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://torokmark.github.io/tags/</loc>
     <lastmod>2021-03-31T12:00:00+01:00</lastmod>
   </url><url>
     <loc>https://torokmark.github.io/tags/const/</loc>
@@ -351,9 +363,6 @@
     <lastmod>2019-08-15T12:00:00+01:00</lastmod>
   </url><url>
     <loc>https://torokmark.github.io/tags/queue/</loc>
-    <lastmod>2019-08-15T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://torokmark.github.io/tags/set/</loc>
     <lastmod>2019-08-15T12:00:00+01:00</lastmod>
   </url><url>
     <loc>https://torokmark.github.io/categories/shell/</loc>

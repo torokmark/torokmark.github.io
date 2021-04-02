@@ -6,7 +6,16 @@
     <description>Recent content in Tags on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 31 Mar 2021 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Apr 2021 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>set</title>
+      <link>https://torokmark.github.io/tags/set/</link>
+      <pubDate>Thu, 01 Apr 2021 12:00:00 +0100</pubDate>
+      
+      <guid>https://torokmark.github.io/tags/set/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>equals</title>
       <link>https://torokmark.github.io/tags/equals/</link>
@@ -679,15 +688,6 @@
       <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
       
       <guid>https://torokmark.github.io/tags/queue/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>set</title>
-      <link>https://torokmark.github.io/tags/set/</link>
-      <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
-      
-      <guid>https://torokmark.github.io/tags/set/</guid>
       <description></description>
     </item>
     

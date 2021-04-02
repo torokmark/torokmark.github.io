@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>set on T[h]ink]er[ing</title>
-    <link>https://torokmark.github.io/tags/set/</link>
-    <description>Recent content in set on T[h]ink]er[ing</description>
+    <title>fix it java on T[h]ink]er[ing</title>
+    <link>https://torokmark.github.io/categories/fix-it-java/</link>
+    <description>Recent content in fix it java on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 01 Apr 2021 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/tags/set/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Apr 2021 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/categories/fix-it-java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fix it Java: Set is Bigger</title>
       <link>https://torokmark.github.io/posts/fix-it-java-set-is-bigger/</link>
@@ -15,16 +15,6 @@
       <guid>https://torokmark.github.io/posts/fix-it-java-set-is-bigger/</guid>
       <description>As we see, the following code works bit different as we expect.
 import java.util.Set; import java.util.HashSet; class Main { public static void main(String[] args) { Set&amp;lt;Dog&amp;gt; dogs = new HashSet&amp;lt;&amp;gt;(); Dog caesar = new Dog(&amp;#34;Dog&amp;#34;); Dog rex = new Dog(&amp;#34;Dog&amp;#34;); dogs.add(caesar); dogs.add(rex); System.out.println(caesar.equals(rex)); System.out.println(dogs.size()); } } class Dog { private String name; public Dog(String name) { this.name = name; } public int hashCode() { return name.hashCode(); } public boolean equals(Dog o) { return name.</description>
-    </item>
-    
-    <item>
-      <title>Container types in shell script</title>
-      <link>https://torokmark.github.io/posts/container-types-in-shell-script/</link>
-      <pubDate>Thu, 15 Aug 2019 12:00:00 +0100</pubDate>
-      
-      <guid>https://torokmark.github.io/posts/container-types-in-shell-script/</guid>
-      <description>Shell script does not support container types like map, set, or queue, though with a third-party lib, presented here, we can use them in our scripts.
-From time to time we need map, queue or any other kind of collections during our work. Shell script is definitely not the right choice to write applications but it may happen that we need some of the previously mentioned types to help our work.</description>
     </item>
     
   </channel>
