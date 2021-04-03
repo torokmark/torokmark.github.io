@@ -866,11 +866,11 @@ the starting point of our application and how can we call its instance methods.<
 <span class="o">}</span>
 </code></pre></div><p>As it seems, <code>Application</code> has a <code>static</code> <code>launch</code> method and an instance level <code>start</code> method.
 In <code>launch</code> method we have to call <code>start</code> somehow.</p>
-<p>Here, I am presenting one approach to solve this.</p>
+<p>Here is one approach how to solve it.</p>
 <ol>
 <li>We should figure out where <code>launch</code> is called.</li>
 <li>Instantiate the class.</li>
-<li>Call <code>start</code> on the instance.</li>
+<li>Call <code>start</code> on that instance.</li>
 </ol>
 <h4 id="where-we-are-at">Where we are at.</h4>
 <p>Stacktrace can be a good start to figure out which class where we are at.</p>
