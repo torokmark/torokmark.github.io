@@ -17,5 +17,16 @@
 import java.util.Set; import java.util.HashSet; class Main { public static void main(String[] args) { Set&amp;lt;Dog&amp;gt; dogs = new HashSet&amp;lt;&amp;gt;(); Dog caesar = new Dog(&amp;#34;German Shepherd&amp;#34;); Dog rex = new Dog(&amp;#34;German Shepherd&amp;#34;); dogs.add(caesar); dogs.add(rex); System.out.println(caesar.equals(rex)); System.out.println(dogs.size()); } } class Dog { private String breed; public Dog(String breed) { this.breed = breed; } public int hashCode() { return breed.hashCode(); } public boolean equals(Dog o) { return breed.</description>
     </item>
     
+    <item>
+      <title>Fix that Java: Challenge</title>
+      <link>https://torokmark.github.io/posts/fix-that-java-challenge/</link>
+      <pubDate>Thu, 01 Apr 2021 11:00:00 +0100</pubDate>
+      
+      <guid>https://torokmark.github.io/posts/fix-that-java-challenge/</guid>
+      <description>In this series I am going to share short codes with well-known, or less well-known but common problems that we, developers face from time to time during our work.
+The series is about learning the language, learning its features, functionalities, and limits. It is up to you how to do it!
+I am going to post a code snippet with a hidden misfunctionality. You can solve that in any way as you like keeping the rules and limitations that I attach to the snippet.</description>
+    </item>
+    
   </channel>
 </rss>
