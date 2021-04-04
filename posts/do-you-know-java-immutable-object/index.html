@@ -9,7 +9,7 @@
 <meta itemprop="description" content="Couple of thoughts about how to implement immutable objects.
  Class has to be final. Fields have to be private and final. Hence, fields are set in constructor. No setters and setter-like methods. If object is passed in ctor parameter, make a clone of it.  Do the same in getters as well.    public final class Person { private final String name; private final int age; private final List&lt;PhoneNumber&gt; phoneNumbers; public Person(String name, int age, List&lt;PhoneNumber&gt; phoneNumbers) { this."><meta itemprop="datePublished" content="2020-05-16T12:00:00&#43;01:00" />
 <meta itemprop="dateModified" content="2020-05-16T12:00:00&#43;01:00" />
-<meta itemprop="wordCount" content="127">
+<meta itemprop="wordCount" content="173">
 <meta itemprop="keywords" content="immutable object,final," /><meta property="og:title" content="Do you know Java: Immutable Object" />
 <meta property="og:description" content="Couple of thoughts about how to implement immutable objects.
  Class has to be final. Fields have to be private and final. Hence, fields are set in constructor. No setters and setter-like methods. If object is passed in ctor parameter, make a clone of it.  Do the same in getters as well.    public final class Person { private final String name; private final int age; private final List&lt;PhoneNumber&gt; phoneNumbers; public Person(String name, int age, List&lt;PhoneNumber&gt; phoneNumbers) { this." />
@@ -105,7 +105,12 @@
         <span class="k">return</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;(</span><span class="n">phoneNumbers</span><span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span>
-</code></pre></div><p><strong>Implementation steps of immutable object is a recurring question on technical interviews.</strong></p>
+</code></pre></div><blockquote>
+<p>It is also very important to mention that <code>PhoneNumber</code> should be immutable as well.
+But what if <code>PhoneNumber</code> is not immutable? <code>Person</code> class still has to be.</p>
+<p>Why do not we clone the objects? Cloning is not a recommended way in Java, try to avoid it.</p>
+</blockquote>
+<p><strong>Implementation steps of immutable object is a recurring question on technical interviews.</strong></p>
 <p>Code can be found: <a href="https://github.com/torokmark/do-you-know-java">https://github.com/torokmark/do-you-know-java</a></p>
 
 			</div>
@@ -114,7 +119,7 @@
 				<p>
 					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-tag meta-icon"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7" y2="7"></line></svg><span class="tag"><a href="https://torokmark.github.io/tags/immutable-object">immutable object</a></span><span class="tag"><a href="https://torokmark.github.io/tags/final">final</a></span>
 				</p>
-				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>127 Words</p>
+				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-file-text"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line><polyline points="10 9 9 9 8 9"></polyline></svg>173 Words</p>
 				<p><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-calendar"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>2020-05-16 13:00 &#43;0200</p>
 			</footer>
 		</article>

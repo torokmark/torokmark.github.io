@@ -349,7 +349,12 @@ and run with <code>java --enable-preview Main</code></p>
         <span class="k">return</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;(</span><span class="n">phoneNumbers</span><span class="o">);</span>
     <span class="o">}</span>
 <span class="o">}</span>
-</code></pre></div><p><strong>Implementation steps of immutable object is a recurring question on technical interviews.</strong></p>
+</code></pre></div><blockquote>
+<p>It is also very important to mention that <code>PhoneNumber</code> should be immutable as well.
+But what if <code>PhoneNumber</code> is not immutable? <code>Person</code> class still has to be.</p>
+<p>Why do not we clone the objects? Cloning is not a recommended way in Java, try to avoid it.</p>
+</blockquote>
+<p><strong>Implementation steps of immutable object is a recurring question on technical interviews.</strong></p>
 <p>Code can be found: <a href="https://github.com/torokmark/do-you-know-java">https://github.com/torokmark/do-you-know-java</a></p>
 ]]></content>
 		</item>
