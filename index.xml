@@ -470,16 +470,8 @@ The Simple One Task: Let us implement a Person with the following fields like na
       <description>Thoughts about coding and everything.
 Mark, software engineer and avid learner!
 Java enthusiast and Ruby monk.
-Software tinker and DevOps thinker.</description>
-    </item>
-    
-    <item>
-      <title>Contact</title>
-      <link>https://torokmark.github.io/contact/</link>
-      <pubDate>Tue, 01 Jan 2019 12:00:00 +0100</pubDate>
-      
-      <guid>https://torokmark.github.io/contact/</guid>
-      <description></description>
+Software tinker and DevOps thinker.
+  GitHub :: https://github.com/torokmark Blog :: https://torokmark.github.io RSS :: https://torokmark.github.io/index.xml Gitter :: https://gitter.im/torokmark  </description>
     </item>
     
     <item>
