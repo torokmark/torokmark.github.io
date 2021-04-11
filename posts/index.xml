@@ -61,14 +61,13 @@ import java.util.Set; import java.util.HashSet; class Main { public static void 
 			<guid>https://torokmark.github.io/posts/fix-that-java-challenge/</guid>
 			<description>In this series I am going to share short codes with well-known, or less well-known but common problems that we, developers face from time to time during our work.
 The series is about learning the language, learning its features, functionalities, and limits. It is up to you how to do it!
-I am going to post a code snippet with a hidden misfunctionality. Your challenge is to solve that in any way as you like keeping the rules and limitations that I attach to the snippet.</description>
+I am going to post a code snippet with a hidden misfunctionality. Your challenge is to solve that keeping the rules and limitations that I attach to the snippet.</description>
 			<content type="html"><![CDATA[<p>In this series I am going to share short codes with well-known, or less well-known
 but common problems that we, developers face from time to time during our work.</p>
 <p>The series is about learning the language, learning its features, functionalities,
 and limits. It is up to you how to do it!</p>
 <p>I am going to post a code snippet with a hidden misfunctionality. Your challenge
-is to solve that in any way as you like keeping the rules and limitations that
-I attach to the snippet.</p>
+is to solve that keeping the rules and limitations that I attach to the snippet.</p>
 ]]></content>
 		</item>
 		
