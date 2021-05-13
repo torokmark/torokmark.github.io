@@ -5,8 +5,51 @@
 		<description>Recent content in Posts on T[h]ink]er[ing</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
-		<lastBuildDate>Thu, 01 Apr 2021 12:00:00 +0100</lastBuildDate>
+		<lastBuildDate>Wed, 05 May 2021 12:00:00 +0100</lastBuildDate>
 		<atom:link href="https://torokmark.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Fix that Java: The Broken Basket</title>
+			<link>https://torokmark.github.io/posts/fix-that-java-the-broken-basket/</link>
+			<pubDate>Wed, 05 May 2021 12:00:00 +0100</pubDate>
+			
+			<guid>https://torokmark.github.io/posts/fix-that-java-the-broken-basket/</guid>
+			<description>Nice basket. We would like to put Jonathan apples only in that. But something is fishy here&amp;hellip;
+class Main { public static void main(String[] args) { Basket basket = new Basket(); basket.add(&amp;#34;Jonathan&amp;#34;); // ...  } } import java.util.List; import java.util.ArrayList; class Basket { private List&amp;lt;String&amp;gt; apples = new ArrayList&amp;lt;&amp;gt;(); public void add(String apple) { if (apple.equals(&amp;#34;Jonathan&amp;#34;)) { apples.add(apple); } } @Override public String toString() { return apples.size() + &amp;#34; piece(s) of Jonathan.</description>
+			<content type="html"><![CDATA[<p>Nice basket. We would like to put Jonathan apples only in that.
+But something is fishy here&hellip;</p>
+<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+        <span class="n">Basket</span> <span class="n">basket</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Basket</span><span class="o">();</span>
+        <span class="n">basket</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">&#34;Jonathan&#34;</span><span class="o">);</span>
+    
+        <span class="c1">// ... 
+</span><span class="c1"></span>    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>
+<span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>
+
+<span class="kd">class</span> <span class="nc">Basket</span> <span class="o">{</span>
+    <span class="kd">private</span> <span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">apples</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;();</span>
+
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">add</span><span class="o">(</span><span class="n">String</span> <span class="n">apple</span><span class="o">)</span> <span class="o">{</span>
+        <span class="k">if</span> <span class="o">(</span><span class="n">apple</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="s">&#34;Jonathan&#34;</span><span class="o">))</span> <span class="o">{</span>
+            <span class="n">apples</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">apple</span><span class="o">);</span>
+        <span class="o">}</span>
+    <span class="o">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="o">()</span> <span class="o">{</span>
+        <span class="k">return</span> <span class="n">apples</span><span class="o">.</span><span class="na">size</span><span class="o">()</span> <span class="o">+</span> <span class="s">&#34; piece(s) of Jonathan.&#34;</span><span class="o">;</span>
+    <span class="o">}</span>
+<span class="o">}</span>
+</code></pre></div><p>Fix that Java code!</p>
+<blockquote>
+<p>If you fixed that then: fix it again but this time you are not allowed to add
+any characters to the code.</p>
+</blockquote>
+]]></content>
+		</item>
 		
 		<item>
 			<title>Fix that Java: Set is Bigger</title>
@@ -748,8 +791,9 @@ ended
 <li>Thread is non-daemon by default</li>
 <li>Thread can be set as daemon before start</li>
 <li>JVM terminates when all remaining threads are terminated</li>
+<li>Daemon thread terminates when all non-daemon threads are terminated including <code>main</code></li>
+<li>Once <code>main</code> terminates and a thread instance runs infinitely, daemon thread results infinite execution.</li>
 </ul>
-<p><strong>If we want to terminate an infinite thread, we should set it as daemon.</strong></p>
 <p>Documentation about <a href="https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Thread.html#setDaemon(boolean)">Daemon</a></p>
 <p>Code can be found: <a href="https://github.com/torokmark/do-you-know-java">https://github.com/torokmark/do-you-know-java</a></p>
 ]]></content>
