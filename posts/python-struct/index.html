@@ -8,8 +8,8 @@
 <meta itemprop="name" content="Ruby-like struct in Python">
 <meta itemprop="description" content="Ruby provides a very flexible way to create new types with certain fields with Struct. Though Python does not have this functionality naturally, with esu package we can do the same.
 Ruby types have rich API which is brought by the design, and the language features as well. Even though Python is very dynamic and flexible as well, some of the features are lacking in the languages.
-In this post I would like to show you a Python package, name is esu, which brings a struct that can provide almost the same functionality."><meta itemprop="datePublished" content="2019-10-19T12:00:00&#43;01:00" />
-<meta itemprop="dateModified" content="2019-10-19T12:00:00&#43;01:00" />
+In this post I would like to show you a Python package, name is esu, which brings a struct that can provide almost the same functionality."><meta itemprop="datePublished" content="2019-10-19T12:00:00+01:00" />
+<meta itemprop="dateModified" content="2019-10-19T12:00:00+01:00" />
 <meta itemprop="wordCount" content="688">
 <meta itemprop="keywords" content="struct,metaprogramming," /><meta property="og:title" content="Ruby-like struct in Python" />
 <meta property="og:description" content="Ruby provides a very flexible way to create new types with certain fields with Struct. Though Python does not have this functionality naturally, with esu package we can do the same.
@@ -17,8 +17,8 @@ Ruby types have rich API which is brought by the design, and the language featur
 In this post I would like to show you a Python package, name is esu, which brings a struct that can provide almost the same functionality." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://torokmark.github.io/posts/python-struct/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2019-10-19T12:00:00&#43;01:00" />
-<meta property="article:modified_time" content="2019-10-19T12:00:00&#43;01:00" />
+<meta property="article:published_time" content="2019-10-19T12:00:00+01:00" />
+<meta property="article:modified_time" content="2019-10-19T12:00:00+01:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Ruby-like struct in Python"/>
@@ -34,7 +34,7 @@ In this post I would like to show you a Python package, name is esu, which bring
 	<link rel="shortcut icon" href="/favicon.ico">
 
 	<title>Ruby-like struct in Python</title>
-	<link rel="stylesheet" href="https://torokmark.github.io/css/style.min.eac77496566fd7d5768fd650ddb0b2b181ca6a2d7c5fdd6fe6b8ba4bf47e566f.css" integrity="sha256-6sd0llZv19V2j9ZQ3bCysYHKai18X91v5ri6S/R+Vm8=" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://torokmark.github.io/css/style.min.037b6ee8f8c1baab6a3d0a9da11c3ff18a7552471f16c59fd98538d5ce99208b.css" integrity="sha256-A3tu6PjBuqtqPQqdoRw/8Yp1UkcfFsWf2YU41c6ZIIs=" crossorigin="anonymous">
 	
 </head>
 
@@ -84,33 +84,33 @@ brings a <em>struct</em> that can provide almost the same functionality.</p>
 <h3 id="usage">Usage<a href="#usage" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>Ruby&rsquo;s Struct (<a href="https://ruby-doc.org/core-2.6.5/Struct.html">doc:2.6.5</a>) looks
 as follows. This brings the goal how our one should look like.</p>
-<div class="highlight"><pre class="chroma"><code class="language-rb" data-lang="rb"><span class="no">Customer</span> <span class="o">=</span> <span class="no">Struct</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="ss">:name</span><span class="p">,</span> <span class="ss">:address</span><span class="p">)</span> <span class="k">do</span>
-  <span class="k">def</span> <span class="nf">greeting</span>
-    <span class="s2">&#34;Hello </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">!&#34;</span>
-  <span class="k">end</span>
-<span class="k">end</span>
-
-<span class="n">dave</span> <span class="o">=</span> <span class="no">Customer</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&#34;Dave&#34;</span><span class="p">,</span> <span class="s2">&#34;123 Main&#34;</span><span class="p">)</span>
-<span class="n">dave</span><span class="o">.</span><span class="n">name</span>     <span class="c1">#=&gt; &#34;Dave&#34;</span>
-<span class="n">dave</span><span class="o">.</span><span class="n">greeting</span> <span class="c1">#=&gt; &#34;Hello Dave!&#34;</span>
-</code></pre></div><p>Here is beneath <code>Struct</code> type provided by <em>esu</em>. As we see in case of Ruby,
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-rb" data-lang="rb"><span class="line"><span class="cl"><span class="no">Customer</span> <span class="o">=</span> <span class="no">Struct</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="ss">:name</span><span class="p">,</span> <span class="ss">:address</span><span class="p">)</span> <span class="k">do</span>
+</span></span><span class="line"><span class="cl">  <span class="k">def</span> <span class="nf">greeting</span>
+</span></span><span class="line"><span class="cl">    <span class="s2">&#34;Hello </span><span class="si">#{</span><span class="nb">name</span><span class="si">}</span><span class="s2">!&#34;</span>
+</span></span><span class="line"><span class="cl">  <span class="k">end</span>
+</span></span><span class="line"><span class="cl"><span class="k">end</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">dave</span> <span class="o">=</span> <span class="no">Customer</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s2">&#34;Dave&#34;</span><span class="p">,</span> <span class="s2">&#34;123 Main&#34;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">dave</span><span class="o">.</span><span class="n">name</span>     <span class="c1">#=&gt; &#34;Dave&#34;</span>
+</span></span><span class="line"><span class="cl"><span class="n">dave</span><span class="o">.</span><span class="n">greeting</span> <span class="c1">#=&gt; &#34;Hello Dave!&#34;</span>
+</span></span></code></pre></div><p>Here is beneath <code>Struct</code> type provided by <em>esu</em>. As we see in case of Ruby,
 field names and methods can be passed to <code>Struct</code> in Python as well.</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="kn">from</span> <span class="nn">esu</span> <span class="kn">import</span> <span class="n">Struct</span>
-
-<span class="n">Customer</span> <span class="o">=</span> <span class="n">Struct</span><span class="p">(</span>
-        <span class="s1">&#39;Customer&#39;</span><span class="p">,</span>
-        <span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;address&#39;</span><span class="p">,</span>
-        <span class="n">methods</span><span class="o">=</span><span class="p">{</span>
-            <span class="s1">&#39;greeting&#39;</span><span class="p">:</span> <span class="k">lambda</span> <span class="bp">self</span><span class="p">:</span> <span class="s2">&#34;Hello {}&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">])</span>
-        <span class="p">})</span>
-
-<span class="n">dave</span> <span class="o">=</span> <span class="n">Customer</span><span class="p">()</span>
-<span class="n">dave</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Dave&#39;</span>
-<span class="n">dave</span><span class="o">.</span><span class="n">greeting</span><span class="p">()</span> <span class="c1"># =&gt; Hello Dave</span>
-
-<span class="n">anna</span> <span class="o">=</span> <span class="n">Customer</span><span class="p">(</span><span class="s1">&#39;Anna&#39;</span><span class="p">,</span> <span class="s1">&#39;432 Avenue&#39;</span><span class="p">)</span>
-<span class="n">anna</span><span class="o">.</span><span class="n">greeting</span><span class="p">()</span> <span class="c1"># =&gt; Hello Anna</span>
-</code></pre></div><h3 id="implementation">Implementation<a href="#implementation" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="kn">from</span> <span class="nn">esu</span> <span class="kn">import</span> <span class="n">Struct</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">Customer</span> <span class="o">=</span> <span class="n">Struct</span><span class="p">(</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;Customer&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;address&#39;</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">        <span class="n">methods</span><span class="o">=</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">            <span class="s1">&#39;greeting&#39;</span><span class="p">:</span> <span class="k">lambda</span> <span class="bp">self</span><span class="p">:</span> <span class="s2">&#34;Hello </span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl">        <span class="p">})</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">dave</span> <span class="o">=</span> <span class="n">Customer</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">dave</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Dave&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">dave</span><span class="o">.</span><span class="n">greeting</span><span class="p">()</span> <span class="c1"># =&gt; Hello Dave</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">anna</span> <span class="o">=</span> <span class="n">Customer</span><span class="p">(</span><span class="s1">&#39;Anna&#39;</span><span class="p">,</span> <span class="s1">&#39;432 Avenue&#39;</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="n">anna</span><span class="o">.</span><span class="n">greeting</span><span class="p">()</span> <span class="c1"># =&gt; Hello Anna</span>
+</span></span></code></pre></div><h3 id="implementation">Implementation<a href="#implementation" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h3>
 <p>Metaprogramming is a very handy and efficient tool when we are intended to build
 types, extend classes with fields and methods during the runtime. Python
 provides good support on this.</p>
@@ -133,33 +133,33 @@ is the body of the method.</p>
 reference</em>. To get access to the fields or other methods, we have to use
 <code>__dict__</code> member of self, and giving the name of the member as key on
 <code>__dict__</code>.</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="n">methods</span><span class="o">=</span><span class="p">{</span>
-    <span class="s1">&#39;greeting&#39;</span><span class="p">:</span> <span class="k">lambda</span> <span class="bp">self</span><span class="p">:</span> <span class="s2">&#34;Hello {}&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">])</span>
-<span class="p">}</span>
-</code></pre></div><p>Unfortunately, lambda is not as expressive as block statement in Ruby. Though,
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">methods</span><span class="o">=</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;greeting&#39;</span><span class="p">:</span> <span class="k">lambda</span> <span class="bp">self</span><span class="p">:</span> <span class="s2">&#34;Hello </span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">])</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><p>Unfortunately, lambda is not as expressive as block statement in Ruby. Though,
 there are workarounds to achieve multiline statements, it is quite unconvinient.
 If we liked to do that, it would be a better way to define method previously and
 pass them in place of the lambda expression.</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="k">def</span> <span class="nf">greeting</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
-    <span class="c1"># multiline comes here...</span>
-    <span class="c1"># and here ...</span>
-    <span class="k">return</span> <span class="s2">&#34;Hello {}&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span>
-
-<span class="n">methods</span><span class="o">=</span><span class="p">{</span>
-    <span class="s1">&#39;greeting&#39;</span><span class="p">:</span> <span class="n">greeting</span><span class="p">)</span>
-<span class="p">}</span>
-</code></pre></div><h4 id="ctor">Ctor<a href="#ctor" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="k">def</span> <span class="nf">greeting</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># multiline comes here...</span>
+</span></span><span class="line"><span class="cl">    <span class="c1"># and here ...</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="s2">&#34;Hello </span><span class="si">{}</span><span class="s2">&#34;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="bp">self</span><span class="o">.</span><span class="vm">__dict__</span><span class="p">[</span><span class="s1">&#39;name&#39;</span><span class="p">]</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">methods</span><span class="o">=</span><span class="p">{</span>
+</span></span><span class="line"><span class="cl">    <span class="s1">&#39;greeting&#39;</span><span class="p">:</span> <span class="n">greeting</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="p">}</span>
+</span></span></code></pre></div><h4 id="ctor">Ctor<a href="#ctor" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>The newly created type&rsquo;s ctor accepts the values of the fields in the same order
 as we defined the fieldnames. If non-args is given, all the fields have the
 default <code>None</code> value. If args is just partially given, <code>ValueError</code> exception is
 raised.</p>
-<div class="highlight"><pre class="chroma"><code class="language-py" data-lang="py"><span class="n">dave</span> <span class="o">=</span> <span class="n">Customer</span><span class="p">()</span>
-<span class="n">dave</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Dave&#39;</span>
-<span class="n">dave</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="mi">54</span>
-
-<span class="n">bob</span> <span class="o">=</span> <span class="n">Customer</span><span class="p">(</span><span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">bob</span><span class="o">.</span><span class="n">name</span><span class="p">)</span> <span class="c1"># =&gt; Bob</span>
-</code></pre></div><h4 id="basic-functionality">Basic functionality<a href="#basic-functionality" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-py" data-lang="py"><span class="line"><span class="cl"><span class="n">dave</span> <span class="o">=</span> <span class="n">Customer</span><span class="p">()</span>
+</span></span><span class="line"><span class="cl"><span class="n">dave</span><span class="o">.</span><span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;Dave&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">dave</span><span class="o">.</span><span class="n">age</span> <span class="o">=</span> <span class="mi">54</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">bob</span> <span class="o">=</span> <span class="n">Customer</span><span class="p">(</span><span class="s1">&#39;Bob&#39;</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
+</span></span><span class="line"><span class="cl"><span class="nb">print</span><span class="p">(</span><span class="n">bob</span><span class="o">.</span><span class="n">name</span><span class="p">)</span> <span class="c1"># =&gt; Bob</span>
+</span></span></code></pre></div><h4 id="basic-functionality">Basic functionality<a href="#basic-functionality" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>There are some methods, which I consider useful and important enough to add them
 to the newly created type.</p>
 <ul>
@@ -202,7 +202,7 @@ The documentation is here: <a href="https://esu.readthedocs.io">https://esu.read
 	</main>
 
 	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
-		<p>&copy; 2021 <a href="https://torokmark.github.io">Mark Torok</a></p>
+		<p>&copy; 2022 <a href="https://torokmark.github.io">Mark Torok</a></p>
 		<p>
 			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://torokmark.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
 		</p>
@@ -210,7 +210,7 @@ The documentation is here: <a href="https://esu.readthedocs.io">https://esu.read
 
 
 
-	<script src="https://torokmark.github.io/js/bundle.min.7d8545daa55d62427355498dd8da13f98ff79a7938ce7d2a5e2ae1ec0de3beb8.js" integrity="sha256-fYVF2qVdYkJzVUmN2NoT+Y/3mnk4zn0qXirh7A3jvrg=" crossorigin="anonymous"></script>
+	<script src="https://torokmark.github.io/js/bundle.min.580988ed2982bcbb74a1773c7abea97b43e4c43b9324e10cda0813ec6ec4bb67.js" integrity="sha256-WAmI7SmCvLt0oXc8er6pe0PkxDuTJOEM2ggT7G7Eu2c=" crossorigin="anonymous"></script>
 	
 
 </body>

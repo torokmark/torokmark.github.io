@@ -14,7 +14,7 @@
       
       <guid>https://torokmark.github.io/posts/do-you-know-java-immutable-object/</guid>
       <description>Couple of thoughts about how to implement immutable objects.
- Class has to be final. Fields have to be private and final. Hence, fields are set in constructor. No setters and setter-like methods. If object is passed in ctor parameter, make a clone of it.  Do the same in getters as well.    public final class Person { private final String name; private final int age; private final List&amp;lt;PhoneNumber&amp;gt; phoneNumbers; public Person(String name, int age, List&amp;lt;PhoneNumber&amp;gt; phoneNumbers) { this.</description>
+Class has to be final. Fields have to be private and final. Hence, fields are set in constructor. No setters and setter-like methods. If object is passed in ctor parameter, make a clone of it. Do the same in getters as well. public final class Person { private final String name; private final int age; private final List&amp;lt;PhoneNumber&amp;gt; phoneNumbers; public Person(String name, int age, List&amp;lt;PhoneNumber&amp;gt; phoneNumbers) { this.</description>
     </item>
     
   </channel>

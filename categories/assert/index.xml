@@ -14,7 +14,7 @@
       
       <guid>https://torokmark.github.io/posts/assertion-framework-in-shell-script/</guid>
       <description>A little lib that helps us checking our scripts with a unit test-like way.
-The Missing Tool Unit testing is part of a lot of projects&#39; toolset. Though some part of the source code requires more attention than it gets payed. Shell scripts belong to them.
+The Missing Tool Unit testing is part of a lot of projects&amp;rsquo; toolset. Though some part of the source code requires more attention than it gets payed. Shell scripts belong to them.
 How can we make sure that our scripts do what we expect they do?
 How can we make sure they are valid, return the right result&amp;hellip;?</description>
     </item>

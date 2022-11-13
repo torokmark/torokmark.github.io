@@ -7,21 +7,21 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta itemprop="name" content="Do you know Java: Less known side of Enums">
 <meta itemprop="description" content="Enums are easy and straigthforward at first sight, but this type has some hidden sides.
-public enum Day { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY }  For enumeration type, Java has a keyword called enum. That was introduced in Java 1.5. All enum types are implicitly inhereted from Enum class.  Hence, all enum types has all methods that Enum has, like name, ordinal, etc. We cannot extend an enum, and enum does not extend custom types."><meta itemprop="datePublished" content="2020-05-01T12:00:00&#43;01:00" />
-<meta itemprop="dateModified" content="2020-05-01T12:00:00&#43;01:00" />
+public enum Day { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY } For enumeration type, Java has a keyword called enum. That was introduced in Java 1.5. All enum types are implicitly inhereted from Enum class. Hence, all enum types has all methods that Enum has, like name, ordinal, etc. We cannot extend an enum, and enum does not extend custom types."><meta itemprop="datePublished" content="2020-05-01T12:00:00+01:00" />
+<meta itemprop="dateModified" content="2020-05-01T12:00:00+01:00" />
 <meta itemprop="wordCount" content="516">
 <meta itemprop="keywords" content="enum," /><meta property="og:title" content="Do you know Java: Less known side of Enums" />
 <meta property="og:description" content="Enums are easy and straigthforward at first sight, but this type has some hidden sides.
-public enum Day { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY }  For enumeration type, Java has a keyword called enum. That was introduced in Java 1.5. All enum types are implicitly inhereted from Enum class.  Hence, all enum types has all methods that Enum has, like name, ordinal, etc. We cannot extend an enum, and enum does not extend custom types." />
+public enum Day { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY } For enumeration type, Java has a keyword called enum. That was introduced in Java 1.5. All enum types are implicitly inhereted from Enum class. Hence, all enum types has all methods that Enum has, like name, ordinal, etc. We cannot extend an enum, and enum does not extend custom types." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://torokmark.github.io/posts/do-you-know-java-less-known-side-of-enums/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-05-01T12:00:00&#43;01:00" />
-<meta property="article:modified_time" content="2020-05-01T12:00:00&#43;01:00" />
+<meta property="article:published_time" content="2020-05-01T12:00:00+01:00" />
+<meta property="article:modified_time" content="2020-05-01T12:00:00+01:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Do you know Java: Less known side of Enums"/>
 <meta name="twitter:description" content="Enums are easy and straigthforward at first sight, but this type has some hidden sides.
-public enum Day { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY }  For enumeration type, Java has a keyword called enum. That was introduced in Java 1.5. All enum types are implicitly inhereted from Enum class.  Hence, all enum types has all methods that Enum has, like name, ordinal, etc. We cannot extend an enum, and enum does not extend custom types."/>
+public enum Day { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY } For enumeration type, Java has a keyword called enum. That was introduced in Java 1.5. All enum types are implicitly inhereted from Enum class. Hence, all enum types has all methods that Enum has, like name, ordinal, etc. We cannot extend an enum, and enum does not extend custom types."/>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -31,7 +31,7 @@ public enum Day { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
 	<link rel="shortcut icon" href="/favicon.ico">
 
 	<title>Do you know Java: Less known side of Enums</title>
-	<link rel="stylesheet" href="https://torokmark.github.io/css/style.min.eac77496566fd7d5768fd650ddb0b2b181ca6a2d7c5fdd6fe6b8ba4bf47e566f.css" integrity="sha256-6sd0llZv19V2j9ZQ3bCysYHKai18X91v5ri6S/R+Vm8=" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://torokmark.github.io/css/style.min.037b6ee8f8c1baab6a3d0a9da11c3ff18a7552471f16c59fd98538d5ce99208b.css" integrity="sha256-A3tu6PjBuqtqPQqdoRw/8Yp1UkcfFsWf2YU41c6ZIIs=" crossorigin="anonymous">
 	
 </head>
 
@@ -72,10 +72,10 @@ public enum Day { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
 			<div class="content">
 				<p><strong>Enums are easy and straigthforward at first sight, but this type has some
 hidden sides.</strong></p>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">enum</span> <span class="n">Day</span> <span class="o">{</span>
-    <span class="n">MONDAY</span><span class="o">,</span> <span class="n">TUESDAY</span><span class="o">,</span> <span class="n">WEDNESDAY</span><span class="o">,</span> <span class="n">THURSDAY</span><span class="o">,</span> <span class="n">FRIDAY</span><span class="o">,</span> <span class="n">SATURDAY</span><span class="o">,</span> <span class="n">SUNDAY</span>
-<span class="o">}</span>
-</code></pre></div><ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">enum</span> <span class="n">Day</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">MONDAY</span><span class="o">,</span> <span class="n">TUESDAY</span><span class="o">,</span> <span class="n">WEDNESDAY</span><span class="o">,</span> <span class="n">THURSDAY</span><span class="o">,</span> <span class="n">FRIDAY</span><span class="o">,</span> <span class="n">SATURDAY</span><span class="o">,</span> <span class="n">SUNDAY</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><ol>
 <li>For enumeration type, Java has a keyword called <code>enum</code>.</li>
 <li>That was introduced in Java 1.5.</li>
 <li>All enum types are implicitly inhereted from <code>Enum</code> class.
@@ -115,71 +115,71 @@ hidden sides.</strong></p>
 </ol>
 <h2 id="different-type-of-enums">Different type of enums<a href="#different-type-of-enums" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h2>
 <h4 id="empty">Empty<a href="#empty" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">enum</span> <span class="n">Empty</span> <span class="o">{</span>
-
-<span class="o">}</span>
-
-<span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">Empty</span><span class="o">.</span><span class="na">values</span><span class="o">().</span><span class="na">length</span><span class="o">);</span> <span class="c1">// =&gt; 0
-</span></code></pre></div><h4 id="with-instances">With Instances<a href="#with-instances" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">enum</span> <span class="n">Level</span> <span class="o">{</span>
-    <span class="n">DEBUG</span><span class="o">,</span> <span class="n">INFO</span><span class="o">,</span> <span class="n">WARN</span><span class="o">,</span> <span class="n">ERROR</span><span class="o">,</span> <span class="n">FATAL</span> <span class="c1">//;
-</span><span class="c1"></span><span class="o">}</span>
-</code></pre></div><p>Semicolon (<code>;</code>) is optional if enum does not have anything else just instances.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">enum</span> <span class="n">Empty</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">Empty</span><span class="o">.</span><span class="na">values</span><span class="o">().</span><span class="na">length</span><span class="o">);</span> <span class="c1">// =&gt; 0
+</span></span></span></code></pre></div><h4 id="with-instances">With Instances<a href="#with-instances" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">enum</span> <span class="n">Level</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">DEBUG</span><span class="o">,</span> <span class="n">INFO</span><span class="o">,</span> <span class="n">WARN</span><span class="o">,</span> <span class="n">ERROR</span><span class="o">,</span> <span class="n">FATAL</span> <span class="c1">//;
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="o">}</span>
+</span></span></code></pre></div><p>Semicolon (<code>;</code>) is optional if enum does not have anything else just instances.</p>
 <h4 id="with-method">With Method<a href="#with-method" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">enum</span> <span class="n">Level</span> <span class="o">{</span>
-    <span class="n">DEBUG</span><span class="o">,</span> <span class="n">INFO</span><span class="o">,</span> <span class="n">WARN</span><span class="o">,</span> <span class="n">ERROR</span><span class="o">,</span> <span class="n">FATAL</span><span class="o">;</span> 
-
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{</span>
-        <span class="c1">// ...
-</span><span class="c1"></span>    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div><p>Here, semicolon is required at the end of the instances.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">enum</span> <span class="n">Level</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">DEBUG</span><span class="o">,</span> <span class="n">INFO</span><span class="o">,</span> <span class="n">WARN</span><span class="o">,</span> <span class="n">ERROR</span><span class="o">,</span> <span class="n">FATAL</span><span class="o">;</span> 
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">print</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>Here, semicolon is required at the end of the instances.</p>
 <h4 id="order-of-instances">Order of Instances<a href="#order-of-instances" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>Order of instances are not important except one depends on another.</p>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">enum</span> <span class="n">NextOne</span> <span class="o">{</span>
-    <span class="n">A</span><span class="o">(</span><span class="n">B</span><span class="o">),</span> <span class="n">B</span><span class="o">(</span><span class="n">C</span><span class="o">),</span> <span class="n">C</span><span class="o">(</span><span class="n">A</span><span class="o">);</span>
-
-    <span class="kd">private</span> <span class="n">NextOne</span> <span class="n">next</span><span class="o">;</span>
-
-    <span class="n">NextOne</span><span class="o">(</span><span class="n">NextOne</span> <span class="n">next</span><span class="o">)</span> <span class="o">{</span>
-        <span class="k">this</span><span class="o">.</span><span class="na">next</span> <span class="o">=</span> <span class="n">next</span><span class="o">;</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div><p>Compiler cannot inference that object <code>B</code> is an instance of <code>NextOne</code>. That means
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">enum</span> <span class="n">NextOne</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">A</span><span class="o">(</span><span class="n">B</span><span class="o">),</span> <span class="n">B</span><span class="o">(</span><span class="n">C</span><span class="o">),</span> <span class="n">C</span><span class="o">(</span><span class="n">A</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">NextOne</span> <span class="n">next</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">NextOne</span><span class="o">(</span><span class="n">NextOne</span> <span class="n">next</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">.</span><span class="na">next</span> <span class="o">=</span> <span class="n">next</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>Compiler cannot inference that object <code>B</code> is an instance of <code>NextOne</code>. That means
 the above code cannot compile.</p>
 <h4 id="methods-overriding">Methods overriding<a href="#methods-overriding" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">enum</span> <span class="n">Day</span> <span class="o">{</span>
-    <span class="n">MONDAY</span> <span class="o">{</span>
-        <span class="nd">@Override</span>
-        <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="o">()</span> <span class="o">{</span>
-            <span class="k">return</span> <span class="s">&#34;Just another manic Monday.&#34;</span><span class="o">;</span>
-        <span class="o">}</span>
-    <span class="o">},</span> <span class="n">TUESDAY</span><span class="o">,</span> <span class="n">WEDNESDAY</span><span class="o">,</span> <span class="n">THURSDAY</span><span class="o">,</span> <span class="n">FRIDAY</span><span class="o">,</span> <span class="n">SATURDAY</span><span class="o">,</span> <span class="n">SUNDAY</span><span class="o">;</span>
-<span class="o">}</span>
-</code></pre></div><p>Further custom methods are also accepted in the block.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">enum</span> <span class="n">Day</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">MONDAY</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="nd">@Override</span>
+</span></span><span class="line"><span class="cl">        <span class="kd">public</span> <span class="n">String</span> <span class="nf">toString</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="s">&#34;Just another manic Monday.&#34;</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="o">},</span> <span class="n">TUESDAY</span><span class="o">,</span> <span class="n">WEDNESDAY</span><span class="o">,</span> <span class="n">THURSDAY</span><span class="o">,</span> <span class="n">FRIDAY</span><span class="o">,</span> <span class="n">SATURDAY</span><span class="o">,</span> <span class="n">SUNDAY</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>Further custom methods are also accepted in the block.</p>
 <h4 id="abstract-methods">Abstract methods<a href="#abstract-methods" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p><code>enum</code> can be extended with <code>abstact</code> methods, though we have to implement it in
 the instances.</p>
 <p><code>enum</code> also can implement interfaces.</p>
 <h4 id="annotation">Annotation<a href="#annotation" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>We can place annotations on it.</p>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="nd">@Author</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&#34;jancsi&#34;</span><span class="o">)</span>
-<span class="kd">public</span> <span class="kd">enum</span> <span class="n">Day</span> <span class="o">{</span>
-    <span class="c1">// ...
-</span><span class="c1"></span><span class="o">}</span>
-</code></pre></div><h4 id="better-way-than-valueof">Better way than <code>valueOf</code><a href="#better-way-than-valueof" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@Author</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&#34;jancsi&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">enum</span> <span class="n">Day</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="o">}</span>
+</span></span></code></pre></div><h4 id="better-way-than-valueof">Better way than <code>valueOf</code><a href="#better-way-than-valueof" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>As I have experienced, <code>valueOf</code> is far not the right method to get an <code>enum</code> instance
 based on <code>String</code>. Its drawback is <code>valueOf</code> throws <code>IllegalArgumentException</code>.</p>
 <p>Here is what I use if it is needed. It returns <code>null</code> if <code>String</code> param does not match.</p>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="n">Day</span> <span class="nf">from</span><span class="o">(</span><span class="n">String</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
-    <span class="k">for</span> <span class="o">(</span><span class="n">Day</span> <span class="n">day</span> <span class="o">:</span> <span class="n">Day</span><span class="o">.</span><span class="na">values</span><span class="o">())</span> <span class="o">{</span>
-        <span class="k">if</span> <span class="o">(</span><span class="n">day</span><span class="o">.</span><span class="na">name</span><span class="o">().</span><span class="na">equalsIgnoreCase</span><span class="o">(</span><span class="n">value</span><span class="o">))</span> <span class="o">{</span>
-            <span class="k">return</span> <span class="n">day</span><span class="o">;</span>
-        <span class="o">}</span>
-    <span class="o">}</span>
-    <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
-<span class="o">}</span>
-</code></pre></div><blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="n">Day</span> <span class="nf">from</span><span class="o">(</span><span class="n">String</span> <span class="n">value</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="o">(</span><span class="n">Day</span> <span class="n">day</span> <span class="o">:</span> <span class="n">Day</span><span class="o">.</span><span class="na">values</span><span class="o">())</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">if</span> <span class="o">(</span><span class="n">day</span><span class="o">.</span><span class="na">name</span><span class="o">().</span><span class="na">equalsIgnoreCase</span><span class="o">(</span><span class="n">value</span><span class="o">))</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">            <span class="k">return</span> <span class="n">day</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="k">return</span> <span class="kc">null</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><blockquote>
 <p><code>from</code>, <code>parse</code> also a good name! Use meaningful names!</p>
 </blockquote>
 <p><strong>In this post we have seen some less known features of enums.</strong></p>
@@ -209,7 +209,7 @@ based on <code>String</code>. Its drawback is <code>valueOf</code> throws <code>
 	</main>
 
 	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
-		<p>&copy; 2021 <a href="https://torokmark.github.io">Mark Torok</a></p>
+		<p>&copy; 2022 <a href="https://torokmark.github.io">Mark Torok</a></p>
 		<p>
 			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://torokmark.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
 		</p>
@@ -217,7 +217,7 @@ based on <code>String</code>. Its drawback is <code>valueOf</code> throws <code>
 
 
 
-	<script src="https://torokmark.github.io/js/bundle.min.7d8545daa55d62427355498dd8da13f98ff79a7938ce7d2a5e2ae1ec0de3beb8.js" integrity="sha256-fYVF2qVdYkJzVUmN2NoT+Y/3mnk4zn0qXirh7A3jvrg=" crossorigin="anonymous"></script>
+	<script src="https://torokmark.github.io/js/bundle.min.580988ed2982bcbb74a1773c7abea97b43e4c43b9324e10cda0813ec6ec4bb67.js" integrity="sha256-WAmI7SmCvLt0oXc8er6pe0PkxDuTJOEM2ggT7G7Eu2c=" crossorigin="anonymous"></script>
 	
 
 </body>

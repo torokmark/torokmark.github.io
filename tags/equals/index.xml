@@ -15,7 +15,7 @@
       <guid>https://torokmark.github.io/posts/do-you-know-java-beware-of-instanceof-in-equals/</guid>
       <description>One of the most important methods is equals. So, it is also important how it is implemented.
 What is the real issue with instanceof and equals? Let us see an implementation of it. First, let us introduce a simple class and its inheritant that demonstrate the usage of equals`.
-public class Mug { private double capacity; // ctor, setter, getter  @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null) { return false; } if (!</description>
+public class Mug { private double capacity; // ctor, setter, getter @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null) { return false; } if (!</description>
     </item>
     
   </channel>

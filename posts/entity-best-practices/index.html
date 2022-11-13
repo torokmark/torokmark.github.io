@@ -6,19 +6,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta itemprop="name" content="Best practices to write an Entity in Spring/Hibernate">
-<meta itemprop="description" content="Every entity has to have a public default contstructor fetchType = FetchType.LAZY on @OneToOne, @OneToMany and @ManyToOne and other associations (EAGER is the default except @OneToMany) If an association is not mandatory:  optional = false on association annotations @Column and @JoinColumn should contain nullable = false   Entity should implement Persistable&lt;IDTYPE&gt; interface  Create own interface with default implementation:    public interface Identifiable extends Persistable&lt;Long&gt; { default isNew() { return getId() == null; } }  All ids should be boxed like Long, Integer, String, etc."><meta itemprop="datePublished" content="2018-10-01T00:00:00&#43;00:00" />
-<meta itemprop="dateModified" content="2018-10-01T00:00:00&#43;00:00" />
+<meta itemprop="description" content="Every entity has to have a public default contstructor fetchType = FetchType.LAZY on @OneToOne, @OneToMany and @ManyToOne and other associations (EAGER is the default except @OneToMany) If an association is not mandatory: optional = false on association annotations @Column and @JoinColumn should contain nullable = false Entity should implement Persistable&lt;IDTYPE&gt; interface Create own interface with default implementation: public interface Identifiable extends Persistable&lt;Long&gt; { default isNew() { return getId() == null; } } All ids should be boxed like Long, Integer, String, etc."><meta itemprop="datePublished" content="2018-10-01T00:00:00+00:00" />
+<meta itemprop="dateModified" content="2018-10-01T00:00:00+00:00" />
 <meta itemprop="wordCount" content="146">
 <meta itemprop="keywords" content="spring,hibernate,entity," /><meta property="og:title" content="Best practices to write an Entity in Spring/Hibernate" />
-<meta property="og:description" content="Every entity has to have a public default contstructor fetchType = FetchType.LAZY on @OneToOne, @OneToMany and @ManyToOne and other associations (EAGER is the default except @OneToMany) If an association is not mandatory:  optional = false on association annotations @Column and @JoinColumn should contain nullable = false   Entity should implement Persistable&lt;IDTYPE&gt; interface  Create own interface with default implementation:    public interface Identifiable extends Persistable&lt;Long&gt; { default isNew() { return getId() == null; } }  All ids should be boxed like Long, Integer, String, etc." />
+<meta property="og:description" content="Every entity has to have a public default contstructor fetchType = FetchType.LAZY on @OneToOne, @OneToMany and @ManyToOne and other associations (EAGER is the default except @OneToMany) If an association is not mandatory: optional = false on association annotations @Column and @JoinColumn should contain nullable = false Entity should implement Persistable&lt;IDTYPE&gt; interface Create own interface with default implementation: public interface Identifiable extends Persistable&lt;Long&gt; { default isNew() { return getId() == null; } } All ids should be boxed like Long, Integer, String, etc." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://torokmark.github.io/posts/entity-best-practices/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2018-10-01T00:00:00&#43;00:00" />
-<meta property="article:modified_time" content="2018-10-01T00:00:00&#43;00:00" />
+<meta property="article:published_time" content="2018-10-01T00:00:00+00:00" />
+<meta property="article:modified_time" content="2018-10-01T00:00:00+00:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Best practices to write an Entity in Spring/Hibernate"/>
-<meta name="twitter:description" content="Every entity has to have a public default contstructor fetchType = FetchType.LAZY on @OneToOne, @OneToMany and @ManyToOne and other associations (EAGER is the default except @OneToMany) If an association is not mandatory:  optional = false on association annotations @Column and @JoinColumn should contain nullable = false   Entity should implement Persistable&lt;IDTYPE&gt; interface  Create own interface with default implementation:    public interface Identifiable extends Persistable&lt;Long&gt; { default isNew() { return getId() == null; } }  All ids should be boxed like Long, Integer, String, etc."/>
+<meta name="twitter:description" content="Every entity has to have a public default contstructor fetchType = FetchType.LAZY on @OneToOne, @OneToMany and @ManyToOne and other associations (EAGER is the default except @OneToMany) If an association is not mandatory: optional = false on association annotations @Column and @JoinColumn should contain nullable = false Entity should implement Persistable&lt;IDTYPE&gt; interface Create own interface with default implementation: public interface Identifiable extends Persistable&lt;Long&gt; { default isNew() { return getId() == null; } } All ids should be boxed like Long, Integer, String, etc."/>
 
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -28,7 +28,7 @@
 	<link rel="shortcut icon" href="/favicon.ico">
 
 	<title>Best practices to write an Entity in Spring/Hibernate</title>
-	<link rel="stylesheet" href="https://torokmark.github.io/css/style.min.eac77496566fd7d5768fd650ddb0b2b181ca6a2d7c5fdd6fe6b8ba4bf47e566f.css" integrity="sha256-6sd0llZv19V2j9ZQ3bCysYHKai18X91v5ri6S/R+Vm8=" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://torokmark.github.io/css/style.min.037b6ee8f8c1baab6a3d0a9da11c3ff18a7552471f16c59fd98538d5ce99208b.css" integrity="sha256-A3tu6PjBuqtqPQqdoRw/8Yp1UkcfFsWf2YU41c6ZIIs=" crossorigin="anonymous">
 	
 </head>
 
@@ -82,12 +82,12 @@
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"> <span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Identifiable</span> <span class="kd">extends</span> <span class="n">Persistable</span><span class="o">&lt;</span><span class="n">Long</span><span class="o">&gt;</span> <span class="o">{</span> 
-     <span class="k">default</span> <span class="n">isNew</span><span class="o">()</span> <span class="o">{</span> 
-         <span class="k">return</span> <span class="n">getId</span><span class="o">()</span> <span class="o">==</span> <span class="kc">null</span><span class="o">;</span> 
-     <span class="o">}</span>
- <span class="o">}</span>
-</code></pre></div><ul>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"> <span class="kd">public</span> <span class="kd">interface</span> <span class="nc">Identifiable</span> <span class="kd">extends</span> <span class="n">Persistable</span><span class="o">&lt;</span><span class="n">Long</span><span class="o">&gt;</span> <span class="o">{</span> 
+</span></span><span class="line"><span class="cl">     <span class="k">default</span> <span class="n">isNew</span><span class="o">()</span> <span class="o">{</span> 
+</span></span><span class="line"><span class="cl">         <span class="k">return</span> <span class="n">getId</span><span class="o">()</span> <span class="o">==</span> <span class="kc">null</span><span class="o">;</span> 
+</span></span><span class="line"><span class="cl">     <span class="o">}</span>
+</span></span><span class="line"><span class="cl"> <span class="o">}</span>
+</span></span></code></pre></div><ul>
 <li>All ids should be boxed like <code>Long</code>, <code>Integer</code>, <code>String</code>, etc. (Implementing <code>Persistable&lt;IDTYPE&gt;</code> will ensure this.)</li>
 <li>Do not use <em>lombok</em> for entities (hibernate), generated code interfere with each other</li>
 <li>Do not reimplement <code>equals</code> and <code>hashCode</code> for entities</li>
@@ -118,7 +118,7 @@
 	</main>
 
 	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
-		<p>&copy; 2021 <a href="https://torokmark.github.io">Mark Torok</a></p>
+		<p>&copy; 2022 <a href="https://torokmark.github.io">Mark Torok</a></p>
 		<p>
 			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://torokmark.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
 		</p>
@@ -126,7 +126,7 @@
 
 
 
-	<script src="https://torokmark.github.io/js/bundle.min.7d8545daa55d62427355498dd8da13f98ff79a7938ce7d2a5e2ae1ec0de3beb8.js" integrity="sha256-fYVF2qVdYkJzVUmN2NoT+Y/3mnk4zn0qXirh7A3jvrg=" crossorigin="anonymous"></script>
+	<script src="https://torokmark.github.io/js/bundle.min.580988ed2982bcbb74a1773c7abea97b43e4c43b9324e10cda0813ec6ec4bb67.js" integrity="sha256-WAmI7SmCvLt0oXc8er6pe0PkxDuTJOEM2ggT7G7Eu2c=" crossorigin="anonymous"></script>
 	
 
 </body>

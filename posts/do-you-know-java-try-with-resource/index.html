@@ -9,8 +9,8 @@
 <meta itemprop="description" content="Try-with-resource gives a safer way to handle exceptions and resources.
 A quite big drawback of try-catch-finally that we have to close resource at the end, otherwise the resource remains locked - not always, but sometimes!
 So either we try not to forget to close the resouce, and place finally at the end, or apply something that does this job instead of us.
-Try-Catch-Finally The hard part comes in finally, which encloses a try-catch, and null check is very easy to forget."><meta itemprop="datePublished" content="2020-04-24T12:00:00&#43;01:00" />
-<meta itemprop="dateModified" content="2020-04-24T12:00:00&#43;01:00" />
+Try-Catch-Finally The hard part comes in finally, which encloses a try-catch, and null check is very easy to forget."><meta itemprop="datePublished" content="2020-04-24T12:00:00+01:00" />
+<meta itemprop="dateModified" content="2020-04-24T12:00:00+01:00" />
 <meta itemprop="wordCount" content="298">
 <meta itemprop="keywords" content="exception handling,try-with-resource,finally," /><meta property="og:title" content="Do you know Java: Use try-with-resource" />
 <meta property="og:description" content="Try-with-resource gives a safer way to handle exceptions and resources.
@@ -19,8 +19,8 @@ So either we try not to forget to close the resouce, and place finally at the en
 Try-Catch-Finally The hard part comes in finally, which encloses a try-catch, and null check is very easy to forget." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://torokmark.github.io/posts/do-you-know-java-try-with-resource/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-04-24T12:00:00&#43;01:00" />
-<meta property="article:modified_time" content="2020-04-24T12:00:00&#43;01:00" />
+<meta property="article:published_time" content="2020-04-24T12:00:00+01:00" />
+<meta property="article:modified_time" content="2020-04-24T12:00:00+01:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Do you know Java: Use try-with-resource"/>
@@ -37,7 +37,7 @@ Try-Catch-Finally The hard part comes in finally, which encloses a try-catch, an
 	<link rel="shortcut icon" href="/favicon.ico">
 
 	<title>Do you know Java: Use try-with-resource</title>
-	<link rel="stylesheet" href="https://torokmark.github.io/css/style.min.eac77496566fd7d5768fd650ddb0b2b181ca6a2d7c5fdd6fe6b8ba4bf47e566f.css" integrity="sha256-6sd0llZv19V2j9ZQ3bCysYHKai18X91v5ri6S/R+Vm8=" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://torokmark.github.io/css/style.min.037b6ee8f8c1baab6a3d0a9da11c3ff18a7552471f16c59fd98538d5ce99208b.css" integrity="sha256-A3tu6PjBuqtqPQqdoRw/8Yp1UkcfFsWf2YU41c6ZIIs=" crossorigin="anonymous">
 	
 </head>
 
@@ -84,50 +84,50 @@ or apply something that does this job instead of us.</p>
 <h4 id="try-catch-finally">Try-Catch-Finally<a href="#try-catch-finally" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>The hard part comes in <code>finally</code>, which encloses a <em>try-catch</em>, and null check
 is very easy to forget.</p>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">BufferedReader</span> <span class="n">br</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span> <span class="c1">// has to be initialized
-</span><span class="c1"></span><span class="k">try</span> <span class="o">{</span>
-    <span class="n">br</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="n">CharArrayReader</span><span class="o">(</span><span class="s">&#34;apple&#34;</span><span class="o">.</span><span class="na">toCharArray</span><span class="o">()));</span>
-    <span class="c1">// ...
-</span><span class="c1"></span><span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
-    <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
-<span class="o">}</span> <span class="k">finally</span> <span class="o">{</span>
-    <span class="k">try</span> <span class="o">{</span>  <span class="c1">// try-catch
-</span><span class="c1"></span>        <span class="k">if</span> <span class="o">(</span><span class="n">br</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// null-check comes handy!
-</span><span class="c1"></span>            <span class="n">br</span><span class="o">.</span><span class="na">close</span><span class="o">();</span> <span class="c1">// to be handled or declared
-</span><span class="c1"></span>        <span class="o">}</span>
-    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
-        <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div><h4 id="try-with-resource">Try-With-Resource<a href="#try-with-resource" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">BufferedReader</span> <span class="n">br</span> <span class="o">=</span> <span class="kc">null</span><span class="o">;</span> <span class="c1">// has to be initialized
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="k">try</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">br</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="n">CharArrayReader</span><span class="o">(</span><span class="s">&#34;apple&#34;</span><span class="o">.</span><span class="na">toCharArray</span><span class="o">()));</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span> <span class="k">finally</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="k">try</span> <span class="o">{</span>  <span class="c1">// try-catch
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="k">if</span> <span class="o">(</span><span class="n">br</span> <span class="o">!=</span> <span class="kc">null</span><span class="o">)</span> <span class="o">{</span> <span class="c1">// null-check comes handy!
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>            <span class="n">br</span><span class="o">.</span><span class="na">close</span><span class="o">();</span> <span class="c1">// to be handled or declared
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>        <span class="o">}</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><h4 id="try-with-resource">Try-With-Resource<a href="#try-with-resource" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>By using <em>try-with-resource</em>, we can take off this burden off our shoulders.
 That is a much shorter and cleaner way to achieve the same without risking
 that we leave resources unclosed and no need to check nulls either.</p>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="k">try</span> <span class="o">(</span><span class="n">BufferedReader</span> <span class="n">br</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="n">CharArrayReader</span><span class="o">(</span><span class="s">&#34;apple&#34;</span><span class="o">.</span><span class="na">toCharArray</span><span class="o">())))</span> <span class="o">{</span>
-    <span class="c1">// ...
-</span><span class="c1"></span><span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
-    <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
-<span class="o">}</span>
-</code></pre></div><ol>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="k">try</span> <span class="o">(</span><span class="n">BufferedReader</span> <span class="n">br</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BufferedReader</span><span class="o">(</span><span class="k">new</span> <span class="n">CharArrayReader</span><span class="o">(</span><span class="s">&#34;apple&#34;</span><span class="o">.</span><span class="na">toCharArray</span><span class="o">())))</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">IOException</span> <span class="n">e</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="n">e</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><ol>
 <li>No need to write <code>finally</code></li>
 <li>Resource will be automatically closed (depends on the implementation)</li>
 <li>Resource has to implement <code>AutoClosable</code> interface</li>
 </ol>
 <h4 id="autoclosable">AutoClosable<a href="#autoclosable" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>What kinf of classes fit in the header of try-with-resource? Those, that implement <code>AutoClosable</code>.</p>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ClosableResource</span> <span class="kd">implements</span> <span class="n">AutoCloseable</span> <span class="o">{</span>
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">close</span><span class="o">()</span> <span class="o">{</span>
-        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;closed!&#34;</span><span class="o">);</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div><p><code>close</code> method is called automatically.</p>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="k">try</span> <span class="o">(</span><span class="n">ClosableResource</span> <span class="n">cr</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ClosableResource</span><span class="o">())</span> <span class="o">{</span>
-    <span class="c1">// ...
-</span><span class="c1"></span><span class="o">}</span> <span class="k">catch</span> <span class="o">(...)</span> <span class="o">{</span>
-    <span class="c1">// ...
-</span><span class="c1"></span><span class="o">}</span>
-</code></pre></div><h4 id="closable-vs-autoclosable">Closable vs AutoClosable<a href="#closable-vs-autoclosable" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">ClosableResource</span> <span class="kd">implements</span> <span class="n">AutoCloseable</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">close</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;closed!&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p><code>close</code> method is called automatically.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="k">try</span> <span class="o">(</span><span class="n">ClosableResource</span> <span class="n">cr</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ClosableResource</span><span class="o">())</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="o">}</span> <span class="k">catch</span> <span class="o">(...)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="c1">// ...
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="o">}</span>
+</span></span></code></pre></div><h4 id="closable-vs-autoclosable">Closable vs AutoClosable<a href="#closable-vs-autoclosable" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p><code>AutoClosable</code> is the superinterface of <code>Closable</code>.</p>
 <p>While <code>Closable#close</code> throws <code>IOException</code>, the <code>AutoClosable#close</code> throws exceptions
 derived from <code>Exception</code>.</p>
@@ -159,7 +159,7 @@ Further reading about <a href="https://docs.oracle.com/javase/tutorial/essential
 	</main>
 
 	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
-		<p>&copy; 2021 <a href="https://torokmark.github.io">Mark Torok</a></p>
+		<p>&copy; 2022 <a href="https://torokmark.github.io">Mark Torok</a></p>
 		<p>
 			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://torokmark.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
 		</p>
@@ -167,7 +167,7 @@ Further reading about <a href="https://docs.oracle.com/javase/tutorial/essential
 
 
 
-	<script src="https://torokmark.github.io/js/bundle.min.7d8545daa55d62427355498dd8da13f98ff79a7938ce7d2a5e2ae1ec0de3beb8.js" integrity="sha256-fYVF2qVdYkJzVUmN2NoT+Y/3mnk4zn0qXirh7A3jvrg=" crossorigin="anonymous"></script>
+	<script src="https://torokmark.github.io/js/bundle.min.580988ed2982bcbb74a1773c7abea97b43e4c43b9324e10cda0813ec6ec4bb67.js" integrity="sha256-WAmI7SmCvLt0oXc8er6pe0PkxDuTJOEM2ggT7G7Eu2c=" crossorigin="anonymous"></script>
 	
 
 </body>

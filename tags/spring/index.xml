@@ -13,7 +13,7 @@
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://torokmark.github.io/posts/entity-best-practices/</guid>
-      <description>Every entity has to have a public default contstructor fetchType = FetchType.LAZY on @OneToOne, @OneToMany and @ManyToOne and other associations (EAGER is the default except @OneToMany) If an association is not mandatory:  optional = false on association annotations @Column and @JoinColumn should contain nullable = false   Entity should implement Persistable&amp;lt;IDTYPE&amp;gt; interface  Create own interface with default implementation:    public interface Identifiable extends Persistable&amp;lt;Long&amp;gt; { default isNew() { return getId() == null; } }  All ids should be boxed like Long, Integer, String, etc.</description>
+      <description>Every entity has to have a public default contstructor fetchType = FetchType.LAZY on @OneToOne, @OneToMany and @ManyToOne and other associations (EAGER is the default except @OneToMany) If an association is not mandatory: optional = false on association annotations @Column and @JoinColumn should contain nullable = false Entity should implement Persistable&amp;lt;IDTYPE&amp;gt; interface Create own interface with default implementation: public interface Identifiable extends Persistable&amp;lt;Long&amp;gt; { default isNew() { return getId() == null; } } All ids should be boxed like Long, Integer, String, etc.</description>
     </item>
     
   </channel>

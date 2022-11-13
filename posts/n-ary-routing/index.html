@@ -8,8 +8,8 @@
 <meta itemprop="name" content="How to implement routing with n-ary tree">
 <meta itemprop="description" content="Routing mechanism is one of the main parts of a web service. Here I provide one approach to achieve this. This implementation is based on n-ary tree and tree search.
 Many ways are available to handle routes, from regex to n-ary trees to parse registered route one by one.
-Different ways N-ary Trees In this approach we can consider the root node as / and all children nodes as route parts are separated by /."><meta itemprop="datePublished" content="2019-03-19T12:00:00&#43;01:00" />
-<meta itemprop="dateModified" content="2019-03-19T12:00:00&#43;01:00" />
+Different ways N-ary Trees In this approach we can consider the root node as / and all children nodes as route parts are separated by /."><meta itemprop="datePublished" content="2019-03-19T12:00:00+01:00" />
+<meta itemprop="dateModified" content="2019-03-19T12:00:00+01:00" />
 <meta itemprop="wordCount" content="902">
 <meta itemprop="keywords" content="n-ary tree," /><meta property="og:title" content="How to implement routing with n-ary tree" />
 <meta property="og:description" content="Routing mechanism is one of the main parts of a web service. Here I provide one approach to achieve this. This implementation is based on n-ary tree and tree search.
@@ -17,8 +17,8 @@ Many ways are available to handle routes, from regex to n-ary trees to parse reg
 Different ways N-ary Trees In this approach we can consider the root node as / and all children nodes as route parts are separated by /." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://torokmark.github.io/posts/n-ary-routing/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2019-03-19T12:00:00&#43;01:00" />
-<meta property="article:modified_time" content="2019-03-19T12:00:00&#43;01:00" />
+<meta property="article:published_time" content="2019-03-19T12:00:00+01:00" />
+<meta property="article:modified_time" content="2019-03-19T12:00:00+01:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="How to implement routing with n-ary tree"/>
@@ -34,7 +34,7 @@ Different ways N-ary Trees In this approach we can consider the root node as / a
 	<link rel="shortcut icon" href="/favicon.ico">
 
 	<title>How to implement routing with n-ary tree</title>
-	<link rel="stylesheet" href="https://torokmark.github.io/css/style.min.eac77496566fd7d5768fd650ddb0b2b181ca6a2d7c5fdd6fe6b8ba4bf47e566f.css" integrity="sha256-6sd0llZv19V2j9ZQ3bCysYHKai18X91v5ri6S/R+Vm8=" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://torokmark.github.io/css/style.min.037b6ee8f8c1baab6a3d0a9da11c3ff18a7552471f16c59fd98538d5ce99208b.css" integrity="sha256-A3tu6PjBuqtqPQqdoRw/8Yp1UkcfFsWf2YU41c6ZIIs=" crossorigin="anonymous">
 	
 </head>
 
@@ -111,34 +111,34 @@ different methods are placed in two different nodes as siblings.
 <code>params</code> are considered as a whitelist of queryparams. Those queryparams that
 are not in this list, those are not parsed and processed, and passed to the
 lambda.</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">routing</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">route</span><span class="o">=</span><span class="s1">&#39;/users&#39;</span><span class="p">,</span> 
-                 <span class="n">callback</span><span class="o">=</span><span class="p">(</span><span class="k">lambda</span> <span class="n">name</span><span class="p">,</span> <span class="n">email</span><span class="p">:</span> <span class="n">users</span><span class="o">.</span><span class="n">create_user</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">email</span><span class="p">)),</span>
-                 <span class="n">method</span><span class="o">=</span><span class="n">routing</span><span class="o">.</span><span class="n">Methods</span><span class="o">.</span><span class="n">POST</span><span class="p">,</span>
-                 <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;email&#39;</span><span class="p">})</span>
-
-<span class="n">routing</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">route</span><span class="o">=</span><span class="s1">&#39;/users/{id}&#39;</span><span class="p">,</span> 
-                 <span class="n">callback</span><span class="o">=</span><span class="p">(</span><span class="k">lambda</span> <span class="nb">id</span><span class="p">:</span> <span class="n">users</span><span class="o">.</span><span class="n">get_user</span><span class="p">(</span><span class="nb">id</span><span class="p">)),</span> 
-                 <span class="n">method</span><span class="o">=</span><span class="n">routing</span><span class="o">.</span><span class="n">Methods</span><span class="o">.</span><span class="n">GET</span><span class="p">)</span>
-</code></pre></div><h4 id="process-a-route">Process a route<a href="#process-a-route" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">routing</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">route</span><span class="o">=</span><span class="s1">&#39;/users&#39;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">                 <span class="n">callback</span><span class="o">=</span><span class="p">(</span><span class="k">lambda</span> <span class="n">name</span><span class="p">,</span> <span class="n">email</span><span class="p">:</span> <span class="n">users</span><span class="o">.</span><span class="n">create_user</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">email</span><span class="p">)),</span>
+</span></span><span class="line"><span class="cl">                 <span class="n">method</span><span class="o">=</span><span class="n">routing</span><span class="o">.</span><span class="n">Methods</span><span class="o">.</span><span class="n">POST</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">                 <span class="n">params</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;name&#39;</span><span class="p">,</span> <span class="s1">&#39;email&#39;</span><span class="p">})</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">routing</span><span class="o">.</span><span class="n">register</span><span class="p">(</span><span class="n">route</span><span class="o">=</span><span class="s1">&#39;/users/</span><span class="si">{id}</span><span class="s1">&#39;</span><span class="p">,</span> 
+</span></span><span class="line"><span class="cl">                 <span class="n">callback</span><span class="o">=</span><span class="p">(</span><span class="k">lambda</span> <span class="nb">id</span><span class="p">:</span> <span class="n">users</span><span class="o">.</span><span class="n">get_user</span><span class="p">(</span><span class="nb">id</span><span class="p">)),</span> 
+</span></span><span class="line"><span class="cl">                 <span class="n">method</span><span class="o">=</span><span class="n">routing</span><span class="o">.</span><span class="n">Methods</span><span class="o">.</span><span class="n">GET</span><span class="p">)</span>
+</span></span></code></pre></div><h4 id="process-a-route">Process a route<a href="#process-a-route" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>The <code>process</code> function takes the three agruments as shown below and returns the
 result of the executed lambda. If lambda returns void than process gives back
 <code>None</code>.</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">request_body</span> <span class="o">=</span> <span class="n">routing</span><span class="o">.</span><span class="n">process</span><span class="p">(</span><span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;path&#39;</span><span class="p">),</span> 
-                               <span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;queryStringParameters&#39;</span><span class="p">),</span> 
-                               <span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;httpMethod&#39;</span><span class="p">))</span>
-</code></pre></div><h4 id="routing-tree">Routing Tree<a href="#routing-tree" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">request_body</span> <span class="o">=</span> <span class="n">routing</span><span class="o">.</span><span class="n">process</span><span class="p">(</span><span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;path&#39;</span><span class="p">),</span> 
+</span></span><span class="line"><span class="cl">                               <span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;queryStringParameters&#39;</span><span class="p">),</span> 
+</span></span><span class="line"><span class="cl">                               <span class="n">event</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;httpMethod&#39;</span><span class="p">))</span>
+</span></span></code></pre></div><h4 id="routing-tree">Routing Tree<a href="#routing-tree" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>Routing tree represents the registered routes. Each <em>node</em> contains the route part,
 the full path from the root to itself, <em>callbacks</em> and children nodes.</p>
 <p>Callbacks are stored in a dictionary with methods as keys and lambdas as values.
 So this way one path could have a <code>POST</code> and a <code>GET</code> or any other methods at the
 same time.</p>
 <p>A node looks like as follows:</p>
-<div class="highlight"><pre class="chroma"><code class="language-js" data-lang="js"><span class="p">(</span><span class="nx">value</span><span class="o">=</span><span class="s2">&#34;/&#34;</span> <span class="nx">resource_path</span><span class="o">=</span><span class="s1">&#39;/&#39;</span> <span class="nx">callbacks</span><span class="o">=</span><span class="p">{}</span> <span class="nx">children</span><span class="o">:</span> <span class="p">[</span>
-  <span class="p">(</span><span class="nx">value</span><span class="o">=</span><span class="s2">&#34;users&#34;</span> <span class="nx">resource_path</span><span class="o">=</span><span class="s1">&#39;/users&#39;</span> <span class="nx">callbacks</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;GET&#39;</span><span class="o">:</span> <span class="p">{</span><span class="nx">callback</span><span class="o">=</span>
-  <span class="nx">lambda</span><span class="o">-</span><span class="nx">expression</span><span class="p">,</span>
-  <span class="nx">params</span><span class="o">=</span><span class="p">{}}}</span>  <span class="nx">children</span><span class="o">:</span> <span class="p">[])</span>
-<span class="p">])</span>
-</code></pre></div><p>The routing tree has two methods that can build the tree up or find the
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-js" data-lang="js"><span class="line"><span class="cl"><span class="p">(</span><span class="nx">value</span><span class="o">=</span><span class="s2">&#34;/&#34;</span> <span class="nx">resource_path</span><span class="o">=</span><span class="s1">&#39;/&#39;</span> <span class="nx">callbacks</span><span class="o">=</span><span class="p">{}</span> <span class="nx">children</span><span class="o">:</span> <span class="p">[</span>
+</span></span><span class="line"><span class="cl">  <span class="p">(</span><span class="nx">value</span><span class="o">=</span><span class="s2">&#34;users&#34;</span> <span class="nx">resource_path</span><span class="o">=</span><span class="s1">&#39;/users&#39;</span> <span class="nx">callbacks</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;GET&#39;</span><span class="o">:</span> <span class="p">{</span><span class="nx">callback</span><span class="o">=</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">lambda</span><span class="o">-</span><span class="nx">expression</span><span class="p">,</span>
+</span></span><span class="line"><span class="cl">  <span class="nx">params</span><span class="o">=</span><span class="p">{}}}</span>  <span class="nx">children</span><span class="o">:</span> <span class="p">[])</span>
+</span></span><span class="line"><span class="cl"><span class="p">])</span>
+</span></span></code></pre></div><p>The routing tree has two methods that can build the tree up or find the
 appropriate path.</p>
 <ul>
 <li><strong>add</strong>: responsible to handle the registration recursively.</li>
@@ -165,12 +165,12 @@ the pathparam node.</p>
 characters that can mess up with the database.</p>
 <p>Here I used very simple validation by using regex, but it is alterable according
 to the needs.</p>
-<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">PATH_PARAM_PATTERN</span> <span class="o">=</span> <span class="s1">&#39;^{([a-zA-Z0-9]+)}$&#39;</span>
-<span class="n">PATH_PART_PATTERN</span> <span class="o">=</span> <span class="s1">&#39;^[a-zA-Z0-9\-]+$&#39;</span>
-
-<span class="n">QUERY_KEY_PATTERN</span> <span class="o">=</span> <span class="s1">&#39;^[a-zA-Z0-9]+$&#39;</span>
-<span class="n">QUERY_VALUE_PATTERN</span> <span class="o">=</span> <span class="s1">&#39;(^[a-zA-Z0-9\-@\. ]+$)&#39;</span>
-</code></pre></div><p>The implementation gives a chance to fine-tune the validation by introducing
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-python" data-lang="python"><span class="line"><span class="cl"><span class="n">PATH_PARAM_PATTERN</span> <span class="o">=</span> <span class="s1">&#39;^{([a-zA-Z0-9]+)}$&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">PATH_PART_PATTERN</span> <span class="o">=</span> <span class="s1">&#39;^[a-zA-Z0-9\-]+$&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="n">QUERY_KEY_PATTERN</span> <span class="o">=</span> <span class="s1">&#39;^[a-zA-Z0-9]+$&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="n">QUERY_VALUE_PATTERN</span> <span class="o">=</span> <span class="s1">&#39;(^[a-zA-Z0-9\-@\. ]+$)&#39;</span>
+</span></span></code></pre></div><p>The implementation gives a chance to fine-tune the validation by introducing
 param specific patterns. These could be placed in either <code>validate_route_register</code> or
 <code>validate_route_process</code> or in both.</p>
 <h4 id="what-it-does-not-contain">What it does not contain<a href="#what-it-does-not-contain" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
@@ -211,7 +211,7 @@ declare route with method, params and lambda, and took a look on how to process 
 	</main>
 
 	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
-		<p>&copy; 2021 <a href="https://torokmark.github.io">Mark Torok</a></p>
+		<p>&copy; 2022 <a href="https://torokmark.github.io">Mark Torok</a></p>
 		<p>
 			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://torokmark.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
 		</p>
@@ -219,7 +219,7 @@ declare route with method, params and lambda, and took a look on how to process 
 
 
 
-	<script src="https://torokmark.github.io/js/bundle.min.7d8545daa55d62427355498dd8da13f98ff79a7938ce7d2a5e2ae1ec0de3beb8.js" integrity="sha256-fYVF2qVdYkJzVUmN2NoT+Y/3mnk4zn0qXirh7A3jvrg=" crossorigin="anonymous"></script>
+	<script src="https://torokmark.github.io/js/bundle.min.580988ed2982bcbb74a1773c7abea97b43e4c43b9324e10cda0813ec6ec4bb67.js" integrity="sha256-WAmI7SmCvLt0oXc8er6pe0PkxDuTJOEM2ggT7G7Eu2c=" crossorigin="anonymous"></script>
 	
 
 </body>

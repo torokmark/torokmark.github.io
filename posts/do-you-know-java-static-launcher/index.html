@@ -8,8 +8,8 @@
 <meta itemprop="name" content="Do you know Java: Instance from static launcher">
 <meta itemprop="description" content="Instantiate the current class from its entry point by using static method. Interesting, isn&rsquo;t it?
 I came across with JavaFX recently, and I saw an example about how to use it. This made me think, and brought the following question in my mind. How can we make an instance of the class that is the starting point of our application and how can we call its instance methods.
-Let us see the code that we have if we start building a javafx application."><meta itemprop="datePublished" content="2020-02-18T12:00:00&#43;01:00" />
-<meta itemprop="dateModified" content="2020-02-18T12:00:00&#43;01:00" />
+Let us see the code that we have if we start building a javafx application."><meta itemprop="datePublished" content="2020-02-18T12:00:00+01:00" />
+<meta itemprop="dateModified" content="2020-02-18T12:00:00+01:00" />
 <meta itemprop="wordCount" content="295">
 <meta itemprop="keywords" content="static,stacktrace,reflection,instantiation," /><meta property="og:title" content="Do you know Java: Instance from static launcher" />
 <meta property="og:description" content="Instantiate the current class from its entry point by using static method. Interesting, isn&rsquo;t it?
@@ -17,8 +17,8 @@ I came across with JavaFX recently, and I saw an example about how to use it. Th
 Let us see the code that we have if we start building a javafx application." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://torokmark.github.io/posts/do-you-know-java-static-launcher/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2020-02-18T12:00:00&#43;01:00" />
-<meta property="article:modified_time" content="2020-02-18T12:00:00&#43;01:00" />
+<meta property="article:published_time" content="2020-02-18T12:00:00+01:00" />
+<meta property="article:modified_time" content="2020-02-18T12:00:00+01:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Do you know Java: Instance from static launcher"/>
@@ -34,7 +34,7 @@ Let us see the code that we have if we start building a javafx application."/>
 	<link rel="shortcut icon" href="/favicon.ico">
 
 	<title>Do you know Java: Instance from static launcher</title>
-	<link rel="stylesheet" href="https://torokmark.github.io/css/style.min.eac77496566fd7d5768fd650ddb0b2b181ca6a2d7c5fdd6fe6b8ba4bf47e566f.css" integrity="sha256-6sd0llZv19V2j9ZQ3bCysYHKai18X91v5ri6S/R+Vm8=" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://torokmark.github.io/css/style.min.037b6ee8f8c1baab6a3d0a9da11c3ff18a7552471f16c59fd98538d5ce99208b.css" integrity="sha256-A3tu6PjBuqtqPQqdoRw/8Yp1UkcfFsWf2YU41c6ZIIs=" crossorigin="anonymous">
 	
 </head>
 
@@ -78,18 +78,18 @@ Let us see the code that we have if we start building a javafx application."/>
 and brought the following question in my mind. How can we make an instance of the class that is
 the starting point of our application and how can we call its instance methods.</p>
 <p>Let us see the code that we have if we start building a <em>javafx</em> application.</p>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="kd">class</span> <span class="nc">Hello</span> <span class="kd">extends</span> <span class="n">Application</span> <span class="o">{</span>
-   
-    <span class="nd">@Override</span>
-    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">start</span><span class="o">(</span><span class="n">Stage</span> <span class="n">stage</span><span class="o">)</span> <span class="o">{</span>
-           
-    <span class="o">}</span>
-
-    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-        <span class="n">launch</span><span class="o">(</span><span class="n">args</span><span class="o">);</span>
-    <span class="o">}</span>
-<span class="o">}</span>
-</code></pre></div><p>As it seems, <code>Application</code> has a <code>static</code> <code>launch</code> method and an instance level <code>start</code> method.
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Hello</span> <span class="kd">extends</span> <span class="n">Application</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">   
+</span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">start</span><span class="o">(</span><span class="n">Stage</span> <span class="n">stage</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">           
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">launch</span><span class="o">(</span><span class="n">args</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>As it seems, <code>Application</code> has a <code>static</code> <code>launch</code> method and an instance level <code>start</code> method.
 In <code>launch</code> method we have to call <code>start</code> somehow.</p>
 <p>Here is one approach how to solve it.</p>
 <ol>
@@ -99,23 +99,23 @@ In <code>launch</code> method we have to call <code>start</code> somehow.</p>
 </ol>
 <h4 id="where-we-are-at">Where we are at.<a href="#where-we-are-at" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>Stacktrace can be a good start to figure out which class where we are at.</p>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="k">new</span> <span class="n">Throwable</span><span class="o">().</span><span class="na">getStackTrace</span><span class="o">()[</span><span class="n">1</span><span class="o">].</span><span class="na">getClassName</span><span class="o">();</span>
-</code></pre></div><blockquote>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="k">new</span> <span class="n">Throwable</span><span class="o">().</span><span class="na">getStackTrace</span><span class="o">()[</span><span class="n">1</span><span class="o">].</span><span class="na">getClassName</span><span class="o">();</span>
+</span></span></code></pre></div><blockquote>
 <p>Instance of <code>Throwable</code> is not thrown!
 The index of <code>1</code> returns the caller as a <code>StackTraceElement</code> which will be <code>Hello</code> in our example.</p>
 </blockquote>
 <h4 id="instantiation">Instantiation<a href="#instantiation" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>Now, we know the name of our class. Reflection can help us to make an instance out of it.</p>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">Class</span><span class="o">.</span><span class="na">forName</span><span class="o">(</span><span class="n">className</span><span class="o">).</span><span class="na">getDeclaredConstructor</span><span class="o">().</span><span class="na">newInstance</span><span class="o">();</span>
-</code></pre></div><h4 id="call-start-method">Call <code>start</code> method<a href="#call-start-method" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Class</span><span class="o">.</span><span class="na">forName</span><span class="o">(</span><span class="n">className</span><span class="o">).</span><span class="na">getDeclaredConstructor</span><span class="o">().</span><span class="na">newInstance</span><span class="o">();</span>
+</span></span></code></pre></div><h4 id="call-start-method">Call <code>start</code> method<a href="#call-start-method" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>As we get the instance, and cast it to <code>Application</code>. Thanks for dynamic binding,
 called <code>start</code> method is the one that we implemented in the child class.</p>
 <h4 id="put-together">Put together<a href="#put-together" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
-<div class="highlight"><pre class="chroma"><code class="language-java" data-lang="java"><span class="n">String</span> <span class="n">className</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Throwable</span><span class="o">().</span><span class="na">getStackTrace</span><span class="o">()[</span><span class="n">1</span><span class="o">].</span><span class="na">getClassName</span><span class="o">();</span>
-<span class="n">Application</span> <span class="n">app</span><span class="o">;</span>
-<span class="n">app</span> <span class="o">=</span> <span class="o">(</span><span class="n">Application</span><span class="o">)</span> <span class="n">Class</span><span class="o">.</span><span class="na">forName</span><span class="o">(</span><span class="n">className</span><span class="o">).</span><span class="na">getDeclaredConstructor</span><span class="o">().</span><span class="na">newInstance</span><span class="o">();</span>
-<span class="n">app</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
-</code></pre></div><p><a href="https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Throwable.html">Java 13 doc : Throwable</a><br>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">String</span> <span class="n">className</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Throwable</span><span class="o">().</span><span class="na">getStackTrace</span><span class="o">()[</span><span class="n">1</span><span class="o">].</span><span class="na">getClassName</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">Application</span> <span class="n">app</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">app</span> <span class="o">=</span> <span class="o">(</span><span class="n">Application</span><span class="o">)</span> <span class="n">Class</span><span class="o">.</span><span class="na">forName</span><span class="o">(</span><span class="n">className</span><span class="o">).</span><span class="na">getDeclaredConstructor</span><span class="o">().</span><span class="na">newInstance</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="n">app</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
+</span></span></code></pre></div><p><a href="https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Throwable.html">Java 13 doc : Throwable</a><br>
 <a href="https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/StackTraceElement.html">Java 13 doc : StackTraceElement</a><br>
 <a href="https://docs.oracle.com/en/java/javase/13/docs/api/java.base/java/lang/Class.html">Java 13 doc : Class</a></p>
 <p><strong>Stacktrace and reflection can be handy many times, as we saw here as well!</strong></p>
@@ -144,7 +144,7 @@ called <code>start</code> method is the one that we implemented in the child cla
 	</main>
 
 	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
-		<p>&copy; 2021 <a href="https://torokmark.github.io">Mark Torok</a></p>
+		<p>&copy; 2022 <a href="https://torokmark.github.io">Mark Torok</a></p>
 		<p>
 			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://torokmark.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
 		</p>
@@ -152,7 +152,7 @@ called <code>start</code> method is the one that we implemented in the child cla
 
 
 
-	<script src="https://torokmark.github.io/js/bundle.min.7d8545daa55d62427355498dd8da13f98ff79a7938ce7d2a5e2ae1ec0de3beb8.js" integrity="sha256-fYVF2qVdYkJzVUmN2NoT+Y/3mnk4zn0qXirh7A3jvrg=" crossorigin="anonymous"></script>
+	<script src="https://torokmark.github.io/js/bundle.min.580988ed2982bcbb74a1773c7abea97b43e4c43b9324e10cda0813ec6ec4bb67.js" integrity="sha256-WAmI7SmCvLt0oXc8er6pe0PkxDuTJOEM2ggT7G7Eu2c=" crossorigin="anonymous"></script>
 	
 
 </body>

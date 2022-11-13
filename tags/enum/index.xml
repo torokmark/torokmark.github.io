@@ -14,7 +14,7 @@
       
       <guid>https://torokmark.github.io/posts/do-you-know-java-less-known-side-of-enums/</guid>
       <description>Enums are easy and straigthforward at first sight, but this type has some hidden sides.
-public enum Day { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY }  For enumeration type, Java has a keyword called enum. That was introduced in Java 1.5. All enum types are implicitly inhereted from Enum class.  Hence, all enum types has all methods that Enum has, like name, ordinal, etc. We cannot extend an enum, and enum does not extend custom types.</description>
+public enum Day { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY } For enumeration type, Java has a keyword called enum. That was introduced in Java 1.5. All enum types are implicitly inhereted from Enum class. Hence, all enum types has all methods that Enum has, like name, ordinal, etc. We cannot extend an enum, and enum does not extend custom types.</description>
     </item>
     
     <item>

@@ -15,7 +15,7 @@
       <guid>https://torokmark.github.io/posts/do-you-know-java-beware-of-instanceof-in-equals/</guid>
       <description>One of the most important methods is equals. So, it is also important how it is implemented.
 What is the real issue with instanceof and equals? Let us see an implementation of it. First, let us introduce a simple class and its inheritant that demonstrate the usage of equals`.
-public class Mug { private double capacity; // ctor, setter, getter  @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null) { return false; } if (!</description>
+public class Mug { private double capacity; // ctor, setter, getter @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null) { return false; } if (!</description>
     </item>
     
     <item>
@@ -58,7 +58,7 @@ Object o = &amp;#34;asdf&amp;#34;; if (o instanceof String) { String s = (String
       
       <guid>https://torokmark.github.io/posts/do-you-know-java-immutable-object/</guid>
       <description>Couple of thoughts about how to implement immutable objects.
- Class has to be final. Fields have to be private and final. Hence, fields are set in constructor. No setters and setter-like methods. If object is passed in ctor parameter, make a clone of it.  Do the same in getters as well.    public final class Person { private final String name; private final int age; private final List&amp;lt;PhoneNumber&amp;gt; phoneNumbers; public Person(String name, int age, List&amp;lt;PhoneNumber&amp;gt; phoneNumbers) { this.</description>
+Class has to be final. Fields have to be private and final. Hence, fields are set in constructor. No setters and setter-like methods. If object is passed in ctor parameter, make a clone of it. Do the same in getters as well. public final class Person { private final String name; private final int age; private final List&amp;lt;PhoneNumber&amp;gt; phoneNumbers; public Person(String name, int age, List&amp;lt;PhoneNumber&amp;gt; phoneNumbers) { this.</description>
     </item>
     
     <item>
@@ -105,7 +105,7 @@ class $ { private String $; public void $(String $) { this.$ = $; } public Strin
       
       <guid>https://torokmark.github.io/posts/do-you-know-java-less-known-side-of-enums/</guid>
       <description>Enums are easy and straigthforward at first sight, but this type has some hidden sides.
-public enum Day { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY }  For enumeration type, Java has a keyword called enum. That was introduced in Java 1.5. All enum types are implicitly inhereted from Enum class.  Hence, all enum types has all methods that Enum has, like name, ordinal, etc. We cannot extend an enum, and enum does not extend custom types.</description>
+public enum Day { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY } For enumeration type, Java has a keyword called enum. That was introduced in Java 1.5. All enum types are implicitly inhereted from Enum class. Hence, all enum types has all methods that Enum has, like name, ordinal, etc. We cannot extend an enum, and enum does not extend custom types.</description>
     </item>
     
     <item>
@@ -223,7 +223,7 @@ In this post we take a look at two approaches. At first, we see how we can check
       <description>HashMap is one of the most used Map type in Java. A good experiment to implement our own one.
 Not so long ago, I took a sit in an interview, and the interviewer asked me to implement a HashMap-like container which contains Integer types keys and Integer values. The trick was that I could not use any containers from the Collection API framework.
 Steps we have to consider:
- Basic API for our map!</description>
+Basic API for our map!</description>
     </item>
     
     <item>
@@ -316,7 +316,7 @@ One of the most popular languages, though Java is full of interesting parts that
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
       
       <guid>https://torokmark.github.io/posts/entity-best-practices/</guid>
-      <description>Every entity has to have a public default contstructor fetchType = FetchType.LAZY on @OneToOne, @OneToMany and @ManyToOne and other associations (EAGER is the default except @OneToMany) If an association is not mandatory:  optional = false on association annotations @Column and @JoinColumn should contain nullable = false   Entity should implement Persistable&amp;lt;IDTYPE&amp;gt; interface  Create own interface with default implementation:    public interface Identifiable extends Persistable&amp;lt;Long&amp;gt; { default isNew() { return getId() == null; } }  All ids should be boxed like Long, Integer, String, etc.</description>
+      <description>Every entity has to have a public default contstructor fetchType = FetchType.LAZY on @OneToOne, @OneToMany and @ManyToOne and other associations (EAGER is the default except @OneToMany) If an association is not mandatory: optional = false on association annotations @Column and @JoinColumn should contain nullable = false Entity should implement Persistable&amp;lt;IDTYPE&amp;gt; interface Create own interface with default implementation: public interface Identifiable extends Persistable&amp;lt;Long&amp;gt; { default isNew() { return getId() == null; } } All ids should be boxed like Long, Integer, String, etc.</description>
     </item>
     
   </channel>

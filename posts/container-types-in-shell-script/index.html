@@ -7,16 +7,16 @@
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 <meta itemprop="name" content="Container types in shell script">
 <meta itemprop="description" content="Shell script does not support container types like map, set, or queue, though with a third-party lib, presented here, we can use them in our scripts.
-From time to time we need map, queue or any other kind of collections during our work. Shell script is definitely not the right choice to write applications but it may happen that we need some of the previously mentioned types to help our work."><meta itemprop="datePublished" content="2019-08-15T12:00:00&#43;01:00" />
-<meta itemprop="dateModified" content="2019-08-15T12:00:00&#43;01:00" />
+From time to time we need map, queue or any other kind of collections during our work. Shell script is definitely not the right choice to write applications but it may happen that we need some of the previously mentioned types to help our work."><meta itemprop="datePublished" content="2019-08-15T12:00:00+01:00" />
+<meta itemprop="dateModified" content="2019-08-15T12:00:00+01:00" />
 <meta itemprop="wordCount" content="354">
 <meta itemprop="keywords" content="container type,queue,set,map,string,stack," /><meta property="og:title" content="Container types in shell script" />
 <meta property="og:description" content="Shell script does not support container types like map, set, or queue, though with a third-party lib, presented here, we can use them in our scripts.
 From time to time we need map, queue or any other kind of collections during our work. Shell script is definitely not the right choice to write applications but it may happen that we need some of the previously mentioned types to help our work." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://torokmark.github.io/posts/container-types-in-shell-script/" /><meta property="article:section" content="posts" />
-<meta property="article:published_time" content="2019-08-15T12:00:00&#43;01:00" />
-<meta property="article:modified_time" content="2019-08-15T12:00:00&#43;01:00" />
+<meta property="article:published_time" content="2019-08-15T12:00:00+01:00" />
+<meta property="article:modified_time" content="2019-08-15T12:00:00+01:00" />
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Container types in shell script"/>
@@ -31,7 +31,7 @@ From time to time we need map, queue or any other kind of collections during our
 	<link rel="shortcut icon" href="/favicon.ico">
 
 	<title>Container types in shell script</title>
-	<link rel="stylesheet" href="https://torokmark.github.io/css/style.min.eac77496566fd7d5768fd650ddb0b2b181ca6a2d7c5fdd6fe6b8ba4bf47e566f.css" integrity="sha256-6sd0llZv19V2j9ZQ3bCysYHKai18X91v5ri6S/R+Vm8=" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://torokmark.github.io/css/style.min.037b6ee8f8c1baab6a3d0a9da11c3ff18a7552471f16c59fd98538d5ce99208b.css" integrity="sha256-A3tu6PjBuqtqPQqdoRw/8Yp1UkcfFsWf2YU41c6ZIIs=" crossorigin="anonymous">
 	
 </head>
 
@@ -85,53 +85,53 @@ call it <code>aggregate</code> since <code>set</code> is a built-in function.</p
 <h4 id="map">Map<a href="#map" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>Map provides a container over key-value pairs with well-known methods.</p>
 <p>As a usage, see below:</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="nb">source</span> <span class="s1">&#39;map.sh&#39;</span>
-
-map create fruits
-map add fruits apple <span class="m">2</span> <span class="c1"># where apple is key and 2 is value</span>
-map size fruits <span class="c1"># returns 1</span>
-map get fruits apple <span class="c1"># 2</span>
-map values fruits <span class="c1"># 2</span>
-</code></pre></div><p>Map&rsquo;s API: <a href="https://github.com/torokmark/utils.sh/wiki/Map">https://github.com/torokmark/utils.sh/wiki/Map</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="nb">source</span> <span class="s1">&#39;map.sh&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">map create fruits
+</span></span><span class="line"><span class="cl">map add fruits apple <span class="m">2</span> <span class="c1"># where apple is key and 2 is value</span>
+</span></span><span class="line"><span class="cl">map size fruits <span class="c1"># returns 1</span>
+</span></span><span class="line"><span class="cl">map get fruits apple <span class="c1"># 2</span>
+</span></span><span class="line"><span class="cl">map values fruits <span class="c1"># 2</span>
+</span></span></code></pre></div><p>Map&rsquo;s API: <a href="https://github.com/torokmark/utils.sh/wiki/Map">https://github.com/torokmark/utils.sh/wiki/Map</a></p>
 <h4 id="aggregate">Aggregate<a href="#aggregate" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>Aggregate is none other than the classic set. All elements are unique in this
 datastructure.</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="nb">source</span> <span class="s1">&#39;aggregate.sh&#39;</span>
-
-aggregate add fruits apple
-aggregate add fruits apple
-aggregate size fruits <span class="c1"># 1</span>
-aggregate empty fruits <span class="c1"># false</span>
-
-aggregate contains fruits vegetables union_set
-aggregate intersection fruits vegetables intersection_set
-aggregate difference fruits vegetables
-
-aggregate destroy fruits
-</code></pre></div><p>Aggregate&rsquo;s API: <a href="https://github.com/torokmark/utils.sh/wiki/Aggregate">https://github.com/torokmark/utils.sh/wiki/Aggregate</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="nb">source</span> <span class="s1">&#39;aggregate.sh&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">aggregate add fruits apple
+</span></span><span class="line"><span class="cl">aggregate add fruits apple
+</span></span><span class="line"><span class="cl">aggregate size fruits <span class="c1"># 1</span>
+</span></span><span class="line"><span class="cl">aggregate empty fruits <span class="c1"># false</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">aggregate contains fruits vegetables union_set
+</span></span><span class="line"><span class="cl">aggregate intersection fruits vegetables intersection_set
+</span></span><span class="line"><span class="cl">aggregate difference fruits vegetables
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">aggregate destroy fruits
+</span></span></code></pre></div><p>Aggregate&rsquo;s API: <a href="https://github.com/torokmark/utils.sh/wiki/Aggregate">https://github.com/torokmark/utils.sh/wiki/Aggregate</a></p>
 <h4 id="stack">Stack<a href="#stack" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>Stack is a classic LIFO datastructure with its well-known methods.</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="nb">source</span> <span class="s1">&#39;stack.sh&#39;</span>
-
-stack create fruits
-stack push fruits apple
-stack push fruits pear
-stack size fruits <span class="c1"># 2</span>
-stack top fruits <span class="c1"># pear</span>
-stack empty fruits <span class="c1"># false</span>
-stack destroy fruits
-</code></pre></div><p>Stack&rsquo;s API: <a href="https://github.com/torokmark/utils.sh/wiki/Stack">https://github.com/torokmark/utils.sh/wiki/Stack</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="nb">source</span> <span class="s1">&#39;stack.sh&#39;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">stack create fruits
+</span></span><span class="line"><span class="cl">stack push fruits apple
+</span></span><span class="line"><span class="cl">stack push fruits pear
+</span></span><span class="line"><span class="cl">stack size fruits <span class="c1"># 2</span>
+</span></span><span class="line"><span class="cl">stack top fruits <span class="c1"># pear</span>
+</span></span><span class="line"><span class="cl">stack empty fruits <span class="c1"># false</span>
+</span></span><span class="line"><span class="cl">stack destroy fruits
+</span></span></code></pre></div><p>Stack&rsquo;s API: <a href="https://github.com/torokmark/utils.sh/wiki/Stack">https://github.com/torokmark/utils.sh/wiki/Stack</a></p>
 <h4 id="queue">Queue<a href="#queue" class="anchor" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 7h3a5 5 0 0 1 5 5 5 5 0 0 1-5 5h-3m-6 0H6a5 5 0 0 1-5-5 5 5 0 0 1 5-5h3"></path><line x1="8" y1="12" x2="16" y2="12"></line></svg></a></h4>
 <p>Queue is a FIFO datastructure with appropriate methods to put, remove data or
 destroy the queue itself.</p>
-<div class="highlight"><pre class="chroma"><code class="language-sh" data-lang="sh"><span class="nb">source</span> <span class="s1">&#39;queue.sh&#39;</span>
-<span class="c1"># I create a queue called fruits</span>
-queue create fruits
-<span class="c1"># put an element to queue</span>
-queue enqueue fruits apple
-queue peek fruits
-queue destroy fruits
-</code></pre></div><p>Queue&rsquo;s API: <a href="https://github.com/torokmark/utils.sh/wiki/Queue">https://github.com/torokmark/utils.sh/wiki/Queue</a></p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="nb">source</span> <span class="s1">&#39;queue.sh&#39;</span>
+</span></span><span class="line"><span class="cl"><span class="c1"># I create a queue called fruits</span>
+</span></span><span class="line"><span class="cl">queue create fruits
+</span></span><span class="line"><span class="cl"><span class="c1"># put an element to queue</span>
+</span></span><span class="line"><span class="cl">queue enqueue fruits apple
+</span></span><span class="line"><span class="cl">queue peek fruits
+</span></span><span class="line"><span class="cl">queue destroy fruits
+</span></span></code></pre></div><p>Queue&rsquo;s API: <a href="https://github.com/torokmark/utils.sh/wiki/Queue">https://github.com/torokmark/utils.sh/wiki/Queue</a></p>
 <p>Source code is available here: <a href="https://github.com/torokmark/utils.sh">https://github.com/torokmark/utils.sh</a><br>
 Github page is avaliable here: <a href="https://torokmark.github.io/utils.sh">https://torokmark.github.io/utils.sh</a></p>
 
@@ -158,7 +158,7 @@ Github page is avaliable here: <a href="https://torokmark.github.io/utils.sh">ht
 	</main>
 
 	<footer id="site-footer" class="section-inner thin animated fadeIn faster">
-		<p>&copy; 2021 <a href="https://torokmark.github.io">Mark Torok</a></p>
+		<p>&copy; 2022 <a href="https://torokmark.github.io">Mark Torok</a></p>
 		<p>
 			Made with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> &#183; Theme <a href="https://github.com/Track3/hermit" target="_blank" rel="noopener">Hermit</a> &#183; <a href="https://torokmark.github.io/posts/index.xml" target="_blank" title="rss"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-rss"><path d="M4 11a9 9 0 0 1 9 9"></path><path d="M4 4a16 16 0 0 1 16 16"></path><circle cx="5" cy="19" r="1"></circle></svg></a>
 		</p>
@@ -166,7 +166,7 @@ Github page is avaliable here: <a href="https://torokmark.github.io/utils.sh">ht
 
 
 
-	<script src="https://torokmark.github.io/js/bundle.min.7d8545daa55d62427355498dd8da13f98ff79a7938ce7d2a5e2ae1ec0de3beb8.js" integrity="sha256-fYVF2qVdYkJzVUmN2NoT+Y/3mnk4zn0qXirh7A3jvrg=" crossorigin="anonymous"></script>
+	<script src="https://torokmark.github.io/js/bundle.min.580988ed2982bcbb74a1773c7abea97b43e4c43b9324e10cda0813ec6ec4bb67.js" integrity="sha256-WAmI7SmCvLt0oXc8er6pe0PkxDuTJOEM2ggT7G7Eu2c=" crossorigin="anonymous"></script>
 	
 
 </body>
