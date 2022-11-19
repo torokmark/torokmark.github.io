@@ -14,10 +14,10 @@
 			<pubDate>Tue, 15 Nov 2022 12:00:00 +0100</pubDate>
 			
 			<guid>https://torokmark.github.io/posts/fix-that-java-the-broken-flash-drive/</guid>
-			<description>Sadly, our colleague did not use version control system and the flash drive was broken that he was using, so we have lost the source code of Starter class.
+			<description>Sadly, one of our colleagues hasn&amp;rsquo;t used version control system and the flash drive he has used was broken, so we have lost one part of the source code such as Starter class.
 class App extends Starter { @Override public void start() { System.out.println(&amp;#34;Start&amp;#34;); } public static void main(String[] args) { launch(args); } } Implement the Starter class and make it work!</description>
-			<content type="html"><![CDATA[<p>Sadly, our colleague did not use version control system and the flash drive was broken
-that he was using, so we have lost the source code of <code>Starter</code> class.</p>
+			<content type="html"><![CDATA[<p>Sadly, one of our colleagues hasn&rsquo;t used version control system and the flash drive he has used was broken,
+so we have lost one part of the source code such as <code>Starter</code> class.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">App</span> <span class="kd">extends</span> <span class="n">Starter</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">   
 </span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
