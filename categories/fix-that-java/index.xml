@@ -14,7 +14,7 @@
       
       <guid>https://torokmark.github.io/posts/fix-that-java-the-broken-flash-drive/</guid>
       <description>Sadly, one of our colleagues hasn&amp;rsquo;t used version control system and the flash drive he has used was broken, so we have lost one part of the source code such as Starter class.
-class App extends Starter { @Override public void start() { System.out.println(&amp;#34;Start&amp;#34;); } public static void main(String[] args) { launch(args); } } Implement the Starter class and make it work!</description>
+class App extends Starter { @Override public void start() { System.out.println(&amp;#34;Start&amp;#34;); } public static void main(String[] args) { launch(args); } } Implement the Starter class and make it work! Once you start the application it should print out Start.</description>
     </item>
     
     <item>
