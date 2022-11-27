@@ -6,7 +6,18 @@
     <description>Recent content in operator on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 18 Nov 2019 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/tags/operator/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 27 Nov 2022 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/tags/operator/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Do you know Java: Decorate your code</title>
+      <link>https://torokmark.github.io/posts/do-you-know-java-decorate-your-code/</link>
+      <pubDate>Sun, 27 Nov 2022 12:00:00 +0100</pubDate>
+      
+      <guid>https://torokmark.github.io/posts/do-you-know-java-decorate-your-code/</guid>
+      <description>You do not need comments to decorate your code minimally.
+Many years back then comments were the ultimate tool to decorate our code. And as it happened many times, sotware engineers glady used it to place ascii arts around their hotfixes or just simple seperate their solutions.
+In this post I would like to show you a funny feature of operators which you can use to draw lines or more.</description>
+    </item>
+    
     <item>
       <title>Do you know Java: One more more more time</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-one-more-more-more-time/</link>

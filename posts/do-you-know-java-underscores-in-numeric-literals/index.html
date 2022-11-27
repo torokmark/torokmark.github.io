@@ -80,13 +80,13 @@ keeping numeric values in range.</strong></p>
 The more readable the code is, the faster that can be understood by developers.<br>
 Java 7 introduced underscore as a comfortable way to separate digits of a numeric value
 into groups.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">____j</span> <span class="o">=</span> <span class="n">0x5_4</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl"><span class="kt">byte</span> <span class="n">b</span> <span class="o">=</span> <span class="n">1_2_7</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl"><span class="kt">short</span> <span class="n">s</span> <span class="o">=</span> <span class="n">32_767</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">1_000_000</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl"><span class="kt">long</span> <span class="n">l</span> <span class="o">=</span> <span class="n">1_000_000_000_000L</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl"><span class="kt">float</span> <span class="n">f</span> <span class="o">=</span> <span class="n">1_000</span><span class="o">.</span><span class="na">5f</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl"><span class="kt">double</span> <span class="n">d</span> <span class="o">=</span> <span class="n">1_000</span><span class="o">.</span><span class="na">5d</span><span class="o">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">____j</span> <span class="o">=</span> <span class="mh">0x5_4</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">byte</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">1_2_7</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">short</span> <span class="n">s</span> <span class="o">=</span> <span class="mi">32_767</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1_000_000</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">long</span> <span class="n">l</span> <span class="o">=</span> <span class="mi">1_000_000_000_000L</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">float</span> <span class="n">f</span> <span class="o">=</span> <span class="mf">1_000.5f</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">double</span> <span class="n">d</span> <span class="o">=</span> <span class="mf">1_000.5d</span><span class="o">;</span>
 </span></span></code></pre></div><p>Naming a few limitations:</p>
 <ul>
 <li>If value is prefixed with underscore(s) then that is identifier: <code>int j = _10;</code></li>

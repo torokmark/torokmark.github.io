@@ -5,8 +5,44 @@
 		<description>Recent content in Posts on T[h]ink]er[ing</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
-		<lastBuildDate>Tue, 15 Nov 2022 12:00:00 +0100</lastBuildDate>
+		<lastBuildDate>Sun, 27 Nov 2022 12:00:00 +0100</lastBuildDate>
 		<atom:link href="https://torokmark.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Do you know Java: Decorate your code</title>
+			<link>https://torokmark.github.io/posts/do-you-know-java-decorate-your-code/</link>
+			<pubDate>Sun, 27 Nov 2022 12:00:00 +0100</pubDate>
+			
+			<guid>https://torokmark.github.io/posts/do-you-know-java-decorate-your-code/</guid>
+			<description>You do not need comments to decorate your code minimally.
+Many years back then comments were the ultimate tool to decorate our code. And as it happened many times, sotware engineers glady used it to place ascii arts around their hotfixes or just simple seperate their solutions.
+In this post I would like to show you a funny feature of operators which you can use to draw lines or more.</description>
+			<content type="html"><![CDATA[<p><strong>You do not need comments to decorate your code minimally.</strong></p>
+<p>Many years back then comments were the ultimate tool to decorate our code. And as it happened many times,
+sotware engineers glady used it to place ascii arts around their hotfixes or just simple seperate their solutions.</p>
+<p>In this post I would like to show you a funny feature of operators which you can use to draw lines or more.</p>
+<p>Let us see the following code snippet.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="o">+</span> <span class="o">+</span> <span class="o">+</span> <span class="o">+</span> <span class="o">+</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+</span></span></code></pre></div><p>Do you think it compiles? Yes, it does! And the reason is none other than the arity of the operators.
+We group the operators into three different groups such as <em>unary</em>, <em>binary</em>, and <em>ternary</em> operators.
+The arity of an operator is the number of operands we need to put around the operator.</p>
+<p>Let us see some examples:</p>
+<ul>
+<li><strong>unary</strong>: <code>!</code>, <code>~</code>, <code>+</code>, <code>-</code>, <code>++</code>, <code>--</code></li>
+<li><strong>binary</strong>: <code>*</code>, <code>==</code>, <code>&lt;=</code></li>
+<li><strong>ternary</strong>: <code>? :</code></li>
+</ul>
+<p>In our case, <code>+</code> and <code>-</code> operators can be unary and binary depending on the context where we use them.
+If there is only one operand before or after the operator the <code>+</code> or <code>-</code> is evaluated as unary,
+if there are operands on both sides then operators is binary.</p>
+<p>Additional examples such as:</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">j</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="o">-</span> <span class="o">+</span> <span class="o">-</span> <span class="o">+</span> <span class="o">-</span> <span class="o">+</span> <span class="mi">1</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">k</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">-</span> <span class="o">-</span> <span class="o">-</span> <span class="o">-</span> <span class="o">-</span> <span class="o">-</span> <span class="o">-</span> <span class="mi">1</span><span class="o">;</span>
+</span></span></code></pre></div><p><strong>The key is the arity of the operators.</strong></p>
+<p>Further reading about <a href="https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op1.html">operators</a>.</p>
+<p>Code can be found: <a href="https://github.com/torokmark/do-you-know-java">https://github.com/torokmark/do-you-know-java</a></p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>Fix that Java: The Broken Flash Drive</title>
@@ -15,7 +51,7 @@
 			
 			<guid>https://torokmark.github.io/posts/fix-that-java-the-broken-flash-drive/</guid>
 			<description>Sadly, one of our colleagues hasn&amp;rsquo;t used version control system and the flash drive he has used was broken, so we have lost one part of the source code such as Starter class.
-class App extends Starter { @Override public void start() { System.out.println(&amp;#34;Start&amp;#34;); } public static void main(String[] args) { launch(args); } } Implement the Starter class and make it work! Once you start the application it should print out Start.</description>
+class App extends Starter { @Override public void start() { System.out.println(&amp;#34;Start&amp;#34;); } public static void main(String[] args) { launch(args); } } Implement the Starter class and make it work! Once you start the application it should call the start method of App class.</description>
 			<content type="html"><![CDATA[<p>Sadly, one of our colleagues hasn&rsquo;t used version control system and the flash drive he has used was broken,
 so we have lost one part of the source code such as <code>Starter</code> class.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">App</span> <span class="kd">extends</span> <span class="n">Starter</span> <span class="o">{</span>
@@ -29,7 +65,7 @@ so we have lost one part of the source code such as <code>Starter</code> class.<
 </span></span><span class="line"><span class="cl">        <span class="n">launch</span><span class="o">(</span><span class="n">args</span><span class="o">);</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
-</span></span></code></pre></div><p>Implement the <code>Starter</code> class and make it work! Once you start the application it should print out <code>Start</code>.</p>
+</span></span></code></pre></div><p>Implement the <code>Starter</code> class and make it work! Once you start the application it should call the <code>start</code> method of <code>App</code> class.</p>
 ]]></content>
 		</item>
 		
@@ -176,8 +212,8 @@ the usage of  equals`.</p>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span></code></pre></div><p>Then we see as:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Mug</span> <span class="n">m1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Mug</span><span class="o">(</span><span class="n">1</span><span class="o">.</span><span class="na">2</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl"><span class="n">Mug</span> <span class="n">m2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Mug</span><span class="o">(</span><span class="n">1</span><span class="o">.</span><span class="na">2</span><span class="o">);</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Mug</span> <span class="n">m1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Mug</span><span class="o">(</span><span class="mf">1.2</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">Mug</span> <span class="n">m2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Mug</span><span class="o">(</span><span class="mf">1.2</span><span class="o">);</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">m1</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">m2</span><span class="o">));</span> <span class="c1">// true
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">m2</span><span class="o">.</span><span class="na">equals</span><span class="o">(</span><span class="n">m1</span><span class="o">));</span> <span class="c1">// true
@@ -290,7 +326,7 @@ getters, and the classic three methods from <code>Object</code> that we override
 applied on them, though record accepts interface implementations.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">record</span> <span class="nf">Person</span><span class="o">(</span><span class="n">String</span> <span class="n">name</span><span class="o">,</span> <span class="kt">int</span> <span class="n">age</span><span class="o">)</span> <span class="kd">implements</span> <span class="n">Comparable</span><span class="o">&lt;</span><span class="n">Person</span><span class="o">&gt;</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">    <span class="n">Person</span><span class="o">()</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">(</span><span class="s">&#34;John Doe&#34;</span><span class="o">,</span> <span class="n">0</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">(</span><span class="s">&#34;John Doe&#34;</span><span class="o">,</span> <span class="mi">0</span><span class="o">);</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
@@ -685,7 +721,7 @@ based on <code>String</code>. Its drawback is <code>valueOf</code> throws <code>
 			<content type="html"><![CDATA[<p><strong>What does the following code print out?</strong></p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-c" data-lang="c"><span class="line"><span class="cl"><span class="cp">#include</span> <span class="cpf">&lt;stdio.h&gt;</span><span class="cp">
 </span></span></span><span class="line"><span class="cl"><span class="cp">#define _ F--&gt;00||F-OO--;
-</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="kt">int</span> <span class="n">F</span><span class="o">=</span><span class="mo">00</span><span class="p">,</span><span class="n">OO</span><span class="o">=</span><span class="mo">00</span><span class="p">;</span><span class="n">main</span><span class="p">(){</span><span class="n">F_OO</span><span class="p">();</span><span class="n">printf</span><span class="p">(</span><span class="s">&#34;%1.3f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="mf">4.</span><span class="o">*-</span><span class="n">F</span><span class="o">/</span><span class="n">OO</span><span class="o">/</span><span class="n">OO</span><span class="p">);}</span><span class="n">F_OO</span><span class="p">()</span>
+</span></span></span><span class="line"><span class="cl"><span class="cp"></span><span class="kt">int</span> <span class="n">F</span><span class="o">=</span><span class="mo">00</span><span class="p">,</span><span class="n">OO</span><span class="o">=</span><span class="mo">00</span><span class="p">;</span><span class="nf">main</span><span class="p">(){</span><span class="nf">F_OO</span><span class="p">();</span><span class="nf">printf</span><span class="p">(</span><span class="s">&#34;%1.3f</span><span class="se">\n</span><span class="s">&#34;</span><span class="p">,</span><span class="mf">4.</span><span class="o">*-</span><span class="n">F</span><span class="o">/</span><span class="n">OO</span><span class="o">/</span><span class="n">OO</span><span class="p">);}</span><span class="nf">F_OO</span><span class="p">()</span>
 </span></span><span class="line"><span class="cl"><span class="p">{</span>
 </span></span><span class="line"><span class="cl">            <span class="n">_</span><span class="o">-</span><span class="n">_</span><span class="o">-</span><span class="n">_</span><span class="o">-</span><span class="n">_</span>
 </span></span><span class="line"><span class="cl">       <span class="n">_</span><span class="o">-</span><span class="n">_</span><span class="o">-</span><span class="n">_</span><span class="o">-</span><span class="n">_</span><span class="o">-</span><span class="n">_</span><span class="o">-</span><span class="n">_</span><span class="o">-</span><span class="n">_</span><span class="o">-</span><span class="n">_</span><span class="o">-</span><span class="n">_</span>
@@ -773,11 +809,11 @@ Our app terminates when all threads are terminated including our <code>main</cod
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">Daemon</span> <span class="kd">extends</span> <span class="n">Thread</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">    <span class="nd">@Override</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">run</span><span class="o">()</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">count</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">        <span class="k">while</span> <span class="o">(</span><span class="kc">true</span><span class="o">)</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">            <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">count</span><span class="o">++);</span>
 </span></span><span class="line"><span class="cl">            <span class="k">try</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">                <span class="n">Thread</span><span class="o">.</span><span class="na">sleep</span><span class="o">(</span><span class="n">500</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">                <span class="n">Thread</span><span class="o">.</span><span class="na">sleep</span><span class="o">(</span><span class="mi">500</span><span class="o">);</span>
 </span></span><span class="line"><span class="cl">            <span class="o">}</span> <span class="k">catch</span> <span class="o">(</span><span class="n">InterruptedException</span> <span class="n">ex</span><span class="o">)</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">                <span class="n">ex</span><span class="o">.</span><span class="na">printStackTrace</span><span class="o">();</span>
 </span></span><span class="line"><span class="cl">            <span class="o">}</span>
@@ -788,7 +824,7 @@ Our app terminates when all threads are terminated including our <code>main</cod
 </span></span><span class="line"><span class="cl">    <span class="n">Thread</span> <span class="n">t</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Daemon</span><span class="o">();</span>
 </span></span><span class="line"><span class="cl">    <span class="n">t</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
 </span></span><span class="line"><span class="cl">    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;t started&#34;</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">    <span class="n">Thread</span><span class="o">.</span><span class="na">sleep</span><span class="o">(</span><span class="n">3500</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">Thread</span><span class="o">.</span><span class="na">sleep</span><span class="o">(</span><span class="mi">3500</span><span class="o">);</span>
 </span></span><span class="line"><span class="cl">    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&#34;ended&#34;</span><span class="o">);</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span></code></pre></div><p>The output is as follows.</p>
@@ -966,7 +1002,7 @@ In <code>launch</code> method we have to call <code>start</code> somehow.</p>
 </ol>
 <h4 id="where-we-are-at">Where we are at.</h4>
 <p>Stacktrace can be a good start to figure out which class where we are at.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="k">new</span> <span class="n">Throwable</span><span class="o">().</span><span class="na">getStackTrace</span><span class="o">()[</span><span class="n">1</span><span class="o">].</span><span class="na">getClassName</span><span class="o">();</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="k">new</span> <span class="n">Throwable</span><span class="o">().</span><span class="na">getStackTrace</span><span class="o">()[</span><span class="mi">1</span><span class="o">].</span><span class="na">getClassName</span><span class="o">();</span>
 </span></span></code></pre></div><blockquote>
 <p>Instance of <code>Throwable</code> is not thrown!
 The index of <code>1</code> returns the caller as a <code>StackTraceElement</code> which will be <code>Hello</code> in our example.</p>
@@ -978,7 +1014,7 @@ The index of <code>1</code> returns the caller as a <code>StackTraceElement</cod
 <p>As we get the instance, and cast it to <code>Application</code>. Thanks for dynamic binding,
 called <code>start</code> method is the one that we implemented in the child class.</p>
 <h4 id="put-together">Put together</h4>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">String</span> <span class="n">className</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Throwable</span><span class="o">().</span><span class="na">getStackTrace</span><span class="o">()[</span><span class="n">1</span><span class="o">].</span><span class="na">getClassName</span><span class="o">();</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">String</span> <span class="n">className</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Throwable</span><span class="o">().</span><span class="na">getStackTrace</span><span class="o">()[</span><span class="mi">1</span><span class="o">].</span><span class="na">getClassName</span><span class="o">();</span>
 </span></span><span class="line"><span class="cl"><span class="n">Application</span> <span class="n">app</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl"><span class="n">app</span> <span class="o">=</span> <span class="o">(</span><span class="n">Application</span><span class="o">)</span> <span class="n">Class</span><span class="o">.</span><span class="na">forName</span><span class="o">(</span><span class="n">className</span><span class="o">).</span><span class="na">getDeclaredConstructor</span><span class="o">().</span><span class="na">newInstance</span><span class="o">();</span>
 </span></span><span class="line"><span class="cl"><span class="n">app</span><span class="o">.</span><span class="na">start</span><span class="o">();</span>
@@ -1005,7 +1041,7 @@ add(new ArrayList&amp;lt;Object&amp;gt;()); // not type safe add(new ArrayList&a
 <h4 id="object">Object</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">add</span><span class="o">(</span><span class="n">List</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span> <span class="n">list</span><span class="o">)</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">    <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">&#34;string&#34;</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">    <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">1</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
 </span></span></code></pre></div><p>Passing the followings are:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">add</span><span class="o">(</span><span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;());</span> <span class="c1">// not type safe
@@ -1015,13 +1051,13 @@ add(new ArrayList&amp;lt;Object&amp;gt;()); // not type safe add(new ArrayList&a
 <p>Wildcard <code>?</code> brings the following.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">add</span><span class="o">(</span><span class="n">List</span><span class="o">&lt;?&gt;</span> <span class="n">list</span><span class="o">)</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">    <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="s">&#34;string&#34;</span><span class="o">);</span> <span class="c1">// compile time error
-</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">1</span><span class="o">);</span>  <span class="c1">// compile time error
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>  <span class="c1">// compile time error
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="o">}</span>
 </span></span></code></pre></div><p>Though, <code>add</code> accepts both <code>ArrayList&lt;String&gt;</code> and <code>ArrayList&lt;Integer&gt;</code>, but not known what kind of parameter is passed during runtime,
 so adding new elements to the list (writing the list) is not allowed.</p>
 <h4 id="super-lower-bounded-wildcard">Super (Lower bounded wildcard)</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">add</span><span class="o">(</span><span class="n">List</span><span class="o">&lt;?</span> <span class="kd">super</span> <span class="n">Number</span><span class="o">&gt;</span> <span class="n">list</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">    <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">1</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>
 </span></span><span class="line"><span class="cl">    <span class="k">for</span> <span class="o">(</span><span class="n">Object</span> <span class="n">number</span> <span class="o">:</span> <span class="n">list</span><span class="o">)</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">number</span><span class="o">);</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
@@ -1038,7 +1074,7 @@ so adding new elements to the list (writing the list) is not allowed.</p>
 </span></span><span class="line"><span class="cl"><span class="n">add</span><span class="o">(</span><span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;());</span>
 </span></span></code></pre></div><h4 id="extends-upper-bounded-wildcard">Extends (Upper bounded wildcard)</h4>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">void</span> <span class="nf">add</span><span class="o">(</span><span class="n">List</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">Number</span><span class="o">&gt;</span> <span class="n">list</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">    <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="n">1</span><span class="o">);</span> <span class="c1">// compile time error
+</span></span><span class="line"><span class="cl">    <span class="n">list</span><span class="o">.</span><span class="na">add</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span> <span class="c1">// compile time error
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>    <span class="k">for</span> <span class="o">(</span><span class="n">Object</span> <span class="n">number</span> <span class="o">:</span> <span class="n">list</span><span class="o">)</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">number</span><span class="o">);</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
@@ -1128,7 +1164,7 @@ to be a subtype of <code>T[]</code> whenever <code>S</code> is a subtype of <cod
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Object</span><span class="o">[]</span> <span class="n">tools</span> <span class="o">=</span> <span class="o">{</span><span class="s">&#34;hammer&#34;</span><span class="o">,</span> <span class="s">&#34;screwdriver&#34;</span><span class="o">};</span>
 </span></span><span class="line"><span class="cl"><span class="n">String</span><span class="o">[]</span> <span class="n">fruits</span> <span class="o">=</span> <span class="o">{</span><span class="s">&#34;apple&#34;</span><span class="o">,</span> <span class="s">&#34;plum&#34;</span><span class="o">};</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">tools</span><span class="o">[</span><span class="n">1</span><span class="o">]</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">MAX_VALUE</span><span class="o">;</span>  <span class="c1">// tools: type: Object[], value: {&#34;hammer&#34;, Integer(1)}
+</span></span><span class="line"><span class="cl"><span class="n">tools</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">MAX_VALUE</span><span class="o">;</span>  <span class="c1">// tools: type: Object[], value: {&#34;hammer&#34;, Integer(1)}
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>
 </span></span><span class="line"><span class="cl"><span class="n">tools</span> <span class="o">=</span> <span class="n">fruits</span><span class="o">;</span>  <span class="c1">// tools: type: String[], value: {&#34;apple&#34;, &#34;plum&#34;}
 </span></span></span></code></pre></div><p>Here, <code>tools</code> is a reference to an array that contains <code>String</code> objects.
@@ -1138,11 +1174,11 @@ subtype.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Object</span><span class="o">[]</span> <span class="n">tools</span> <span class="o">=</span> <span class="o">{</span><span class="s">&#34;hammer&#34;</span><span class="o">,</span> <span class="s">&#34;screwdriver&#34;</span><span class="o">};</span>
 </span></span><span class="line"><span class="cl"><span class="n">String</span><span class="o">[]</span> <span class="n">fruits</span> <span class="o">=</span> <span class="o">{</span><span class="s">&#34;apple&#34;</span><span class="o">,</span> <span class="s">&#34;plum&#34;</span><span class="o">};</span>
 </span></span><span class="line"><span class="cl">
-</span></span><span class="line"><span class="cl"><span class="n">tools</span><span class="o">[</span><span class="n">1</span><span class="o">]</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">MAX_VALUE</span><span class="o">;</span>  <span class="c1">// tools: type: Object[], value: {&#34;hammer&#34;, Integer(1)}
+</span></span><span class="line"><span class="cl"><span class="n">tools</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">MAX_VALUE</span><span class="o">;</span>  <span class="c1">// tools: type: Object[], value: {&#34;hammer&#34;, Integer(1)}
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>
 </span></span><span class="line"><span class="cl"><span class="n">tools</span> <span class="o">=</span> <span class="n">fruits</span><span class="o">;</span>  <span class="c1">// tools: type: String[], value: {&#34;apple&#34;, &#34;plum&#34;}
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span>
-</span></span><span class="line"><span class="cl"><span class="n">tools</span><span class="o">[</span><span class="n">1</span><span class="o">]</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">MAX_VALUE</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="n">tools</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="n">Integer</span><span class="o">.</span><span class="na">MAX_VALUE</span><span class="o">;</span>
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Exception</span> <span class="n">in</span> <span class="n">thread</span> <span class="s">&#34;main&#34;</span> <span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">ArrayStoreException</span><span class="o">:</span> <span class="n">java</span><span class="o">.</span><span class="na">lang</span><span class="o">.</span><span class="na">Integer</span>
 </span></span></code></pre></div><ul>
 <li>Though, static type is <code>Object[]</code>, its dynamic type is <code>String[]</code></li>
@@ -1325,8 +1361,8 @@ Arity decides how many operands are accepted in the operation. This brings us th
 <p>What is the output of the next operation?</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="n">0</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">1</span><span class="o">;</span> 
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">n</span> <span class="o">=</span> <span class="mi">0</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span> 
 </span></span><span class="line"><span class="cl">        <span class="n">n</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="o">+</span> <span class="o">+</span> <span class="o">+</span> <span class="o">+</span> <span class="o">+</span> <span class="n">i</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">n</span><span class="o">);</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
@@ -1338,7 +1374,7 @@ What if we mix two of them?</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="n">i</span> <span class="o">+</span> <span class="o">-</span> <span class="o">+</span> <span class="o">-</span> <span class="o">+</span> <span class="o">-</span> <span class="n">i</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl"><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">n</span><span class="o">);</span>
 </span></span></code></pre></div><p>Obviously, those operators that are not unary and binary at the same time, cannot work this way.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="n">2</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="n">i</span><span class="o">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">n</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="o">*</span> <span class="n">i</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl"><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">n</span><span class="o">);</span>
 </span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">boolean</span> <span class="n">b</span> <span class="o">=</span> <span class="kc">false</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl"><span class="n">b</span> <span class="o">=</span> <span class="kc">true</span> <span class="o">!</span> <span class="o">!</span> <span class="o">!</span> <span class="o">!</span> <span class="o">!</span> <span class="o">!</span> <span class="o">!</span> <span class="kc">false</span><span class="o">;</span>
@@ -1366,7 +1402,7 @@ Is that still valid variable name? Let us see what the compiler says.</p>
 <p>The source looks as follows:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">_</span> <span class="o">=</span> <span class="n">1</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">_</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">_</span><span class="o">);</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
@@ -1381,7 +1417,7 @@ Is that still valid variable name? Let us see what the compiler says.</p>
 <p>What if we put multiple underscores next to each other?</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
 </span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
-</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">__</span> <span class="o">=</span> <span class="n">1</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">        <span class="kt">int</span> <span class="n">__</span> <span class="o">=</span> <span class="mi">1</span><span class="o">;</span>
 </span></span><span class="line"><span class="cl">        <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">__</span><span class="o">);</span>
 </span></span><span class="line"><span class="cl">    <span class="o">}</span>
 </span></span><span class="line"><span class="cl"><span class="o">}</span>
@@ -1628,13 +1664,13 @@ keeping numeric values in range.</strong></p>
 The more readable the code is, the faster that can be understood by developers.<br>
 Java 7 introduced underscore as a comfortable way to separate digits of a numeric value
 into groups.</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">____j</span> <span class="o">=</span> <span class="n">0x5_4</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl"><span class="kt">byte</span> <span class="n">b</span> <span class="o">=</span> <span class="n">1_2_7</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl"><span class="kt">short</span> <span class="n">s</span> <span class="o">=</span> <span class="n">32_767</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="n">1_000_000</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl"><span class="kt">long</span> <span class="n">l</span> <span class="o">=</span> <span class="n">1_000_000_000_000L</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl"><span class="kt">float</span> <span class="n">f</span> <span class="o">=</span> <span class="n">1_000</span><span class="o">.</span><span class="na">5f</span><span class="o">;</span>
-</span></span><span class="line"><span class="cl"><span class="kt">double</span> <span class="n">d</span> <span class="o">=</span> <span class="n">1_000</span><span class="o">.</span><span class="na">5d</span><span class="o">;</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">____j</span> <span class="o">=</span> <span class="mh">0x5_4</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">byte</span> <span class="n">b</span> <span class="o">=</span> <span class="mi">1_2_7</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">short</span> <span class="n">s</span> <span class="o">=</span> <span class="mi">32_767</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">1_000_000</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">long</span> <span class="n">l</span> <span class="o">=</span> <span class="mi">1_000_000_000_000L</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">float</span> <span class="n">f</span> <span class="o">=</span> <span class="mf">1_000.5f</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="kt">double</span> <span class="n">d</span> <span class="o">=</span> <span class="mf">1_000.5d</span><span class="o">;</span>
 </span></span></code></pre></div><p>Naming a few limitations:</p>
 <ul>
 <li>If value is prefixed with underscore(s) then that is identifier: <code>int j = _10;</code></li>
@@ -1921,8 +1957,8 @@ or some other approaches to achieve the same goal.</strong></p>
 <p>In this post I write some snippets to demonstrate what other languages provide
 to prevent the exception raised by referencing to a null object.</p>
 <p>Demonstration of the core problem again, comes below:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Person</span> <span class="n">john</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="o">(</span><span class="s">&#34;John&#34;</span><span class="o">,</span> <span class="n">54</span><span class="o">,</span> <span class="k">new</span> <span class="n">Address</span><span class="o">(</span><span class="s">&#34;Paris&#34;</span><span class="o">,</span> <span class="s">&#34;Champs-Elysee&#34;</span><span class="o">,</span> <span class="n">54</span><span class="o">));</span>
-</span></span><span class="line"><span class="cl"><span class="n">Person</span> <span class="n">joe</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="o">(</span><span class="s">&#34;Joe&#34;</span><span class="o">,</span> <span class="n">54</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Person</span> <span class="n">john</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="o">(</span><span class="s">&#34;John&#34;</span><span class="o">,</span> <span class="mi">54</span><span class="o">,</span> <span class="k">new</span> <span class="n">Address</span><span class="o">(</span><span class="s">&#34;Paris&#34;</span><span class="o">,</span> <span class="s">&#34;Champs-Elysee&#34;</span><span class="o">,</span> <span class="mi">54</span><span class="o">));</span>
+</span></span><span class="line"><span class="cl"><span class="n">Person</span> <span class="n">joe</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="o">(</span><span class="s">&#34;Joe&#34;</span><span class="o">,</span> <span class="mi">54</span><span class="o">,</span> <span class="kc">null</span><span class="o">);</span>
 </span></span><span class="line"><span class="cl">
 </span></span><span class="line"><span class="cl"><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">john</span><span class="o">.</span><span class="na">getAddress</span><span class="o">().</span><span class="na">getStreet</span><span class="o">());</span> <span class="c1">// emits the street name
 </span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">joe</span><span class="o">.</span><span class="na">getAddress</span><span class="o">().</span><span class="na">getStreet</span><span class="o">());</span> <span class="c1">// raises NPE
@@ -1952,8 +1988,8 @@ we can safely traverse over the embedded objects without fearing to get NPE.</p>
 </span></span><span class="line"><span class="cl"><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">street</span><span class="o">);</span>
 </span></span></code></pre></div><p>In Java 8, a very handy method of <code>Map</code> got introduced, called <code>getOrDefault</code>.
 In case of it looks like as follows:</p>
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">hsh</span><span class="o">.</span><span class="na">getOrDefault</span><span class="o">(</span><span class="s">&#34;London&#34;</span><span class="o">,</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Integer</span><span class="o">&gt;()).</span><span class="na">getOrDefault</span><span class="o">(</span><span class="s">&#34;john&#34;</span><span class="o">,</span> <span class="o">-</span><span class="n">1</span><span class="o">));</span>
-</span></span><span class="line"><span class="cl"><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">hsh</span><span class="o">.</span><span class="na">getOrDefault</span><span class="o">(</span><span class="s">&#34;Paris&#34;</span><span class="o">,</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Integer</span><span class="o">&gt;()).</span><span class="na">getOrDefault</span><span class="o">(</span><span class="s">&#34;john&#34;</span><span class="o">,</span> <span class="o">-</span><span class="n">1</span><span class="o">));</span>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">hsh</span><span class="o">.</span><span class="na">getOrDefault</span><span class="o">(</span><span class="s">&#34;London&#34;</span><span class="o">,</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Integer</span><span class="o">&gt;()).</span><span class="na">getOrDefault</span><span class="o">(</span><span class="s">&#34;john&#34;</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">));</span>
+</span></span><span class="line"><span class="cl"><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">hsh</span><span class="o">.</span><span class="na">getOrDefault</span><span class="o">(</span><span class="s">&#34;Paris&#34;</span><span class="o">,</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Integer</span><span class="o">&gt;()).</span><span class="na">getOrDefault</span><span class="o">(</span><span class="s">&#34;john&#34;</span><span class="o">,</span> <span class="o">-</span><span class="mi">1</span><span class="o">));</span>
 </span></span></code></pre></div><h3 id="groovy">Groovy</h3>
 <p>Groovy brings safe navigation operator as part of the language.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-groovy" data-lang="groovy"><span class="line"><span class="cl"><span class="n">john</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Person</span><span class="o">(</span><span class="s2">&#34;john&#34;</span><span class="o">,</span> <span class="mi">54</span><span class="o">,</span> <span class="k">new</span> <span class="n">Address</span><span class="o">(</span><span class="s2">&#34;London&#34;</span><span class="o">,</span> <span class="s2">&#34;Baker&#34;</span><span class="o">,</span> <span class="mi">221</span><span class="o">))</span>
@@ -2054,13 +2090,13 @@ I would like to present these less known or unexplained parts of the languages.<
 <h4 id="the-usual-way">The usual way</h4>
 <p>Usually to initialize a collection or a map we do:</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Integer</span><span class="o">&gt;</span> <span class="n">map</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Integer</span><span class="o">&gt;();</span>
-</span></span><span class="line"><span class="cl"><span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">&#34;apple&#34;</span><span class="o">,</span> <span class="n">2</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl"><span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">&#34;melon&#34;</span><span class="o">,</span> <span class="n">5</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">&#34;apple&#34;</span><span class="o">,</span> <span class="mi">2</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">&#34;melon&#34;</span><span class="o">,</span> <span class="mi">5</span><span class="o">);</span>
 </span></span></code></pre></div><h4 id="double-braces">Double Braces</h4>
 <p>Double brace initialization brings the opportunity to do this at the so-called same time.</p>
 <div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Integer</span><span class="o">&gt;</span> <span class="n">map</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Integer</span><span class="o">&gt;()</span> <span class="o">{{</span>
-</span></span><span class="line"><span class="cl">  <span class="n">put</span><span class="o">(</span><span class="s">&#34;apple&#34;</span><span class="o">,</span> <span class="n">2</span><span class="o">);</span>
-</span></span><span class="line"><span class="cl">  <span class="n">put</span><span class="o">(</span><span class="s">&#34;melon&#34;</span><span class="o">,</span> <span class="n">5</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">put</span><span class="o">(</span><span class="s">&#34;apple&#34;</span><span class="o">,</span> <span class="mi">2</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">  <span class="n">put</span><span class="o">(</span><span class="s">&#34;melon&#34;</span><span class="o">,</span> <span class="mi">5</span><span class="o">);</span>
 </span></span><span class="line"><span class="cl"><span class="o">}};</span>
 </span></span></code></pre></div><h4 id="how-it-works">How it works</h4>
 <p>Inner braces belong to the init block of the anonymous class derived from <code>HashMap</code>.
