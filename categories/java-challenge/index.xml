@@ -6,7 +6,27 @@
     <description>Recent content in java challenge on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Nov 2022 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/categories/java-challenge/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Dec 2022 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/categories/java-challenge/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Fix that Java: Increasing Value</title>
+      <link>https://torokmark.github.io/posts/fix-that-java-increasing-value/</link>
+      <pubDate>Tue, 06 Dec 2022 12:00:00 +0100</pubDate>
+      
+      <guid>https://torokmark.github.io/posts/fix-that-java-increasing-value/</guid>
+      <description>Threads&amp;rsquo; execution easily ends up in corrupted data.
+class Main { public static void main(String[] args) throws InterruptedException { Counter counter = new Counter(); Thread thread = new CounterThread(counter); } } class Counter { private volatile int value = 0; public void increase() { value += 1; } public int getValue() { return value; } } class CounterThread extends Thread { private final Counter counter; public CounterThread(Counter counter) { this.counter = counter; } @Override public void run() { for (int i = 0; i &amp;lt; 10000; i += 1) { counter.</description>
+    </item>
+    
+    <item>
+      <title>Fix that Java: Mugs are not the Same</title>
+      <link>https://torokmark.github.io/posts/fix-that-java-mugs-are-not-the-same/</link>
+      <pubDate>Mon, 05 Dec 2022 12:00:00 +0100</pubDate>
+      
+      <guid>https://torokmark.github.io/posts/fix-that-java-mugs-are-not-the-same/</guid>
+      <description>Ahh, either mugs or code but one of them is definitely broken&amp;hellip;. or both.
+public class Main { public static void main(String[] args) { Mug classic = new Mug(1.2); PlasticMug plastic = new PlasticMug(1.2, &amp;#34;polycarbonat&amp;#34;); System.out.println(plastic.equals(classic)); } } public class Mug { private double capacity; public Mug(double capacity) { this.capacity = capacity; } public double getCapacity() { return capacity; } @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null) { return false; } if (!</description>
+    </item>
+    
     <item>
       <title>Fix that Java: The Broken Flash Drive</title>
       <link>https://torokmark.github.io/posts/fix-that-java-the-broken-flash-drive/</link>

@@ -6,7 +6,16 @@
     <description>Recent content in Tags on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Nov 2022 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 06 Dec 2022 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>challenge</title>
+      <link>https://torokmark.github.io/tags/challenge/</link>
+      <pubDate>Tue, 06 Dec 2022 12:00:00 +0100</pubDate>
+      
+      <guid>https://torokmark.github.io/tags/challenge/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>arity</title>
       <link>https://torokmark.github.io/tags/arity/</link>
@@ -22,15 +31,6 @@
       <pubDate>Sun, 27 Nov 2022 12:00:00 +0100</pubDate>
       
       <guid>https://torokmark.github.io/tags/operator/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>challenge</title>
-      <link>https://torokmark.github.io/tags/challenge/</link>
-      <pubDate>Tue, 15 Nov 2022 12:00:00 +0100</pubDate>
-      
-      <guid>https://torokmark.github.io/tags/challenge/</guid>
       <description></description>
     </item>
     

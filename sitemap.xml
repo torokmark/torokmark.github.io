@@ -2,10 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://torokmark.github.io/tags/arity/</loc>
-    <lastmod>2022-11-27T12:00:00+01:00</lastmod>
-  </url><url>
     <loc>https://torokmark.github.io/categories/</loc>
+    <lastmod>2022-12-06T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://torokmark.github.io/tags/challenge/</loc>
+    <lastmod>2022-12-06T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://torokmark.github.io/categories/fix-that-java/</loc>
+    <lastmod>2022-12-06T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://torokmark.github.io/posts/fix-that-java-increasing-value/</loc>
+    <lastmod>2022-12-06T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://torokmark.github.io/categories/java-challenge/</loc>
+    <lastmod>2022-12-06T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://torokmark.github.io/posts/</loc>
+    <lastmod>2022-12-06T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://torokmark.github.io/</loc>
+    <lastmod>2022-12-06T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://torokmark.github.io/tags/</loc>
+    <lastmod>2022-12-06T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://torokmark.github.io/posts/fix-that-java-mugs-are-not-the-same/</loc>
+    <lastmod>2022-12-05T12:00:00+01:00</lastmod>
+  </url><url>
+    <loc>https://torokmark.github.io/tags/arity/</loc>
     <lastmod>2022-11-27T12:00:00+01:00</lastmod>
   </url><url>
     <loc>https://torokmark.github.io/categories/do-you-know-java/</loc>
@@ -20,25 +44,7 @@
     <loc>https://torokmark.github.io/tags/operator/</loc>
     <lastmod>2022-11-27T12:00:00+01:00</lastmod>
   </url><url>
-    <loc>https://torokmark.github.io/posts/</loc>
-    <lastmod>2022-11-27T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://torokmark.github.io/</loc>
-    <lastmod>2022-11-27T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://torokmark.github.io/tags/</loc>
-    <lastmod>2022-11-27T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://torokmark.github.io/tags/challenge/</loc>
-    <lastmod>2022-11-15T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://torokmark.github.io/categories/fix-that-java/</loc>
-    <lastmod>2022-11-15T12:00:00+01:00</lastmod>
-  </url><url>
     <loc>https://torokmark.github.io/posts/fix-that-java-the-broken-flash-drive/</loc>
-    <lastmod>2022-11-15T12:00:00+01:00</lastmod>
-  </url><url>
-    <loc>https://torokmark.github.io/categories/java-challenge/</loc>
     <lastmod>2022-11-15T12:00:00+01:00</lastmod>
   </url><url>
     <loc>https://torokmark.github.io/posts/fix-that-java-the-broken-basket/</loc>
