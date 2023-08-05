@@ -5,8 +5,42 @@
 		<description>Recent content in Posts on T[h]ink]er[ing</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
-		<lastBuildDate>Wed, 28 Dec 2022 12:00:00 +0100</lastBuildDate>
+		<lastBuildDate>Sat, 05 Aug 2023 12:00:00 +0100</lastBuildDate>
 		<atom:link href="https://torokmark.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>Fix that Java: Uncompiling Compiler</title>
+			<link>https://torokmark.github.io/posts/fix-that-java-uncompiling-compiler/</link>
+			<pubDate>Sat, 05 Aug 2023 12:00:00 +0100</pubDate>
+			
+			<guid>https://torokmark.github.io/posts/fix-that-java-uncompiling-compiler/</guid>
+			<description>Though, the following challenge seems easy, we have some restrictions. Unfortunatelly, the source codes of Main and JavaCompiler are not in our hands.
+class Main { public static void main(String[] args) { JavaCompiler compiler = new JavaCompiler(&amp;#34;hello.java&amp;#34;); compiler.compile(); } } class JavaCompiler implements Compiler { private String path; JavaCompiler(String path) { this.path = path; } String getPath() { return path; } } interface Compiler { void compile(); } Take care of the code, and make it work!</description>
+			<content type="html"><![CDATA[<p>Though, the following challenge seems easy, we have some restrictions.
+Unfortunatelly, the source codes of <code>Main</code> and <code>JavaCompiler</code> are not in our hands.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">Main</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">       <span class="n">JavaCompiler</span> <span class="n">compiler</span> <span class="o">=</span> <span class="k">new</span> <span class="n">JavaCompiler</span><span class="o">(</span><span class="s">&#34;hello.java&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">       <span class="n">compiler</span><span class="o">.</span><span class="na">compile</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">class</span> <span class="nc">JavaCompiler</span> <span class="kd">implements</span> <span class="n">Compiler</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">String</span> <span class="n">path</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">JavaCompiler</span><span class="o">(</span><span class="n">String</span> <span class="n">path</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">this</span><span class="o">.</span><span class="na">path</span> <span class="o">=</span> <span class="n">path</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="n">String</span> <span class="nf">getPath</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="k">return</span> <span class="n">path</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="kd">interface</span> <span class="nc">Compiler</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="kt">void</span> <span class="nf">compile</span><span class="o">();</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></div><p>Take care of the code, and make it work!</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>Fix that Java: Increasing Value</title>
