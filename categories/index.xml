@@ -6,7 +6,34 @@
     <description>Recent content in Categories on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Aug 2023 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Aug 2023 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>intellij</title>
+      <link>https://torokmark.github.io/categories/intellij/</link>
+      <pubDate>Sun, 06 Aug 2023 12:00:00 +0100</pubDate>
+      
+      <guid>https://torokmark.github.io/categories/intellij/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>java</title>
+      <link>https://torokmark.github.io/categories/java/</link>
+      <pubDate>Sun, 06 Aug 2023 12:00:00 +0100</pubDate>
+      
+      <guid>https://torokmark.github.io/categories/java/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>plugin</title>
+      <link>https://torokmark.github.io/categories/plugin/</link>
+      <pubDate>Sun, 06 Aug 2023 12:00:00 +0100</pubDate>
+      
+      <guid>https://torokmark.github.io/categories/plugin/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>fix that java</title>
       <link>https://torokmark.github.io/categories/fix-that-java/</link>
@@ -31,15 +58,6 @@
       <pubDate>Sun, 27 Nov 2022 12:00:00 +0100</pubDate>
       
       <guid>https://torokmark.github.io/categories/do-you-know-java/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>java</title>
-      <link>https://torokmark.github.io/categories/java/</link>
-      <pubDate>Sun, 27 Nov 2022 12:00:00 +0100</pubDate>
-      
-      <guid>https://torokmark.github.io/categories/java/</guid>
       <description></description>
     </item>
     

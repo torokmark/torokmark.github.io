@@ -5,8 +5,103 @@
 		<description>Recent content in Posts on T[h]ink]er[ing</description>
 		<generator>Hugo -- gohugo.io</generator>
 		<language>en-us</language>
-		<lastBuildDate>Sat, 05 Aug 2023 12:00:00 +0100</lastBuildDate>
+		<lastBuildDate>Sun, 06 Aug 2023 12:00:00 +0100</lastBuildDate>
 		<atom:link href="https://torokmark.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+		
+		<item>
+			<title>IntelliJ Plugin: Java Development</title>
+			<link>https://torokmark.github.io/posts/intellij-plugin-java-development/</link>
+			<pubDate>Sun, 06 Aug 2023 12:00:00 +0100</pubDate>
+			
+			<guid>https://torokmark.github.io/posts/intellij-plugin-java-development/</guid>
+			<description>This post presents some of the plugins of IntelliJ that can be useful during daily work.
+These plugins are used mostly to develop Java related projects, and give a huge support in effective programming. Some of them are language or project agnostic.
+Recommendation is represented as a list of star. Five is the most, zero is the lowest.
+Material Theme UI ⭐ ⭐ ⭐ ⭐ ⭐ Rich, awesome, and configurable UI design to bring the best out of the look of your IDE.</description>
+			<content type="html"><![CDATA[<p><strong>This post presents some of the plugins of IntelliJ that can be useful during daily work.</strong></p>
+<p>These plugins are used mostly to develop Java related projects, and give a huge
+support in effective programming. Some of them are language or project agnostic.</p>
+<p>Recommendation is represented as a list of star. Five is the most, zero is the lowest.</p>
+<hr>
+<h3 id="material-theme-ui-----">Material Theme UI ⭐ ⭐ ⭐ ⭐ ⭐</h3>
+<p>Rich, awesome, and configurable UI design to bring the best out of the look of
+your IDE.</p>
+<p>Brought by AtomMaterial</p>
+<hr>
+<h3 id="atom-material-icons-----">Atom Material Icons ⭐ ⭐ ⭐ ⭐ ⭐</h3>
+<p>Along with the Theme UI, matching icons are inevitably on the list.</p>
+<p>Brought by AtomMaterial</p>
+<blockquote>
+<p>There are many other theme and icon sets can be found on the market place.
+Worth to trying them out.</p>
+</blockquote>
+<hr>
+<h3 id="plantuml-integration----">PlantUML Integration ⭐ ⭐ ⭐ ⭐</h3>
+<p>PlantUML brings a version controlled DSL to provide many of the well-known UML
+diagrams. Easy to use, offer multiple ways to export the results.</p>
+<p>Brought by third-party</p>
+<blockquote>
+<p>When you work UMLs daily basis and don&rsquo;t want to use a +1 tool, then this plugin
+is definitely your friend.</p>
+</blockquote>
+<hr>
+<h3 id="rainbow-brackets-----">Rainbow Brackets ⭐ ⭐ ⭐ ⭐ ⭐</h3>
+<p>Freemium plugin to give a hand in the brackets chaos. No missing closing brackets or parenthesis,
+no dangling else problem.</p>
+<p>Brought by third-party.</p>
+<hr>
+<h3 id="rainbow-csv----">Rainbow CSV ⭐ ⭐ ⭐ ⭐</h3>
+<p>Once a CSV file contains more than a few columns, reading of the data becomes a mess.
+This plugin sort this kind of problem out by colorizing the columns to make data readable.</p>
+<p>Brought by third-party</p>
+<hr>
+<h3 id="ideolog--">Ideolog ⭐ ⭐</h3>
+<p>Comes handy to highlight lines belong to different severities in a logfile.
+Not easy to configure, so here you can find a configuration to process Tomcat log files.</p>
+<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl">^<span class="o">(</span><span class="se">\d</span>+-<span class="o">[</span>a-zA-Z<span class="o">]</span>+-<span class="se">\d</span>+ <span class="se">\d</span>+:<span class="se">\d</span>+:<span class="se">\d</span>+.<span class="se">\d</span>+<span class="o">)</span> <span class="o">([</span>A-Z<span class="o">]</span>+<span class="o">)</span> <span class="o">(</span><span class="se">\[</span><span class="o">[</span>a-zA-Z0-9<span class="se">\-\[\]</span><span class="o">]</span>+<span class="se">\]</span><span class="o">)</span> <span class="o">([</span>a-zA-Z0-9.:<span class="se">\/</span><span class="o">]</span>+<span class="o">)</span> <span class="o">([</span>a-zA-Z0-9 <span class="se">\[\]</span><span class="s2">&#34;&#39;:.,\-=_\/]+)</span>$<span class="s2">
+</span></span></span></code></pre></div><p>The content of the log file looks as follows:</p>
+<pre tabindex="0"><code>23-Dec-2023 08:21:39.134 INFO [main] org.apache.catalina.startup.VersionLoggerListener.log Server version:        Apache Tomcat/8.5
+23-Dec-2023 10:45:57.289 ERROR [localhost] org.apache.catalina.startup.HostConfig.deployDirectory Deploying web application directory [/opt/apache-tomcat-8.5/webapps/ROOT]
+23-Dec-2023 10:46:15.232 WARNING [localhost] org.apache.catalina.util.SessionIdGeneratorBase.createSecureRandom Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [272] milliseconds.
+</code></pre><p>Brough by JetBrains</p>
+<blockquote>
+<p>This plugin can have more star, though, configuration requires prior knowledge
+regex and instead of coloring the whole line in green or red, for the better
+experience, tokenization could be helpful to read logs.</p>
+</blockquote>
+<hr>
+<h3 id="lombok-">Lombok ⭐</h3>
+<p>Well-known and widely used package to generate getters/setters and other
+boilerplate content.</p>
+<p>Brough by JetBrains</p>
+<hr>
+<h3 id="string-manipulation---">String Manipulation ⭐ ⭐ ⭐</h3>
+<p>Awesome tool to align, sort, quote or handle strings in a file in any way. Strictly
+recommended for sorting CSV files or writing markdowns.</p>
+<p>Brought by third-party</p>
+<hr>
+<h3 id="grep-console--">Grep Console ⭐ ⭐</h3>
+<p>It can highlight the output lines like Ideolog, however it can give a lot more.
+By using regular expressions the output can be filtered against the pattern or
+vice versa. The plugin brings heavy configuration as well.</p>
+<p>Brought by third-party</p>
+<hr>
+<h3 id="nyancat-progressbar">NyanCat Progressbar</h3>
+<p>Who doesn&rsquo;t know NyanCat! World-famous pet between two slice of breads and leaving
+a rainbow behind?</p>
+<blockquote>
+<p>Sometimes it becomes annoying to see a colorful line at the bottom of the IDE.</p>
+</blockquote>
+<p>Brought by third-party</p>
+<hr>
+<h3 id="randomness---">Randomness ⭐ ⭐ ⭐</h3>
+<p>Dummy data is essential to try out something that was just implemented, or test the methods
+in a unit test. This smart and well-configurable plugin brings all of these and
+helps us to generate random numbers or strings according to our needs.</p>
+<p>Brought by third-party</p>
+<p>Keep up, happy coding!</p>
+]]></content>
+		</item>
 		
 		<item>
 			<title>Fix that Java: Uncompiling Compiler</title>

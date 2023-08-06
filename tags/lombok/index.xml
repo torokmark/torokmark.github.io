@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>lombok on T[h]ink]er[ing</title>
+    <link>https://torokmark.github.io/tags/lombok/</link>
+    <description>Recent content in lombok on T[h]ink]er[ing</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 06 Aug 2023 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/tags/lombok/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>IntelliJ Plugin: Java Development</title>
+      <link>https://torokmark.github.io/posts/intellij-plugin-java-development/</link>
+      <pubDate>Sun, 06 Aug 2023 12:00:00 +0100</pubDate>
+      
+      <guid>https://torokmark.github.io/posts/intellij-plugin-java-development/</guid>
+      <description>This post presents some of the plugins of IntelliJ that can be useful during daily work.
+These plugins are used mostly to develop Java related projects, and give a huge support in effective programming. Some of them are language or project agnostic.
+Recommendation is represented as a list of star. Five is the most, zero is the lowest.
+Material Theme UI ⭐ ⭐ ⭐ ⭐ ⭐ Rich, awesome, and configurable UI design to bring the best out of the look of your IDE.</description>
+    </item>
+    
+  </channel>
+</rss>
