@@ -6,16 +6,14 @@
     <description>Recent content in csharp on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 05 Aug 2019 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/categories/csharp/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 05 Aug 2019 12:00:00 +0100</lastBuildDate>
+    <atom:link href="https://torokmark.github.io/categories/csharp/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Safe navigation in languages</title>
       <link>https://torokmark.github.io/posts/safe-navigation-in-languages/</link>
       <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/safe-navigation-in-languages/</guid>
-      <description>As we saw in the previous post, Ruby development team introduced a safe navigation operator to get rid of painful chaining of objects, which could raise NPE in case of null object in the middle. But Ruby is not the only language that came up with this idea. Most of the languages have introduced this operator, usually called null propagation, or some other approaches to achieve the same goal.
-In this post I write some snippets to demonstrate what other languages provide to prevent the exception raised by referencing to a null object.</description>
+      <description>As we saw in the previous post, Ruby development team introduced a safe navigation operator to get rid of painful chaining of objects, which could raise NPE in case of null object in the middle. But Ruby is not the only language that came up with this idea. Most of the languages have introduced this operator, usually called null propagation, or some other approaches to achieve the same goal.&#xA;In this post I write some snippets to demonstrate what other languages provide to prevent the exception raised by referencing to a null object.</description>
     </item>
-    
   </channel>
 </rss>

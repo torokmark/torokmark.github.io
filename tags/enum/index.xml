@@ -6,26 +6,21 @@
     <description>Recent content in enum on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 01 May 2020 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/tags/enum/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 01 May 2020 12:00:00 +0100</lastBuildDate>
+    <atom:link href="https://torokmark.github.io/tags/enum/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Do you know Java: Less known side of Enums</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-less-known-side-of-enums/</link>
       <pubDate>Fri, 01 May 2020 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-less-known-side-of-enums/</guid>
-      <description>Enums are easy and straigthforward at first sight, but this type has some hidden sides.
-public enum Day { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY } For enumeration type, Java has a keyword called enum. That was introduced in Java 1.5. All enum types are implicitly inhereted from Enum class. Hence, all enum types has all methods that Enum has, like name, ordinal, etc. We cannot extend an enum, and enum does not extend custom types.</description>
+      <description>Enums are easy and straigthforward at first sight, but this type has some hidden sides.&#xA;public enum Day { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY } For enumeration type, Java has a keyword called enum. That was introduced in Java 1.5. All enum types are implicitly inhereted from Enum class. Hence, all enum types has all methods that Enum has, like name, ordinal, etc. We cannot extend an enum, and enum does not extend custom types.</description>
     </item>
-    
     <item>
       <title>Do you know Java: Entry Point in Interface or Enum</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-entry-point-in-interface/</link>
       <pubDate>Fri, 09 Aug 2019 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-entry-point-in-interface/</guid>
-      <description>All Java applications start with a class and an entry point in it. We can change the class type to others.
-All Java applications start at one common point. That is a class which has at least one static method, called main as an entry point of the app. This method is called by JRE after the class is loaded when we execute java command with the appropriate name of the class.</description>
+      <description>All Java applications start with a class and an entry point in it. We can change the class type to others.&#xA;All Java applications start at one common point. That is a class which has at least one static method, called main as an entry point of the app. This method is called by JRE after the class is loaded when we execute java command with the appropriate name of the class.</description>
     </item>
-    
   </channel>
 </rss>

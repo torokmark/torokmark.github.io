@@ -6,16 +6,14 @@
     <description>Recent content in final on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 16 May 2020 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/tags/final/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 16 May 2020 12:00:00 +0100</lastBuildDate>
+    <atom:link href="https://torokmark.github.io/tags/final/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Do you know Java: Immutable Object</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-immutable-object/</link>
       <pubDate>Sat, 16 May 2020 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-immutable-object/</guid>
-      <description>Couple of thoughts about how to implement immutable objects.
-Class has to be final. Fields have to be private and final. Hence, fields are set in constructor. No setters and setter-like methods. If object is passed in ctor parameter, make a clone of it. Do the same in getters as well. public final class Person { private final String name; private final int age; private final List&amp;lt;PhoneNumber&amp;gt; phoneNumbers; public Person(String name, int age, List&amp;lt;PhoneNumber&amp;gt; phoneNumbers) { this.</description>
+      <description>Couple of thoughts about how to implement immutable objects.&#xA;Class has to be final. Fields have to be private and final. Hence, fields are set in constructor. No setters and setter-like methods. If object is passed in ctor parameter, make a clone of it. Do the same in getters as well. public final class Person { private final String name; private final int age; private final List&amp;lt;PhoneNumber&amp;gt; phoneNumbers; public Person(String name, int age, List&amp;lt;PhoneNumber&amp;gt; phoneNumbers) { this.</description>
     </item>
-    
   </channel>
 </rss>

@@ -6,17 +6,14 @@
     <description>Recent content in n-ary tree on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 19 Mar 2019 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/tags/n-ary-tree/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 19 Mar 2019 12:00:00 +0100</lastBuildDate>
+    <atom:link href="https://torokmark.github.io/tags/n-ary-tree/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>How to implement routing with n-ary tree</title>
       <link>https://torokmark.github.io/posts/n-ary-routing/</link>
       <pubDate>Tue, 19 Mar 2019 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/n-ary-routing/</guid>
-      <description>Routing mechanism is one of the main parts of a web service. Here I provide one approach to achieve this. This implementation is based on n-ary tree and tree search.
-Many ways are available to handle routes, from regex to n-ary trees to parse registered route one by one.
-Different ways N-ary Trees In this approach we can consider the root node as / and all children nodes as route parts are separated by /.</description>
+      <description>Routing mechanism is one of the main parts of a web service. Here I provide one approach to achieve this. This implementation is based on n-ary tree and tree search.&#xA;Many ways are available to handle routes, from regex to n-ary trees to parse registered route one by one.&#xA;Different ways N-ary Trees In this approach we can consider the root node as / and all children nodes as route parts are separated by /.</description>
     </item>
-    
   </channel>
 </rss>

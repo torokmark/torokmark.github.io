@@ -6,38 +6,28 @@
     <description>Recent content in ruby on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 23 Aug 2019 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/categories/ruby/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 23 Aug 2019 12:00:00 +0100</lastBuildDate>
+    <atom:link href="https://torokmark.github.io/categories/ruby/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Ruby&#39;s or operator precedence</title>
       <link>https://torokmark.github.io/posts/rubys-or-operator-precedence/</link>
       <pubDate>Fri, 23 Aug 2019 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/rubys-or-operator-precedence/</guid>
-      <description>Operators have precedence and sometimes they can give us hard time to figure out why our code works as it does.
-Ruby has three or operators, |, ||, and the readable or. All of them have different precedences. That is, the precedence, that makes some trouble if we do not care about which one we use.
-The evaluation of logical operators are left-associative, that means the far left operator is evaluated at first, than its result will be the left operand of the next operator and so on.</description>
+      <description>Operators have precedence and sometimes they can give us hard time to figure out why our code works as it does.&#xA;Ruby has three or operators, |, ||, and the readable or. All of them have different precedences. That is, the precedence, that makes some trouble if we do not care about which one we use.&#xA;The evaluation of logical operators are left-associative, that means the far left operator is evaluated at first, than its result will be the left operand of the next operator and so on.</description>
     </item>
-    
     <item>
       <title>Benchmarking Ruby Control Flows and Datastructures</title>
       <link>https://torokmark.github.io/posts/ruby-benchmark-control-flows/</link>
       <pubDate>Sat, 03 Aug 2019 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/ruby-benchmark-control-flows/</guid>
-      <description>Flexibility of Ruby brings many ways to achieve the same results, whether it is a loop, selection of elements from datastructures, or assignment of values.
-Performance is one of the major metrics of an application. Ruby provides a module, natively brought by the language, called Benchmark, which helps us to observe the code and reflects the potential bottlenecks.
-Sometimes that is very suprising which statement executes faster and which of them provides less performance.</description>
+      <description>Flexibility of Ruby brings many ways to achieve the same results, whether it is a loop, selection of elements from datastructures, or assignment of values.&#xA;Performance is one of the major metrics of an application. Ruby provides a module, natively brought by the language, called Benchmark, which helps us to observe the code and reflects the potential bottlenecks.&#xA;Sometimes that is very suprising which statement executes faster and which of them provides less performance.</description>
     </item>
-    
     <item>
       <title>Safe navigation in Ruby</title>
       <link>https://torokmark.github.io/posts/safe-navigation-in-ruby/</link>
       <pubDate>Mon, 17 Jun 2019 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/safe-navigation-in-ruby/</guid>
-      <description>Navigation through embedded objects can suprise us with an error if one of the fields, which are objects as well, is null. We are in the same situation if we have a hash object and want to get a value by key if key does not exist. The burning situation crops up if we chain up methods next to each other.
-In this post I write some approaches, how to keep our code still clean, readable and safe if we liked to chain up calls next one another on an object or on a key-value pair container.</description>
+      <description>Navigation through embedded objects can suprise us with an error if one of the fields, which are objects as well, is null. We are in the same situation if we have a hash object and want to get a value by key if key does not exist. The burning situation crops up if we chain up methods next to each other.&#xA;In this post I write some approaches, how to keep our code still clean, readable and safe if we liked to chain up calls next one another on an object or on a key-value pair container.</description>
     </item>
-    
   </channel>
 </rss>

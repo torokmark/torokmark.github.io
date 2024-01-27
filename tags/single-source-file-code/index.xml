@@ -6,17 +6,14 @@
     <description>Recent content in single source file code on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 28 Aug 2019 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/tags/single-source-file-code/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 28 Aug 2019 12:00:00 +0100</lastBuildDate>
+    <atom:link href="https://torokmark.github.io/tags/single-source-file-code/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Do you know Java: Single Source File Code</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-single-source-file-code/</link>
       <pubDate>Wed, 28 Aug 2019 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-single-source-file-code/</guid>
-      <description>Java 11 introduced a new way of executing applications. That gives us the opportunity to do it without excplicitely compiling it. What&amp;rsquo;s more, Java code can be run as a script.
-In Java, compilation and execution of an app are two different steps. The java command gives us the feeling that we work with an interpreter.
-The Pre-Java-11 era Compilation of the source code and execution of the app are separated commands before Java 11, as we see here:</description>
+      <description>Java 11 introduced a new way of executing applications. That gives us the opportunity to do it without excplicitely compiling it. What&amp;rsquo;s more, Java code can be run as a script.&#xA;In Java, compilation and execution of an app are two different steps. The java command gives us the feeling that we work with an interpreter.&#xA;The Pre-Java-11 era Compilation of the source code and execution of the app are separated commands before Java 11, as we see here:</description>
     </item>
-    
   </channel>
 </rss>

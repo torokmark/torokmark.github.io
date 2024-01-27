@@ -6,18 +6,14 @@
     <description>Recent content in java7 on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 25 Mar 2020 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/tags/java7/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 25 Mar 2020 12:00:00 +0100</lastBuildDate>
+    <atom:link href="https://torokmark.github.io/tags/java7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Do you know Java: Catch Multiple Exceptions</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-catch-multiple-exceptions/</link>
       <pubDate>Wed, 25 Mar 2020 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-catch-multiple-exceptions/</guid>
-      <description>Catching multiple exceptions is very useful when we are intended to do the same operations when they are raised.
-The feature introduced in Java 7 and by using it we can place exceptions in the same catch branch.
-The old way looked like as follows.
-try { } catch (SQLException ex) { logger.log(ex); } catch (RemoteException ex) { logger.log(ex); } catch (NullPointerException ex) { logger.log(ex); } In Java 7 and onwards, we can place multiple exceptions in one catch branch.</description>
+      <description>Catching multiple exceptions is very useful when we are intended to do the same operations when they are raised.&#xA;The feature introduced in Java 7 and by using it we can place exceptions in the same catch branch.&#xA;The old way looked like as follows.&#xA;try { } catch (SQLException ex) { logger.log(ex); } catch (RemoteException ex) { logger.log(ex); } catch (NullPointerException ex) { logger.log(ex); } In Java 7 and onwards, we can place multiple exceptions in one catch branch.</description>
     </item>
-    
   </channel>
 </rss>

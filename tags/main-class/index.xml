@@ -6,16 +6,14 @@
     <description>Recent content in main class on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 09 Aug 2019 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/tags/main-class/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 09 Aug 2019 12:00:00 +0100</lastBuildDate>
+    <atom:link href="https://torokmark.github.io/tags/main-class/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Do you know Java: Entry Point in Interface or Enum</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-entry-point-in-interface/</link>
       <pubDate>Fri, 09 Aug 2019 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-entry-point-in-interface/</guid>
-      <description>All Java applications start with a class and an entry point in it. We can change the class type to others.
-All Java applications start at one common point. That is a class which has at least one static method, called main as an entry point of the app. This method is called by JRE after the class is loaded when we execute java command with the appropriate name of the class.</description>
+      <description>All Java applications start with a class and an entry point in it. We can change the class type to others.&#xA;All Java applications start at one common point. That is a class which has at least one static method, called main as an entry point of the app. This method is called by JRE after the class is loaded when we execute java command with the appropriate name of the class.</description>
     </item>
-    
   </channel>
 </rss>

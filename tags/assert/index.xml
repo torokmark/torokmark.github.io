@@ -6,29 +6,21 @@
     <description>Recent content in assert on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 21 Dec 2019 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/tags/assert/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 21 Dec 2019 12:00:00 +0100</lastBuildDate>
+    <atom:link href="https://torokmark.github.io/tags/assert/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Do you know Java: Parameter validation</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-parameter-validation/</link>
       <pubDate>Sat, 21 Dec 2019 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-parameter-validation/</guid>
-      <description>Checking method parameters is crutial to avoid inconvenient situations with null pointers or undesired values. Assertion and exception handling are two ways to give feedback to users about parameters.
-What if we are intended to validate the parameters of a function? What if we liked to set up preconditions? How can we avoid working with null objects?
-In this post we take a look at two approaches. At first, we see how we can check parameters with assertion and what its pros and cons are.</description>
+      <description>Checking method parameters is crutial to avoid inconvenient situations with null pointers or undesired values. Assertion and exception handling are two ways to give feedback to users about parameters.&#xA;What if we are intended to validate the parameters of a function? What if we liked to set up preconditions? How can we avoid working with null objects?&#xA;In this post we take a look at two approaches. At first, we see how we can check parameters with assertion and what its pros and cons are.</description>
     </item>
-    
     <item>
       <title>Assertion framework in shell script</title>
       <link>https://torokmark.github.io/posts/assertion-framework-in-shell-script/</link>
       <pubDate>Sun, 31 Mar 2019 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/assertion-framework-in-shell-script/</guid>
-      <description>A little lib that helps us checking our scripts with a unit test-like way.
-The Missing Tool Unit testing is part of a lot of projects&amp;rsquo; toolset. Though some part of the source code requires more attention than it gets payed. Shell scripts belong to them.
-How can we make sure that our scripts do what we expect they do?
-How can we make sure they are valid, return the right result&amp;hellip;?</description>
+      <description>A little lib that helps us checking our scripts with a unit test-like way.&#xA;The Missing Tool Unit testing is part of a lot of projects&amp;rsquo; toolset. Though some part of the source code requires more attention than it gets payed. Shell scripts belong to them.&#xA;How can we make sure that our scripts do what we expect they do?&#xA;How can we make sure they are valid, return the right result&amp;hellip;?</description>
     </item>
-    
   </channel>
 </rss>

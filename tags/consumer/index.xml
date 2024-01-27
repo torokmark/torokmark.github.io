@@ -6,18 +6,14 @@
     <description>Recent content in consumer on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 08 Feb 2020 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/tags/consumer/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 08 Feb 2020 12:00:00 +0100</lastBuildDate>
+    <atom:link href="https://torokmark.github.io/tags/consumer/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Do you know Java: PECS</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-pecs/</link>
       <pubDate>Sat, 08 Feb 2020 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-pecs/</guid>
-      <description>Do you remember the rule of PECS? If not, read the post quickly!
-PECS stands for Produce-Extend, Consume-Super. What does that mean? Let us see an example with types from the standard.
-Object void add(List&amp;lt;Object&amp;gt; list) { list.add(&amp;#34;string&amp;#34;); list.add(1); } Passing the followings are:
-add(new ArrayList&amp;lt;Object&amp;gt;()); // not type safe add(new ArrayList&amp;lt;String&amp;gt;()); // compile time error The first is not type safe, the second one does not compile, since ArrayList&amp;lt;String&amp;gt; is not the subtype of List&amp;lt;Object&amp;gt;.</description>
+      <description>Do you remember the rule of PECS? If not, read the post quickly!&#xA;PECS stands for Produce-Extend, Consume-Super. What does that mean? Let us see an example with types from the standard.&#xA;Object void add(List&amp;lt;Object&amp;gt; list) { list.add(&amp;#34;string&amp;#34;); list.add(1); } Passing the followings are:&#xA;add(new ArrayList&amp;lt;Object&amp;gt;()); // not type safe add(new ArrayList&amp;lt;String&amp;gt;()); // compile time error The first is not type safe, the second one does not compile, since ArrayList&amp;lt;String&amp;gt; is not the subtype of List&amp;lt;Object&amp;gt;.</description>
     </item>
-    
   </channel>
 </rss>

@@ -6,16 +6,14 @@
     <description>Recent content in varargs on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 15 Oct 2019 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/tags/varargs/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 15 Oct 2019 12:00:00 +0100</lastBuildDate>
+    <atom:link href="https://torokmark.github.io/tags/varargs/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Do you know Java: Varargs as Entry Point Parameter</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-varargs-in-entry-point/</link>
       <pubDate>Tue, 15 Oct 2019 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-varargs-in-entry-point/</guid>
-      <description>Java 5 was one of those versions that brought much more features and syntactic sugars than any other of them. Varargs is one of those. This provides a very comfortable way to pass different number of arguments to a method. Can we use it anywhere?
-Varargs is just a syntactic sugar, it can be used in a more flexible way than its predecessor, the typed array. It has the same characteristics which means it supports indexing, it has an attribute called length, it is iterable.</description>
+      <description>Java 5 was one of those versions that brought much more features and syntactic sugars than any other of them. Varargs is one of those. This provides a very comfortable way to pass different number of arguments to a method. Can we use it anywhere?&#xA;Varargs is just a syntactic sugar, it can be used in a more flexible way than its predecessor, the typed array. It has the same characteristics which means it supports indexing, it has an attribute called length, it is iterable.</description>
     </item>
-    
   </channel>
 </rss>

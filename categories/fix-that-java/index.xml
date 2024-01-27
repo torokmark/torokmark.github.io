@@ -6,77 +6,56 @@
     <description>Recent content in fix that java on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Aug 2023 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/categories/fix-that-java/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 05 Aug 2023 12:00:00 +0100</lastBuildDate>
+    <atom:link href="https://torokmark.github.io/categories/fix-that-java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Fix that Java: Uncompiling Compiler</title>
       <link>https://torokmark.github.io/posts/fix-that-java-uncompiling-compiler/</link>
       <pubDate>Sat, 05 Aug 2023 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/fix-that-java-uncompiling-compiler/</guid>
-      <description>Though, the following challenge seems easy, we have some restrictions. Unfortunatelly, the source codes of Main and JavaCompiler are not in our hands.
-class Main { public static void main(String[] args) { JavaCompiler compiler = new JavaCompiler(&amp;#34;hello.java&amp;#34;); compiler.compile(); } } class JavaCompiler implements Compiler { private String path; JavaCompiler(String path) { this.path = path; } String getPath() { return path; } } interface Compiler { void compile(); } Take care of the code, and make it work!</description>
+      <description>Though, the following challenge seems easy, we have some restrictions. Unfortunatelly, the source codes of Main and JavaCompiler are not in our hands.&#xA;class Main { public static void main(String[] args) { JavaCompiler compiler = new JavaCompiler(&amp;#34;hello.java&amp;#34;); compiler.compile(); } } class JavaCompiler implements Compiler { private String path; JavaCompiler(String path) { this.path = path; } String getPath() { return path; } } interface Compiler { void compile(); } Take care of the code, and make it work!</description>
     </item>
-    
     <item>
       <title>Fix that Java: Increasing Value</title>
       <link>https://torokmark.github.io/posts/fix-that-java-increasing-value/</link>
       <pubDate>Wed, 28 Dec 2022 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/fix-that-java-increasing-value/</guid>
-      <description>Threads&amp;rsquo; execution easily ends up in corrupted data.
-class Main { public static void main(String[] args) throws InterruptedException { Counter counter = new Counter(); Thread thread = new CounterThread(counter); } } class Counter { private volatile int value = 0; public void increase() { value += 1; } public int getValue() { return value; } } class CounterThread extends Thread { private final Counter counter; public CounterThread(Counter counter) { this.counter = counter; } @Override public void run() { for (int i = 0; i &amp;lt; 10000; i += 1) { counter.</description>
+      <description>Threads&amp;rsquo; execution easily ends up in corrupted data.&#xA;class Main { public static void main(String[] args) throws InterruptedException { Counter counter = new Counter(); Thread thread = new CounterThread(counter); } } class Counter { private volatile int value = 0; public void increase() { value += 1; } public int getValue() { return value; } } class CounterThread extends Thread { private final Counter counter; public CounterThread(Counter counter) { this.counter = counter; } @Override public void run() { for (int i = 0; i &amp;lt; 10000; i += 1) { counter.</description>
     </item>
-    
     <item>
       <title>Fix that Java: Mugs are not the Same</title>
       <link>https://torokmark.github.io/posts/fix-that-java-mugs-are-not-the-same/</link>
       <pubDate>Mon, 05 Dec 2022 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/fix-that-java-mugs-are-not-the-same/</guid>
-      <description>Ahh, either mugs or code but one of them is definitely broken&amp;hellip;. or both.
-public class Main { public static void main(String[] args) { Mug classic = new Mug(1.2); PlasticMug plastic = new PlasticMug(1.2, &amp;#34;polycarbonat&amp;#34;); System.out.println(plastic.equals(classic)); } } public class Mug { private double capacity; public Mug(double capacity) { this.capacity = capacity; } public double getCapacity() { return capacity; } @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null) { return false; } if (!</description>
+      <description>Ahh, either mugs or code but one of them is definitely broken&amp;hellip;. or both.&#xA;public class Main { public static void main(String[] args) { Mug classic = new Mug(1.2); PlasticMug plastic = new PlasticMug(1.2, &amp;#34;polycarbonat&amp;#34;); System.out.println(plastic.equals(classic)); } } public class Mug { private double capacity; public Mug(double capacity) { this.capacity = capacity; } public double getCapacity() { return capacity; } @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null) { return false; } if (!</description>
     </item>
-    
     <item>
       <title>Fix that Java: The Broken Flash Drive</title>
       <link>https://torokmark.github.io/posts/fix-that-java-the-broken-flash-drive/</link>
       <pubDate>Tue, 15 Nov 2022 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/fix-that-java-the-broken-flash-drive/</guid>
-      <description>Sadly, one of our colleagues hasn&amp;rsquo;t used version control system and the flash drive he has used was broken, so we have lost one part of the source code such as Starter class.
-class App extends Starter { @Override public void start() { System.out.println(&amp;#34;Start&amp;#34;); } public static void main(String[] args) { launch(args); } } Implement the Starter class and make it work! Once you start the application it should call the start method of App class.</description>
+      <description>Sadly, one of our colleagues hasn&amp;rsquo;t used version control system and the flash drive he has used was broken, so we have lost one part of the source code such as Starter class.&#xA;class App extends Starter { @Override public void start() { System.out.println(&amp;#34;Start&amp;#34;); } public static void main(String[] args) { launch(args); } } Implement the Starter class and make it work! Once you start the application it should call the start method of App class.</description>
     </item>
-    
     <item>
       <title>Fix that Java: The Broken Basket</title>
       <link>https://torokmark.github.io/posts/fix-that-java-the-broken-basket/</link>
       <pubDate>Sun, 13 Nov 2022 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/fix-that-java-the-broken-basket/</guid>
-      <description>Nice basket. We would like to put Jonathan apples only in that. But something is fishy here&amp;hellip;
-class Main { public static void main(String[] args) { Basket basket = new Basket(); basket.add(&amp;#34;Jonathan&amp;#34;); // ... } } import java.util.List; import java.util.ArrayList; class Basket { private List&amp;lt;String&amp;gt; apples = new ArrayList&amp;lt;&amp;gt;(); public void add(String apple) { if (apple.equals(&amp;#34;Jonathan&amp;#34;)) { apples.add(apple); } } @Override public String toString() { return apples.size() + &amp;#34; piece(s) of Jonathan.</description>
+      <description>Nice basket. We would like to put Jonathan apples only in that. But something is fishy here&amp;hellip;&#xA;class Main { public static void main(String[] args) { Basket basket = new Basket(); basket.add(&amp;#34;Jonathan&amp;#34;); // ... } } import java.util.List; import java.util.ArrayList; class Basket { private List&amp;lt;String&amp;gt; apples = new ArrayList&amp;lt;&amp;gt;(); public void add(String apple) { if (apple.equals(&amp;#34;Jonathan&amp;#34;)) { apples.add(apple); } } @Override public String toString() { return apples.size() + &amp;#34; piece(s) of Jonathan.</description>
     </item>
-    
     <item>
       <title>Fix that Java: Set is Bigger</title>
       <link>https://torokmark.github.io/posts/fix-that-java-set-is-bigger/</link>
       <pubDate>Thu, 01 Apr 2021 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/fix-that-java-set-is-bigger/</guid>
-      <description>As we see, the following code works bit different as we expect.
-import java.util.Set; import java.util.HashSet; class Main { public static void main(String[] args) { Set&amp;lt;Dog&amp;gt; dogs = new HashSet&amp;lt;&amp;gt;(); Dog caesar = new Dog(&amp;#34;German Shepherd&amp;#34;); Dog rex = new Dog(&amp;#34;German Shepherd&amp;#34;); dogs.add(caesar); dogs.add(rex); System.out.println(caesar.equals(rex)); System.out.println(dogs.size()); } } class Dog { private String breed; public Dog(String breed) { this.breed = breed; } public int hashCode() { return breed.hashCode(); } public boolean equals(Dog o) { return breed.</description>
+      <description>As we see, the following code works bit different as we expect.&#xA;import java.util.Set; import java.util.HashSet; class Main { public static void main(String[] args) { Set&amp;lt;Dog&amp;gt; dogs = new HashSet&amp;lt;&amp;gt;(); Dog caesar = new Dog(&amp;#34;German Shepherd&amp;#34;); Dog rex = new Dog(&amp;#34;German Shepherd&amp;#34;); dogs.add(caesar); dogs.add(rex); System.out.println(caesar.equals(rex)); System.out.println(dogs.size()); } } class Dog { private String breed; public Dog(String breed) { this.breed = breed; } public int hashCode() { return breed.hashCode(); } public boolean equals(Dog o) { return breed.</description>
     </item>
-    
     <item>
       <title>Fix that Java: Challenge</title>
       <link>https://torokmark.github.io/posts/fix-that-java-challenge/</link>
       <pubDate>Thu, 01 Apr 2021 11:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/fix-that-java-challenge/</guid>
-      <description>In this series I am going to share short codes with well-known, or less well-known but common problems that we, developers face from time to time during our work.
-The series is about learning the language, learning its features, functionalities, and limits. It is up to you how to do it!
-I am going to post a code snippet with a hidden misfunctionality. Your challenge is to solve that keeping the rules and limitations that I attach to the snippet.</description>
+      <description>In this series I am going to share short codes with well-known, or less well-known but common problems that we, developers face from time to time during our work.&#xA;The series is about learning the language, learning its features, functionalities, and limits. It is up to you how to do it!&#xA;I am going to post a code snippet with a hidden misfunctionality. Your challenge is to solve that keeping the rules and limitations that I attach to the snippet.</description>
     </item>
-    
   </channel>
 </rss>

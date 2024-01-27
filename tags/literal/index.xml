@@ -6,30 +6,21 @@
     <description>Recent content in literal on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 03 May 2020 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/tags/literal/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 03 May 2020 12:00:00 +0100</lastBuildDate>
+    <atom:link href="https://torokmark.github.io/tags/literal/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Do you know Java: Text Blocks</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-text-blocks/</link>
       <pubDate>Sun, 03 May 2020 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-text-blocks/</guid>
-      <description>Text blocks is a new proposed feature, hopefully coming with Java 15.
-Until then, let us see how it looks like in Java 14 as a feature preview.
-Here is how we declare a multiline string value. Once we have to concatenate, and also have to place new line characters (\n).
-String text = &amp;#34;one line\n&amp;#34; + &amp;#34;and\n&amp;#34; + &amp;#34;another&amp;#34;; When text is printed out:
-one line and another The new feature looks like the following.</description>
+      <description>Text blocks is a new proposed feature, hopefully coming with Java 15.&#xA;Until then, let us see how it looks like in Java 14 as a feature preview.&#xA;Here is how we declare a multiline string value. Once we have to concatenate, and also have to place new line characters (\n).&#xA;String text = &amp;#34;one line\n&amp;#34; + &amp;#34;and\n&amp;#34; + &amp;#34;another&amp;#34;; When text is printed out:&#xA;one line and another The new feature looks like the following.</description>
     </item>
-    
     <item>
       <title>Do you know Java: Underscores in Numeric Literals</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-underscores-in-numeric-literals/</link>
       <pubDate>Thu, 05 Sep 2019 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-underscores-in-numeric-literals/</guid>
-      <description>Underscore can be used in numeric literals to group digits in a numeric value. This way that can enhance code readability, decrease mistyping and helps visually keeping numeric values in range.
-Code readability is one of the most important viewpoints of software development. The more readable the code is, the faster that can be understood by developers.
-Java 7 introduced underscore as a comfortable way to separate digits of a numeric value into groups.</description>
+      <description>Underscore can be used in numeric literals to group digits in a numeric value. This way that can enhance code readability, decrease mistyping and helps visually keeping numeric values in range.&#xA;Code readability is one of the most important viewpoints of software development. The more readable the code is, the faster that can be understood by developers.&#xA;Java 7 introduced underscore as a comfortable way to separate digits of a numeric value into groups.</description>
     </item>
-    
   </channel>
 </rss>

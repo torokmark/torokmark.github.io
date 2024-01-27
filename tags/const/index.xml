@@ -6,17 +6,14 @@
     <description>Recent content in const on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 29 Jun 2020 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/tags/const/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 29 Jun 2020 12:00:00 +0100</lastBuildDate>
+    <atom:link href="https://torokmark.github.io/tags/const/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Do you know Java: Hidden Keywords</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-hidden-keywords/</link>
       <pubDate>Mon, 29 Jun 2020 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-hidden-keywords/</guid>
-      <description>Java has a lot of keywords which are not used as identifiers or values.
-Though, Java has a lot of keywords, some of them are less known or even not used. More over not used because they cannot be used at all.
-The good old goto is one of the two. Since sequence, selection and iteration are enough for Turing machine, goto became unnecessarily, not to mention that understanding the code becomes hard to follow.</description>
+      <description>Java has a lot of keywords which are not used as identifiers or values.&#xA;Though, Java has a lot of keywords, some of them are less known or even not used. More over not used because they cannot be used at all.&#xA;The good old goto is one of the two. Since sequence, selection and iteration are enough for Turing machine, goto became unnecessarily, not to mention that understanding the code becomes hard to follow.</description>
     </item>
-    
   </channel>
 </rss>

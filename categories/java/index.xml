@@ -6,341 +6,217 @@
     <description>Recent content in java on T[h]ink]er[ing</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 06 Aug 2023 12:00:00 +0100</lastBuildDate><atom:link href="https://torokmark.github.io/categories/java/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 06 Aug 2023 12:00:00 +0100</lastBuildDate>
+    <atom:link href="https://torokmark.github.io/categories/java/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>IntelliJ Plugin: Java Development</title>
       <link>https://torokmark.github.io/posts/intellij-plugin-java-development/</link>
       <pubDate>Sun, 06 Aug 2023 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/intellij-plugin-java-development/</guid>
-      <description>This post presents some of the plugins of IntelliJ that can be useful during daily work.
-These plugins are used mostly to develop Java related projects, and give a huge support in effective programming. Some of them are language or project agnostic.
-Recommendation is represented as a list of star. Five is the most, zero is the lowest.
-Material Theme UI ⭐ ⭐ ⭐ ⭐ ⭐ Rich, awesome, and configurable UI design to bring the best out of the look of your IDE.</description>
+      <description>This post presents some of the plugins of IntelliJ that can be useful during daily work.&#xA;These plugins are used mostly to develop Java related projects, and give a huge support in effective programming. Some of them are language or project agnostic.&#xA;Recommendation is represented as a list of star. Five is the most, zero is the lowest.&#xA;Material Theme UI &amp;#x2b50; &amp;#x2b50; &amp;#x2b50; &amp;#x2b50; &amp;#x2b50; Rich, awesome, and configurable UI design to bring the best out of the look of your IDE.</description>
     </item>
-    
     <item>
       <title>Do you know Java: Decorate your code</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-decorate-your-code/</link>
       <pubDate>Sun, 27 Nov 2022 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-decorate-your-code/</guid>
-      <description>You do not need comments to decorate your code minimally.
-Many years back then comments were the ultimate tool to decorate our code. And as it happened many times, sotware engineers glady used it to place ascii arts around their hotfixes or just simple seperate their solutions.
-In this post I would like to show you a funny feature of operators which you can use to draw lines or more.</description>
+      <description>You do not need comments to decorate your code minimally.&#xA;Many years back then comments were the ultimate tool to decorate our code. And as it happened many times, sotware engineers glady used it to place ascii arts around their hotfixes or just simple seperate their solutions.&#xA;In this post I would like to show you a funny feature of operators which you can use to draw lines or more.</description>
     </item>
-    
     <item>
       <title>Do you know Java: Beware of instanceof in equals</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-beware-of-instanceof-in-equals/</link>
       <pubDate>Wed, 31 Mar 2021 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-beware-of-instanceof-in-equals/</guid>
-      <description>One of the most important methods is equals. So, it is also important how it is implemented.
-What is the real issue with instanceof and equals? Let us see an implementation of it. First, let us introduce a simple class and its inheritant that demonstrate the usage of equals`.
-public class Mug { private double capacity; // ctor, setter, getter @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null) { return false; } if (!</description>
+      <description>One of the most important methods is equals. So, it is also important how it is implemented.&#xA;What is the real issue with instanceof and equals? Let us see an implementation of it. First, let us introduce a simple class and its inheritant that demonstrate the usage of equals`.&#xA;public class Mug { private double capacity; // ctor, setter, getter @Override public boolean equals(Object o) { if (this == o) { return true; } if (o == null) { return false; } if (!</description>
     </item>
-    
     <item>
       <title>Do you know Java: Hidden Keywords</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-hidden-keywords/</link>
       <pubDate>Mon, 29 Jun 2020 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-hidden-keywords/</guid>
-      <description>Java has a lot of keywords which are not used as identifiers or values.
-Though, Java has a lot of keywords, some of them are less known or even not used. More over not used because they cannot be used at all.
-The good old goto is one of the two. Since sequence, selection and iteration are enough for Turing machine, goto became unnecessarily, not to mention that understanding the code becomes hard to follow.</description>
+      <description>Java has a lot of keywords which are not used as identifiers or values.&#xA;Though, Java has a lot of keywords, some of them are less known or even not used. More over not used because they cannot be used at all.&#xA;The good old goto is one of the two. Since sequence, selection and iteration are enough for Turing machine, goto became unnecessarily, not to mention that understanding the code becomes hard to follow.</description>
     </item>
-    
     <item>
       <title>Do you know Java: Records</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-records/</link>
       <pubDate>Mon, 25 May 2020 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-records/</guid>
-      <description>Java 15 introduces record type.
-Records are a new kind of class in the Java language. The purpose of a record is to declare that a small group of variables is to be regarded as a new kind of entity. As said in JEP 384.
-Simple data carrier classes contain too much boilerplate code compared to the data itself. Fields, getter, setters, ctors, toString, equals, hashCode. On the other hand, quite difficult to figure out what the class represents.</description>
+      <description>Java 15 introduces record type.&#xA;Records are a new kind of class in the Java language. The purpose of a record is to declare that a small group of variables is to be regarded as a new kind of entity. As said in JEP 384.&#xA;Simple data carrier classes contain too much boilerplate code compared to the data itself. Fields, getter, setters, ctors, toString, equals, hashCode. On the other hand, quite difficult to figure out what the class represents.</description>
     </item>
-    
     <item>
       <title>Do you know Java: Pattern Matching for instanceof</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-instanceof-pattern-matching/</link>
       <pubDate>Sat, 23 May 2020 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-instanceof-pattern-matching/</guid>
-      <description>Java 15 brings a syntactic sugar, called Pattern Matching for instanceof, with which we can shorten the code and make it more safe.
-In prior versions of Java, the instanceof operator workes as follows:
-Object o = &amp;#34;asdf&amp;#34;; if (o instanceof String) { String s = (String) o; System.out.println(o); } Java 15 - and Java 14 as a preview feature - introduces an enhanced instanceof operator, which brings the ability to cast the eximined instance to the type of the right operand.</description>
+      <description>Java 15 brings a syntactic sugar, called Pattern Matching for instanceof, with which we can shorten the code and make it more safe.&#xA;In prior versions of Java, the instanceof operator workes as follows:&#xA;Object o = &amp;#34;asdf&amp;#34;; if (o instanceof String) { String s = (String) o; System.out.println(o); } Java 15 - and Java 14 as a preview feature - introduces an enhanced instanceof operator, which brings the ability to cast the eximined instance to the type of the right operand.</description>
     </item>
-    
     <item>
       <title>Do you know Java: Immutable Object</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-immutable-object/</link>
       <pubDate>Sat, 16 May 2020 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-immutable-object/</guid>
-      <description>Couple of thoughts about how to implement immutable objects.
-Class has to be final. Fields have to be private and final. Hence, fields are set in constructor. No setters and setter-like methods. If object is passed in ctor parameter, make a clone of it. Do the same in getters as well. public final class Person { private final String name; private final int age; private final List&amp;lt;PhoneNumber&amp;gt; phoneNumbers; public Person(String name, int age, List&amp;lt;PhoneNumber&amp;gt; phoneNumbers) { this.</description>
+      <description>Couple of thoughts about how to implement immutable objects.&#xA;Class has to be final. Fields have to be private and final. Hence, fields are set in constructor. No setters and setter-like methods. If object is passed in ctor parameter, make a clone of it. Do the same in getters as well. public final class Person { private final String name; private final int age; private final List&amp;lt;PhoneNumber&amp;gt; phoneNumbers; public Person(String name, int age, List&amp;lt;PhoneNumber&amp;gt; phoneNumbers) { this.</description>
     </item>
-    
     <item>
       <title>Do you know Java: Helpful NullPointerExceptions</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-helpful-nullpointerexceptions/</link>
       <pubDate>Tue, 05 May 2020 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-helpful-nullpointerexceptions/</guid>
-      <description>Java 14 has brought a helpful feature with that we can get information about the source of the raised NullPointerException
-NullPointerException is not very friendly and can occur anywhere. All the placed where we don&amp;rsquo;t want it to be. In this post I will show you how to track down its source.
-The following source code is given:
-String value = null; System.out.println(value.length()); Pre Java 14 Era The good old error message is the following:</description>
+      <description>Java 14 has brought a helpful feature with that we can get information about the source of the raised NullPointerException&#xA;NullPointerException is not very friendly and can occur anywhere. All the placed where we don&amp;rsquo;t want it to be. In this post I will show you how to track down its source.&#xA;The following source code is given:&#xA;String value = null; System.out.println(value.length()); Pre Java 14 Era The good old error message is the following:</description>
     </item>
-    
     <item>
       <title>Do you know Java: Text Blocks</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-text-blocks/</link>
       <pubDate>Sun, 03 May 2020 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-text-blocks/</guid>
-      <description>Text blocks is a new proposed feature, hopefully coming with Java 15.
-Until then, let us see how it looks like in Java 14 as a feature preview.
-Here is how we declare a multiline string value. Once we have to concatenate, and also have to place new line characters (\n).
-String text = &amp;#34;one line\n&amp;#34; + &amp;#34;and\n&amp;#34; + &amp;#34;another&amp;#34;; When text is printed out:
-one line and another The new feature looks like the following.</description>
+      <description>Text blocks is a new proposed feature, hopefully coming with Java 15.&#xA;Until then, let us see how it looks like in Java 14 as a feature preview.&#xA;Here is how we declare a multiline string value. Once we have to concatenate, and also have to place new line characters (\n).&#xA;String text = &amp;#34;one line\n&amp;#34; + &amp;#34;and\n&amp;#34; + &amp;#34;another&amp;#34;; When text is printed out:&#xA;one line and another The new feature looks like the following.</description>
     </item>
-    
     <item>
       <title>Do you know Java: I Need Dollars, Dollars, ...</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-i-need-dollars-dollars/</link>
       <pubDate>Sat, 02 May 2020 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-i-need-dollars-dollars/</guid>
-      <description>Some special characters are accepted as part of an identifier, dollar sign is among them.
-Have you ever though about to write an application, whichever small that would be, and use as less identifier as possible.
-And what if the identifier is weird itself already?
-class $ { private String $; public void $(String $) { this.$ = $; } public String $() { return this.$; } } public class Main { public static void main(String[] args) { $ $ = new $(); $.</description>
+      <description>Some special characters are accepted as part of an identifier, dollar sign is among them.&#xA;Have you ever though about to write an application, whichever small that would be, and use as less identifier as possible.&#xA;And what if the identifier is weird itself already?&#xA;class $ { private String $; public void $(String $) { this.$ = $; } public String $() { return this.$; } } public class Main { public static void main(String[] args) { $ $ = new $(); $.</description>
     </item>
-    
     <item>
       <title>Do you know Java: Less known side of Enums</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-less-known-side-of-enums/</link>
       <pubDate>Fri, 01 May 2020 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-less-known-side-of-enums/</guid>
-      <description>Enums are easy and straigthforward at first sight, but this type has some hidden sides.
-public enum Day { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY } For enumeration type, Java has a keyword called enum. That was introduced in Java 1.5. All enum types are implicitly inhereted from Enum class. Hence, all enum types has all methods that Enum has, like name, ordinal, etc. We cannot extend an enum, and enum does not extend custom types.</description>
+      <description>Enums are easy and straigthforward at first sight, but this type has some hidden sides.&#xA;public enum Day { MONDAY, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY } For enumeration type, Java has a keyword called enum. That was introduced in Java 1.5. All enum types are implicitly inhereted from Enum class. Hence, all enum types has all methods that Enum has, like name, ordinal, etc. We cannot extend an enum, and enum does not extend custom types.</description>
     </item>
-    
     <item>
       <title>Do you know Java: Execute Shell Commands</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-execute-shell-commands/</link>
       <pubDate>Tue, 28 Apr 2020 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-execute-shell-commands/</guid>
-      <description>Two ways are shown here about how to execute shell scripts and commands with Java.
-In this post I am showing two ways to execute shell scripts or shell commands from a Java app.
-ProcessBuilder ProcessBuilder class has been created to create and handle operating system processes.
-ProcessBuilder#start method creates a single native process. Let us see how to do it.
-ProcessBuilder builder = new ProcessBuilder(); builder.command(&amp;#34;bash&amp;#34;, &amp;#34;-c&amp;#34;, &amp;#34;ping google.com&amp;#34;); Process process; try { process = builder.</description>
+      <description>Two ways are shown here about how to execute shell scripts and commands with Java.&#xA;In this post I am showing two ways to execute shell scripts or shell commands from a Java app.&#xA;ProcessBuilder ProcessBuilder class has been created to create and handle operating system processes.&#xA;ProcessBuilder#start method creates a single native process. Let us see how to do it.&#xA;ProcessBuilder builder = new ProcessBuilder(); builder.command(&amp;#34;bash&amp;#34;, &amp;#34;-c&amp;#34;, &amp;#34;ping google.com&amp;#34;); Process process; try { process = builder.</description>
     </item>
-    
     <item>
       <title>Do you know Java: Daemon Thread</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-daemon-thread/</link>
       <pubDate>Sat, 25 Apr 2020 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-daemon-thread/</guid>
-      <description>Application terminates when all threads are terminated. But what if some of them run endlessly?
-Sometimes threads run until a condition is met, sometimes they run endlessly.
-Once a thread is created and then started, it runs parallel with the main execution. Our app terminates when all threads are terminated including our main method as well.
-What if a thread is infinite and still running though the main is already terminated?</description>
+      <description>Application terminates when all threads are terminated. But what if some of them run endlessly?&#xA;Sometimes threads run until a condition is met, sometimes they run endlessly.&#xA;Once a thread is created and then started, it runs parallel with the main execution. Our app terminates when all threads are terminated including our main method as well.&#xA;What if a thread is infinite and still running though the main is already terminated?</description>
     </item>
-    
     <item>
       <title>Do you know Java: Use try-with-resource</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-try-with-resource/</link>
       <pubDate>Fri, 24 Apr 2020 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-try-with-resource/</guid>
-      <description>Try-with-resource gives a safer way to handle exceptions and resources.
-A quite big drawback of try-catch-finally that we have to close resource at the end, otherwise the resource remains locked - not always, but sometimes!
-So either we try not to forget to close the resouce, and place finally at the end, or apply something that does this job instead of us.
-Try-Catch-Finally The hard part comes in finally, which encloses a try-catch, and null check is very easy to forget.</description>
+      <description>Try-with-resource gives a safer way to handle exceptions and resources.&#xA;A quite big drawback of try-catch-finally that we have to close resource at the end, otherwise the resource remains locked - not always, but sometimes!&#xA;So either we try not to forget to close the resouce, and place finally at the end, or apply something that does this job instead of us.&#xA;Try-Catch-Finally The hard part comes in finally, which encloses a try-catch, and null check is very easy to forget.</description>
     </item>
-    
     <item>
       <title>Do you know Java: Catch Multiple Exceptions</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-catch-multiple-exceptions/</link>
       <pubDate>Wed, 25 Mar 2020 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-catch-multiple-exceptions/</guid>
-      <description>Catching multiple exceptions is very useful when we are intended to do the same operations when they are raised.
-The feature introduced in Java 7 and by using it we can place exceptions in the same catch branch.
-The old way looked like as follows.
-try { } catch (SQLException ex) { logger.log(ex); } catch (RemoteException ex) { logger.log(ex); } catch (NullPointerException ex) { logger.log(ex); } In Java 7 and onwards, we can place multiple exceptions in one catch branch.</description>
+      <description>Catching multiple exceptions is very useful when we are intended to do the same operations when they are raised.&#xA;The feature introduced in Java 7 and by using it we can place exceptions in the same catch branch.&#xA;The old way looked like as follows.&#xA;try { } catch (SQLException ex) { logger.log(ex); } catch (RemoteException ex) { logger.log(ex); } catch (NullPointerException ex) { logger.log(ex); } In Java 7 and onwards, we can place multiple exceptions in one catch branch.</description>
     </item>
-    
     <item>
       <title>Do you know Java: Instance from static launcher</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-static-launcher/</link>
       <pubDate>Tue, 18 Feb 2020 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-static-launcher/</guid>
-      <description>Instantiate the current class from its entry point by using static method. Interesting, isn&amp;rsquo;t it?
-I came across with JavaFX recently, and I saw an example about how to use it. This made me think, and brought the following question in my mind. How can we make an instance of the class that is the starting point of our application and how can we call its instance methods.
-Let us see the code that we have if we start building a javafx application.</description>
+      <description>Instantiate the current class from its entry point by using static method. Interesting, isn&amp;rsquo;t it?&#xA;I came across with JavaFX recently, and I saw an example about how to use it. This made me think, and brought the following question in my mind. How can we make an instance of the class that is the starting point of our application and how can we call its instance methods.&#xA;Let us see the code that we have if we start building a javafx application.</description>
     </item>
-    
     <item>
       <title>Do you know Java: PECS</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-pecs/</link>
       <pubDate>Sat, 08 Feb 2020 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-pecs/</guid>
-      <description>Do you remember the rule of PECS? If not, read the post quickly!
-PECS stands for Produce-Extend, Consume-Super. What does that mean? Let us see an example with types from the standard.
-Object void add(List&amp;lt;Object&amp;gt; list) { list.add(&amp;#34;string&amp;#34;); list.add(1); } Passing the followings are:
-add(new ArrayList&amp;lt;Object&amp;gt;()); // not type safe add(new ArrayList&amp;lt;String&amp;gt;()); // compile time error The first is not type safe, the second one does not compile, since ArrayList&amp;lt;String&amp;gt; is not the subtype of List&amp;lt;Object&amp;gt;.</description>
+      <description>Do you remember the rule of PECS? If not, read the post quickly!&#xA;PECS stands for Produce-Extend, Consume-Super. What does that mean? Let us see an example with types from the standard.&#xA;Object void add(List&amp;lt;Object&amp;gt; list) { list.add(&amp;#34;string&amp;#34;); list.add(1); } Passing the followings are:&#xA;add(new ArrayList&amp;lt;Object&amp;gt;()); // not type safe add(new ArrayList&amp;lt;String&amp;gt;()); // compile time error The first is not type safe, the second one does not compile, since ArrayList&amp;lt;String&amp;gt; is not the subtype of List&amp;lt;Object&amp;gt;.</description>
     </item>
-    
     <item>
       <title>Do you know Java: JShell</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-jshell/</link>
       <pubDate>Sun, 05 Jan 2020 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-jshell/</guid>
-      <description>JShell interpreter can process Java statements without requiring them to be placed in class and method body.
-JShell interpreter and CLI were introduced in Java 9. That come handy when we would like to execute a statement, or call a subroutine to get their results.
-Shell To enter the shell, we should type jshell in the command line and hit enter.
-| Welcome to JShell -- Version 13 | For an introduction type: /help intro jshell&amp;gt; | Welcome to JShell -- Version 13 | For an introduction type: /help intro jshell&amp;gt; int i = 1 + 2; i ==&amp;gt; 3 jshell&amp;gt; System.</description>
+      <description>JShell interpreter can process Java statements without requiring them to be placed in class and method body.&#xA;JShell interpreter and CLI were introduced in Java 9. That come handy when we would like to execute a statement, or call a subroutine to get their results.&#xA;Shell To enter the shell, we should type jshell in the command line and hit enter.&#xA;| Welcome to JShell -- Version 13 | For an introduction type: /help intro jshell&amp;gt; | Welcome to JShell -- Version 13 | For an introduction type: /help intro jshell&amp;gt; int i = 1 + 2; i ==&amp;gt; 3 jshell&amp;gt; System.</description>
     </item>
-    
     <item>
       <title>Do you know Java: Arrays as Generic Containers</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-arrays-as-generic-containers/</link>
       <pubDate>Sat, 28 Dec 2019 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-arrays-as-generic-containers/</guid>
-      <description>We can assign different type of elements to an array even the operation is accepted in compile-time, that raises error in run-time.
-Sometimes Java is tricky, even it has static type system, we can assign different type of elements to an array, which is accepted in compile time, even array contains different type than the types of the element.
-Covariance Let S &amp;lt;: T mean that S is subtype of T and covariant is S &amp;lt;: T =&amp;gt; S&#39; &amp;lt;: T&#39;.</description>
+      <description>We can assign different type of elements to an array even the operation is accepted in compile-time, that raises error in run-time.&#xA;Sometimes Java is tricky, even it has static type system, we can assign different type of elements to an array, which is accepted in compile time, even array contains different type than the types of the element.&#xA;Covariance Let S &amp;lt;: T mean that S is subtype of T and covariant is S &amp;lt;: T =&amp;gt; S&#39; &amp;lt;: T&#39;.</description>
     </item>
-    
     <item>
       <title>Do you know Java: Parameter validation</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-parameter-validation/</link>
       <pubDate>Sat, 21 Dec 2019 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-parameter-validation/</guid>
-      <description>Checking method parameters is crutial to avoid inconvenient situations with null pointers or undesired values. Assertion and exception handling are two ways to give feedback to users about parameters.
-What if we are intended to validate the parameters of a function? What if we liked to set up preconditions? How can we avoid working with null objects?
-In this post we take a look at two approaches. At first, we see how we can check parameters with assertion and what its pros and cons are.</description>
+      <description>Checking method parameters is crutial to avoid inconvenient situations with null pointers or undesired values. Assertion and exception handling are two ways to give feedback to users about parameters.&#xA;What if we are intended to validate the parameters of a function? What if we liked to set up preconditions? How can we avoid working with null objects?&#xA;In this post we take a look at two approaches. At first, we see how we can check parameters with assertion and what its pros and cons are.</description>
     </item>
-    
     <item>
       <title>Interview: Implement a HashMap-like data structure in Java</title>
       <link>https://torokmark.github.io/posts/interview-map/</link>
       <pubDate>Sun, 15 Dec 2019 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/interview-map/</guid>
-      <description>HashMap is one of the most used Map type in Java. A good experiment to implement our own one.
-Not so long ago, I took a sit in an interview, and the interviewer asked me to implement a HashMap-like container which contains Integer types keys and Integer values. The trick was that I could not use any containers from the Collection API framework.
-Steps we have to consider:
-Basic API for our map!</description>
+      <description>HashMap is one of the most used Map type in Java. A good experiment to implement our own one.&#xA;Not so long ago, I took a sit in an interview, and the interviewer asked me to implement a HashMap-like container which contains Integer types keys and Integer values. The trick was that I could not use any containers from the Collection API framework.&#xA;Steps we have to consider:&#xA;Basic API for our map!</description>
     </item>
-    
     <item>
       <title>Do you know Java: One more more more time</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-one-more-more-more-time/</link>
       <pubDate>Mon, 18 Nov 2019 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-one-more-more-more-time/</guid>
-      <description>Operators have arity. Sometimes we can make patterns out of them. Which is funny.
-Every operator has an arity in Java. They can be either unary, binary, and ternary operators. Arity decides how many operands are accepted in the operation. This brings us the next riddle.
-The Riddle What is the output of the next operation?
-class Main { public static void main(String[] args) { int n = 0; int i = 1; n = i + + + + + + i; System.</description>
+      <description>Operators have arity. Sometimes we can make patterns out of them. Which is funny.&#xA;Every operator has an arity in Java. They can be either unary, binary, and ternary operators. Arity decides how many operands are accepted in the operation. This brings us the next riddle.&#xA;The Riddle What is the output of the next operation?&#xA;class Main { public static void main(String[] args) { int n = 0; int i = 1; n = i + + + + + + i; System.</description>
     </item>
-    
     <item>
       <title>Do you know Java: Underscore as identifier</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-underscore-as-identifier/</link>
       <pubDate>Mon, 28 Oct 2019 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-underscore-as-identifier/</guid>
-      <description>We could use underscore as a variable name until Java 7, but it cannot be used as an identifier from Java 9 and upwards.
-Java has strict rules about how to name a variable, which characters are accepted in it or which one can be the first one. Underscore is a legal character among alphabetic characters and numbers. What if I did not use any other chars just underscore? Is that still valid variable name?</description>
+      <description>We could use underscore as a variable name until Java 7, but it cannot be used as an identifier from Java 9 and upwards.&#xA;Java has strict rules about how to name a variable, which characters are accepted in it or which one can be the first one. Underscore is a legal character among alphabetic characters and numbers. What if I did not use any other chars just underscore? Is that still valid variable name?</description>
     </item>
-    
     <item>
       <title>Do you know Java: Varargs as Entry Point Parameter</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-varargs-in-entry-point/</link>
       <pubDate>Tue, 15 Oct 2019 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-varargs-in-entry-point/</guid>
-      <description>Java 5 was one of those versions that brought much more features and syntactic sugars than any other of them. Varargs is one of those. This provides a very comfortable way to pass different number of arguments to a method. Can we use it anywhere?
-Varargs is just a syntactic sugar, it can be used in a more flexible way than its predecessor, the typed array. It has the same characteristics which means it supports indexing, it has an attribute called length, it is iterable.</description>
+      <description>Java 5 was one of those versions that brought much more features and syntactic sugars than any other of them. Varargs is one of those. This provides a very comfortable way to pass different number of arguments to a method. Can we use it anywhere?&#xA;Varargs is just a syntactic sugar, it can be used in a more flexible way than its predecessor, the typed array. It has the same characteristics which means it supports indexing, it has an attribute called length, it is iterable.</description>
     </item>
-    
     <item>
       <title>Do you know Java: Underscores in Numeric Literals</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-underscores-in-numeric-literals/</link>
       <pubDate>Thu, 05 Sep 2019 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-underscores-in-numeric-literals/</guid>
-      <description>Underscore can be used in numeric literals to group digits in a numeric value. This way that can enhance code readability, decrease mistyping and helps visually keeping numeric values in range.
-Code readability is one of the most important viewpoints of software development. The more readable the code is, the faster that can be understood by developers.
-Java 7 introduced underscore as a comfortable way to separate digits of a numeric value into groups.</description>
+      <description>Underscore can be used in numeric literals to group digits in a numeric value. This way that can enhance code readability, decrease mistyping and helps visually keeping numeric values in range.&#xA;Code readability is one of the most important viewpoints of software development. The more readable the code is, the faster that can be understood by developers.&#xA;Java 7 introduced underscore as a comfortable way to separate digits of a numeric value into groups.</description>
     </item>
-    
     <item>
       <title>Do you know Java: Single Source File Code</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-single-source-file-code/</link>
       <pubDate>Wed, 28 Aug 2019 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-single-source-file-code/</guid>
-      <description>Java 11 introduced a new way of executing applications. That gives us the opportunity to do it without excplicitely compiling it. What&amp;rsquo;s more, Java code can be run as a script.
-In Java, compilation and execution of an app are two different steps. The java command gives us the feeling that we work with an interpreter.
-The Pre-Java-11 era Compilation of the source code and execution of the app are separated commands before Java 11, as we see here:</description>
+      <description>Java 11 introduced a new way of executing applications. That gives us the opportunity to do it without excplicitely compiling it. What&amp;rsquo;s more, Java code can be run as a script.&#xA;In Java, compilation and execution of an app are two different steps. The java command gives us the feeling that we work with an interpreter.&#xA;The Pre-Java-11 era Compilation of the source code and execution of the app are separated commands before Java 11, as we see here:</description>
     </item>
-    
     <item>
       <title>Do you know Java: Entry Point in Interface or Enum</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-entry-point-in-interface/</link>
       <pubDate>Fri, 09 Aug 2019 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-entry-point-in-interface/</guid>
-      <description>All Java applications start with a class and an entry point in it. We can change the class type to others.
-All Java applications start at one common point. That is a class which has at least one static method, called main as an entry point of the app. This method is called by JRE after the class is loaded when we execute java command with the appropriate name of the class.</description>
+      <description>All Java applications start with a class and an entry point in it. We can change the class type to others.&#xA;All Java applications start at one common point. That is a class which has at least one static method, called main as an entry point of the app. This method is called by JRE after the class is loaded when we execute java command with the appropriate name of the class.</description>
     </item>
-    
     <item>
       <title>Safe navigation in languages</title>
       <link>https://torokmark.github.io/posts/safe-navigation-in-languages/</link>
       <pubDate>Mon, 05 Aug 2019 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/safe-navigation-in-languages/</guid>
-      <description>As we saw in the previous post, Ruby development team introduced a safe navigation operator to get rid of painful chaining of objects, which could raise NPE in case of null object in the middle. But Ruby is not the only language that came up with this idea. Most of the languages have introduced this operator, usually called null propagation, or some other approaches to achieve the same goal.
-In this post I write some snippets to demonstrate what other languages provide to prevent the exception raised by referencing to a null object.</description>
+      <description>As we saw in the previous post, Ruby development team introduced a safe navigation operator to get rid of painful chaining of objects, which could raise NPE in case of null object in the middle. But Ruby is not the only language that came up with this idea. Most of the languages have introduced this operator, usually called null propagation, or some other approaches to achieve the same goal.&#xA;In this post I write some snippets to demonstrate what other languages provide to prevent the exception raised by referencing to a null object.</description>
     </item>
-    
     <item>
       <title>Do you know Java: Double Brace Initialization</title>
       <link>https://torokmark.github.io/posts/do-you-know-java-double-brace-initialization/</link>
       <pubDate>Sun, 28 Jul 2019 12:00:00 +0100</pubDate>
-      
       <guid>https://torokmark.github.io/posts/do-you-know-java-double-brace-initialization/</guid>
-      <description>Double brace initialization is a very comfortable way to add values to a collection or pairs to a map instance instead of having multiple statements next to each other.
-One of the most popular languages, though Java is full of interesting parts that look wierd or unusual at first glance. In the sequence I call Do you know Java, I would like to present these less known or unexplained parts of the languages.</description>
+      <description>Double brace initialization is a very comfortable way to add values to a collection or pairs to a map instance instead of having multiple statements next to each other.&#xA;One of the most popular languages, though Java is full of interesting parts that look wierd or unusual at first glance. In the sequence I call Do you know Java, I would like to present these less known or unexplained parts of the languages.</description>
     </item>
-    
     <item>
       <title>Best practices to write an Entity in Spring/Hibernate</title>
       <link>https://torokmark.github.io/posts/entity-best-practices/</link>
       <pubDate>Mon, 01 Oct 2018 00:00:00 +0000</pubDate>
-      
       <guid>https://torokmark.github.io/posts/entity-best-practices/</guid>
       <description>Every entity has to have a public default contstructor fetchType = FetchType.LAZY on @OneToOne, @OneToMany and @ManyToOne and other associations (EAGER is the default except @OneToMany) If an association is not mandatory: optional = false on association annotations @Column and @JoinColumn should contain nullable = false Entity should implement Persistable&amp;lt;IDTYPE&amp;gt; interface Create own interface with default implementation: public interface Identifiable extends Persistable&amp;lt;Long&amp;gt; { default isNew() { return getId() == null; } } All ids should be boxed like Long, Integer, String, etc.</description>
     </item>
-    
   </channel>
 </rss>
